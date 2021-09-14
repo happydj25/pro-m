@@ -1,0 +1,1570 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta charset="utf-8">
+    <meta name="ROBOTS" content="INDEX,FOLLOW">
+    <meta name="GOOGLEBOT" content="INDEX,NOFOLLOW">
+    <meta name="ROBOTS" content="NOARCHIVE">
+    <meta name="GOOGLEBOT" content="NOARCHIVE">
+
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta property="og:type" content="website">
+    <title>SPOLIVE PRO</title>
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/m_livegame.css">
+
+    <link rel="shortcut icon" href="./img/icons/favicon.ico">
+    <link rel="apple-touch-icon" href="./img/icons/favicon_72.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/icons/favicon_72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/icons/favicon_114.png">
+</head>
+
+<body class="body_index">
+    <div class="dim hidden"></div>
+    <header>
+        <div class="container">
+            <button class="menu">
+                <span class="list-i-menu"></span>
+            </button>
+            <h1 class="logo">
+                <a href="main.html">
+                    <span class="list-i-logo"></span>
+                </a>
+            </h1>
+            <ul class="hdul">
+                <li onclick="wopen('/page/payment/payment.php', 'payment', '768', '1000');">
+                    <a href="" title="충전"><span class="list-i-charge"></span></a>
+                </li>
+                <li>
+                    <button class="mydata" title="내정보">
+                        <span class="list-i-mydata"></span>
+                    </button>
+                </li>
+                <li>
+                    <button class="logout" onclick="location.href='//portal.dev.spolive.com/bbs/logout.php?url=//sports.portal.dev.spolive.com'" title="로그아웃">
+                        <span class="list-i-logout"></span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="betitem hidden">
+        <div class="tit">
+            <p class="twtxt">베팅아이템</p>
+            <button class="xbtn">
+                <span class="list-i-xbtn"></span>
+            </button>
+        </div>
+        <div id="mk_item_layer_betslip">Loading.</div>
+    </div>
+
+    <div class="navmu_wrap hidden">
+
+        <div class="login hidden">
+
+            <div class="tit">
+                <p class="twtxt">로그인</p>
+                <button class="xbtn">
+                    <span class="list-i-xbtn"></span>
+                </button>
+            </div>
+            <form name="flogin" action="//portal.dev.spolive.com/bbs/login_check.php" method="post">
+                <div>
+                    <input type="text" name="mb_id" placeholder="아이디를 입력해주세요." required="">
+                    <input type="password" name="mb_password" placeholder="비밀번호를 입력해주세요." required="">
+                    <button type="submit" class="ybtn">로그인</button>
+                    <a href="//portal.dev.spolive.com/bbs/register.php" class="ybtn2">회원가입</a>
+                </div>
+                <div class="find">
+                    <a href="//portal.dev.spolive.com/bbs/password_lost.php">아이디 찾기</a>
+                    <a href="//portal.dev.spolive.com/bbs/password_lost.php">비밀번호 찾기</a>
+                </div>
+                <div class="snslogin">
+                    <p class="twtxt">다른 로그인 방법</p>
+                    <a href="">
+                        <span class="list-i-naver"></span>
+                        네이버 로그인
+                    </a>
+                    <a href="">
+                        <span class="list-i-kakko"></span>
+                        카카오 로그인
+                    </a>
+                    <a href="">
+                        <span class="list-i-fbook"></span>
+                        페이스북 로그인
+                    </a>
+                    <a href="">
+                        <span class="list-i-google"></span>
+                        구글 로그인
+                    </a>
+                </div>
+            </form>
+        </div>
+
+        <div class="mydata hidden">
+            <div class="tit">
+                <p class="twtxt">내정보</p>
+                <button class="xbtn">
+                    <span class="list-i-xbtn"></span>
+                </button>
+            </div>
+            <div class="container">
+                <div class="mydata">
+                    <div class="tit">
+                        <span class="list-i-myicon"></span>
+                        기본정보
+                        <button class="inven_btn" onclick="location.href='gold-market-inventory.html'">인벤토리</button>
+                    </div>
+                    <div>
+                        <span class="txt">랭킹</span>
+                        <span>-</span>
+                    </div>
+                    <div>
+                        <span class="txt">닉네임</span>
+                        <button class="btn1" onclick="location.href='gold-market.html'">변경</button>
+                        <span class="name">자낳괴나돈조심</span>
+                    </div>
+                    <div class="business">
+                        <span class="list-i-business"></span>
+                        <span class="num">D-0</span>
+                    </div>
+                    <div class="first">
+                        <span class="list-i-first"></span>
+                        <span class="num">D-345</span>
+                    </div>
+                </div>
+
+                <div class="mygold">
+                    <div class="tit">
+                        <span class="list-i-mygold"></span>
+                        보유재화
+                    </div>
+                    <div>
+                        <span class="txt">껨코인</span>
+                        <button class="btn1" onclick="wopen('/page/payment/payment.php', 'payment', '768', '1000');">충전</button>
+                        <span class="num"><span class="list-i-coin"></span>0</span>
+                    </div>
+                    <div>
+                        <span class="txt">골드</span>
+                        <button class="btn1" onclick="location.href='/contents/list.php?ca_id=50'">구매</button>
+                        <span class="num"><span class="list-i-gold"></span>35,999,910</span>
+                    </div>
+                    <div class="question">
+                        <span class="txt">마일리지</span>
+                        <span class="list-i-subtxt"></span>
+                        <div class="txt qpopup hidden">
+                            <p class="tit">마일리지</p>
+                            <span class="zone">
+                                게임 플레이를 통해 무료로 제공되는 재화입니다.<br>
+                                마일리지는 게임 참여 후 적중 실패 시 베팅금액의 0.001%만큼 적립 받습니다.
+                                획득한 마일리지는 골드마켓에서<br>아이템 구매 시 사용할 수 있습니다.<br>
+                            </span>
+                        </div>
+                        <span class="num"><span class="list-i-mile"></span>0</span>
+                    </div>
+                </div>
+
+
+                <div class="wrank">
+                    <div class="tit">
+                        <span class="list-i-wrank"></span>
+                        주간전적
+                        <label for="weekly_record" class="onoff_btn">
+                            <input type="checkbox" name="weekly_record" id="weekly_record">
+                            <span class="list-i-mdonoff"></span>
+                        </label>
+                    </div>
+                    <div>
+                        <span class="txt">적중건수</span>
+                        <span class="num">0</span>
+                    </div>
+                    <div>
+                        <span class="txt">최대 당첨 배당</span>
+                        <span class="num">0</span>
+                    </div>
+                    <div>
+                        <span class="txt">최대 당첨 골드</span>
+                        <span class="num">0</span>
+                    </div>
+                </div>
+
+                <div class="mrank">
+                    <div class="tit">
+                        <span class="list-i-mrank"></span>
+                        월간전적
+                        <label for="monthly_record" class="onoff_btn">
+                            <input type="checkbox" name="monthly_record" id="monthly_record">
+                            <span class="list-i-mdonoff"></span>
+                        </label>
+                    </div>
+                    <div>
+                        <span class="txt">적중건수</span>
+                        <span class="num">0</span>
+                    </div>
+                    <div>
+                        <span class="txt">최대 당첨 배당</span>
+                        <span class="num">0</span>
+                    </div>
+                    <div>
+                        <span class="txt">최대 당첨 골드</span>
+                        <span class="num">0</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="menu hidden">
+            <div class="tit">
+                <p class="twtxt">전체 메뉴</p>
+                <button class="xbtn"><span class="list-i-xbtn"></span></button>
+            </div>
+            <ul class="game">
+                <li>
+                    <a href="https://www.spolive.com/">
+                        <div class="img">
+                            <img src="./img/game/menu_thum01.png" alt="">
+                        </div>
+                        <p>스포라이브</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="img">
+                            <img src="./img/game/menu_thum02.png" alt="">
+                        </div>
+                        <p>타이젬 바둑</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="img">
+                            <img src="./img/game/munu_thum03.png" alt="">
+                        </div>
+                        <p>해피라이브</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="gnb">
+                <ul>
+                    <li>
+                        <button type="button">
+                            <span class="list-i-run"></span>
+                            스포츠게임
+                            <span class="list-i-rarr"></span>
+                        </button>
+                        <ul>
+                            <li><a href="sport-game.html">스포츠게임</a></li>
+                            <li><a href="live-game.html">라이브게임</a></li>
+                            <li><a href="bet-rules.html">베팅규정</a></li>
+                            <li><a href="match-schedule.html">경기일정</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button">
+                            <span class="list-i-murank"></span>
+                            랭킹
+                            <span class="list-i-rarr"></span>
+                        </button>
+                        <ul>
+                            <li><a href="rank.html">주간랭킹</a></li>
+                            <li><a href="rank.html">월간랭킹</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" onclick="location.href='team-rank.html'">
+                            <span class="list-i-murank"></span>
+                            종목별 팀 순위
+                            <span class="list-i-rarr"></span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button">
+                            <span class="list-i-community"></span>
+                            커뮤니티
+                            <span class="list-i-rarr"></span>
+                        </button>
+                        <ul>
+                            <li><a href="board.html">자유게시판</a></li>
+                            <li><a href="board.html">분석게시판</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button">
+                            <span class="list-i-nnews"></span>
+                            새소식
+                            <span class="list-i-rarr"></span>
+                        </button>
+                        <ul>
+                            <li><a href="noti.html">공지사항</a></li>
+                            <li><a href="noti.html">업데이트</a></li>
+                            <li><a href="event.html">이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" onclick="location.href='gold-market.html'">
+                            <span class="list-i-gmk"></span>
+                            골드마켓
+                            <span class="list-i-rarr"></span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button">
+                            <span class="list-i-make"></span>
+                            제작
+                            <span class="list-i-rarr"></span>
+                        </button>
+                        <ul>
+                            <li><a href="make.html">합성</a></li>
+                            <li><a href="make.html">강화</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="betcart hidden">
+            <div class="container">
+                <div class="more_btn gtxt">
+                    전체보기
+                    <span class="list-i-betcartmore"></span>
+                </div>
+                <div class="tit">
+                    <button class="gbtn all_cancel_btn">전체삭제</button>
+                    <p class="twtxt">베팅카트<span class="btxt betCartCnt">(0)</span></p>
+                    <button class="xbtn"><span class="list-i-xbtn"></span></button>
+                </div>
+                <ul class="cart_list bet_list">
+                    <li>경기를 선택해주세요.</li>
+                </ul>
+                <div class="mygold">
+                    <span>보유골드<a href=""><span class="list-i-more"></span></a></span>
+                    <span>35,999,910</span>
+                </div>
+                <div class="gross_dividend">
+                    <span>총 배당률</span>
+                    <span id="odd_total">1</span>
+                </div>
+                <div class="estimated_gold">
+                    <span>예상골드</span>
+                    <span id="winspogold_total">0</span>
+                </div>
+                <div class="myitem">
+                    <span>보유 아이템</span>
+                    <button class="bbtn">베팅아이템 적용하기</button>
+                </div>
+                <div class="gold_btn expect_gold">
+                    <button class="gbtn2">1,000,000</button>
+                    <button class="gbtn2">3,000,000</button>
+                    <button class="gbtn2">5,000,000</button>
+                    <button class="gbtn2">10,000,000</button>
+                    <button class="gbtn2">30,000,000</button>
+                    <button class="gbtn2">50,000,000</button>
+                    <button class="gbtn2">초기화</button>
+                    <button class="bbtn max_btn" id="btnMax" name="btnMinMax">MAX</button>
+                </div>
+                <input type="text" id="seedgold" name="seedgold" placeholder="배팅골드를 입력해 주세요." value="10,000">
+                <button class="ybtn btn_batting">베팅하기</button>
+                <label for="cart_keep" class="onoff_btn">
+                    카트유지
+                    <input type="checkbox" name="cart_keep" id="cart_keep">
+                    <span class="list-i-bconoff"></span>
+                </label>
+            </div>
+
+
+
+
+
+        </div>
+        <div class="mylog hidden">
+
+            <div class="betlog_dlookup" style="display:none;">
+                <input type="date" name="" id="">
+                <input type="date" name="" id="">
+                <button class="dlookup_btn"></button>
+            </div>
+
+            <div class="container">
+                <button class="xbtn"><span class="list-i-xbtn"></span></button>
+                <div class="mylog_tab">
+                    <ul class="tit cancel_change_btn">
+                        <li class="on" onclick="get_draw_list();click_mybet_btn('change_mybet_btn');" id="change_mybet_btn">베팅내역</li>
+                        <li onclick="MyDrawList();click_mybet_btn('change_mybet_cancel_btn');" id="change_mybet_cancel_btn">베팅취소</li>
+                    </ul>
+
+                    <div id="mybet_layer">
+                        <ul class="tit change_btn change_list_btn" id="list_chage_btn_ul">
+                            <li data-id="mylog_sport" class="on" data-type="">전체</li>
+                            <li data-id="mylog_sport" data-type="SRS">스포츠</li>
+                            <li data-id="mylog_live" data-type="LIVE">라이브</li>
+                        </ul>
+                        <div id="mylog_sport" class="conBox on">
+                            <div class="period datebtn_wrap">
+                                <button class="on" data-type="today">오늘</button>
+                                <button data-type="week" data-value="1">1주일</button>
+                                <button data-type="month" data-value="1">1개월</button>
+                                <button data-type="month" data-value="3">3개월</button>
+                            </div>
+                            <div id="my_hit_list">
+                                <div class="betlog_box_blank">내역이 존재하지 않습니다.</div>
+                            </div>
+                            <div class="page_num memo"></div>
+                        </div>
+                    </div>
+                    <div id="mybet_cancel_layer" style="display: none;">
+                        <div class="mybet_top">
+                            <label for="all_select">
+                                <label><input type="checkbox" class="all_cancel_check">
+                                    전체선택</label>
+                            </label>
+                            <button class="select_bet_xbtn mybet-select-cancel">선택 베팅 개별 취소</button>
+                            <button class="select_bet_xbtn choice_cancel_btn">선택 베팅 전체 취소</button>
+                        </div>
+                        <ul class="mybet_list" id="mybet_cancel_list">
+                            <li class="null_betlist">
+                                최근 베팅한 내역이 없습니다.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="chat hidden">
+            <div class="tit">
+                <button class="chatshar"><span class="list-i-chatshar btn_bet"></span></button>
+                <!-- on으로 확성기 기능 on off -->
+                <button class="speaker"><span class="list-i-speaker"></span></button>
+                <button class="chatset"><span class="list-i-chatset"></span></button>
+
+                <div class="hidden">
+                    <button class="on"><span class="chat-i-scr" data-type="scroll"></span></button>
+                    <button><span class="chat-i-usarm" data-type="join"></span></button>
+                </div>
+
+
+                <p class="twtxt">채팅</p>
+                <button class="xbtn"><span class="list-i-xbtn"></span></button>
+            </div>
+            <div class="container chat_box">
+                <ul class="chat_list chat_content">
+                    <li class="game_master">
+                        <span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>
+                            gameadmin
+                        </span>🤢🤢🤢🤢🤢🤢🤢🤢😚😚😚🙂🤔🤩
+                    </li>
+                    <li class=""><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="champot19" data-nick="뽀뽀야럽" class="memo"></li>
+                            </ul>
+                            뽀뽀야럽
+                        </span>aa</li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="fkxp104" data-nick="fkxp104" class="memo"></li>
+                            </ul>fkxp104
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=5::SRS/14949','_blank',840,252)">승무패 9.44 대기중 <span class="list-i-betmore"></span></a></li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="fkxp104" data-nick="fkxp104" class="memo"></li>
+                            </ul>fkxp104
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=5::SRS/14949','_blank',840,252)">승무패 9.44 대기중 <span class="list-i-betmore"></span></a></li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>
+                            gameadmin
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=5::SRS/15045','_blank',840,212)">승무패 2.05 대기중 <span class="list-i-betmore"></span></a></li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="baaaba" data-nick="보로봉봉" class="memo"></li>
+                            </ul>보로봉봉
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=5::SRS/15047','_blank',840,372)">
+                            승무패 4.14 대기중
+                            <span class="list-i-betmore"></span></a></li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="champot19" data-nick="뽀뽀뽀친구" class="memo"></li>
+                            </ul>뽀뽀뽀친구
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=5::SRS/15066','_blank',840,332)">승무패 236079 대기중 <span class="list-i-betmore"></span></a></li>
+                    <li class=""><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="seojwfan9" data-nick="fewwegwwee" class="memo"></li>
+                            </ul>fewwegwwee
+                        </span>ㅇㄹㄹㄷ</li>
+                    <li class="game_master"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span>sdfsdfsdfsdf</li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="liveTest31" data-nick="liveTest31" class="memo"></li>
+                            </ul>liveTest31
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=3:63:49478','_blank',840,94)">점프볼 0 적중실패 <span class="list-i-betmore"></span></a></li>
+                    <li class=""><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="baaaba" data-nick="보로봉봉" class="memo"></li>
+                            </ul>보로봉봉
+                        </span>djkssydfsajfa</li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=5::SRS/15060','_blank',840,172)">승무패 1.68 대기중 <span class="list-i-betmore"></span></a></li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=3:61:40900','_blank',840,94)">코인토스 1.95 적중성공
+                            <span class="list-i-betmore"></span></a></li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=3:63:49940','_blank',840,94)">점프볼 0 적중실패 <span class="list-i-betmore"></span></a></li>
+                    <li class="game_master"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span>ㄴㅇㄻㄴㅇㄻㅇㄹ</li>
+                    <li class="game_master"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span>ㄴㅇㄹㄴㅇㄹ</li>
+                    <li class="game_master"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span>ㄴㅇㄻㄻㄴㄹㅇㅁㄴㄹㅇ</li>
+                    <li class=""><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="fkxp104" data-nick="라떼" class="memo"></li>
+                            </ul>라떼
+                        </span>아아아앙</li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=5::SRS/14690','_blank',840,252)">승무패 11.3 적중특례 <span class="list-i-betmore"></span></a></li>
+                    <li class=""><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="fkxp104" data-nick="라떼" class="memo"></li>
+                            </ul>라떼
+                        </span>ㅇ</li>
+                    <li class=""><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="fkxp104" data-nick="라떼" class="memo">
+
+                                </li>
+                            </ul>라떼
+                        </span>test</li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=5::SRS/15218','_blank',840,172)">승무패 2.05 대기중 <span class="list-i-betmore"></span></a></li>
+                    <li class=""><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="fkxp104" data-nick="라떼" class="memo"></li>
+                            </ul>라떼
+                        </span>test</li>
+                    <li class="myChat "><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="shemf1004" data-nick="자낳괴나돈조심" class="memo"></li>
+                            </ul>자낳괴나돈조심
+                        </span>asdf</li>
+                    <li class="myChat "><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="shemf1004" data-nick="자낳괴나돈조심" class="memo"></li>
+                            </ul>자낳괴나돈조심
+                        </span>sdfsdfsdfsd</li>
+                    <li class="myChat "><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="shemf1004" data-nick="자낳괴나돈조심" class="memo"></li>
+                            </ul>자낳괴나돈조심
+                        </span>sd</li>
+                    <li class="myChat "><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="shemf1004" data-nick="자낳괴나돈조심" class="memo"></li>
+                            </ul>자낳괴나돈조심
+                        </span>fd</li>
+                    <li class="myChat "><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="shemf1004" data-nick="자낳괴나돈조심" class="memo"></li>
+                            </ul>자낳괴나돈조심
+                        </span>d</li>
+                    <li class="myChat "><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="shemf1004" data-nick="자낳괴나돈조심" class="memo"></li>
+                            </ul>자낳괴나돈조심
+                        </span>d</li>
+                    <li class="myChat "><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="shemf1004" data-nick="자낳괴나돈조심" class="memo"></li>
+                            </ul>자낳괴나돈조심
+                        </span>d</li>
+                </ul>
+                <div class="chat_btm">
+                    <input type="text" name="messagePut" id="messagePut" autocomplete="off" placeholder="대화 내용을 입력해 주세요.">
+                    <button class="off">전송</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div id="layer_message"></div>
+
+    <!-- 메인자리 -->
+
+    <main>
+
+        <div class="tab">
+            <ul>
+                <li data-id="sportgame" class="on"><a href="/page/hitgame.php">스포츠 게임</a></li>
+                <li data-id="livegame"><a href="live-game.html">라이브 게임</a></li>
+            </ul>
+
+            <div class="wrap">
+                <div class="frame gamelist" id="basic" style="overflow: hidden;">
+                    <ul class="clearfix" style="transform: translateZ(0px); width: 1200px;">
+                        <li class="all active">전체</li>
+                        <li class="soccer" data-sports="1">축구</li>
+                        <li class="basketball" data-sports="2">농구</li>
+                        <li class="baseball" data-sports="3">야구</li>
+                        <li class="volleyball" data-sports="23">배구</li>
+                        <li class="icehockey" data-sports="4">아이스하키</li>
+                        <li class="tennis" data-sports="5">테니스</li>
+                        <li class="table-tennis" data-sports="20">탁구</li>
+                        <li class="football" data-sports="16">미식축구</li>
+                        <li class="handball" data-sports="6">핸드볼</li>
+                        <li class="dart" data-sports="22">다트</li>
+                        <li class="badminton" data-sports="31">배드민턴</li>
+                        <li class="snooker" data-sports="19">스누커</li>
+                        <li class="squash" data-sports="37">스쿼시</li>
+                        <li class="futsal" data-sports="29">풋살</li>
+                    </ul>
+                    <div class="controls">
+                        <button class="btn prev disabled" disabled="">prev</button>
+                        <button class="btn next disabled" disabled="">next</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="betting_content">
+                <div class="waiting_progress" style="display: none;">
+                    <!-- <em>잠시 기다려 주세요.</em> -->
+                    <div class="loader"></div>
+                </div>
+                <div class="wrap_board bettb esports SRS59284170200">
+                    <div class="betlist tb_board tb_board_bet" id="157483">
+                        <div class="list" id="157483">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-16(목) 17:00</p>
+                                    <p class="home homename">kt Rolster</p>
+                                    <p class="away awayname">T1</p>
+                                </div>
+                                <div class="right">
+                                    <button class="more btn_board_open" style="display: none;">0
+                                        <span class="detail">0</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap">
+                                    <span>H</span>
+                                    <span>무승부</span>
+                                    <span>A</span>
+                                </div>
+                                <div class="type_wrap" data-sportid="130" data-mnmid="157483-2way" id="157483-2way" data-markettype="2way" data-allottedvalue="None" data-srsmarketid="9696155" data-finished="0" data-hometeam="kt Rolster"
+                                    data-awayteam="T1" data-typename="승무패" data-isspecial="false">
+                                    <button class="btn_board btn_board_normal homewin on">3.7</button>
+                                    <button class="btn_board_normal draw">&nbsp;</button>
+                                    <button class="btn_board btn_board_normal awaywin">1.28</button>
+                                </div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide">
+                                        <span>H</span>
+                                        <span>핸디캡</span>
+                                        <span>A</span>
+                                    </div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide">
+                                        <span>U</span>
+                                        <span>언오버</span>
+                                        <span>O</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_board bettb esports SRS59316170300">
+                    <div class="betlist tb_board tb_board_bet" id="157191">
+                        <div class="list" id="157191">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-16(목) 18:00</p>
+                                    <p class="home homename">LNG Esports</p>
+                                    <p class="away awayname">인빅터스 게이밍</p>
+                                </div>
+                                <div class="right">
+                                    <button class="more btn_board_open" style="display: none;">0
+                                        <span class="detail">0</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap">
+                                    <span>H</span>
+                                    <span>무승부</span>
+                                    <span>A</span>
+                                </div>
+                                <div class="type_wrap" data-sportid="130" data-mnmid="157191-2way" id="157191-2way" data-markettype="2way" data-allottedvalue="None" data-srsmarketid="9621969" data-finished="0" data-hometeam="LNG Esports"
+                                    data-awayteam="인빅터스 게이밍" data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">4.9</button><button class="btn_board_normal draw">&nbsp;</button><button
+                                        class="btn_board btn_board_normal awaywin">1.18</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide">
+                                        <span>H</span>
+                                        <span>핸디캡</span>
+                                        <span>A</span>
+                                    </div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_board bettb soccer SRS144170330">
+                    <div class="betlist tb_board tb_board_bet" id="155852">
+                        <div class="list" id="155852">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-16(목) 18:30</p>
+                                    <p class="home homename">멜버른 빅토리</p>
+                                    <p class="away awayname">웨스턴 유니테드 FC</p>
+                                </div>
+                                <div class="right">
+                                    <button class="more btn_board_close">2
+                                        <span class="detail">135</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap">
+                                    <span>H</span>
+                                    <span>무승부</span>
+                                    <span>A</span>
+                                </div>
+                                <div class="type_wrap" data-sportid="1" data-mnmid="155852-3way" id="155852-3way" data-markettype="3way" data-allottedvalue="None" data-srsmarketid="9354085" data-finished="0" data-hometeam="멜버른 빅토리"
+                                    data-awayteam="웨스턴 유니테드 FC" data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">2.55</button><button class="btn_board_normal draw btn_board">3.75</button><button
+                                        class="btn_board btn_board_normal awaywin">2.7</button></div>
+                            </div>
+                            <div class="list2">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide" style="display: block;">
+                                        <span>H</span>
+                                        <span>핸디캡</span>
+                                        <span>A</span>
+                                    </div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="155852-handicap" id="155852-handicap" data-markettype="handicap" data-allottedvalue="2" data-srsmarketid="9354041" data-finished="0" data-hometeam="멜버른 빅토리"
+                                        data-awayteam="웨스턴 유니테드 FC" data-typename="핸디캡" data-isspecial="false" style="display: block;"><button class="btn_board btn_board_normal homewin">1.19</button><button class="btn_board_normal draw btn_board">
+                                            <strong>(H+2)</strong>8.6</button><button class="btn_board btn_board_normal awaywin">13</button></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide" style="display: block;"><span>U</span>
+                                        <span>언오버</span>
+                                        <span>O</span>
+                                    </div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="155852-totals" id="155852-totals" data-markettype="totals" data-allottedvalue="3.5" data-srsmarketid="9015958" data-finished="0" data-hometeam="멜버른 빅토리"
+                                        data-awayteam="웨스턴 유니테드 FC" data-typename="U / O" data-isspecial="false" style="display: block;"><button class="btn_board btn_board_normal homewin">1.56</button><button
+                                            class="btn_board_normal draw"><strong>(U/O 3.5)</strong></button><button class="btn_board btn_board_normal awaywin">2.55</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="more_155852" class="pro_view" style="display: block;">
+                            <div class="more_wrap"><button class="more_btn pro off indetail"></button></div>
+                            <div class="detail_choice moregame_list list" style="display: block;">
+                                <div class="live_rightwr">
+                                    <ul class="center_tab topcate" id="tab">
+                                        <li class="tab_tit on" data-gubun="ALL">전체</li>
+                                        <li class="tab_tit" id="group_c2b9bb34d328000d" data-gubun="group_c2b9bb34d328000d">승무패
+                                        </li>
+                                        <li class="tab_tit" id="group_c2a4d398c15c000d" data-gubun="group_c2a4d398c15c000d">스페셜
+                                        </li>
+                                        <li class="tab_tit" id="group_c5b8b354002fc624bc84000d" data-gubun="group_c5b8b354002fc624bc84000d">언더/오버
+                                        </li>
+                                    </ul>
+                                    <div class="tabcontent_box" id="tab_con">
+                                        <div class="box group_c2b9bb34d328000d box3 code545277" id="8" data-markettype="3" style="display:block;">
+                                            <div class="live_maintit">1 골<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="2248170186411" data-mnmid="155852-more" data-srsmetketid="9354088" data-special="false" data-name="승무패
+    " class="odds_bet  code545277 on" data-arrow="undefined" data-predictionname="홈승" data-allotted="1" data-title="1 골" data-odds="2.02"><span class="">홈승</span><span class="odds"><span class="down_arr"></span> 2.02</span></div>
+                                                <div id="2248170187411" data-mnmid="155852-more" data-srsmetketid="9015049" data-special="false" data-name="승무패
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="없음." data-allotted="1" data-title="1 골" data-odds="19"><span class="">없음.</span><span class="odds"><span class="up_arr"></span> 19</span></div>
+                                                <div id="2248170188411" data-mnmid="155852-more" data-srsmetketid="9354089" data-special="false" data-name="승무패
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="원정승" data-allotted="1" data-title="1 골" data-odds="2.07"><span class="">원정승</span><span class="odds"><span class="up_arr"></span> 2.07</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2b9bb34d328000d box3 code545277" id="9" data-markettype="3" style="display:block;">
+                                            <div class="live_maintit">라스트 골<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="22481701962900" data-mnmid="155852-more" data-srsmetketid="9354086" data-special="false" data-name="승무패
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="홈승" data-allotted="None" data-title="라스트 골" data-odds="2.02"><span class="">홈승</span><span class="odds"><span class="up_arr"></span> 2.02</span></div>
+                                                <div id="22481701972900" data-mnmid="155852-more" data-srsmetketid="9015046" data-special="false" data-name="승무패
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="없음." data-allotted="None" data-title="라스트 골" data-odds="19"><span class="">없음.</span><span class="odds"><span class="up_arr"></span> 19</span></div>
+                                                <div id="22481701982900" data-mnmid="155852-more" data-srsmetketid="9354087" data-special="false" data-name="승무패
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="원정승" data-allotted="None" data-title="라스트 골" data-odds="2.07"><span class="">원정승</span><span class="odds"><span class="up_arr"></span> 2.07</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box3 code545277" id="10" data-markettype="3" style="display:block;">
+                                            <div class="live_maintit">더블 기회<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="22481701109460" data-mnmid="155852-more" data-srsmetketid="9354100" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="홈승 또는 드로" data-allotted="None" data-title="더블 기회" data-odds="1.48"><span class="">홈승 또는 드로</span><span class="odds"><span class="up_arr"></span> 1.48</span></div>
+                                                <div id="224817011010460" data-mnmid="155852-more" data-srsmetketid="9014788" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="홈승 또는 원정승" data-allotted="None" data-title="더블 기회" data-odds="1.3"><span class="">홈승 또는 원정승</span><span class="odds"><span class="down_arr"></span> 1.3</span></div>
+                                                <div id="224817011011460" data-mnmid="155852-more" data-srsmetketid="9354101" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="드로 또는 원정승" data-allotted="None" data-title="더블 기회" data-odds="1.52"><span class="">드로 또는 원정승</span><span class="odds"><span class="up_arr"></span> 1.52</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2b9bb34d328000d box2 code545277" id="11" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">드로 노 베트<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="22481701114470" data-mnmid="155852-more" data-srsmetketid="9354102" data-special="false" data-name="승무패
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="홈승" data-allotted="None" data-title="드로 노 베트" data-odds="1.9"><span class="">홈승</span><span class="odds"><span class="up_arr"></span> 1.9</span></div>
+                                                <div id="22481701115470" data-mnmid="155852-more" data-srsmetketid="9354103" data-special="false" data-name="승무패
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="원정승" data-allotted="None" data-title="드로 노 베트" data-odds="1.99"><span class="">원정승</span><span class="odds"><span class="up_arr"></span> 1.99</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2b9bb34d328000d box2 code545277" id="12" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">멜버른 빅토리 노 베트<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="22481701127764060" data-mnmid="155852-more" data-srsmetketid="9354026" data-special="false" data-name="승무패
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="드로" data-allotted="None" data-title="멜버른 빅토리 노 베트" data-odds="2.31"><span class="">드로</span><span class="odds"><span class="up_arr"></span> 2.31</span></div>
+                                                <div id="22481701127784060" data-mnmid="155852-more" data-srsmetketid="9354027" data-special="false" data-name="승무패
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="원정승" data-allotted="None" data-title="멜버른 빅토리 노 베트" data-odds="1.68"><span class="">원정승</span><span class="odds"><span class="down_arr"></span> 1.68</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2b9bb34d328000d box2 code545277" id="13" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">웨스턴 유니테드 FC 노 베트<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="22481701137804070" data-mnmid="155852-more" data-srsmetketid="9354028" data-special="false" data-name="승무패
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="홈승" data-allotted="None" data-title="웨스턴 유니테드 FC 노 베트" data-odds="1.64"><span class="">홈승</span><span class="odds"><span class="down_arr"></span> 1.64</span></div>
+                                                <div id="22481701137824070" data-mnmid="155852-more" data-srsmetketid="9354029" data-special="false" data-name="승무패
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="드로" data-allotted="None" data-title="웨스턴 유니테드 FC 노 베트" data-odds="2.37"><span class="">드로</span><span class="odds"><span class="up_arr"></span> 2.37</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c5b8b354002fc624bc84000d box2 code545277" id="19" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">총 멜버른 빅토리<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="22481701191235315" data-mnmid="155852-more" data-srsmetketid="9354036" data-special="false" data-name="언더/오버
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="오버 1.5" data-allotted="1.5" data-title="총 멜버른 빅토리" data-odds="2.09"><span class="over">오버 1.5</span><span class="odds"><span class="up_arr"></span> 2.09</span></div>
+                                                <div id="22481701191335315" data-mnmid="155852-more" data-srsmetketid="9354037" data-special="false" data-name="언더/오버
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="언더 1.5" data-allotted="1.5" data-title="총 멜버른 빅토리" data-odds="1.81"><span class="under">언더 1.5</span><span class="odds"><span class="up_arr"></span> 1.81</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c5b8b354002fc624bc84000d box2 code545277" id="20" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">총 웨스턴 유니테드 FC<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="22481701201235215" data-mnmid="155852-more" data-srsmetketid="9354034" data-special="false" data-name="언더/오버
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="오버 1.5" data-allotted="1.5" data-title="총 웨스턴 유니테드 FC" data-odds="2.15"><span class="over">오버 1.5</span><span class="odds"><span class="up_arr"></span> 2.15</span></div>
+                                                <div id="22481701201335215" data-mnmid="155852-more" data-srsmetketid="9354035" data-special="false" data-name="언더/오버
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="언더 1.5" data-allotted="1.5" data-title="총 웨스턴 유니테드 FC" data-odds="1.77"><span class="under">언더 1.5</span><span class="odds"><span class="down_arr"></span> 1.77</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box2 code545277" id="26" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">오드/이븐<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="224817012670450" data-mnmid="155852-more" data-srsmetketid="9015064" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="오드" data-allotted="None" data-title="오드/이븐" data-odds="2"><span class="">오드</span><span class="odds"><span class="up_arr"></span> 2</span></div>
+                                                <div id="224817012672450" data-mnmid="155852-more" data-srsmetketid="9015065" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="이븐" data-allotted="None" data-title="오드/이븐" data-odds="1.89"><span class="">이븐</span><span class="odds"><span class="up_arr"></span> 1.89</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box2 code545277" id="27" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">멜버른 빅토리 오드/이븐<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="2248170127704100" data-mnmid="155852-more" data-srsmetketid="9015946" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="오드" data-allotted="None" data-title="멜버른 빅토리 오드/이븐" data-odds="2.03"><span class="">오드</span><span class="odds"><span class="up_arr"></span> 2.03</span></div>
+                                                <div id="2248170127724100" data-mnmid="155852-more" data-srsmetketid="9015947" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="이븐" data-allotted="None" data-title="멜버른 빅토리 오드/이븐" data-odds="1.86"><span class="">이븐</span><span class="odds"><span class="up_arr"></span> 1.86</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box2 code545277" id="28" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">웨스턴 유니테드 FC 오드/이븐<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="2248170128704110" data-mnmid="155852-more" data-srsmetketid="9354032" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="오드" data-allotted="None" data-title="웨스턴 유니테드 FC 오드/이븐" data-odds="2.03"><span class="">오드</span><span class="odds"><span class="up_arr"></span> 2.03</span></div>
+                                                <div id="2248170128724110" data-mnmid="155852-more" data-srsmetketid="9354033" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="이븐" data-allotted="None" data-title="웨스턴 유니테드 FC 오드/이븐" data-odds="1.86"><span class="">이븐</span><span class="odds"><span class="up_arr"></span> 1.86</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box2 code545277" id="29" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">두 팀 모두 득점<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="224817012974430" data-mnmid="155852-more" data-srsmetketid="9015058" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="예" data-allotted="None" data-title="두 팀 모두 득점" data-odds="1.56"><span class="">예</span><span class="odds"><span class="down_arr"></span> 1.56</span></div>
+                                                <div id="224817012976430" data-mnmid="155852-more" data-srsmetketid="9016002" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="아니오" data-allotted="None" data-title="두 팀 모두 득점" data-odds="2.55"><span class="">아니오</span><span class="odds"><span class="up_arr"></span> 2.55</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box2 code545277" id="31" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">멜버른 빅토리 클린시트<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="2248170131742670" data-mnmid="155852-more" data-srsmetketid="9354072" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="예" data-allotted="None" data-title="멜버른 빅토리 클린시트" data-odds="4.3"><span class="">예</span><span class="odds"><span class="up_arr"></span> 4.3</span></div>
+                                                <div id="2248170131762670" data-mnmid="155852-more" data-srsmetketid="9354073" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="아니오" data-allotted="None" data-title="멜버른 빅토리 클린시트" data-odds="1.25"><span class="">아니오</span><span class="odds"><span class="down_arr"></span> 1.25</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box2 code545277" id="32" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">웨스턴 유니테드 FC 클린시트<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="2248170132742680" data-mnmid="155852-more" data-srsmetketid="9354075" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="예" data-allotted="None" data-title="웨스턴 유니테드 FC 클린시트" data-odds="4.5"><span class="">예</span><span class="odds"><span class="up_arr"></span> 4.5</span></div>
+                                                <div id="2248170132762680" data-mnmid="155852-more" data-srsmetketid="9015987" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="아니오" data-allotted="None" data-title="웨스턴 유니테드 FC 클린시트" data-odds="1.25"><span class="">아니오</span><span class="odds"><span class="up_arr"></span> 1.25</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box2 code545277" id="33" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">멜버른 빅토리가/이 nil로 우승<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="2248170133744080" data-mnmid="155852-more" data-srsmetketid="9015944" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="예" data-allotted="None" data-title="멜버른 빅토리가/이 nil로 우승" data-odds="5.8"><span class="">예</span><span class="odds"><span class="up_arr"></span> 5.8</span></div>
+                                                <div id="2248170133764080" data-mnmid="155852-more" data-srsmetketid="9354030" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="아니오" data-allotted="None" data-title="멜버른 빅토리가/이 nil로 우승" data-odds="1.18"><span class="">아니오</span><span class="odds"><span class="down_arr"></span> 1.18</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box2 code545277" id="34" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">웨스턴 유니테드 FC가/이 nil로 우승<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="2248170134744090" data-mnmid="155852-more" data-srsmetketid="9354031" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="예" data-allotted="None" data-title="웨스턴 유니테드 FC가/이 nil로 우승" data-odds="5.8"><span class="">예</span><span class="odds"><span class="up_arr"></span> 5.8</span></div>
+                                                <div id="2248170134764090" data-mnmid="155852-more" data-srsmetketid="9015945" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="아니오" data-allotted="None" data-title="웨스턴 유니테드 FC가/이 nil로 우승" data-odds="1.18"><span class="">아니오</span><span class="odds"><span class="down_arr"></span> 1.18</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box2 code545277" id="48" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">멜버른 빅토리가/이 전후반전 모두 우승<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="2248170148743150" data-mnmid="155852-more" data-srsmetketid="9354048" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="예" data-allotted="None" data-title="멜버른 빅토리가/이 전후반전 모두 우승" data-odds="8.4"><span class="">예</span><span class="odds"><span class="up_arr"></span> 8.4</span></div>
+                                                <div id="2248170148763150" data-mnmid="155852-more" data-srsmetketid="9354049" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="아니오" data-allotted="None" data-title="멜버른 빅토리가/이 전후반전 모두 우승" data-odds="1.1"><span class="">아니오</span><span class="odds"><span class="down_arr"></span> 1.1</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box2 code545277" id="49" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">웨스턴 유니테드 FC가/이 전후반전 모두 우승<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="2248170149743180" data-mnmid="155852-more" data-srsmetketid="9354055" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="예" data-allotted="None" data-title="웨스턴 유니테드 FC가/이 전후반전 모두 우승" data-odds="9"><span class="">예</span><span class="odds"><span class="up_arr"></span> 9</span></div>
+                                                <div id="2248170149763180" data-mnmid="155852-more" data-srsmetketid="9015972" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="아니오" data-allotted="None" data-title="웨스턴 유니테드 FC가/이 전후반전 모두 우승" data-odds="1.1"><span class="">아니오</span><span class="odds"><span class="down_arr"></span> 1.1</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box2 code545277" id="50" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">멜버른 빅토리가/이 전반전 또는 후반전에서 우승<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="2248170150743160" data-mnmid="155852-more" data-srsmetketid="9354050" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="예" data-allotted="None" data-title="멜버른 빅토리가/이 전반전 또는 후반전에서 우승" data-odds="1.79"><span class="">예</span><span class="odds"><span class="up_arr"></span> 1.79</span></div>
+                                                <div id="2248170150763160" data-mnmid="155852-more" data-srsmetketid="9354051" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="아니오" data-allotted="None" data-title="멜버른 빅토리가/이 전반전 또는 후반전에서 우승" data-odds="2.12"><span class="">아니오</span><span class="odds"><span class="up_arr"></span> 2.12</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box2 code545277" id="51" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">웨스턴 유니테드 FC가/이 전반전 또는 후반전에서 우승<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="2248170151743190" data-mnmid="155852-more" data-srsmetketid="9354056" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="예" data-allotted="None" data-title="웨스턴 유니테드 FC가/이 전반전 또는 후반전에서 우승" data-odds="1.84"><span class="">예</span><span class="odds"><span class="up_arr"></span> 1.84</span>
+                                                </div>
+                                                <div id="2248170151763190" data-mnmid="155852-more" data-srsmetketid="9354057" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="아니오" data-allotted="None" data-title="웨스턴 유니테드 FC가/이 전반전 또는 후반전에서 우승" data-odds="2.06"><span class="">아니오</span><span class="odds"><span class="up_arr"></span>
+                                                        2.06</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box3 code545277" id="52" data-markettype="3" style="display:block;">
+                                            <div class="live_maintit">최고 득점 하프<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="22481701524362070" data-mnmid="155852-more" data-srsmetketid="9014974" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="전반전" data-allotted="None" data-title="최고 득점 하프" data-odds="3.4"><span class="">전반전</span><span class="odds"><span class="down_arr"></span> 3.4</span></div>
+                                                <div id="22481701524382070" data-mnmid="155852-more" data-srsmetketid="9328741" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="후반전" data-allotted="None" data-title="최고 득점 하프" data-odds="2.07"><span class="">후반전</span><span class="odds"><span class="down_arr"></span> 2.07</span></div>
+                                                <div id="22481701524402070" data-mnmid="155852-more" data-srsmetketid="9014976" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="이쿠얼" data-allotted="None" data-title="최고 득점 하프" data-odds="4"><span class="">이쿠얼</span><span class="odds"><span class="down_arr"></span> 4</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box3 code545277" id="53" data-markettype="3" style="display:block;">
+                                            <div class="live_maintit">멜버른 빅토리 최고 득점 하프<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="22481701534363300" data-mnmid="155852-more" data-srsmetketid="9015019" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="전반전" data-allotted="None" data-title="멜버른 빅토리 최고 득점 하프" data-odds="3.7"><span class="">전반전</span><span class="odds"><span class="up_arr"></span> 3.7</span></div>
+                                                <div id="22481701534383300" data-mnmid="155852-more" data-srsmetketid="9015020" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="후반전" data-allotted="None" data-title="멜버른 빅토리 최고 득점 하프" data-odds="2.55"><span class="">후반전</span><span class="odds"><span class="up_arr"></span> 2.55</span></div>
+                                                <div id="22481701534403300" data-mnmid="155852-more" data-srsmetketid="9015986" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="이쿠얼" data-allotted="None" data-title="멜버른 빅토리 최고 득점 하프" data-odds="2.7"><span class="">이쿠얼</span><span class="odds"><span class="up_arr"></span> 2.7</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box3 code545277" id="54" data-markettype="3" style="display:block;">
+                                            <div class="live_maintit">웨스턴 유니테드 FC 최고 득점 하프<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="22481701544363310" data-mnmid="155852-more" data-srsmetketid="9015026" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="전반전" data-allotted="None" data-title="웨스턴 유니테드 FC 최고 득점 하프" data-odds="3.7"><span class="">전반전</span><span class="odds"><span class="up_arr"></span> 3.7</span></div>
+                                                <div id="22481701544383310" data-mnmid="155852-more" data-srsmetketid="9015027" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="후반전" data-allotted="None" data-title="웨스턴 유니테드 FC 최고 득점 하프" data-odds="2.55"><span class="">후반전</span><span class="odds"><span class="up_arr"></span> 2.55</span></div>
+                                                <div id="22481701544403310" data-mnmid="155852-more" data-srsmetketid="9354074" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="이쿠얼" data-allotted="None" data-title="웨스턴 유니테드 FC 최고 득점 하프" data-odds="2.7"><span class="">이쿠얼</span><span class="odds"><span class="up_arr"></span> 2.7</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box2 code545277" id="56" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">멜버른 빅토리가/이 전후반전에서 모두 득점<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="2248170156743170" data-mnmid="155852-more" data-srsmetketid="9354053" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="예" data-allotted="None" data-title="멜버른 빅토리가/이 전후반전에서 모두 득점" data-odds="3.3"><span class="">예</span><span class="odds"><span class="up_arr"></span> 3.3</span></div>
+                                                <div id="2248170156763170" data-mnmid="155852-more" data-srsmetketid="9354054" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="아니오" data-allotted="None" data-title="멜버른 빅토리가/이 전후반전에서 모두 득점" data-odds="1.38"><span class="">아니오</span><span class="odds"><span class="up_arr"></span> 1.38</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box2 code545277" id="57" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">웨스턴 유니테드 FC가/이 전후반전에서 모두 득점<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="2248170157743200" data-mnmid="155852-more" data-srsmetketid="9354058" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="예" data-allotted="None" data-title="웨스턴 유니테드 FC가/이 전후반전에서 모두 득점" data-odds="3.4"><span class="">예</span><span class="odds"><span class="up_arr"></span> 3.4</span></div>
+                                                <div id="2248170157763200" data-mnmid="155852-more" data-srsmetketid="9354059" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="아니오" data-allotted="None" data-title="웨스턴 유니테드 FC가/이 전후반전에서 모두 득점" data-odds="1.36"><span class="">아니오</span><span class="odds"><span class="up_arr"></span> 1.36</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c5b8b354002fc624bc84000d box2 code545277" id="58" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">전후반전 모두 오버 1.5<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="22481701587432115" data-mnmid="155852-more" data-srsmetketid="9014995" data-special="false" data-name="언더/오버
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="예" data-allotted="1.5" data-title="전후반전 모두 오버 1.5" data-odds="4.5"><span class="">예</span><span class="odds"><span class="up_arr"></span> 4.5</span></div>
+                                                <div id="22481701587632115" data-mnmid="155852-more" data-srsmetketid="9014996" data-special="false" data-name="언더/오버
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="아니오" data-allotted="1.5" data-title="전후반전 모두 오버 1.5" data-odds="1.24"><span class="">아니오</span><span class="odds"><span class="down_arr"></span> 1.24</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c5b8b354002fc624bc84000d box2 code545277" id="59" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">전후반전 모두 언더 1.5<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="22481701597432215" data-mnmid="155852-more" data-srsmetketid="9014997" data-special="false" data-name="언더/오버
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="예" data-allotted="1.5" data-title="전후반전 모두 언더 1.5" data-odds="3.25"><span class="">예</span><span class="odds"><span class="up_arr"></span> 3.25</span></div>
+                                                <div id="22481701597632215" data-mnmid="155852-more" data-srsmetketid="9014998" data-special="false" data-name="언더/오버
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="아니오" data-allotted="1.5" data-title="전후반전 모두 언더 1.5" data-odds="1.38"><span class="">아니오</span><span class="odds"><span class="up_arr"></span> 1.38</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box3 code545277" id="60" data-markettype="3" style="display:block;">
+                                            <div class="live_maintit">전반전 - 1x2<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="22481701601420" data-mnmid="155852-more" data-srsmetketid="9354092" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="홈승" data-allotted="None" data-title="전반전 - 1x2" data-odds="3.15"><span class="">홈승</span><span class="odds"><span class="up_arr"></span> 3.15</span></div>
+                                                <div id="22481701602420" data-mnmid="155852-more" data-srsmetketid="9015056" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="드로" data-allotted="None" data-title="전반전 - 1x2" data-odds="2.45"><span class="">드로</span><span class="odds"><span class="down_arr"></span> 2.45</span></div>
+                                                <div id="22481701603420" data-mnmid="155852-more" data-srsmetketid="9354093" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="원정승" data-allotted="None" data-title="전반전 - 1x2" data-odds="3.3"><span class="">원정승</span><span class="odds"><span class="up_arr"></span> 3.3</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box3 code545277" id="62" data-markettype="3" style="display:block;">
+                                            <div class="live_maintit">전반전 - 1번 골<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="224817016263901" data-mnmid="155852-more" data-srsmetketid="9354090" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="홈승" data-allotted="1" data-title="전반전 -  1번 골" data-odds="2.6"><span class="">홈승</span><span class="odds"><span class="up_arr"></span> 2.6</span></div>
+                                                <div id="224817016273901" data-mnmid="155852-more" data-srsmetketid="9015052" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="없음." data-allotted="1" data-title="전반전 -  1번 골" data-odds="3.65"><span class="">없음.</span><span class="odds"><span class="down_arr"></span> 3.65</span></div>
+                                                <div id="224817016283901" data-mnmid="155852-more" data-srsmetketid="9354091" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="원정승" data-allotted="1" data-title="전반전 -  1번 골" data-odds="2.7"><span class="">원정승</span><span class="odds"><span class="up_arr"></span> 2.7</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box3 code545277" id="63" data-markettype="3" style="display:block;">
+                                            <div class="live_maintit">전반전 - 더블찬스<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="224817016393230" data-mnmid="155852-more" data-srsmetketid="9354063" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="홈승 또는 드로" data-allotted="None" data-title="전반전 - 더블찬스" data-odds="1.3"><span class="">홈승 또는 드로</span><span class="odds"><span class="up_arr"></span> 1.3</span></div>
+                                                <div id="2248170163103230" data-mnmid="155852-more" data-srsmetketid="9015002" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="홈승 또는 원정승" data-allotted="None" data-title="전반전 - 더블찬스" data-odds="1.48"><span class="">홈승 또는 원정승</span><span class="odds"><span class="up_arr"></span> 1.48</span></div>
+                                                <div id="2248170163113230" data-mnmid="155852-more" data-srsmetketid="9354064" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="드로 또는 원정승" data-allotted="None" data-title="전반전 - 더블찬스" data-odds="1.32"><span class="">드로 또는 원정승</span><span class="odds"><span class="up_arr"></span> 1.32</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box2 code545277" id="64" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">전반전 - 드로 노 베트<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="224817016443240" data-mnmid="155852-more" data-srsmetketid="9354065" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="홈승" data-allotted="None" data-title="전반전 - 드로 노 베트" data-odds="1.91"><span class="">홈승</span><span class="odds"><span class="up_arr"></span> 1.91</span></div>
+                                                <div id="224817016453240" data-mnmid="155852-more" data-srsmetketid="9354066" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="원정승" data-allotted="None" data-title="전반전 - 드로 노 베트" data-odds="1.98"><span class="">원정승</span><span class="odds"><span class="up_arr"></span> 1.98</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box3 code545277" id="65" data-markettype="3" style="display:block;">
+                                            <div class="live_maintit">전반전 - 핸티캡 0:1<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="224817016517123961" data-mnmid="155852-more" data-srsmetketid="9015071" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="드로 (-1)" data-allotted="-1" data-title="전반전 - 핸티캡 0:1" data-odds="4.4"><span class="">드로 (-1)</span><span class="odds"><span class="down_arr"></span> 4.4</span></div>
+                                                <div id="224817016517133961" data-mnmid="155852-more" data-srsmetketid="9354106" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="원정승 (-1)" data-allotted="-1" data-title="전반전 - 핸티캡 0:1" data-odds="1.41"><span class="">원정승 (-1)</span><span class="odds"><span class="down_arr"></span> 1.41</span></div>
+                                                <div id="224817016517113961" data-mnmid="155852-more" data-srsmetketid="9022027" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="홈승 (1)" data-allotted="1" data-title="전반전 - 핸티캡 1:0" data-odds="1.41"><span class="">홈승 (1)</span><span class="odds"><span class="down_arr"></span> 1.41</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box2 code545277" id="69" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">전반전 - 멜버른 빅토리 합계<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="22481701691239205" data-mnmid="155852-more" data-srsmetketid="9354094" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="오버 0.5" data-allotted="0.5" data-title="전반전 - 멜버른 빅토리 합계" data-odds="1.98"><span class="over">오버 0.5</span><span class="odds"><span class="up_arr"></span> 1.98</span>
+                                                </div>
+                                                <div id="22481701691339205" data-mnmid="155852-more" data-srsmetketid="9354095" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="언더 0.5" data-allotted="0.5" data-title="전반전 - 멜버른 빅토리 합계" data-odds="1.91"><span class="under">언더 0.5</span><span class="odds"><span class="down_arr"></span> 1.91</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box2 code545277" id="70" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">전반전 - 웨스턴 유니테드 FC 합계<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="22481701701239305" data-mnmid="155852-more" data-srsmetketid="9354096" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="오버 0.5" data-allotted="0.5" data-title="전반전 - 웨스턴 유니테드 FC 합계" data-odds="2.01"><span class="over">오버 0.5</span><span class="odds"><span class="up_arr"></span> 2.01</span>
+                                                </div>
+                                                <div id="22481701701339305" data-mnmid="155852-more" data-srsmetketid="9354097" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="언더 0.5" data-allotted="0.5" data-title="전반전 - 웨스턴 유니테드 FC 합계" data-odds="1.88"><span class="under">언더 0.5</span><span class="odds"><span class="down_arr"></span>
+                                                        1.88</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box2 code545277" id="74" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">전반전 - 오드/이븐<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="2248170174702200" data-mnmid="155852-more" data-srsmetketid="9015044" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="오드" data-allotted="None" data-title="전반전 - 오드/이븐" data-odds="2.1"><span class="">오드</span><span class="odds"><span class="up_arr"></span> 2.1</span></div>
+                                                <div id="2248170174722200" data-mnmid="155852-more" data-srsmetketid="9015045" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="이븐" data-allotted="None" data-title="전반전 - 오드/이븐" data-odds="1.81"><span class="">이븐</span><span class="odds"><span class="up_arr"></span> 1.81</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box2 code545277" id="75" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">전반전 - 두 팀 모두 득점<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="2248170175743280" data-mnmid="155852-more" data-srsmetketid="9015013" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="예" data-allotted="None" data-title="전반전 - 두 팀 모두 득점" data-odds="3.9"><span class="">예</span><span class="odds"><span class="up_arr"></span> 3.9</span></div>
+                                                <div id="2248170175763280" data-mnmid="155852-more" data-srsmetketid="9015014" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="아니오" data-allotted="None" data-title="전반전 - 두 팀 모두 득점" data-odds="1.29"><span class="">아니오</span><span class="odds"><span class="down_arr"></span> 1.29</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box2 code545277" id="76" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">전반전 - 멜버른 빅토리 클린시트<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="2248170176743940" data-mnmid="155852-more" data-srsmetketid="9354098" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="예" data-allotted="None" data-title="전반전 - 멜버른 빅토리 클린시트" data-odds="1.88"><span class="">예</span><span class="odds"><span class="up_arr"></span> 1.88</span></div>
+                                                <div id="2248170176763940" data-mnmid="155852-more" data-srsmetketid="9354099" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="아니오" data-allotted="None" data-title="전반전 - 멜버른 빅토리 클린시트" data-odds="2.01"><span class="">아니오</span><span class="odds"><span class="up_arr"></span> 2.01</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box2 code545277" id="77" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">전반전 - 웨스턴 유니테드 FC 클린시트<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="2248170177743950" data-mnmid="155852-more" data-srsmetketid="9354104" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="예" data-allotted="None" data-title="전반전 - 웨스턴 유니테드 FC 클린시트" data-odds="1.91"><span class="">예</span><span class="odds"><span class="up_arr"></span> 1.91</span></div>
+                                                <div id="2248170177763950" data-mnmid="155852-more" data-srsmetketid="9354105" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="아니오" data-allotted="None" data-title="전반전 - 웨스턴 유니테드 FC 클린시트" data-odds="1.98"><span class="">아니오</span><span class="odds"><span class="up_arr"></span> 1.98</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box3 code545277" id="83" data-markettype="3" style="display:block;">
+                                            <div class="live_maintit">후반전 - 1x2<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="224817018312590" data-mnmid="155852-more" data-srsmetketid="9354042" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="홈승" data-allotted="None" data-title="후반전 - 1x2" data-odds="2.85"><span class="">홈승</span><span class="odds"><span class="up_arr"></span> 2.85</span></div>
+                                                <div id="224817018322590" data-mnmid="155852-more" data-srsmetketid="9014957" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="드로" data-allotted="None" data-title="후반전 - 1x2" data-odds="2.9"><span class="">드로</span><span class="odds"><span class="down_arr"></span> 2.9</span></div>
+                                                <div id="224817018332590" data-mnmid="155852-more" data-srsmetketid="9354043" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="원정승" data-allotted="None" data-title="후반전 - 1x2" data-odds="2.95"><span class="">원정승</span><span class="odds"><span class="up_arr"></span> 2.95</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box3 code545277" id="85" data-markettype="3" style="display:block;">
+                                            <div class="live_maintit">후반전 - 더블찬스<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="224817018593360" data-mnmid="155852-more" data-srsmetketid="9354082" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="홈승 또는 드로" data-allotted="None" data-title="후반전 - 더블찬스" data-odds="1.35"><span class="">홈승 또는 드로</span><span class="odds"><span class="up_arr"></span> 1.35</span></div>
+                                                <div id="2248170185103360" data-mnmid="155852-more" data-srsmetketid="9015040" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="홈승 또는 원정승" data-allotted="None" data-title="후반전 - 더블찬스" data-odds="1.36"><span class="">홈승 또는 원정승</span><span class="odds"><span class="up_arr"></span> 1.36</span></div>
+                                                <div id="2248170185113360" data-mnmid="155852-more" data-srsmetketid="9015993" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="드로 또는 원정승" data-allotted="None" data-title="후반전 - 더블찬스" data-odds="1.36"><span class="">드로 또는 원정승</span><span class="odds"><span class="up_arr"></span> 1.36</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box2 code545277" id="86" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">후반전 - 드로 노 베트<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="224817018643350" data-mnmid="155852-more" data-srsmetketid="9354080" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="홈승" data-allotted="None" data-title="후반전 - 드로 노 베트" data-odds="1.91"><span class="">홈승</span><span class="odds"><span class="up_arr"></span> 1.91</span></div>
+                                                <div id="224817018653350" data-mnmid="155852-more" data-srsmetketid="9354081" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="원정승" data-allotted="None" data-title="후반전 - 드로 노 베트" data-odds="1.98"><span class="">원정승</span><span class="odds"><span class="up_arr"></span> 1.98</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box3 code545277" id="87" data-markettype="3" style="display:block;">
+                                            <div class="live_maintit">후반전 - 핸디캡 0:1<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="224817018717114051" data-mnmid="155852-more" data-srsmetketid="9354024" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="홈승 (-1)" data-allotted="-1" data-title="후반전 - 핸디캡 0:1" data-odds="8"><span class="">홈승 (-1)</span><span class="odds"><span class="up_arr"></span> 8</span></div>
+                                                <div id="224817018717134051" data-mnmid="155852-more" data-srsmetketid="9354025" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="원정승 (-1)" data-allotted="-1" data-title="후반전 - 핸디캡 0:1" data-odds="1.49"><span class="">원정승 (-1)</span><span class="odds"><span class="down_arr"></span> 1.49</span></div>
+                                                <div id="224817018717124051" data-mnmid="155852-more" data-srsmetketid="9015380" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="드로 (1)" data-allotted="1" data-title="후반전 - 핸디캡 1:0" data-odds="4.3"><span class="">드로 (1)</span><span class="odds"><span class="up_arr"></span> 4.3</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box2 code545277" id="88" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">후반전 - 핸디캡<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="18446744073709551615" data-mnmid="155852-more" data-srsmetketid="9354047" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="원정승 (-0.25)" data-allotted="-0.25" data-title="후반전 - 핸디캡" data-odds="1.65"><span class="">원정승 (-0.25)</span><span class="odds"><span class="down_arr"></span> 1.65</span>
+                                                </div>
+                                                <div id="224817018817142610" data-mnmid="155852-more" data-srsmetketid="9354044" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="홈승 (0)" data-allotted="0" data-title="후반전 - 핸디캡" data-odds="1.91"><span class="">홈승 (0)</span><span class="odds"><span class="down_arr"></span> 1.91</span></div>
+                                                <div id="224817018817152610" data-mnmid="155852-more" data-srsmetketid="9354045" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="원정승 (0)" data-allotted="0" data-title="후반전 - 핸디캡" data-odds="1.98"><span class="">원정승 (0)</span><span class="odds"><span class="up_arr"></span> 1.98</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box2 code545277" id="90" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">후반전 - 합계<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="22481701901228505" data-mnmid="155852-more" data-srsmetketid="9014962" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="오버 0.5" data-allotted="0.5" data-title="후반전 - 합계" data-odds="1.18"><span class="over">오버 0.5</span><span class="odds"><span class=""></span> 1.18</span></div>
+                                                <div id="22481701901328505" data-mnmid="155852-more" data-srsmetketid="9014963" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="언더 0.5" data-allotted="0.5" data-title="후반전 - 합계" data-odds="5.4"><span class="under">언더 0.5</span><span class="odds"><span class="up_arr"></span> 5.4</span></div>
+                                                <div id="22481701901228515" data-mnmid="155852-more" data-srsmetketid="9014964" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="오버 1.5" data-allotted="1.5" data-title="후반전 - 합계" data-odds="1.85"><span class="over">오버 1.5</span><span class="odds"><span class="down_arr"></span> 1.85</span></div>
+                                                <div id="22481701901328515" data-mnmid="155852-more" data-srsmetketid="9014965" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="언더 1.5" data-allotted="1.5" data-title="후반전 - 합계" data-odds="2.04"><span class="under">언더 1.5</span><span class="odds"><span class="down_arr"></span> 2.04</span></div>
+                                                <div id="22481701901228525" data-mnmid="155852-more" data-srsmetketid="9014966" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="오버 2.5" data-allotted="2.5" data-title="후반전 - 합계" data-odds="3.75"><span class="over">오버 2.5</span><span class="odds"><span class=""></span> 3.75</span></div>
+                                                <div id="22481701901328525" data-mnmid="155852-more" data-srsmetketid="9014967" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="언더 2.5" data-allotted="2.5" data-title="후반전 - 합계" data-odds="1.31"><span class="under">언더 2.5</span><span class="odds"><span class="down_arr"></span> 1.31</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box2 code545277" id="94" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">후반전 - 오드/이븐<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="2248170194703340" data-mnmid="155852-more" data-srsmetketid="9015033" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="오드" data-allotted="None" data-title="후반전 - 오드/이븐" data-odds="2"><span class="">오드</span><span class="odds"><span class="up_arr"></span> 2</span></div>
+                                                <div id="2248170194723340" data-mnmid="155852-more" data-srsmetketid="9015034" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="이븐" data-allotted="None" data-title="후반전 - 오드/이븐" data-odds="1.89"><span class="">이븐</span><span class="odds"><span class="up_arr"></span> 1.89</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box2 code545277" id="95" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">후반전 - 두 팀 모두 득점<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="2248170195743290" data-mnmid="155852-more" data-srsmetketid="9015017" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="예" data-allotted="None" data-title="후반전 - 두 팀 모두 득점" data-odds="2.8"><span class="">예</span><span class="odds"><span class="up_arr"></span> 2.8</span></div>
+                                                <div id="2248170195763290" data-mnmid="155852-more" data-srsmetketid="9015018" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="아니오" data-allotted="None" data-title="후반전 - 두 팀 모두 득점" data-odds="1.48"><span class="">아니오</span><span class="odds"><span class="up_arr"></span> 1.48</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2b9bb34d328000d box3 code545277" id="105" data-markettype="3" style="display:block;">
+                                            <div class="live_maintit">10분 - 1x2 1부터 10까지<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="2248170110513271" data-mnmid="155852-more" data-srsmetketid="9354069" data-special="false" data-name="승무패
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="홈승" data-allotted="1" data-title="10분 - 1x2 1부터 10까지" data-odds="8.8"><span class="">홈승</span><span class="odds"><span class="up_arr"></span> 8.8</span></div>
+                                                <div id="2248170110523271" data-mnmid="155852-more" data-srsmetketid="9015011" data-special="false" data-name="승무패
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="드로" data-allotted="1" data-title="10분 - 1x2 1부터 10까지" data-odds="1.24"><span class="">드로</span><span class="odds"><span class="down_arr"></span> 1.24</span></div>
+                                                <div id="2248170110533271" data-mnmid="155852-more" data-srsmetketid="9354070" data-special="false" data-name="승무패
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="원정승" data-allotted="1" data-title="10분 - 1x2 1부터 10까지" data-odds="9.2"><span class="">원정승</span><span class="odds"><span class="up_arr"></span> 9.2</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2b9bb34d328000d box2 code545277" id="854" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">멜버른 빅토리 또는 오버 2.5<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="224817018547471225" data-mnmid="155852-more" data-srsmetketid="9015968" data-special="false" data-name="승무패
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="예" data-allotted="2.5" data-title="멜버른 빅토리 또는 오버 2.5" data-odds="1.38"><span class="">예</span><span class="odds"><span class="up_arr"></span> 1.38</span></div>
+                                                <div id="224817018547671225" data-mnmid="155852-more" data-srsmetketid="9354052" data-special="false" data-name="승무패
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="아니오" data-allotted="2.5" data-title="멜버른 빅토리 또는 오버 2.5" data-odds="3.35"><span class="">아니오</span><span class="odds"><span class="up_arr"></span> 3.35</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2b9bb34d328000d box2 code545277" id="855" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">멜버른 빅토리 또는 언더 2.5<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="224817018557471525" data-mnmid="155852-more" data-srsmetketid="9354061" data-special="false" data-name="승무패
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="예" data-allotted="2.5" data-title="멜버른 빅토리 또는 언더 2.5" data-odds="1.48"><span class="">예</span><span class="odds"><span class="up_arr"></span> 1.48</span></div>
+                                                <div id="224817018557671525" data-mnmid="155852-more" data-srsmetketid="9354062" data-special="false" data-name="승무패
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="아니오" data-allotted="2.5" data-title="멜버른 빅토리 또는 언더 2.5" data-odds="2.85"><span class="">아니오</span><span class="odds"><span class="up_arr"></span> 2.85</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2b9bb34d328000d box2 code545277" id="856" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">드로 또는 오버 2.5<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="224817018567471325" data-mnmid="155852-more" data-srsmetketid="9014987" data-special="false" data-name="승무패
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="예" data-allotted="2.5" data-title="드로 또는 오버 2.5" data-odds="1.29"><span class="">예</span><span class="odds"><span class="down_arr"></span> 1.29</span></div>
+                                                <div id="224817018567671325" data-mnmid="155852-more" data-srsmetketid="9014988" data-special="false" data-name="승무패
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="아니오" data-allotted="2.5" data-title="드로 또는 오버 2.5" data-odds="3.9"><span class="">아니오</span><span class="odds"><span class="up_arr"></span> 3.9</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2b9bb34d328000d box2 code545277" id="857" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">드로 또는 언더 2.5<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="224817018577471625" data-mnmid="155852-more" data-srsmetketid="9015006" data-special="false" data-name="승무패
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="예" data-allotted="2.5" data-title="드로 또는 언더 2.5" data-odds="1.94"><span class="">예</span><span class="odds"><span class="up_arr"></span> 1.94</span></div>
+                                                <div id="224817018577671625" data-mnmid="155852-more" data-srsmetketid="9015007" data-special="false" data-name="승무패
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="아니오" data-allotted="2.5" data-title="드로 또는 언더 2.5" data-odds="1.94"><span class="">아니오</span><span class="odds"><span class="up_arr"></span> 1.94</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2b9bb34d328000d box2 code545277" id="858" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">웨스턴 유니테드 FC 또는 오버 2.5<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="224817018587471425" data-mnmid="155852-more" data-srsmetketid="9354060" data-special="false" data-name="승무패
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="예" data-allotted="2.5" data-title="웨스턴 유니테드 FC 또는 오버 2.5" data-odds="1.38"><span class="">예</span><span class="odds"><span class="down_arr"></span> 1.38</span></div>
+                                                <div id="224817018587671425" data-mnmid="155852-more" data-srsmetketid="9015976" data-special="false" data-name="승무패
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="아니오" data-allotted="2.5" data-title="웨스턴 유니테드 FC 또는 오버 2.5" data-odds="3.35"><span class="">아니오</span><span class="odds"><span class="up_arr"></span> 3.35</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2b9bb34d328000d box2 code545277" id="859" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">웨스턴 유니테드 FC 또는 언더 2.5<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="224817018597471725" data-mnmid="155852-more" data-srsmetketid="9354067" data-special="false" data-name="승무패
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="예" data-allotted="2.5" data-title="웨스턴 유니테드 FC 또는 언더 2.5" data-odds="1.5"><span class="">예</span><span class="odds"><span class="up_arr"></span> 1.5</span></div>
+                                                <div id="224817018597671725" data-mnmid="155852-more" data-srsmetketid="9354068" data-special="false" data-name="승무패
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="아니오" data-allotted="2.5" data-title="웨스턴 유니테드 FC 또는 언더 2.5" data-odds="2.75"><span class="">아니오</span><span class="odds"><span class="up_arr"></span> 2.75</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box2 code545277" id="860" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">멜버른 빅토리 또는 두 팀 모두 득점<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="22481701860747180" data-mnmid="155852-more" data-srsmetketid="9015984" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="예" data-allotted="None" data-title="멜버른 빅토리 또는 두 팀 모두 득점" data-odds="1.25"><span class="">예</span><span class="odds"><span class="up_arr"></span> 1.25</span></div>
+                                                <div id="22481701860767180" data-mnmid="155852-more" data-srsmetketid="9354071" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="아니오" data-allotted="None" data-title="멜버른 빅토리 또는 두 팀 모두 득점" data-odds="4.5"><span class="">아니오</span><span class="odds"><span class="up_arr"></span> 4.5</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box2 code545277" id="861" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">드로 또는 두 팀 모두 득점<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="22481701861747190" data-mnmid="155852-more" data-srsmetketid="9015024" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="예" data-allotted="None" data-title="드로 또는 두 팀 모두 득점" data-odds="1.45"><span class="">예</span><span class="odds"><span class="up_arr"></span> 1.45</span></div>
+                                                <div id="22481701861767190" data-mnmid="155852-more" data-srsmetketid="9015025" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="아니오" data-allotted="None" data-title="드로 또는 두 팀 모두 득점" data-odds="2.95"><span class="">아니오</span><span class="odds"><span class="up_arr"></span> 2.95</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box2 code545277" id="862" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">웨스턴 유니테드 FC 또는 두 팀 모두 득점<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="22481701862747200" data-mnmid="155852-more" data-srsmetketid="9354076" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="예" data-allotted="None" data-title="웨스턴 유니테드 FC 또는 두 팀 모두 득점" data-odds="1.25"><span class="">예</span><span class="odds"><span class="down_arr"></span> 1.25</span></div>
+                                                <div id="22481701862767200" data-mnmid="155852-more" data-srsmetketid="9354077" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="아니오" data-allotted="None" data-title="웨스턴 유니테드 FC 또는 두 팀 모두 득점" data-odds="4.3"><span class="">아니오</span><span class="odds"><span class="up_arr"></span> 4.3</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box2 code545277" id="863" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">멜버른 빅토리 또는 임의의 클린 시트<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="22481701863747210" data-mnmid="155852-more" data-srsmetketid="9354078" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="예" data-allotted="None" data-title="멜버른 빅토리 또는 임의의 클린 시트" data-odds="1.67"><span class="">예</span><span class="odds"><span class="up_arr"></span> 1.67</span></div>
+                                                <div id="22481701863767210" data-mnmid="155852-more" data-srsmetketid="9354079" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="아니오" data-allotted="None" data-title="멜버른 빅토리 또는 임의의 클린 시트" data-odds="2.33"><span class="">아니오</span><span class="odds"><span class="up_arr"></span> 2.33</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="box group_c2a4d398c15c000d box2 code545277" id="865" data-markettype="2" style="display:block;">
+                                            <div class="live_maintit">웨스턴 유니테드 FC 또는 임의의 클린 시트<span class="score_right"></span></div>
+                                            <div class="choice_box inbox">
+                                                <div id="22481701865747230" data-mnmid="155852-more" data-srsmetketid="9354083" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="예" data-allotted="None" data-title="웨스턴 유니테드 FC 또는 임의의 클린 시트" data-odds="1.69"><span class="">예</span><span class="odds"><span class="up_arr"></span> 1.69</span></div>
+                                                <div id="22481701865767230" data-mnmid="155852-more" data-srsmetketid="9354084" data-special="true" data-name="스페셜
+    " class="odds_bet  code545277" data-arrow="undefined" data-predictionname="아니오" data-allotted="None" data-title="웨스턴 유니테드 FC 또는 임의의 클린 시트" data-odds="2.28"><span class="">아니오</span><span class="odds"><span class="up_arr"></span> 2.28</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="more_wrap" style="display: block;"><button class="more_btn off indetail"></button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_board bettb esports SRS59284170500">
+                    <div class="betlist tb_board tb_board_bet" id="157484">
+                        <div class="list" id="157484">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-16(목) 20:00</p>
+                                    <p class="home homename">Seolhaeone Prince</p>
+                                    <p class="away awayname">Sandbox Gaming</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open" style="display: none;">0<span class="detail">0</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="130" data-mnmid="157484-2way" id="157484-2way" data-markettype="2way" data-allottedvalue="None" data-srsmarketid="9673473" data-finished="0" data-hometeam="Seolhaeone Prince"
+                                    data-awayteam="Sandbox Gaming" data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">3.1</button><button class="btn_board_normal draw">&nbsp;</button><button
+                                        class="btn_board btn_board_normal awaywin">1.38</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_board bettb esports SRS59316170500">
+                    <div class="betlist tb_board tb_board_bet" id="157194">
+                        <div class="list" id="157194">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-16(목) 20:00</p>
+                                    <p class="home homename">로열 네버 기브업</p>
+                                    <p class="away awayname">Suning Gaming</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open" style="display: none;">0<span class="detail">0</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="130" data-mnmid="157194-2way" id="157194-2way" data-markettype="2way" data-allottedvalue="None" data-srsmarketid="9713108" data-finished="0" data-hometeam="로열 네버 기브업"
+                                    data-awayteam="Suning Gaming" data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">2.18</button><button class="btn_board_normal draw">&nbsp;</button><button
+                                        class="btn_board btn_board_normal awaywin">1.69</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_board bettb soccer SRS2171000">
+                    <div class="betlist tb_board tb_board_bet" id="157147">
+                        <div class="list" id="157147">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-17(금) 01:00</p>
+                                    <p class="home homename">리즈</p>
+                                    <p class="away awayname">반즐리</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open">2<span class="detail">150</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="1" data-mnmid="157147-3way" id="157147-3way" data-markettype="3way" data-allottedvalue="None" data-srsmarketid="9709011" data-finished="0" data-hometeam="리즈" data-awayteam="반즐리"
+                                    data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.35</button><button class="btn_board_normal draw btn_board">5.4</button><button
+                                        class="btn_board btn_board_normal awaywin">9.6</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="157147-handicap" id="157147-handicap" data-markettype="handicap" data-allottedvalue="-2" data-srsmarketid="9708967" data-finished="0" data-hometeam="리즈"
+                                        data-awayteam="반즐리" data-typename="핸디캡" data-isspecial="false"><button class="btn_board btn_board_normal homewin">3.5</button><button
+                                            class="btn_board_normal draw btn_board"><strong>(H-2)</strong>4.5</button><button class="btn_board btn_board_normal awaywin">1.92</button></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="157147-totals" id="157147-totals" data-markettype="totals" data-allottedvalue="3.5" data-srsmarketid="9670580" data-finished="0" data-hometeam="리즈"
+                                        data-awayteam="반즐리" data-typename="U / O" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.51</button><button class="btn_board_normal draw"><strong>(U/O 3.5)</strong></button><button
+                                            class="btn_board btn_board_normal awaywin">2.75</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="more_157147" class="pro_view" style="display: none;">
+                            <div class="more_wrap"><button class="more_btn"></button></div>
+                            <div class="detail_choice moregame_list list" style="display:none"></div>
+                            <div class="more_wrap" style="display:none;"><button class="more_btn off"></button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form name="AnalysisDataForm" id="AnalysisDataForm" method="post" action="/page/dataCenter/AnalysisData.php">
+                <input type="hidden" name="frameurl">
+                <input type="hidden" name="aid">
+            </form>
+        </div>
+    </main>
+
+
+
+    <!-- 메인자리 -->
+    <footer>
+        <div class="container">
+            <div class="ftbtn">
+                <button class="logout" onclick="location.href='//portal.dev.spolive.com/bbs/logout.php?url=//sports.portal.dev.spolive.com'">
+                    <span class="list-i-ftlogout"></span>로그아웃
+                </button>
+                <a href="/?device=pc" class="pcview_btn">
+                    <span class="list-i-ftpc"></span>PC화면
+                </a>
+            </div>
+            <h2>
+                <span class="list-i-ftlogo"></span>
+            </h2>
+            <p>ⓒ 2015 - 2020, SPOLIVE Corp.All rights reserved.</p>
+        </div>
+    </footer>
+    <nav>
+        <ul>
+            <li class="nvmenu">
+                <button>
+                    <span class="list-i-nvmanu"></span>
+                    <p>전체메뉴</p>
+                    <span class="new">18</span>
+                </button>
+            </li>
+            <li class="nvbetcart">
+                <button>
+                    <span class="list-i-nvcart"></span>
+                    <p>베팅카트</p>
+                    <span class="new">0</span>
+                </button>
+            </li>
+            <li class="nvmylog">
+                <button>
+                    <span class="list-i-nvlog"></span>
+                    <p>베팅내역</p>
+                    <span class="new">0</span>
+                </button>
+            </li>
+            <li class="nvchat">
+                <button>
+                    <span class="list-i-nvchat"></span>
+                    <p>채팅창</p>
+                    <span class="new">0</span>
+                </button>
+            </li>
+            <li onclick="wopen('/page/payment/payment.php', 'payment', '768', '1000');">
+                <a href="#.">
+                    <span class="list-i-nvcharge"></span>
+                    <p>충전</p>
+                    <span class="new">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/plugins.js"></script>
+    <script src="./js/sly.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/spolive-0.0.1.js"></script>
+</body>
+
+</html>

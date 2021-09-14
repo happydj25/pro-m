@@ -1,0 +1,2951 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta charset="utf-8">
+    <meta name="ROBOTS" content="INDEX,FOLLOW">
+    <meta name="GOOGLEBOT" content="INDEX,NOFOLLOW">
+    <meta name="ROBOTS" content="NOARCHIVE">
+    <meta name="GOOGLEBOT" content="NOARCHIVE">
+
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta property="og:type" content="website">
+    <title>SPOLIVE PRO</title>
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/m_livegame.css">
+
+    <link rel="shortcut icon" href="./img/icons/favicon.ico">
+    <link rel="apple-touch-icon" href="./img/icons/favicon_72.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/icons/favicon_72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/icons/favicon_114.png">
+</head>
+
+<body class="body_index">
+    <div class="dim hidden"></div>
+    <header>
+        <div class="container">
+            <button class="menu">
+                <span class="list-i-menu"></span>
+            </button>
+            <h1 class="logo">
+                <a href="main.html">
+                    <span class="list-i-logo"></span>
+                </a>
+            </h1>
+            <ul class="hdul">
+                <li onclick="wopen('/page/payment/payment.php', 'payment', '768', '1000');">
+                    <a href="" title="충전"><span class="list-i-charge"></span></a>
+                </li>
+                <li>
+                    <button class="mydata" title="내정보">
+                        <span class="list-i-mydata"></span>
+                    </button>
+                </li>
+                <li>
+                    <button class="logout" onclick="location.href='//portal.dev.spolive.com/bbs/logout.php?url=//sports.portal.dev.spolive.com'" title="로그아웃">
+                        <span class="list-i-logout"></span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="betitem hidden">
+        <div class="tit">
+            <p class="twtxt">베팅아이템</p>
+            <button class="xbtn">
+                <span class="list-i-xbtn"></span>
+            </button>
+        </div>
+        <div id="mk_item_layer_betslip">Loading.</div>
+    </div>
+
+    <div class="navmu_wrap hidden">
+
+        <div class="login hidden">
+
+            <div class="tit">
+                <p class="twtxt">로그인</p>
+                <button class="xbtn">
+                    <span class="list-i-xbtn"></span>
+                </button>
+            </div>
+            <form name="flogin" action="//portal.dev.spolive.com/bbs/login_check.php" method="post">
+                <div>
+                    <input type="text" name="mb_id" placeholder="아이디를 입력해주세요." required="">
+                    <input type="password" name="mb_password" placeholder="비밀번호를 입력해주세요." required="">
+                    <button type="submit" class="ybtn">로그인</button>
+                    <a href="//portal.dev.spolive.com/bbs/register.php" class="ybtn2">회원가입</a>
+                </div>
+                <div class="find">
+                    <a href="//portal.dev.spolive.com/bbs/password_lost.php">아이디 찾기</a>
+                    <a href="//portal.dev.spolive.com/bbs/password_lost.php">비밀번호 찾기</a>
+                </div>
+                <div class="snslogin">
+                    <p class="twtxt">다른 로그인 방법</p>
+                    <a href="">
+                        <span class="list-i-naver"></span>
+                        네이버 로그인
+                    </a>
+                    <a href="">
+                        <span class="list-i-kakko"></span>
+                        카카오 로그인
+                    </a>
+                    <a href="">
+                        <span class="list-i-fbook"></span>
+                        페이스북 로그인
+                    </a>
+                    <a href="">
+                        <span class="list-i-google"></span>
+                        구글 로그인
+                    </a>
+                </div>
+            </form>
+        </div>
+
+        <div class="mydata hidden">
+            <div class="tit">
+                <p class="twtxt">내정보</p>
+                <button class="xbtn">
+                    <span class="list-i-xbtn"></span>
+                </button>
+            </div>
+            <div class="container">
+                <div class="mydata">
+                    <div class="tit">
+                        <span class="list-i-myicon"></span>
+                        기본정보
+                        <button class="inven_btn" onclick="location.href='gold-market-inventory.html'">인벤토리</button>
+                    </div>
+                    <div>
+                        <span class="txt">랭킹</span>
+                        <span>-</span>
+                    </div>
+                    <div>
+                        <span class="txt">닉네임</span>
+                        <button class="btn1" onclick="location.href='gold-market.html'">변경</button>
+                        <span class="name">자낳괴나돈조심</span>
+                    </div>
+                    <div class="business">
+                        <span class="list-i-business"></span>
+                        <span class="num">D-0</span>
+                    </div>
+                    <div class="first">
+                        <span class="list-i-first"></span>
+                        <span class="num">D-345</span>
+                    </div>
+                </div>
+
+                <div class="mygold">
+                    <div class="tit">
+                        <span class="list-i-mygold"></span>
+                        보유재화
+                    </div>
+                    <div>
+                        <span class="txt">껨코인</span>
+                        <button class="btn1" onclick="wopen('/page/payment/payment.php', 'payment', '768', '1000');">충전</button>
+                        <span class="num"><span class="list-i-coin"></span>0</span>
+                    </div>
+                    <div>
+                        <span class="txt">골드</span>
+                        <button class="btn1" onclick="location.href='/contents/list.php?ca_id=50'">구매</button>
+                        <span class="num"><span class="list-i-gold"></span>35,999,910</span>
+                    </div>
+                    <div class="question">
+                        <span class="txt">마일리지</span>
+                        <span class="list-i-subtxt"></span>
+                        <div class="txt qpopup hidden">
+                            <p class="tit">마일리지</p>
+                            <span class="zone">
+                                게임 플레이를 통해 무료로 제공되는 재화입니다.<br>
+                                마일리지는 게임 참여 후 적중 실패 시 베팅금액의 0.001%만큼 적립 받습니다.
+                                획득한 마일리지는 골드마켓에서<br>아이템 구매 시 사용할 수 있습니다.<br>
+                            </span>
+                        </div>
+                        <span class="num"><span class="list-i-mile"></span>0</span>
+                    </div>
+                </div>
+
+
+                <div class="wrank">
+                    <div class="tit">
+                        <span class="list-i-wrank"></span>
+                        주간전적
+                        <label for="weekly_record" class="onoff_btn">
+                            <input type="checkbox" name="weekly_record" id="weekly_record">
+                            <span class="list-i-mdonoff"></span>
+                        </label>
+                    </div>
+                    <div>
+                        <span class="txt">적중건수</span>
+                        <span class="num">0</span>
+                    </div>
+                    <div>
+                        <span class="txt">최대 당첨 배당</span>
+                        <span class="num">0</span>
+                    </div>
+                    <div>
+                        <span class="txt">최대 당첨 골드</span>
+                        <span class="num">0</span>
+                    </div>
+                </div>
+
+                <div class="mrank">
+                    <div class="tit">
+                        <span class="list-i-mrank"></span>
+                        월간전적
+                        <label for="monthly_record" class="onoff_btn">
+                            <input type="checkbox" name="monthly_record" id="monthly_record">
+                            <span class="list-i-mdonoff"></span>
+                        </label>
+                    </div>
+                    <div>
+                        <span class="txt">적중건수</span>
+                        <span class="num">0</span>
+                    </div>
+                    <div>
+                        <span class="txt">최대 당첨 배당</span>
+                        <span class="num">0</span>
+                    </div>
+                    <div>
+                        <span class="txt">최대 당첨 골드</span>
+                        <span class="num">0</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="menu hidden">
+            <div class="tit">
+                <p class="twtxt">전체 메뉴</p>
+                <button class="xbtn"><span class="list-i-xbtn"></span></button>
+            </div>
+            <ul class="game">
+                <li>
+                    <a href="https://www.spolive.com/">
+                        <div class="img">
+                            <img src="./img/game/menu_thum01.png" alt="">
+                        </div>
+                        <p>스포라이브</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="img">
+                            <img src="./img/game/menu_thum02.png" alt="">
+                        </div>
+                        <p>타이젬 바둑</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="img">
+                            <img src="./img/game/munu_thum03.png" alt="">
+                        </div>
+                        <p>해피라이브</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="gnb">
+                <ul>
+                    <li>
+                        <button type="button">
+                            <span class="list-i-run"></span>
+                            스포츠게임
+                            <span class="list-i-rarr"></span>
+                        </button>
+                        <ul>
+                            <li><a href="sport-game.html">스포츠게임</a></li>
+                            <li><a href="live-game.html">라이브게임</a></li>
+                            <li><a href="bet-rules.html">베팅규정</a></li>
+                            <li><a href="match-schedule.html">경기일정</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button">
+                            <span class="list-i-murank"></span>
+                            랭킹
+                            <span class="list-i-rarr"></span>
+                        </button>
+                        <ul>
+                            <li><a href="rank.html">주간랭킹</a></li>
+                            <li><a href="rank.html">월간랭킹</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" onclick="location.href='team-rank.html'">
+                            <span class="list-i-murank"></span>
+                            종목별 팀 순위
+                            <span class="list-i-rarr"></span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button">
+                            <span class="list-i-community"></span>
+                            커뮤니티
+                            <span class="list-i-rarr"></span>
+                        </button>
+                        <ul>
+                            <li><a href="board.html">자유게시판</a></li>
+                            <li><a href="board.html">분석게시판</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button">
+                            <span class="list-i-nnews"></span>
+                            새소식
+                            <span class="list-i-rarr"></span>
+                        </button>
+                        <ul>
+                            <li><a href="noti.html">공지사항</a></li>
+                            <li><a href="noti.html">업데이트</a></li>
+                            <li><a href="event.html">이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" onclick="location.href='gold-market.html'">
+                            <span class="list-i-gmk"></span>
+                            골드마켓
+                            <span class="list-i-rarr"></span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button">
+                            <span class="list-i-make"></span>
+                            제작
+                            <span class="list-i-rarr"></span>
+                        </button>
+                        <ul>
+                            <li><a href="make.html">합성</a></li>
+                            <li><a href="make.html">강화</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="betcart hidden">
+            <div class="container">
+                <div class="more_btn gtxt">
+                    전체보기
+                    <span class="list-i-betcartmore"></span>
+                </div>
+                <div class="tit">
+                    <button class="gbtn all_cancel_btn">전체삭제</button>
+                    <p class="twtxt">베팅카트<span class="btxt betCartCnt">(0)</span></p>
+                    <button class="xbtn"><span class="list-i-xbtn"></span></button>
+                </div>
+                <ul class="cart_list bet_list">
+                    <li>경기를 선택해주세요.</li>
+                </ul>
+                <div class="mygold">
+                    <span>보유골드<a href=""><span class="list-i-more"></span></a></span>
+                    <span>35,999,910</span>
+                </div>
+                <div class="gross_dividend">
+                    <span>총 배당률</span>
+                    <span id="odd_total">1</span>
+                </div>
+                <div class="estimated_gold">
+                    <span>예상골드</span>
+                    <span id="winspogold_total">0</span>
+                </div>
+                <div class="myitem">
+                    <span>보유 아이템</span>
+                    <button class="bbtn">베팅아이템 적용하기</button>
+                </div>
+                <div class="gold_btn expect_gold">
+                    <button class="gbtn2">1,000,000</button>
+                    <button class="gbtn2">3,000,000</button>
+                    <button class="gbtn2">5,000,000</button>
+                    <button class="gbtn2">10,000,000</button>
+                    <button class="gbtn2">30,000,000</button>
+                    <button class="gbtn2">50,000,000</button>
+                    <button class="gbtn2">초기화</button>
+                    <button class="bbtn max_btn" id="btnMax" name="btnMinMax">MAX</button>
+                </div>
+                <input type="text" id="seedgold" name="seedgold" placeholder="배팅골드를 입력해 주세요." value="10,000">
+                <button class="ybtn btn_batting">베팅하기</button>
+                <label for="cart_keep" class="onoff_btn">
+                    카트유지
+                    <input type="checkbox" name="cart_keep" id="cart_keep">
+                    <span class="list-i-bconoff"></span>
+                </label>
+            </div>
+
+
+
+
+
+        </div>
+        <div class="mylog hidden">
+
+            <div class="betlog_dlookup" style="display:none;">
+                <input type="date" name="" id="">
+                <input type="date" name="" id="">
+                <button class="dlookup_btn"></button>
+            </div>
+
+            <div class="container">
+                <button class="xbtn"><span class="list-i-xbtn"></span></button>
+                <div class="mylog_tab">
+                    <ul class="tit cancel_change_btn">
+                        <li class="on" onclick="get_draw_list();click_mybet_btn('change_mybet_btn');" id="change_mybet_btn">베팅내역</li>
+                        <li onclick="MyDrawList();click_mybet_btn('change_mybet_cancel_btn');" id="change_mybet_cancel_btn">베팅취소</li>
+                    </ul>
+
+                    <div id="mybet_layer">
+                        <ul class="tit change_btn change_list_btn" id="list_chage_btn_ul">
+                            <li data-id="mylog_sport" class="on" data-type="">전체</li>
+                            <li data-id="mylog_sport" data-type="SRS">스포츠</li>
+                            <li data-id="mylog_live" data-type="LIVE">라이브</li>
+                        </ul>
+                        <div id="mylog_sport" class="conBox on">
+                            <div class="period datebtn_wrap">
+                                <button class="on" data-type="today">오늘</button>
+                                <button data-type="week" data-value="1">1주일</button>
+                                <button data-type="month" data-value="1">1개월</button>
+                                <button data-type="month" data-value="3">3개월</button>
+                            </div>
+                            <div id="my_hit_list">
+                                <div class="betlog_box_blank">내역이 존재하지 않습니다.</div>
+                            </div>
+                            <div class="page_num memo"></div>
+                        </div>
+                    </div>
+                    <div id="mybet_cancel_layer" style="display: none;">
+                        <div class="mybet_top">
+                            <label for="all_select">
+                                <label><input type="checkbox" class="all_cancel_check">
+                                    전체선택</label>
+                            </label>
+                            <button class="select_bet_xbtn mybet-select-cancel">선택 베팅 개별 취소</button>
+                            <button class="select_bet_xbtn choice_cancel_btn">선택 베팅 전체 취소</button>
+                        </div>
+                        <ul class="mybet_list" id="mybet_cancel_list">
+                            <li class="null_betlist">
+                                최근 베팅한 내역이 없습니다.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="chat hidden">
+            <div class="tit">
+                <button class="chatshar"><span class="list-i-chatshar btn_bet"></span></button>
+                <!-- on으로 확성기 기능 on off -->
+                <button class="speaker"><span class="list-i-speaker"></span></button>
+                <button class="chatset"><span class="list-i-chatset"></span></button>
+
+                <div class="hidden">
+                    <button class="on"><span class="chat-i-scr" data-type="scroll"></span></button>
+                    <button><span class="chat-i-usarm" data-type="join"></span></button>
+                </div>
+
+
+                <p class="twtxt">채팅</p>
+                <button class="xbtn"><span class="list-i-xbtn"></span></button>
+            </div>
+            <div class="container chat_box">
+                <ul class="chat_list chat_content">
+                    <li class="game_master">
+                        <span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>
+                            gameadmin
+                        </span>🤢🤢🤢🤢🤢🤢🤢🤢😚😚😚🙂🤔🤩
+                    </li>
+                    <li class=""><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="champot19" data-nick="뽀뽀야럽" class="memo"></li>
+                            </ul>
+                            뽀뽀야럽
+                        </span>aa</li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="fkxp104" data-nick="fkxp104" class="memo"></li>
+                            </ul>fkxp104
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=5::SRS/14949','_blank',840,252)">승무패 9.44 대기중 <span class="list-i-betmore"></span></a></li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="fkxp104" data-nick="fkxp104" class="memo"></li>
+                            </ul>fkxp104
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=5::SRS/14949','_blank',840,252)">승무패 9.44 대기중 <span class="list-i-betmore"></span></a></li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>
+                            gameadmin
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=5::SRS/15045','_blank',840,212)">승무패 2.05 대기중 <span class="list-i-betmore"></span></a></li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="baaaba" data-nick="보로봉봉" class="memo"></li>
+                            </ul>보로봉봉
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=5::SRS/15047','_blank',840,372)">
+                            승무패 4.14 대기중
+                            <span class="list-i-betmore"></span></a></li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="champot19" data-nick="뽀뽀뽀친구" class="memo"></li>
+                            </ul>뽀뽀뽀친구
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=5::SRS/15066','_blank',840,332)">승무패 236079 대기중 <span class="list-i-betmore"></span></a></li>
+                    <li class=""><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="seojwfan9" data-nick="fewwegwwee" class="memo"></li>
+                            </ul>fewwegwwee
+                        </span>ㅇㄹㄹㄷ</li>
+                    <li class="game_master"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span>sdfsdfsdfsdf</li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="liveTest31" data-nick="liveTest31" class="memo"></li>
+                            </ul>liveTest31
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=3:63:49478','_blank',840,94)">점프볼 0 적중실패 <span class="list-i-betmore"></span></a></li>
+                    <li class=""><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="baaaba" data-nick="보로봉봉" class="memo"></li>
+                            </ul>보로봉봉
+                        </span>djkssydfsajfa</li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=5::SRS/15060','_blank',840,172)">승무패 1.68 대기중 <span class="list-i-betmore"></span></a></li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=3:61:40900','_blank',840,94)">코인토스 1.95 적중성공
+                            <span class="list-i-betmore"></span></a></li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=3:63:49940','_blank',840,94)">점프볼 0 적중실패 <span class="list-i-betmore"></span></a></li>
+                    <li class="game_master"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span>ㄴㅇㄻㄴㅇㄻㅇㄹ</li>
+                    <li class="game_master"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span>ㄴㅇㄹㄴㅇㄹ</li>
+                    <li class="game_master"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span>ㄴㅇㄻㄻㄴㄹㅇㅁㄴㄹㅇ</li>
+                    <li class=""><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="fkxp104" data-nick="라떼" class="memo"></li>
+                            </ul>라떼
+                        </span>아아아앙</li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=5::SRS/14690','_blank',840,252)">승무패 11.3 적중특례 <span class="list-i-betmore"></span></a></li>
+                    <li class=""><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="fkxp104" data-nick="라떼" class="memo"></li>
+                            </ul>라떼
+                        </span>ㅇ</li>
+                    <li class=""><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="fkxp104" data-nick="라떼" class="memo">
+
+                                </li>
+                            </ul>라떼
+                        </span>test</li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=5::SRS/15218','_blank',840,172)">승무패 2.05 대기중 <span class="list-i-betmore"></span></a></li>
+                    <li class=""><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="fkxp104" data-nick="라떼" class="memo"></li>
+                            </ul>라떼
+                        </span>test</li>
+                    <li class="myChat "><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="shemf1004" data-nick="자낳괴나돈조심" class="memo"></li>
+                            </ul>자낳괴나돈조심
+                        </span>asdf</li>
+                    <li class="myChat "><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="shemf1004" data-nick="자낳괴나돈조심" class="memo"></li>
+                            </ul>자낳괴나돈조심
+                        </span>sdfsdfsdfsd</li>
+                    <li class="myChat "><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="shemf1004" data-nick="자낳괴나돈조심" class="memo"></li>
+                            </ul>자낳괴나돈조심
+                        </span>sd</li>
+                    <li class="myChat "><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="shemf1004" data-nick="자낳괴나돈조심" class="memo"></li>
+                            </ul>자낳괴나돈조심
+                        </span>fd</li>
+                    <li class="myChat "><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="shemf1004" data-nick="자낳괴나돈조심" class="memo"></li>
+                            </ul>자낳괴나돈조심
+                        </span>d</li>
+                    <li class="myChat "><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="shemf1004" data-nick="자낳괴나돈조심" class="memo"></li>
+                            </ul>자낳괴나돈조심
+                        </span>d</li>
+                    <li class="myChat "><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="shemf1004" data-nick="자낳괴나돈조심" class="memo"></li>
+                            </ul>자낳괴나돈조심
+                        </span>d</li>
+                </ul>
+                <div class="chat_btm">
+                    <input type="text" name="messagePut" id="messagePut" autocomplete="off" placeholder="대화 내용을 입력해 주세요.">
+                    <button class="off">전송</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div id="layer_message"></div>
+
+    <!-- 메인자리 -->
+    <main>
+
+        <div class="subnav">
+            <div class="tit"><a href="#" onclick="history.back()"><span class="list-i-larr"></span>베팅규정</a></div>
+            <div class="livego">
+                <a href="live-game.html">
+                    <span class="list-i-livenum"></span>
+                    <span class="gamenum">12</span>
+                </a>
+            </div>
+        </div>
+        <ul class="submenu menu2 rulemenu">
+            <a href="bet-rules.html">
+                <li class="on" data-id="spo-rule">스포츠 게임</li>
+            </a>
+            <a href="bet-rules-live.html">
+                <li>라이브 게임</li>
+            </a>
+        </ul>
+
+        <div class="wrap">
+            <div class="frame gamelist" id="basic" style="overflow: hidden;">
+                <ul class="clearfix" style="transform: translateZ(0px); width: 1200px;">
+                    <li class="all active">전체</li>
+
+                    <li class="soccer" data-sports="1">축구</li>
+                    <li class="basketball" data-sports="2">농구</li>
+                    <li class="baseball" data-sports="3">야구</li>
+                    <li class="volleyball" data-sports="23">배구</li>
+                    <li class="icehockey" data-sports="4">아이스하키</li>
+                    <li class="tennis" data-sports="5">테니스</li>
+                    <li class="table-tennis" data-sports="20">탁구</li>
+                    <li class="football" data-sports="16">미식축구</li>
+                    <li class="handball" data-sports="6">핸드볼</li>
+                    <li class="dart" data-sports="22">다트</li>
+                    <li class="badminton" data-sports="31">배드민턴</li>
+                    <li class="snooker" data-sports="19">스누커</li>
+                    <li class="squash" data-sports="37">스쿼시</li>
+                    <li class="futsal" data-sports="29">풋살</li>
+                </ul>
+                <div class="controls">
+                    <button class="btn prev disabled" disabled="">prev</button>
+                    <button class="btn next">next</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="rules_wrap on" id="spo-rule">
+            <!-- 전체 -->
+            <div class="bet_rule all">
+                <div class="tit_box">
+                    <p>스포츠 게임</p>
+                    <span>스포츠 게임은 경기를 선택하여 예상 결과를 맞히는 게임으로 서비스 하는 모든 종목의 국내 및 해외 경기를 기준으로 참여가 가능합니다.</span>
+                </div>
+                <div class="tit">베팅규정</div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>대상 경기</th>
+                            <td>
+                                축구, 농구, 야구 등 각종 전세계 스포츠 경기
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>게임종류</th>
+                            <td>
+                                승무패, 핸디캡, 언더/오버 제공
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>참여 가능 시간</th>
+                            <td>
+                                해당 경기 시작 전까지 참여 가능
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>베팅제한</th>
+                            <td>
+                                <p class="type1">최대 선택 가능 경기: 1 ~ 10경기(폴더)</p>
+                                <p class="type1">1회 최소 베팅 골드: 10,000</p>
+                                <p class="type1">1회 최대 배팅 골드: 50,000,000</p>
+                                <p class="type1">동일 경기 팀 포함 최대 베팅 골드: 20억</p>
+                                <p class="type1">동일 경기 팀 포함 최대 당첨 골드: 10억</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>베팅 패널티</th>
+                            <td>
+                                <p class="type1">1경기(폴더) 베팅시 → 최종 배당률에서 2.5% 패널티 적용</p>
+                                <p class="type1">2경기(폴더)이상 베팅시 → 배당률 패널티 없음</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>결과 처리</th>
+                            <td>
+                                종목 및 게임 타입 별 연장시간 적용/미적용으로 구분
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>정산 처리 시간</th>
+                            <td>
+                                경기가 종료된 후 1시간 이내 처리<br><span>특정 경기의 경우 정산 처리가 지연될 수 있습니다.</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>베팅 취소</th>
+                            <td>
+                                게임 참여 후 5분 이내로 취소 가능<br>
+                                <span>경기 시작 시간이 1시간 미만인 경기의 경우 취소가 불가합니다.</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>적중 특례</th>
+                            <td>
+                                무승부가 선택되지 않는 경기에서 무승부가 발생한 경우 배당률을 1.0배로 처리합니다.<br>
+                                단, 핸디캡 언더/오버 등 사전에 조건이 주어진 경우 반영된 결과를 적용합니다.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>주의사항</th>
+                            <td>
+                                <p class="type1">게임 참여 시 베팅 규정 및 타입 설명을 확인해 보시기 바랍니다.</p>
+                                <p class="type1">종목에 따라 동일 경기 크로스 베팅에 제한이 있을 수 있으니 종목 별 규정 및 타입을 확인해 주시기 바랍니다.</p>
+                                <p class="type1">게임에 의도하지 않은 상황이 발생하는 경우 운영팀의 판단 하에 베팅이 취소될 수 있습니다.</p>
+                                <p class="type1">경기가 정상적으로 종료까지 진행되지 않더라도 경기 단체의 규정에 의해 정식경기가 성립될 경우 그 결과가 인정될 수 있습니다.</p>
+                                <p class="type1">경기에 따라 부득이하게 경우 결과 처리 및 배당금 지급이 지연될 수 있습니다.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 축구 -->
+            <div class="bet_rule soccer" style="display: none;">
+                <div class="tit_box">
+                    <p>대상 리그</p>
+                    <span>K리그, EPL, 라리가, 분데스리가, 세리에A, 리그앙 등 전세계 축구 리그</span>
+                </div>
+                <div class="tit_box">
+                    <p>크로스 베팅 규정</p>
+                    <span>동일 경기와 조합하여 베팅 불가능</span>
+                    <span>다른 경기와 조합하여 베팅 가능</span>
+                    <span>스페셜 타입은 조합하여 베팅 불가능</span>
+                </div>
+                <div class="tit">게임 타입</div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>승/무/패
+                            </th>
+                            <td>(승/무/패)를 예측하는 게임
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>예선 통과할 팀
+                            </th>
+                            <td>예선 통과팀을 예측하는 게임
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>득점 방법
+                            </th>
+                            <td>득점 방법을 예측하는 게임
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>x 골
+                            </th>
+                            <td>x 번째 득점팀을 예측하는 게임
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>마지막 골
+                            </th>
+                            <td>마지막 득점팀을 예측하는 게임
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>더블 찬스
+                            </th>
+                            <td>(승무/무패/(승/패))를 예측하는 게임
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>승/패(무승부 적특)
+                            </th>
+                            <td>(승/패)를 예측하는 게임 (무승부 시 적중특례 처리)
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>무/패(홈승 적특)
+                            </th>
+                            <td>(무/패)를 예측하는 게임 (홈팀 승리 시 적중특례 처리)
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>승/무(원정승 적특)
+                            </th>
+                            <td>(승/무)를 예측하는 게임 (원정팀 승리 시 적중특례 처리)
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>핸디캡(승/무/패)
+                            </th>
+                            <td>경기 득점에 핸디캡을 적용하여 경기결과에 따라 (승/무/패)를 예측하는 게임
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>승리팀 및 득점차
+                            </th>
+                            <td>승리팀과 양팀의 득점차를 예측하는 게임
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>핸디캡(승/패)
+                            </th>
+                            <td>경기 득점에 핸디캡을 적용하여 경기결과에 따라 (승/패)를 예측하는 게임
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>언더/오버
+                            </th>
+                            <td>양팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>홈팀(언더/오버)
+                            </th>
+                            <td>홈팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>원정팀(언더/오버)
+                            </th>
+                            <td>원정팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>경기 총 득점
+                            </th>
+                            <td>경기의 정확한 총 득점를 예측하는 게임
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>홈팀 총 득점
+                            </th>
+                            <td>홈팀의 정확한 총 득점를 예측하는 게임
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>원정팀 총 득점
+                            </th>
+                            <td>원정팀의 정확한 총 득점를 예측하는 게임
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>득점 총 합 범위
+                            </th>
+                            <td>정확한 득점이 포함된 범위를 예측하는 게임
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>홀/짝
+                            </th>
+                            <td>양팀 득점 총 합의 (홀/짝)을 예측하는 게임
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>홈팀(홀/짝)
+                            </th>
+                            <td>홈팀 득점 총 합의 (홀/짝)을 예측하는 게임
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>원정팀(홀/짝)
+                            </th>
+                            <td>원정팀 득점 총 합의 (홀/짝)을 예측하는 게임
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>양팀 모두 득점 여부
+                            </th>
+                            <td>양팀이 모두 득점할 지 여부를 예측하는 게임
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>득점할 팀
+                            </th>
+                            <td>득점할 팀을 예측하는 게임
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>홈팀 무실점 여부
+                            </th>
+                            <td>홈팀의 무실점 여부를 예측하는 게임
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>원정팀 무실점 여부
+                            </th>
+                            <td>원정팀의 무실점 여부를 예측하는 게임
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>홈팀 무실점&amp;승
+                            </th>
+                            <td>홈팀의 무실점 승리 여부를 예측하는 게임
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>원정팀 무실점&amp;승
+                            </th>
+                            <td>원정팀의 무실점 승리 여부를 예측하는 게임
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>(승/무/패)&amp;양팀 득점 여부
+                            </th>
+                            <td>(승/무/패)와 양팀 득점 여부를 예측하는 게임
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>(언더/오버)&amp;양팀 득점 여부
+                            </th>
+                            <td>(언더/오버)와 양팀 득점 여부를 예측하는 게임
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>(승/무/패)&amp;(언더/오버)
+                            </th>
+                            <td>(승/무/패)와 (언더/오버)를 예측하는 게임
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>x번째 득점선수
+                            </th>
+                            <td>x번째 득점할 선수를 예측하는 게임
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>마지막 득점선수
+                            </th>
+                            <td>가장 마지막에 득점할 선수를 예측하는 게임
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>상시 득점선수
+                            </th>
+                            <td>득점할 선수를 예측하는 게임
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>정확한 스코어
+                            </th>
+                            <td>양팀의 정확한 최종 득점을 예측하는 게임(몇 대 몇)
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>정확한 스코어
+                            </th>
+                            <td>양팀의 정확한 최종 득점을 예측하는 게임(몇 대 몇)
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>하프타임/풀타임 정확한 득점
+                            </th>
+                            <td>(하프타임/풀타임)에 정확한 득점를 예측하는 게임
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <th>하프타임/풀타임 정확한 득점 </th>
+                            <td>(하프타임/풀타임)에 정확한 득점를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>하프타임/풀타임 </th>
+                            <td>(하프타임/풀타임)에 승리팀을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>홈팀의 (전/후반) 모두 승리 여부 </th>
+                            <td>홈팀이 (전/후반)에 모두 승리할 지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>원정팀의 (전/후반) 모두 승리 여부 </th>
+                            <td>원정팀이 (전/후반)에 모두 승리할 지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>홈팀의 (전/후반) 중 한쪽만 승리 여부 </th>
+                            <td>홈팀이 (전/후반)중 한쪽만 승리할 지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>원정팀의 (전/후반) 중 한쪽만 승리 여부 </th>
+                            <td>원정팀이 (전/후반)중 한쪽만 승리할 지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>(전/후반) 중 득점이 많은 쪽은? </th>
+                            <td>(전/후반)중 득점이 많은 쪽을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>홈팀 (전/후반) 중 득점이 많은 쪽은? </th>
+                            <td>홈팀의 (전/후반)중 득점이 많은 쪽을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>원정팀 (전/후반) 중 득점이 많은 쪽은? </th>
+                            <td>원정팀의 (전/후반)중 득점이 많은 쪽을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>(전/후반) 양팀 모두 득점 여부 </th>
+                            <td>(전/후반) 양팀이 모두 득점하는 지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>홈팀 (전/후반) 모두 득점 여부 </th>
+                            <td>홈팀이 (전/후반) 모두 득점하는 지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>원정팀 (전/후반) 모두 득점 여부 </th>
+                            <td>원정팀이 (전/후반) 모두 득점하는 지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>(전/후반) 각각 오버 여부 </th>
+                            <td>(전/후반) 각각 양팀 득점 총 합이 제시된 기준 점수보다 큰 값(오버)인지 아닌지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>(전/후반) 각각 언더 여부 </th>
+                            <td>(전/후반) 각각 양팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 아닌지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전(승/무/패) </th>
+                            <td>전반전 (승/무/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 x 골 </th>
+                            <td>전반전 x 득점을 달성하는 팀을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 더블찬스 </th>
+                            <td>전반전 (승무/무패/(승/패))를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 승/패(무승부 적특) </th>
+                            <td>전반전 (승/패)를 예측하는 게임 (무승부 시 적중특례 처리) </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 핸디캡(승/무/패) </th>
+                            <td>전반전 경기 득점에 핸디캡을 적용하여 경기결과에 따라 (승/무/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 핸디캡(승/패) </th>
+                            <td>전반전 경기 득점에 핸디캡을 적용하여 경기결과에 따라 (승/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전(언더/오버) </th>
+                            <td>전반전 양팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 홈팀(언더/오버) </th>
+                            <td>전반전 홈팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 원정팀(언더/오버) </th>
+                            <td>전반전 원정팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 정확한 득점 </th>
+                            <td>양팀의 전반전 득점의 합산을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전(홀/짝) </th>
+                            <td>전반전 양팀 득점를 합산하여 (홀/짝)을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 양팀 모두 득점 여부 </th>
+                            <td>전반전 양팀의 득점 여부를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 홈팀 무실점 여부 </th>
+                            <td>전반전 홈팀의 무실점 여부를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 원정팀 무실점 여부 </th>
+                            <td>전반전 원정팀의 무실점 여부를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 (승/무/패)&amp;양팀 득점 여부 </th>
+                            <td>전반전 (승/무/패)와 양팀이 득점할 지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 (승/무/패)&amp;(언더/오버) </th>
+                            <td>전반전 (승/무/패)와(언더/오버)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 정확한 스코어 </th>
+                            <td>양팀의 정확한 전반전 스코어를 예측하는 게임(몇 대 몇) </td>
+                        </tr>
+                        <tr>
+                            <th>후반전(승/무/패) </th>
+                            <td>후반전 (승/무/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>후반전 x 골 </th>
+                            <td>후반전 x 득점을 달성하는 팀을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>후반전 더블찬스 </th>
+                            <td>후반전 (승무/무패/(승/패))를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>후반전 승/패(무승부 적특) </th>
+                            <td>후반전 (승/패)를 예측하는 게임 (무승부 시 적중특례 처리) </td>
+                        </tr>
+                        <tr>
+                            <th>후반전 핸디캡(승/무/패) </th>
+                            <td>후반전 경기 득점에 핸디캡을 적용하여 경기결과에 따라 (승/무/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>후반전 핸디캡(승/패) </th>
+                            <td>후반전 경기 득점에 핸디캡을 적용하여 경기결과에 따라 (승/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>후반전(언더/오버) </th>
+                            <td>후반전 양팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>후반전 홈팀(언더/오버) </th>
+                            <td>후반전 홈팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>후반전 원정팀(언더/오버) </th>
+                            <td>후반전 원정팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>후반전 정확한 득점 </th>
+                            <td>양팀의 후반전 득점의 합산을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>후반전(홀/짝) </th>
+                            <td>후반전 양팀 득점 총 합의 (홀/짝)을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>후반전 양팀 모두 득점 여부 </th>
+                            <td>후반전 양팀의 득점 여부를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>후반전 홈팀 무실점 여부 </th>
+                            <td>후반전 홈팀의 무실점 여부를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>후반전 원정팀 무실점 여부 </th>
+                            <td>후반전 원정팀의 무실점 여부를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>후반전 정확한 스코어 </th>
+                            <td>양팀의 정확한 후반전 스코어를 예측하는 게임(몇 대 몇) </td>
+                        </tr>
+                        <tr>
+                            <th>x번째 득점 시간대(15분간격) </th>
+                            <td>x번째 득점 시간대(15분 간격)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>x번째 득점 시간대(10분간격) </th>
+                            <td>x번째 득점 시간대(10분 간격)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반 10분(승/무/패) </th>
+                            <td>전반 10분 (승/무/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>연장전 득점 여부 </th>
+                            <td>연장전 득점 여부를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>승부차기 진행 여부 </th>
+                            <td>승부차기 진행 여부를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>경고 수(승/무/패) </th>
+                            <td>경고 수 (승/무/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>x번째 경고 </th>
+                            <td>x번째 경고를 받는 팀을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>경고 점수(언더/오버) </th>
+                            <td>양팀이 받은 경고 점수의 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 // 옐로우 카드 10P , 레드 카드 25P </td>
+                        </tr>
+                        <tr>
+                            <th>경고 수(언더/오버) </th>
+                            <td>양팀이 받은 경고 수의 총 합이 제시된 기준 수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>정확한 경고 수 </th>
+                            <td>양팀이 받은 경고 수 합산을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>홈팀 경고 수 </th>
+                            <td>홈팀이 받은 경고 수를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>원정팀 경고 수 </th>
+                            <td>원정팀이 받은 경고 수를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>경고점수 범위 </th>
+                            <td>정확한 경고의 점수가 포함된 범위를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>퇴장 여부 </th>
+                            <td>퇴장 여부를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>홈팀 퇴장 여부 </th>
+                            <td>홈팀의 퇴장 여부를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>원정팀 퇴장 여부 </th>
+                            <td>원정팀의 퇴장 여부를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 경고 수(승/무/패) </th>
+                            <td>홈팀의 경고수 (승/무/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 x번째 경고 </th>
+                            <td>전반전 x번째 경고를 받는 팀을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 경고 점수 (언더/오버) </th>
+                            <td>전반전 양팀이 받은 경고 점수의 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 경고 수(언더/오버) </th>
+                            <td>전반전 양팀이 받은 경고 수의 총 합이 제시된 기준 수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 정확한 경고 </th>
+                            <td>전반전 양팀이 받은 경고 수의 합산을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 홈팀 정확한 경고 </th>
+                            <td>전반전 홈팀이 받은 경고 수의 합산을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 원정팀 정확한 경고 </th>
+                            <td>전반전 원정팀이 받은 경고 수의 합산을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 경고점수 범위 </th>
+                            <td>전반전 정확한 경고의 점수가 포함된 범위를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 퇴장 여부 </th>
+                            <td>전반전의 퇴장 여부를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 홈팀 퇴장 여부 </th>
+                            <td>전반전 홈팀의 퇴장 여부를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 원정팀 퇴장 여부 </th>
+                            <td>전반전 원정팀의 퇴장 여부를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>코너킥(승/무/패) </th>
+                            <td>홈팀의 코너킥수 (승/무/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>x번째 코너킥 </th>
+                            <td>x번째 코너킥을 차는 팀을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>마지막 코너킥 </th>
+                            <td>마지막 코너킥을 차는 팀을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>코너킥 핸디캡((승/패)) </th>
+                            <td>양팀의 코너킥 수에 핸디캡을 적용하여 경기결과에 따라 (승/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>코너킥(언더/오버) </th>
+                            <td>양팀의 코너킥 총 합이 제시된 기준 수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>코너킥 범위 </th>
+                            <td>양팀이 찬 코너킥 수가 포함된 범위를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>홈팀 코너킥 범위 </th>
+                            <td>홈팀이 찬 코너킥 수가 포함된 범위를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>원정팀 코너킥 범위 </th>
+                            <td>원정팀이 찬 코너킥 수가 포함된 범위를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>코너킥(홀/짝) </th>
+                            <td>양팀이 찬 코너킥 수를 합산하여 (홀/짝)을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 코너킥(승/무/패) </th>
+                            <td>전반전 홈팀의 코너킥 수(승/무/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반적 x번째 코너킥 </th>
+                            <td>전반전 x번째 코너킥을 차는 팀을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 마지막 코너킥 </th>
+                            <td>전반전 마지막 코너킥을 차는 팀을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 코너킥 핸디캡((승/패)) </th>
+                            <td>전반전 양팀 코너킥 수에 핸디캡을 적용하여 경기결과에 따라 (승/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 코너킥(언더/오버) </th>
+                            <td>전반전 양팀 코너킥 총 합이 제시된 기준 수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 홈팀 정확한 코너킥 수 </th>
+                            <td>전반전 홈팀이 찬 코너킥 수의 합산을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 원정팀 정확한 코너킥 수 </th>
+                            <td>전반전 원정팀이 찬 코너킥 수의 합산을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 코너킥 범위 </th>
+                            <td>전반전 정확한 코너킥 수가 포함된 범위를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 코너킥(홀/짝) </th>
+                            <td>전반전 양팀 코너킥 총 합의 (홀/짝)을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>x골&amp;(승/무/패) </th>
+                            <td>x 번째 득점팀과 (승/무/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>정확한 스코어 </th>
+                            <td>양팀의 정확한 최종 득점를 예측하는 게임(몇 대 몇) </td>
+                        </tr>
+                        <tr>
+                            <th>연장 진행 여부 </th>
+                            <td>연장 진행 여부를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>더블찬스&amp;전반전 양팀 득점 여부 </th>
+                            <td>(승무/무패/(승/패))와 전반전 양팀 득점 여부를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>더반찬스&amp;후반전 양팀 득점 여부 </th>
+                            <td>(승무/무패/(승/패))와 후반전 양팀 득점 여부를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 더블찬스&amp;양팀 득점 여부 </th>
+                            <td>전반전 (승무/무패/(승/패))와 양팀 득점 여부를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>후반전(승/무/패)&amp;양팀 득점 여부 </th>
+                            <td>후반전 (승/무/패)와 양팀 득점 여부를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>후반전(승/무/패)&amp;언더/오버 </th>
+                            <td>후반전 (승/무/패)와 (언더/오버)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>후반전 더블찬스&amp;양팀 득점 여부 </th>
+                            <td>후반전 (승무/무패/(승/패))와 양팀 득점 여부를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>더블찬스&amp;양팀 득점 여부 </th>
+                            <td>(승무/무패/(승/패))와 양팀 득점 여부를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>더블찬스&amp;(언더/오버) </th>
+                            <td>(승무/무패/(승/패))와 (언더/오버)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>멀티골 </th>
+                            <td>양팀의 멀티골을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>홈팀 멀티골 </th>
+                            <td>홈팀의 멀티골을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>원정팀 멀티골 </th>
+                            <td>원정팀의 멀티골을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>멀티골 스코어 </th>
+                            <td>멀티골 스코어를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 멀티골 </th>
+                            <td>전반전 멀티골을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>후반전 멀티골 </th>
+                            <td>후반전 멀티골을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>하프타임/풀타임&amp;(언더/오버) </th>
+                            <td>(하프타임/풀타임)에 승리팀과 (언더/오버)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>하프타임/풀타임&amp;전반전(언더/오버) </th>
+                            <td>(하프타임/풀타임)에 승리팀과 전반전(언더/오버)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>하프타임/풀타임&amp;정확한 득점 </th>
+                            <td>(하프타임/풀타임)에 승리팀과 득점 수를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>홈승 or 오버 </th>
+                            <td>홈팀이 승리하거나 양팀 득점 총 합이 제시된 기준 점수보다 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>홈승 or 언더 </th>
+                            <td>홈팀 승리하거나 양팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>무승부 or 오버 </th>
+                            <td>무승부 이거나 양팀 득점 총 합이 제시된 기준 점수보다 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>무승부 or 언더 </th>
+                            <td>무승부 이거나 양팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>원정승 or 오버 </th>
+                            <td>원정팀이 승리하거나 양팀 득점 총 합이 제시된 기준 점수보다 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>원정승 or 언더 </th>
+                            <td>원정팀이 승리하거나 양팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>홈승 or 양팀 득점 여부 </th>
+                            <td>홈팀이 승리하거나 양팀 득점 여부를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>무승부 or 양팀 득점 여부 </th>
+                            <td>무승부 이거나 양팀 득점 여부를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>원정팀 or 양팀 득점 여부 </th>
+                            <td>원정팀이 승리하거나 양팀 득점 여부를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>홈팀 or 무실점 </th>
+                            <td>홈팀이 승리하거나 무실점을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>무승부 or 무실점 </th>
+                            <td>무승부 이거나 무실점을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>원정팀 or 무실점 </th>
+                            <td>원정팀이 승리하거나 무실점을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>원정팀 승리 </th>
+                            <td>원정팀 승리를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>홈팀 승리 </th>
+                            <td>홈팀 승리를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>어느 팀이든 승리팀 여부 </th>
+                            <td>어느 팀이든 승리팀이 있는지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>X선수 득점 여부 - 연장포함 </th>
+                            <td>특정 선수의 득점 여부를 예측하는 게임 </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 농구 -->
+            <div class="bet_rule basketball" style="display: none;">
+                <div class="tit_box">
+                    <p>대상 리그</p>
+                    <span>NBA, WNBA, KBL, WKBL 등 전세계 농구 리그</span>
+                </div>
+                <div class="tit_box">
+                    <p>크로스 베팅 규정</p>
+                    <span>동일 경기 및 다른 경기를 조합하여 베팅 가능</span>
+                    <span>스페셜 타입은 조합하여 베팅 불가능</span>
+                </div>
+                <div class="tit">게임 타입</div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>승/무/패 </th>
+                            <td>(승/무/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>승/패(무승부 적특) </th>
+                            <td>(승/패)를 예측하는 게임 (무승부 시 적중특례 처리) </td>
+                        </tr>
+                        <tr>
+                            <th>핸디캡(승/무/패) </th>
+                            <td>경기 득점에 핸디캡을 적용하여 경기결과에 따라 (승/무/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>언더/오버 </th>
+                            <td>양팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>하프타임/풀타임 </th>
+                            <td>(하프타임/풀타임)에 승리팀을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전,후반전 중 최고 득점 </th>
+                            <td>전반전과 후반전 중 어느쪽이 더 많은 득점을 했는지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전(승/무/패) </th>
+                            <td>전반전 (승/무/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 승/패(무승부 적특) </th>
+                            <td>전반전 (승/패)를 예측하는 게임, 무승부 시 적중 특례 처리 된다. </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 핸디캡(승/패) </th>
+                            <td>전반전 스코어에 핸디캡을 적용하여 결과에 따라 (승/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전(언더/오버) </th>
+                            <td>전반전 양팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 홈팀(언더/오버) </th>
+                            <td>전반전 홈팀 득점 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전 원정팀(언더/오버) </th>
+                            <td>전반전 원정팀 득점 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>전반전(홀/짝) </th>
+                            <td>전반전 양팀 득점 총 합의 (홀/짝)을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>후반전(승/무/패) </th>
+                            <td>후반전 (승/무/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>후반전(승/패) </th>
+                            <td>후반전 (승/패)를 예측하는 게임, 무승부 시 적중 특례 처리 된다. </td>
+                        </tr>
+                        <tr>
+                            <th>후반전(핸디캡) </th>
+                            <td>후반전 스코어에 핸디캡을 적용하여 결과에 따라 (승/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>후반전(언더/오버) </th>
+                            <td>후반전 양팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>후반전(홀/짝) </th>
+                            <td>후반전 양팀 득점 총 합의 (홀/짝)을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>승리팀 - 연장포함 </th>
+                            <td>최종 경기 결과 승리팀을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>연장 진행 여부 </th>
+                            <td>해당 경기에 연장전의 진행 여부를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>핸디캡(승/패) - 연장포함 </th>
+                            <td>최종 경기 결과 스코어에 핸디캡을 적용하여 경기 결과에 따라 (승/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>언더/오버 - 연장포함 </th>
+                            <td>최종 경기 결과 양팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>홈팀(언더/오버) - 연장포함 </th>
+                            <td>최종 경기 결과 홈팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>원정팀(언더/오버) - 연장포함 </th>
+                            <td>최종 경기 결과 원정팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>홀/짝 - 연장포함 </th>
+                            <td>최종 경기 결과 양팀 득점 총 합의 (홀/짝)을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>제시된 점수에 먼저 도달하는 팀 - 연장포함 </th>
+                            <td>최종 경기 결과 제시된 기준 점수에 먼저 도달하는 팀을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>최고 득점 쿼터 </th>
+                            <td>쿼터 중 양팀 득점 합이 가장 높은 쿼터를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>x쿼터(승/무/패) </th>
+                            <td>x쿼터 (승/무/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>x쿼터(언더/오버) </th>
+                            <td>x쿼터 양팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>승리팀 및 득점차 - 연장포함 </th>
+                            <td>승리팀과 양팀의 득점차를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>x득점 - 연장포함 </th>
+                            <td>경기 최종 결과 양팀 득점 총 합을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>승리팀&amp;(언더/오버) - 연장포함 </th>
+                            <td>경기 최종 결과 승리팀과 양팀 득점 총 합의 (언더/오버)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>언더/오버(기준점 포함) </th>
+                            <td>양팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 혹은 동일한지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>양 팀 총 득점 범위 </th>
+                            <td>양팀의 특점 총 합의 범위를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>제시된 점수에 먼저 도달하는 팀 </th>
+                            <td>제시된 기준 점수에 먼저 도달하는 팀을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>x쿼터 승리팀 및 득점차 </th>
+                            <td>x쿼터 승리팀과 양팀의 득점차를 모두 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>x쿼터 승/패(무승부 적특) </th>
+                            <td>x쿼터 (승/패)를 예측하는 게임(무승부 시 적중특례 처리) </td>
+                        </tr>
+                        <tr>
+                            <th>x쿼터 핸디캡(승/패) </th>
+                            <td>x쿼터 스코어에 핸디캡을 적용하여 경기 결과에 따라 (승/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>x쿼터(홀/짝) </th>
+                            <td>x쿼터 양팀 득점 총 합의 (홀/짝)을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>x쿼터 홈팀(언더/오버) </th>
+                            <td>x쿼터 홈팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>x쿼터 원정팀(언더/오버) </th>
+                            <td>x쿼터 원정팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>득점차 - 연장포함 </th>
+                            <td>경기 최종 결과 양팀의 득점차를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>x번째 타임아웃 </th>
+                            <td>x번째 타임 아웃을 하는 팀을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>x쿼터 마지막 득점 </th>
+                            <td>x쿼터 마지막으로 득점을 하는 팀을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>x번째 자유투 득점 </th>
+                            <td>x번째 자유투 득점을 하는 팀을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>홈팀 연속 최고 득점(언더/오버) </th>
+                            <td>홈팀이 연속으로 득점하는 최고 점수의 (언더/오버)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>원정팀 연속 최고 득점(언더/오버) </th>
+                            <td>원정팀이 연속으로 득점하는 최고 점수의 (언더/오버)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>연속 최고 득점(언더/오버) </th>
+                            <td>양팀이 연속으로 득점하는 점수 중 최고 점수의 (언더/오버)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>앞서가는 득점 </th>
+                            <td>홈팀이 앞서가는 점수를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>원정팀의 앞서가는 득점 </th>
+                            <td>원정팀이 앞서가는 점수를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th>앞서가는 득점 </th>
+                            <td>양팀이 앞서가는 점수를 예측하는 게임 </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 야구 -->
+            <div class="bet_rule baseball" style="display: none;">
+                <div class="tit_box">
+                    <p>대상 리그</p>
+                    <span>KBO, MLB, NPB 등 전세계 야구 리그</span>
+                </div>
+                <div class="tit_box">
+                    <p>크로스 베팅 규정</p>
+                    <span>동일 경기 및 다른 경기를 조합하여 베팅 가능</span>
+                    <span>스페셜 타입은 조합하여 베팅 불가능</span>
+                </div>
+                <div class="tit">베팅규정</div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>승/무/패</th>
+                            <td>(승/무/패)를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>승리팀 - 연장포함</th>
+                            <td>승리팀을 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>핸디캡(승/패) - 연장포함</th>
+                            <td>경기 득점에 핸디캡을 적용하여 경기결과에 따라 (승/패)를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>언더/오버 - 연장포함</th>
+                            <td>양팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>홈팀(언더/오버) - 연장포함</th>
+                            <td>홈팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>원정팀(언더/오버) - 연장포함</th>
+                            <td>원정팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>언더/오버(기준점 포함) - 연장 포함</th>
+                            <td>양팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 혹은 동일한지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>홀/짝 - 연장포함</th>
+                            <td>양팀 득점 총 합의 (홀/짝)을 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>제시된 점수에 먼저 도달하는 팀 - 연장 포함</th>
+                            <td>제시된 점수에 먼저 도달하는 팀을 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>연장 진행 여부</th>
+                            <td>연장전 진행 여부를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>홈팀 9회말 진행 여부</th>
+                            <td>홈팀이 9회말 진행 여부를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>더 많은 이닝을 이기는 팀</th>
+                            <td>더 많은 이닝을 이기는 팀을 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>한 이닝 기준 최고 득점을 올리는 팀</th>
+                            <td>한 이닝 기준 최고 득점을 기록하는 팀을 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>가장 높은 득점을 낸 이닝</th>
+                            <td>가장 높은 득점을 낸 이닝을 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>1~5이닝(승/무/패)</th>
+                            <td>1~5 이닝 기준 (승/무/패)를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>1~5이닝 핸디캡(승/패)</th>
+                            <td>1~5 이닝 기준 경기 득점에 핸디캡을 적용하여 경기결과에 따라 (승/패)를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>1~5이닝(언더/오버)</th>
+                            <td>1~5이닝 기준 양팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>1~5이닝 홈팀(언더/오버)</th>
+                            <td>1~5 이닝 홈팀 기준 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>1~5이닝 원정팀(언더/오버)</th>
+                            <td>1~5 이닝 원정팀 기준 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>x이닝(승/무/패)</th>
+                            <td>x 이닝 기준 (승/무/패)를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>X이닝(언더/오버)</th>
+                            <td>x 이닝 기준 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>양 팀의 최대 연속 득점 수</th>
+                            <td>양팀의 최대 연속 득점 수를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>경기 종료 시점</th>
+                            <td>언제 경기가 끝날지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>특정 점수 도달 시점(연장 포함)</th>
+                            <td>x 점수를 도달하는 시점을 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>x이닝 홈팀 득점 여부</th>
+                            <td>x 이닝 기준 홈팀 득점 여부를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>x이닝 원정팀 득점 여부</th>
+                            <td>x 이닝 기준 원정팀 득점 여부를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>안타(언더/오버) - 연장포함</th>
+                            <td>양팀 안타 수 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>홈팀 안타(언더/오버)- 연장포함</th>
+                            <td>홈팀 안타 수 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>원정팀 안타(언더/오버) - 연장포함</th>
+                            <td>원정팀 안타 수 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>x이닝 안타(언더/오버)</th>
+                            <td>x이닝 기준 안타 수 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>x이닝 홈팀 안타(언더/오버)</th>
+                            <td>x이닝 홈팀 기준 안타 수 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>x이닝 원정팀 안타(언더/오버)</th>
+                            <td>x이닝 원정팀 기준 안타 수 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>1~5이닝 기준 안타 (언더/오버)</th>
+                            <td>1~5이닝 기준 안타 수 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>1~5이닝 기준 홈팀 안타(언더/오버)</th>
+                            <td>1~5이닝 홈팀 기준 안타 수 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>1~5이닝 기준 원정팀 안타(언더/오버)</th>
+                            <td>1~5이닝 원정팀 기준 안타 수 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>승리팀&amp;(언더/오버) - 연장 포함</th>
+                            <td>승리팀 및 (언더/오버)를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>홈런(언더/오버) - 연장포함</th>
+                            <td>양팀 홈런 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>홈팀 홈런(언더/오버) - 연장포함</th>
+                            <td>홈팀 홈런 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>원정팀 홈런(언더/오버) - 연장포함</th>
+                            <td>원정팀 홈런 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>X이닝 승리팀</th>
+                            <td>x이닝 승리팀을 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>1~5이닝 기준 승리팀</th>
+                            <td>1~5이닝 기준 승리을 예측하는 게임</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 배구 -->
+            <div class="bet_rule volleyball" style="display: none;">
+                <div class="tit_box">
+                    <p>대상 리그</p>
+                    <span>V리그, 중국CVA, A1, 수퍼리가 등 전세계 배구 리그</span>
+                </div>
+                <div class="tit_box">
+                    <p>크로스 베팅 규정</p>
+                    <span>동일 경기 및 다른 경기를 조합하여 베팅 가능</span>
+                    <span>스페셜 타입은 조합하여 베팅 불가능</span>
+                </div>
+                <div class="tit">게임 타입</div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>승리팀</th>
+                            <td>승리팀을 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>홈팀의 세트 승리</th>
+                            <td>홈팀의 세트 승리가 많은지를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>원정팀의 세트 승리</th>
+                            <td>원정팀의 세트 승리가 많은지를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>경기 진행 세트</th>
+                            <td>정확한 총 진행 세트를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>정확한 스코어</th>
+                            <td>양팀의 정확한 최종 득점을 예측하는 게임(몇 대 몇)</td>
+                        </tr>
+                        <tr>
+                            <th>x세트 승리팀</th>
+                            <td>x 세트 승리팀을 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>포인트 핸디캡(승/패)</th>
+                            <td>경기 득점에 핸디캡을 적용하여 경기결과에 따라 (승/패)를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>포인트(언더/오버)</th>
+                            <td>양팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>듀스로 결과가 결정되는 세트</th>
+                            <td>듀스로 결과가 결정되는 세트의 수를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>x세트 포인트 핸디캡(승/패)</th>
+                            <td>x세트 득점에 핸디캡을 적용하여 경기결과에 따라 (승/패)를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>x세트 포인트(U/O)</th>
+                            <td>x세트 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>x세트(홀/짝)</th>
+                            <td>x 세트 양팀 득점 총 합의 (홀/짝)을 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>x세트 제시된 점수에 먼저 도달하는 팀</th>
+                            <td>x 세트 제시된 점수에 먼저 도달하는 팀을 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>4세트 진행 여부</th>
+                            <td>4세트 진행 여부를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>5세트 진행 여부</th>
+                            <td>5세트 진행 여부를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>홈팀의 1세트 차 승리</th>
+                            <td>홈팀의 1세트 차이로 승리 여부를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>원정팀의 1세트 차 승리</th>
+                            <td>원정팀의 1세트 차이로 승리 여부를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>홈팀의 2세트 차 승리</th>
+                            <td>홈팀의 2세트 차이로 승리 여부를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th>원정팀의 2세트 차 승리</th>
+                            <td>원정팀의 2세트 차이로 승리 여부를 예측하는 게임</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <!-- 아이스하키 -->
+            <div class="bet_rule icehockey" style="display: none;">
+                <div class="tit_box">
+                    <p>대상 리그</p>
+                    <span>NHL, KHL 등 전세계 아이스하키 리그</span>
+                </div>
+                <div class="tit_box">
+                    <p>크로스 베팅 규정</p>
+                    <span>동일 경기와 조합하여 베팅 불가능</span>
+                    <span>다른 경기와 조합하여 베팅 가능</span>
+                    <span>스페셜 타입은 조합하여 베팅 불가능</span>
+                </div>
+                <div class="tit">게임 타입</div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th> 승/무/패</th>
+                            <td>(승/무/패)를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> x골</th>
+                            <td>x 번째 득점팀을 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 마지막 골</th>
+                            <td>마지막 득점팀을 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 더블찬스</th>
+                            <td>(승무/무패/(승/패))를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 승/패(무승부 적특)</th>
+                            <td>(승/패)를 예측하는 게임 (무승부 시 적중특례 처리)</td>
+                        </tr>
+                        <tr>
+                            <th> 핸디캡(승/무/패)</th>
+                            <td>경기 득점에 핸디캡을 적용하여 경기결과에 따라 (승/무/패)를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 승리팀 및 득점차</th>
+                            <td>승리팀과 양팀의 득점차를 모두 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 핸디캡(승/패)</th>
+                            <td>경기 득점에 핸디캡을 적용하여 경기결과에 따라 (승/패)를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 언더/오버</th>
+                            <td>양팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 홈팀(언더/오버)</th>
+                            <td>홈팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 원정팀(언더/오버)</th>
+                            <td>원정팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 홀/짝</th>
+                            <td>양팀 득점 총 합의 (홀/짝)을 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 양팀 모두 득점 여부</th>
+                            <td>양팀이 모두 득점할 지 여부를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> (승/무/패)&amp;(언더/오버)</th>
+                            <td>(승/무/패)와 (언더/오버)를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 정확한 스코어</th>
+                            <td>양팀의 정확한 최종 득점를 예측하는 게임(몇 대 몇)</td>
+                        </tr>
+                        <tr>
+                            <th> 연장 진행 여부</th>
+                            <td>연장 진행 여부를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 승리팀 - 연장 및 패널티 포함</th>
+                            <td>승리팀을 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 핸디캡(승/패) - 연장 및 패널티 포함</th>
+                            <td>경기 득점에 핸디캡을 적용하여 경기결과에 따라 (승/패)를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 언더/오버 - 연장 및 패널티 포함</th>
+                            <td>양팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 홀/짝 - 연장 및 패널티 포함</th>
+                            <td>양팀 득점 총 합의 (홀/짝)을 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 가장 득점이 많은 피리어드 찾기</th>
+                            <td>가장 많은 득점이 나온 피리어드를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> x피리어드(승/무/패)</th>
+                            <td>x 피리어드 (승/무/패)를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> x피리어드 x골</th>
+                            <td>x 피리어드 x 번째 득점을 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> x피리어드(언더/오버)</th>
+                            <td>x 피리어드 양팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> x피리어드 양팀 모두 득점</th>
+                            <td>x 피리어드 양팀 모두 득점 여부를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> x피리어드 마지막 팀 득점</th>
+                            <td>x 피리어드 마지막 득점 팀을 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> x피리어드 승/패(무승부 적특)</th>
+                            <td>x 피리어드 (승/패)를 예측하는 게임 (무승부 시 적중특례 처리)</td>
+                        </tr>
+                        <tr>
+                            <th> x피리어드 핸디캡(승/패)</th>
+                            <td>x 피리어드 경기 득점에 핸디캡을 적용하여 경기결과에 따라 (승/패)를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> x피리어드(홀/짝)</th>
+                            <td>x 피리어드 양팀 득점 총 합의 (홀/짝)을 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> x피리어드 더블찬스</th>
+                            <td>x 피리어드 (승무/무패/(승/패))를 예측하는 게임</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <!-- 테니스 -->
+            <div class="bet_rule tennis" style="display: none;">
+                <div class="tit_box">
+                    <p>대상 리그</p>
+                    <span>호주 오픈, 프랑스 오픈, 윔블던, US 오픈 등 전세계 테니스 리그</span>
+                </div>
+                <div class="tit_box">
+                    <p>크로스 베팅 규정</p>
+                    <span>동일 경기 및 다른 경기를 조합하여 베팅 가능</span>
+                    <span>스페셜 타입은 조합하여 베팅 불가능</span>
+                </div>
+                <div class="tit">게임 타입</div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th> 승자 </th>
+                            <td> 승자를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 게임 핸디캡(승/패) </th>
+                            <td> 게임 수에 핸디캡을 적용하여 경기결과에 따라 (승/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 세트 핸디캡(승/패) </th>
+                            <td> 세트에 핸디캡을 적용하여 경기결과에 따라 (승/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 게임(언더/오버) </th>
+                            <td> 게임 수 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 선수1 게임(언더/오버) </th>
+                            <td> 선수1 게임 수 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 선수2 게임(언더/오버) </th>
+                            <td> 선수2 게임 수 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 선수1 세트 (승/패) </th>
+                            <td> 선수1 의 세트 (승/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 선수2 세트 (승/패) </th>
+                            <td> 선수2의 세트 (승/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 무실점 승부 세트 여부 </th>
+                            <td> 한점도 내주지 않고 승부가 난 세트가 있는지 여부를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 타이 브레이크 여부 </th>
+                            <td> 타이브레이크가 발생할지 여부를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 경기 총 세트 </th>
+                            <td> 경기의 정확한 총 세트 수를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 게임(홀/짝) </th>
+                            <td> 게임수 총 합의 (홀/짝)을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 정확한 스코어 </th>
+                            <td> 양선수의 정확한 최종 득점을 예측하는 게임(몇 대 몇) </td>
+                        </tr>
+                        <tr>
+                            <th> 1세트&amp;최종 승자 </th>
+                            <td> 1세트와 최종 승자를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> x세트 승자 </th>
+                            <td> x 세트 승자를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> x세트 게임 핸디캡(승/패) </th>
+                            <td> x 세트 게임 핸디캡을 적용하여 경기결과에 따라 (승/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> x세트 게임(언더/오버) </th>
+                            <td> x세트 게임 수 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> x세트 타이 브레이크 여부 </th>
+                            <td> x 세트 타이브레이크가 발생할지 여부를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> x세트 정확한 스코어 </th>
+                            <td> x세트 양선수의 정확한 최종 득점을 예측하는 게임(몇 대 몇) </td>
+                        </tr>
+                        <tr>
+                            <th> 선수1의 1세트 차 승리 </th>
+                            <td> 선수1의 1세트 차이로 승리 여부를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 선수2의 1세트 차 승리 </th>
+                            <td> 선수2의 1세트 차이로 승리 여부를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 선수1의 2세트 차 승리 </th>
+                            <td> 선수1의 2세트 차이로 승리 여부를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 선수2의 2세트 차 승리 </th>
+                            <td> 선수2의 2세트 차이로 승리 여부를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 승자&amp;(언더/오버) </th>
+                            <td> 승자와 (언더/오버)를 예측하는 게임 </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <!-- 탁구 -->
+            <div class="bet_rule table-tennis" style="display: none;">
+                <div class="tit_box">
+                    <p>대상 리그</p>
+                    <span>코리아 오픈, 독일 오픈, 카타르 오픈 등 전세계 탁구 리그</span>
+                </div>
+                <div class="tit_box">
+                    <p>크로스 베팅 규정</p>
+                    <span>동일 경기 및 다른 경기를 조합하여 베팅 가능</span>
+                    <span>스페셜 타입은 조합하여 베팅 불가능</span>
+                </div>
+                <div class="tit">게임 타입</div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th> 승자 </th>
+                            <td> 승자 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 정확한 스코어 </th>
+                            <td> 양선수의 정확한 최종 득점을 예측하는 게임(몇 대 몇) </td>
+                        </tr>
+                        <tr>
+                            <th> 포인트 핸디캡(승/패) </th>
+                            <td> 경기 득점에 핸디캡을 적용하여 경기결과에 따라 (승/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 포인트(언더/오버) </th>
+                            <td> 양선수 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 경기 진행 게임 수 </th>
+                            <td> 정확한 총 진행 게임 수를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> x게임 승자 </th>
+                            <td> x게임 승자를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> x게임 포인트 핸디캡(승/패) </th>
+                            <td> x게임에 포인트 핸디캡을 적용하여 경기결과에 따라 (승/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> x게임(언더/오버) </th>
+                            <td> x게임 포인트 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> x게임(홀/짝) </th>
+                            <td> x게임 포인트 총 합의 (홀/짝)을 예측하는 게임 </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 미식축구 -->
+            <div class="bet_rule  football" style="display: none;">
+                <div class="tit_box">
+                    <p>대상 리그</p>
+                    <span>K리그, EPL, 라리가, 분데스리가, 세리에A, 리그앙 등 전세계 축구 리그</span>
+                </div>
+                <div class="tit_box">
+                    <p>크로스 베팅 규정</p>
+                    <span>동일 경기와 조합하여 베팅 불가능</span>
+                    <span>다른 경기와 조합하여 베팅 가능</span>
+                    <span>스페셜 타입은 조합하여 베팅 불가능</span>
+                </div>
+                <div class="tit">게임 타입</div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th> 승/무/패 </th>
+                            <td> (승/무/패)를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 홀/짝 </th>
+                            <td> 양팀 득점 총 합의 (홀/짝)을 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 홈팀(홀/짝) </th>
+                            <td> 홈팀 양팀 득점 총 합의 (홀/짝)을 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 원정팀(홀/짝) </th>
+                            <td> 원정팀 양팀 득점 총 합의 (홀/짝)을 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 하프타임/풀타임 </th>
+                            <td> (하프타임/풀타임)에 승리팀을 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 전,후반전 중 최고 득점 </th>
+                            <td> 전반전과 후반전 중 어느쪽이 더 많은 득점을 했는지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 전반전(승/무/패) </th>
+                            <td> 전반전 (승/무/패)를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 전반전 승/패(무승부 적특) </th>
+                            <td> 전반전 (승/패)를 예측하는 게임(무승부 시 적중 특례 처리)</td>
+                        </tr>
+                        <tr>
+                            <th> 전반전 핸디캡(승/패) </th>
+                            <td> 전반전 스코어에 핸디캡을 적용하여 경기결과에 따라 (승/패)를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 전반전(언더/오버) </th>
+                            <td> 전반전 양팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 전반전(홀/짝) </th>
+                            <td> 전반전 양팀 득점 총 합의 (홀/짝)을 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 후반전(승/무/패) </th>
+                            <td> 후반전 (승/무/패)를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 후반전 핸디캡(승/패) </th>
+                            <td> 후반전 스코어에 핸디캡을 적용하여 경기결과에 따라 (승/패)를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 후반전(언더/오버) </th>
+                            <td> 후반전 양팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 승리팀 - 연장포함 </th>
+                            <td> 최종 경기 결과 승리팀을 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 연장 진행 여부 </th>
+                            <td> 연장 진행 여부를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 핸디캡(승/패) - 연장포함 </th>
+                            <td> 스코어에 핸디캡을 적용하여 경기결과에 따라 (승/패)를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 언더/오버 - 연장포함 </th>
+                            <td> 양팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 홈팀(언더/오버) - 연장포함 </th>
+                            <td> 홈팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 원정팀(언더/오버) - 연장포함 </th>
+                            <td> 원정팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 홀/짝 - 연장포함 </th>
+                            <td> 양팀 득점 총 합의 (홀/짝)을 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 제시된 점수에 먼저 도달하는 팀 - 연장포함 </th>
+                            <td> 최종 경기 결과 제시된 기준 점수에 먼저 도달하는 팀을 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 후반전 핸디캡(승/패) - 연장포함 </th>
+                            <td> 후반전 스코어에 핸디캡을 적용하여 경기결과에 따라 (승/패)를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 후반전(언더/오버) - 연장포함 </th>
+                            <td> 후반전 양팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 최고 득점 쿼터 </th>
+                            <td> 진행된 쿼터 중 가장 득점이 많은 쿼터를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> x쿼터(승/무/패) </th>
+                            <td> x쿼터 (승/무/패)를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> x쿼터(언더/오버) </th>
+                            <td> x쿼터 양팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 후반전(승/무/패) - 연장포함 </th>
+                            <td> 후반전 (승/무/패)를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 후반전 승/패(무승부 적특) - 연장포함 </th>
+                            <td> 후반전 (승/패)를 예측하는 게임(무승부 시 적중특례 처리)</td>
+                        </tr>
+                        <tr>
+                            <th> x쿼터 승/패(무승부 적특) </th>
+                            <td> x쿼터 (승/패)를 예측하는 게임(무승부 시 적중특례 처리)</td>
+                        </tr>
+                        <tr>
+                            <th> x쿼터 핸디캡(승/패) </th>
+                            <td> x쿼터 스코어에 핸디캡을 적용하여 경기결과에 따라 (승/패)를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 승/무/패 - 연장포함 </th>
+                            <td> (승/무/패)를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> x쿼터(승/무/패) - 연장포함 </th>
+                            <td> x쿼터 (승/무/패)를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> x쿼터 승/패(무승부 적특) - 연장포함 </th>
+                            <td> x쿼터 (승/패)를 예측하는 게임(무승부 시 적중특례 처리)</td>
+                        </tr>
+                        <tr>
+                            <th> x쿼터 핸디캡(승/패) - 연장포함 </th>
+                            <td> x쿼터 스코어에 핸디캡을 적용하여 경기결과에 따라 (승/패)를 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> x쿼터(언더/오버) - 연장포함 </th>
+                            <td> x쿼터 양팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 홈팀(홀/짝) - 연장포함 </th>
+                            <td> 홈팀 스코어의 (홀/짝)을 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 원정팀(홀/짝) - 연장포함 </th>
+                            <td> 원정팀 스코어의 (홀/짝)을 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 전반전 홈팀(홀/짝) </th>
+                            <td> 전반전 홈팀 스코어의 (홀/짝)을 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 전반전 원정팀(홀/짝) </th>
+                            <td> 전반전 원정팀 스코어의 (홀/짝)을 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 터치다운(언더/오버) - 연장포함 </th>
+                            <td> 터치다운 수가 제시된 기준보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 필드 골(언더/오버) - 연장포함 </th>
+                            <td> 필드골 수가 제시된 기준보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> 턴오버(언더/오버) - 연장포함 </th>
+                            <td> 턴오버 수가 제시된 기준보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> SACK(언더/오버) - 연장포함 </th>
+                            <td> SACK이 발생한 수가 제시된 기준보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> x번째 필드 골 - 연장포함 </th>
+                            <td> x번째 필드 골을 넣는 팀을 예측하는 게임</td>
+                        </tr>
+                        <tr>
+                            <th> x번째 드라이브 결과 </th>
+                            <td> 득점을 하기 위해 전진했을 때의 결과를 예측하는 게임</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <!-- 핸드볼 -->
+            <div class="bet_rule handball" style="display: none;">
+                <div class="tit_box">
+                    <p>대상 리그</p>
+                    <span>HLA, WHA, OHB-Cup, 프리미에르리가 등 전세계 핸드볼 리그</span>
+                </div>
+                <div class="tit_box">
+                    <p>크로스 베팅 규정</p>
+                    <span>동일 경기 및 다른 경기를 조합하여 베팅 가능</span>
+                    <span>스페셜 타입은 조합하여 베팅 불가능</span>
+                </div>
+                <div class="tit">게임 타입</div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th> 승/무/패 </th>
+                            <td> (승/무/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 더블 찬스 </th>
+                            <td> (승무/무패/(승/패))를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 승/패(무승부 적특) </th>
+                            <td> (승/패)를 예측하는 게임 (무승부 시 적중특례 처리) </td>
+                        </tr>
+                        <tr>
+                            <th> 승리팀 및 득점차 </th>
+                            <td> 승리팀과 양팀의 득점차를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 핸디캡(승/패) </th>
+                            <td> 경기 득점에 핸디캡을 적용하여 경기결과에 따라 (승/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 언더/오버 </th>
+                            <td> 양팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 홈팀(언더/오버) </th>
+                            <td> 홈팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 원정팀(언더/오버) </th>
+                            <td> 원정팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 홀/짝 </th>
+                            <td> 양팀 득점 총 합의 (홀/짝)을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> (승/무/패)&amp;(언더/오버) </th>
+                            <td> (승/무/패)와 (언더/오버)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 하프타임/풀타임 </th>
+                            <td> (하프타임/풀타임)에 승리팀을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 전,후반전 중 최고 득점 </th>
+                            <td> 전반전과 후반전 중 어느쪽이 더 많은 득점을 했는지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 전반전(승/무/패) </th>
+                            <td> 전반전 (승/무/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 전반전 더블찬스 </th>
+                            <td> 전반전 (승무/무패/(승/패))를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 전반전 승/패(무승부 적특) </th>
+                            <td> 전반전 (승/패)를 예측하는 게임 (무승부 시 적중특례 처리) </td>
+                        </tr>
+                        <tr>
+                            <th> 전반전 핸디캡(승/패) </th>
+                            <td> 전반전 경기 득점에 핸디캡을 적용하여 경기결과에 따라 (승/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 전반전(언더/오버) </th>
+                            <td> 전반전 양팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 전반전(홀/짝) </th>
+                            <td> 전반전 양팀 득점를 합산하여 (홀/짝)을 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 후반전(승/무/패) </th>
+                            <td> 후반전 (승/무/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 후반전 더블찬스 </th>
+                            <td> 후반전 (승무/무패/(승/패))를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 후반전 승/패(무승부 적특) </th>
+                            <td> 후반전 (승/패)를 예측하는 게임 (무승부 시 적중특례 처리) </td>
+                        </tr>
+                        <tr>
+                            <th> 후반전(홀/짝) </th>
+                            <td> 후반전 양팀 득점를 합산하여 (홀/짝)을 예측하는 게임 </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 다트 -->
+            <div class="bet_rule dart" style="display: none;">
+                <div class="tit_box">
+                    <p>대상 리그</p>
+                    <span>인터내셔널리그, BDO, Matchplay 등 전세계 다트 리그</span>
+                </div>
+                <div class="tit_box">
+                    <p>크로스 베팅 규정</p>
+                    <span>동일 경기 및 다른 경기를 조합하여 베팅 가능</span>
+                    <span>스페셜 타입은 조합하여 베팅 불가능</span>
+                </div>
+                <div class="tit">게임 타입</div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th> 승/무/패 </th>
+                            <td> (승/무/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 승자 </th>
+                            <td> 승자를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 세트 핸디캡(승/패) </th>
+                            <td> 세트 스코어에 핸디캡을 적용하여 경기 결과에 따라 (승/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> x세트 승자 </th>
+                            <td> x세트 승자를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 세트(언더/오버) </th>
+                            <td> 진행 세트 수가 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> x세트 레그 핸디캡(승/패) </th>
+                            <td> x세트 레그 핸디캡을 적용하여 경기 결과에 따라 (승/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> x세트 레그(언더/오버) </th>
+                            <td> x세트 전체 레그 수 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> x세트 정확한 스코어(레그당) </th>
+                            <td> x세트 정확한 스코어(레그당)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> x세트 x레그 승자 </th>
+                            <td> x세트 x레그 승자를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 가장 많은 180점을 달성한 선수 </th>
+                            <td> 가장 많은 180점을 달성한 선수를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> x선수의 180점 달성 여부 </th>
+                            <td> 특정 선수가 180점을 달성하는지 여부를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 180점 핸디캡(승/패) </th>
+                            <td> 180점을 달성한 수에 핸디캡을 적용하여 경기 결과에 따라 (승/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 180점(언더/오버) </th>
+                            <td> 양선수의 180점 달성 수가 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 선수1 180점(언더/오버) </th>
+                            <td> 선수1의 180점 달성 수가 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 선수2 180점(언더/오버) </th>
+                            <td> 선수2의 180점 달성 수가 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 정확한 스코어(세트당) </th>
+                            <td> 양선수의 정확한 스코어를 예측하는 게임(몇 대 몇) </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 배드민턴 -->
+            <div class="bet_rule badminton" style="display: none;">
+                <div class="tit_box">
+                    <p>대상 리그</p>
+                    <span>내셔널리그, PBL, Dutch Open 등 전세계 배드민턴 리그</span>
+                </div>
+                <div class="tit_box">
+                    <p>크로스 베팅 규정</p>
+                    <span>동일 경기 및 다른 경기를 조합하여 베팅 가능</span>
+                    <span>스페셜 타입은 조합하여 베팅 불가능</span>
+                </div>
+                <div class="tit">게임 타입</div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th> 승자 </th>
+                            <td> 승자를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 정확한 스코어 </th>
+                            <td> 양선수의 정확한 최종 득점을 예측하는 게임(몇 대 몇) </td>
+                        </tr>
+                        <tr>
+                            <th> 포인트 핸디캡(승/패) </th>
+                            <td> 경기 득점에 핸디캡을 적용하여 경기결과에 따라 (승/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 포인트(언더/오버) </th>
+                            <td> 양선수 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 듀스로 결과가 결정되는 세트 </th>
+                            <td> 듀스로 결과가 결정되는 세트의 수를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 경기 진행 세트 </th>
+                            <td> 정확한 총 진행 세트를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> x세트 승자 </th>
+                            <td> x세트 승자를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> x세트 포인트 핸디캡(승/패) </th>
+                            <td> x 세트에 포인트 핸디캡을 적용하여 경기결과에 따라 (승/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> x세트 (언더/오버) </th>
+                            <td> x세트 양선수 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> x세트(홀/짝) </th>
+                            <td> x세트 양선수 득점 총 합의 (홀/짝)을 예측하는 게임 </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 스누커 -->
+            <div class="bet_rule snooker" style="display: none;">
+                <div class="tit_box">
+                    <p>대상 리그</p>
+                    <span>프리미어리그, 플레이어 투어 챔피언쉽 등 전세계 스누커 리그</span>
+                </div>
+                <div class="tit_box">
+                    <p>크로스 베팅 규정</p>
+                    <span>동일 경기 및 다른 경기를 조합하여 베팅 가능</span>
+                    <span>스페셜 타입은 조합하여 베팅 불가능</span>
+                </div>
+                <div class="tit">게임 타입</div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th> 승/무/패 </th>
+                            <td> (승/무/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 승자 </th>
+                            <td> 승자를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 정확한 스코어 </th>
+                            <td> 양선수의 정확한 최종 득점을 예측하는 게임(몇 대 몇) </td>
+                        </tr>
+                        <tr>
+                            <th> 프레임 핸디캡(승/패) </th>
+                            <td> 프레임에 핸디캡을 적용하여 경기결과에 따라 (승/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 프레임(언더/오버) </th>
+                            <td> 프레임 수 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> x프레임 승자 </th>
+                            <td> x프레임 승자를 예측하는 게임 </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 스쿼시 -->
+            <div class="bet_rule squash" style="display: none;">
+                <div class="tit_box">
+                    <p>대상 리그</p>
+                    <span>UOS, PSL 등 전세계 스쿼시 리그</span>
+                </div>
+                <div class="tit_box">
+                    <p>크로스 베팅 규정</p>
+                    <span>동일 경기 및 다른 경기를 조합하여 베팅 가능</span>
+                    <span>스페셜 타입은 조합하여 베팅 불가능</span>
+                </div>
+                <div class="tit">게임 타입</div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th> 승자 </th>
+                            <td> 승자를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 정확한 스코어 </th>
+                            <td> 양선수의 정확한 최종 득점을 예측하는 게임(몇 대 몇) </td>
+                        </tr>
+                        <tr>
+                            <th> 포인트 핸디캡(승/패) </th>
+                            <td> 경기 득점에 핸디캡을 적용하여 경기결과에 따라 (승/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 포인트(언더/오버) </th>
+                            <td> 양선수 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 듀스로 결과가 결정되는 게임 </th>
+                            <td> 듀스로 결과가 결정되는 게임의 수를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 경기 진행 게임 </th>
+                            <td> 정확한 총 진행 게임 수를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> x게임 승자 </th>
+                            <td> x게임 승자를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> x게임 포인트 핸디캡(승/패) </th>
+                            <td> x 게임에 포인트 핸디캡을 적용하여 경기결과에 따라 (승/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> x게임 (언더/오버) </th>
+                            <td> x게임 양선수 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> x게임(홀/짝) </th>
+                            <td> x게임 양선수 득점 총 합의 (홀/짝)을 예측하는 게임 </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- 풋살 -->
+            <div class="bet_rule futsal" style="display: none;">
+                <div class="tit_box">
+                    <p>대상 리그</p>
+                    <span>수퍼리가, 프리메라 디비전, 세리에A 등 전세계 풋살 리그</span>
+                </div>
+                <div class="tit_box">
+                    <p>크로스 베팅 규정</p>
+                    <span>동일 경기 및 다른 경기를 조합하여 베팅 가능</span>
+                    <span>스페셜 타입은 조합하여 베팅 불가능</span>
+                </div>
+                <div class="tit">게임 타입</div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th> 승/무/패 </th>
+                            <td> (승/무/패)를 예측하는 게임 </td>
+                        </tr>
+                        <tr>
+                            <th> 언더/오버 </th>
+                            <td> 양팀 득점 총 합이 제시된 기준 점수보다 낮은 값(언더)인지 큰 값(오버)인지 예측하는 게임 </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+    </main>
+    <!-- 메인자리 -->
+    <footer>
+        <div class="container">
+            <div class="ftbtn">
+                <button class="logout" onclick="location.href='//portal.dev.spolive.com/bbs/logout.php?url=//sports.portal.dev.spolive.com'">
+                    <span class="list-i-ftlogout"></span>로그아웃
+                </button>
+                <a href="/?device=pc" class="pcview_btn">
+                    <span class="list-i-ftpc"></span>PC화면
+                </a>
+            </div>
+            <h2>
+                <span class="list-i-ftlogo"></span>
+            </h2>
+            <p>ⓒ 2015 - 2020, SPOLIVE Corp.All rights reserved.</p>
+        </div>
+    </footer>
+    <nav>
+        <ul>
+            <li class="nvmenu">
+                <button>
+                    <span class="list-i-nvmanu"></span>
+                    <p>전체메뉴</p>
+                    <span class="new">18</span>
+                </button>
+            </li>
+            <li class="nvbetcart">
+                <button>
+                    <span class="list-i-nvcart"></span>
+                    <p>베팅카트</p>
+                    <span class="new">0</span>
+                </button>
+            </li>
+            <li class="nvmylog">
+                <button>
+                    <span class="list-i-nvlog"></span>
+                    <p>베팅내역</p>
+                    <span class="new">0</span>
+                </button>
+            </li>
+            <li class="nvchat">
+                <button>
+                    <span class="list-i-nvchat"></span>
+                    <p>채팅창</p>
+                    <span class="new">0</span>
+                </button>
+            </li>
+            <li onclick="wopen('/page/payment/payment.php', 'payment', '768', '1000');">
+                <a href="#.">
+                    <span class="list-i-nvcharge"></span>
+                    <p>충전</p>
+                    <span class="new">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/plugins.js"></script>
+    <script src="./js/sly.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/spolive-0.0.1.js"></script>
+</body>
+
+</html>

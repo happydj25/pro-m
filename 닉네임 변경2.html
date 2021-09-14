@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta charset="utf-8">
+    <meta name="ROBOTS" content="INDEX,FOLLOW">
+    <meta name="GOOGLEBOT" content="INDEX,NOFOLLOW">
+    <meta name="ROBOTS" content="NOARCHIVE">
+    <meta name="GOOGLEBOT" content="NOARCHIVE">
+
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta property="og:type" content="website">
+    <title>SPOLIVE PRO</title>
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/m_livegame.css">
+
+    <link rel="shortcut icon" href="./img/icons/favicon.ico">
+    <link rel="apple-touch-icon" href="./img/icons/favicon_72.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/icons/favicon_72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/icons/favicon_114.png">
+</head>
+
+<body class="body_index">
+    <header>
+        <div class="container">
+            <button class="menu">
+                <span class="list-i-menu"></span>
+            </button>
+            <h1 class="logo">
+                <a href="main.html">
+                    <span class="list-i-logo"></span>
+                </a>
+            </h1>
+            <ul class="hdul">
+                <li onclick="wopen('/page/payment/payment.php', 'payment', '768', '1000');">
+                    <a href="" title="충전"><span class="list-i-charge"></span></a>
+                </li>
+                <li>
+                    <button class="mydata" title="내정보">
+                        <span class="list-i-mydata"></span>
+                    </button>
+                </li>
+                <li>
+                    <button class="logout" onclick="location.href='//portal.dev.spolive.com/bbs/logout.php?url=//sports.portal.dev.spolive.com'" title="로그아웃">
+                        <span class="list-i-logout"></span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="betitem hidden">
+        <div class="tit">
+            <p class="twtxt">베팅아이템</p>
+            <button class="xbtn">
+                <span class="list-i-xbtn"></span>
+            </button>
+        </div>
+        <div id="mk_item_layer_betslip">Loading.</div>
+    </div>
+
+    <div class="navmu_wrap hidden">
+
+        <div class="login hidden">
+
+            <div class="tit">
+                <p class="twtxt">로그인</p>
+                <button class="xbtn">
+                    <span class="list-i-xbtn"></span>
+                </button>
+            </div>
+            <form name="flogin" action="//portal.dev.spolive.com/bbs/login_check.php" method="post">
+                <div>
+                    <input type="text" name="mb_id" placeholder="아이디를 입력해주세요." required="">
+                    <input type="password" name="mb_password" placeholder="비밀번호를 입력해주세요." required="">
+                    <button type="submit" class="ybtn">로그인</button>
+                    <a href="//portal.dev.spolive.com/bbs/register.php" class="ybtn2">회원가입</a>
+                </div>
+                <div class="find">
+                    <a href="//portal.dev.spolive.com/bbs/password_lost.php">아이디 찾기</a>
+                    <a href="//portal.dev.spolive.com/bbs/password_lost.php">비밀번호 찾기</a>
+                </div>
+                <div class="snslogin">
+                    <p class="twtxt">다른 로그인 방법</p>
+                    <a href="">
+                        <span class="list-i-naver"></span>
+                        네이버 로그인
+                    </a>
+                    <a href="">
+                        <span class="list-i-kakko"></span>
+                        카카오 로그인
+                    </a>
+                    <a href="">
+                        <span class="list-i-fbook"></span>
+                        페이스북 로그인
+                    </a>
+                    <a href="">
+                        <span class="list-i-google"></span>
+                        구글 로그인
+                    </a>
+                </div>
+            </form>
+        </div>
+
+        <div class="mydata hidden">
+            <div class="tit">
+                <p class="twtxt">내정보</p>
+                <button class="xbtn">
+                    <span class="list-i-xbtn"></span>
+                </button>
+            </div>
+            <div class="container">
+                <div class="mydata">
+                    <div class="tit">
+                        <span class="list-i-myicon"></span>
+                        기본정보
+                        <button class="inven_btn" onclick="location.href='gold-market-inventory.html'">인벤토리</button>
+                    </div>
+                    <div>
+                        <span class="txt">랭킹</span>
+                        <span>-</span>
+                    </div>
+                    <div>
+                        <span class="txt">닉네임</span>
+                        <button class="btn1" onclick="location.href='gold-market.html'">변경</button>
+                        <span class="name">자낳괴나돈조심</span>
+                    </div>
+                    <div class="business">
+                        <span class="list-i-business"></span>
+                        <span class="num">D-0</span>
+                    </div>
+                    <div class="first">
+                        <span class="list-i-first"></span>
+                        <span class="num">D-345</span>
+                    </div>
+                </div>
+
+                <div class="mygold">
+                    <div class="tit">
+                        <span class="list-i-mygold"></span>
+                        보유재화
+                    </div>
+                    <div>
+                        <span class="txt">껨코인</span>
+                        <button class="btn1" onclick="wopen('/page/payment/payment.php', 'payment', '768', '1000');">충전</button>
+                        <span class="num"><span class="list-i-coin"></span>0</span>
+                    </div>
+                    <div>
+                        <span class="txt">골드</span>
+                        <button class="btn1" onclick="location.href='/contents/list.php?ca_id=50'">구매</button>
+                        <span class="num"><span class="list-i-gold"></span>35,999,910</span>
+                    </div>
+                    <div class="question">
+                        <span class="txt">마일리지</span>
+                        <span class="list-i-subtxt"></span>
+                        <div class="txt qpopup hidden">
+                            <p class="tit">마일리지</p>
+                            <span class="zone">
+                                게임 플레이를 통해 무료로 제공되는 재화입니다.<br>
+                                마일리지는 게임 참여 후 적중 실패 시 베팅금액의 0.001%만큼 적립 받습니다.
+                                획득한 마일리지는 골드마켓에서<br>아이템 구매 시 사용할 수 있습니다.<br>
+                            </span>
+                        </div>
+                        <span class="num"><span class="list-i-mile"></span>0</span>
+                    </div>
+                </div>
+
+
+                <div class="wrank">
+                    <div class="tit">
+                        <span class="list-i-wrank"></span>
+                        주간전적
+                        <label for="weekly_record" class="onoff_btn">
+                            <input type="checkbox" name="weekly_record" id="weekly_record">
+                            <span class="list-i-mdonoff"></span>
+                        </label>
+                    </div>
+                    <div>
+                        <span class="txt">적중건수</span>
+                        <span class="num">0</span>
+                    </div>
+                    <div>
+                        <span class="txt">최대 당첨 배당</span>
+                        <span class="num">0</span>
+                    </div>
+                    <div>
+                        <span class="txt">최대 당첨 골드</span>
+                        <span class="num">0</span>
+                    </div>
+                </div>
+
+                <div class="mrank">
+                    <div class="tit">
+                        <span class="list-i-mrank"></span>
+                        월간전적
+                        <label for="monthly_record" class="onoff_btn">
+                            <input type="checkbox" name="monthly_record" id="monthly_record">
+                            <span class="list-i-mdonoff"></span>
+                        </label>
+                    </div>
+                    <div>
+                        <span class="txt">적중건수</span>
+                        <span class="num">0</span>
+                    </div>
+                    <div>
+                        <span class="txt">최대 당첨 배당</span>
+                        <span class="num">0</span>
+                    </div>
+                    <div>
+                        <span class="txt">최대 당첨 골드</span>
+                        <span class="num">0</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="menu hidden">
+            <div class="tit">
+                <p class="twtxt">전체 메뉴</p>
+                <button class="xbtn"><span class="list-i-xbtn"></span></button>
+            </div>
+            <ul class="game">
+                <li>
+                    <a href="https://www.spolive.com/">
+                        <div class="img">
+                            <img src="./img/game/menu_thum01.png" alt="">
+                        </div>
+                        <p>스포라이브</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="img">
+                            <img src="./img/game/menu_thum02.png" alt="">
+                        </div>
+                        <p>타이젬 바둑</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="img">
+                            <img src="./img/game/munu_thum03.png" alt="">
+                        </div>
+                        <p>해피라이브</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="gnb">
+                <ul>
+                    <li>
+                        <button type="button">
+                            <span class="list-i-run"></span>
+                            스포츠게임
+                            <span class="list-i-rarr"></span>
+                        </button>
+                        <ul>
+                            <li><a href="sport-game.html">스포츠게임</a></li>
+                            <li><a href="live-game.html">라이브게임</a></li>
+                            <li><a href="bet-rules.html">베팅규정</a></li>
+                            <li><a href="match-schedule.html">경기일정</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button">
+                            <span class="list-i-murank"></span>
+                            랭킹
+                            <span class="list-i-rarr"></span>
+                        </button>
+                        <ul>
+                            <li><a href="rank.html">주간랭킹</a></li>
+                            <li><a href="rank.html">월간랭킹</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" onclick="location.href='team-rank.html'">
+                            <span class="list-i-murank"></span>
+                            종목별 팀 순위
+                            <span class="list-i-rarr"></span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button">
+                            <span class="list-i-community"></span>
+                            커뮤니티
+                            <span class="list-i-rarr"></span>
+                        </button>
+                        <ul>
+                            <li><a href="board.html">자유게시판</a></li>
+                            <li><a href="board.html">분석게시판</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button">
+                            <span class="list-i-nnews"></span>
+                            새소식
+                            <span class="list-i-rarr"></span>
+                        </button>
+                        <ul>
+                            <li><a href="noti.html">공지사항</a></li>
+                            <li><a href="noti.html">업데이트</a></li>
+                            <li><a href="event.html">이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" onclick="location.href='gold-market.html'">
+                            <span class="list-i-gmk"></span>
+                            골드마켓
+                            <span class="list-i-rarr"></span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button">
+                            <span class="list-i-make"></span>
+                            제작
+                            <span class="list-i-rarr"></span>
+                        </button>
+                        <ul>
+                            <li><a href="make.html">합성</a></li>
+                            <li><a href="make.html">강화</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="betcart hidden">
+            <div class="container">
+                <div class="more_btn gtxt">
+                    전체보기
+                    <span class="list-i-betcartmore"></span>
+                </div>
+                <div class="tit">
+                    <button class="gbtn all_cancel_btn">전체삭제</button>
+                    <p class="twtxt">베팅카트<span class="btxt betCartCnt">(0)</span></p>
+                    <button class="xbtn"><span class="list-i-xbtn"></span></button>
+                </div>
+                <ul class="cart_list bet_list">
+                    <li>경기를 선택해주세요.</li>
+                </ul>
+                <div class="mygold">
+                    <span>보유골드<a href=""><span class="list-i-more"></span></a></span>
+                    <span>35,999,910</span>
+                </div>
+                <div class="gross_dividend">
+                    <span>총 배당률</span>
+                    <span id="odd_total">1</span>
+                </div>
+                <div class="estimated_gold">
+                    <span>예상골드</span>
+                    <span id="winspogold_total">0</span>
+                </div>
+                <div class="myitem">
+                    <span>보유 아이템</span>
+                    <button class="bbtn">베팅아이템 적용하기</button>
+                </div>
+                <div class="gold_btn expect_gold">
+                    <button class="gbtn2">1,000,000</button>
+                    <button class="gbtn2">3,000,000</button>
+                    <button class="gbtn2">5,000,000</button>
+                    <button class="gbtn2">10,000,000</button>
+                    <button class="gbtn2">30,000,000</button>
+                    <button class="gbtn2">50,000,000</button>
+                    <button class="gbtn2">초기화</button>
+                    <button class="bbtn max_btn" id="btnMax" name="btnMinMax">MAX</button>
+                </div>
+                <input type="text" id="seedgold" name="seedgold" placeholder="배팅골드를 입력해 주세요." value="10,000">
+                <button class="ybtn btn_batting">베팅하기</button>
+                <label for="cart_keep" class="onoff_btn">
+                    카트유지
+                    <input type="checkbox" name="cart_keep" id="cart_keep">
+                    <span class="list-i-bconoff"></span>
+                </label>
+            </div>
+
+
+
+
+
+        </div>
+        <div class="mylog hidden">
+
+            <div class="betlog_dlookup" style="display:none;">
+                <input type="date" name="" id="">
+                <input type="date" name="" id="">
+                <button class="dlookup_btn"></button>
+            </div>
+
+            <div class="container">
+                <button class="xbtn"><span class="list-i-xbtn"></span></button>
+                <div class="mylog_tab">
+                    <ul class="tit cancel_change_btn">
+                        <li class="on" onclick="get_draw_list();click_mybet_btn('change_mybet_btn');" id="change_mybet_btn">베팅내역</li>
+                        <li onclick="MyDrawList();click_mybet_btn('change_mybet_cancel_btn');" id="change_mybet_cancel_btn">베팅취소</li>
+                    </ul>
+
+                    <div id="mybet_layer">
+                        <ul class="tit change_btn change_list_btn" id="list_chage_btn_ul">
+                            <li data-id="mylog_sport" class="on" data-type="">전체</li>
+                            <li data-id="mylog_sport" data-type="SRS">스포츠</li>
+                            <li data-id="mylog_live" data-type="LIVE">라이브</li>
+                        </ul>
+                        <div id="mylog_sport" class="conBox on">
+                            <div class="period datebtn_wrap">
+                                <button class="on" data-type="today">오늘</button>
+                                <button data-type="week" data-value="1">1주일</button>
+                                <button data-type="month" data-value="1">1개월</button>
+                                <button data-type="month" data-value="3">3개월</button>
+                            </div>
+                            <div id="my_hit_list">
+                                <div class="betlog_box_blank">내역이 존재하지 않습니다.</div>
+                            </div>
+                            <div class="page_num memo"></div>
+                        </div>
+                    </div>
+                    <div id="mybet_cancel_layer" style="display: none;">
+                        <div class="mybet_top">
+                            <label for="all_select">
+                                <label><input type="checkbox" class="all_cancel_check">
+                                    전체선택</label>
+                            </label>
+                            <button class="select_bet_xbtn mybet-select-cancel">선택 베팅 개별 취소</button>
+                            <button class="select_bet_xbtn choice_cancel_btn">선택 베팅 전체 취소</button>
+                        </div>
+                        <ul class="mybet_list" id="mybet_cancel_list">
+                            <li class="null_betlist">
+                                최근 베팅한 내역이 없습니다.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="chat hidden">
+            <div class="tit">
+                <button class="chatshar"><span class="list-i-chatshar btn_bet"></span></button>
+                <!-- on으로 확성기 기능 on off -->
+                <button class="speaker"><span class="list-i-speaker"></span></button>
+                <button class="chatset"><span class="list-i-chatset"></span></button>
+
+                <div class="hidden">
+                    <button class="on"><span class="chat-i-scr" data-type="scroll"></span></button>
+                    <button><span class="chat-i-usarm" data-type="join"></span></button>
+                </div>
+
+
+                <p class="twtxt">채팅</p>
+                <button class="xbtn"><span class="list-i-xbtn"></span></button>
+            </div>
+            <div class="container chat_box">
+                <ul class="chat_list chat_content">
+                    <li class="game_master">
+                        <span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>
+                            gameadmin
+                        </span>🤢🤢🤢🤢🤢🤢🤢🤢😚😚😚🙂🤔🤩
+                    </li>
+                    <li class=""><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="champot19" data-nick="뽀뽀야럽" class="memo"></li>
+                            </ul>
+                            뽀뽀야럽
+                        </span>aa</li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="fkxp104" data-nick="fkxp104" class="memo"></li>
+                            </ul>fkxp104
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=5::SRS/14949','_blank',840,252)">승무패 9.44 대기중 <span class="list-i-betmore"></span></a></li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="fkxp104" data-nick="fkxp104" class="memo"></li>
+                            </ul>fkxp104
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=5::SRS/14949','_blank',840,252)">승무패 9.44 대기중 <span class="list-i-betmore"></span></a></li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>
+                            gameadmin
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=5::SRS/15045','_blank',840,212)">승무패 2.05 대기중 <span class="list-i-betmore"></span></a></li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="baaaba" data-nick="보로봉봉" class="memo"></li>
+                            </ul>보로봉봉
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=5::SRS/15047','_blank',840,372)">
+                            승무패 4.14 대기중
+                            <span class="list-i-betmore"></span></a></li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="champot19" data-nick="뽀뽀뽀친구" class="memo"></li>
+                            </ul>뽀뽀뽀친구
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=5::SRS/15066','_blank',840,332)">승무패 236079 대기중 <span class="list-i-betmore"></span></a></li>
+                    <li class=""><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="seojwfan9" data-nick="fewwegwwee" class="memo"></li>
+                            </ul>fewwegwwee
+                        </span>ㅇㄹㄹㄷ</li>
+                    <li class="game_master"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span>sdfsdfsdfsdf</li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="liveTest31" data-nick="liveTest31" class="memo"></li>
+                            </ul>liveTest31
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=3:63:49478','_blank',840,94)">점프볼 0 적중실패 <span class="list-i-betmore"></span></a></li>
+                    <li class=""><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="baaaba" data-nick="보로봉봉" class="memo"></li>
+                            </ul>보로봉봉
+                        </span>djkssydfsajfa</li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=5::SRS/15060','_blank',840,172)">승무패 1.68 대기중 <span class="list-i-betmore"></span></a></li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=3:61:40900','_blank',840,94)">코인토스 1.95 적중성공
+                            <span class="list-i-betmore"></span></a></li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=3:63:49940','_blank',840,94)">점프볼 0 적중실패 <span class="list-i-betmore"></span></a></li>
+                    <li class="game_master"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span>ㄴㅇㄻㄴㅇㄻㅇㄹ</li>
+                    <li class="game_master"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span>ㄴㅇㄹㄴㅇㄹ</li>
+                    <li class="game_master"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span>ㄴㅇㄻㄻㄴㄹㅇㅁㄴㄹㅇ</li>
+                    <li class=""><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="fkxp104" data-nick="라떼" class="memo"></li>
+                            </ul>라떼
+                        </span>아아아앙</li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=5::SRS/14690','_blank',840,252)">승무패 11.3 적중특례 <span class="list-i-betmore"></span></a></li>
+                    <li class=""><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="fkxp104" data-nick="라떼" class="memo"></li>
+                            </ul>라떼
+                        </span>ㅇ</li>
+                    <li class=""><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="fkxp104" data-nick="라떼" class="memo"></li>
+                            </ul>라떼
+                        </span>test</li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=5::SRS/15218','_blank',840,172)">승무패 2.05 대기중 <span class="list-i-betmore"></span></a></li>
+                    <li class=""><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="fkxp104" data-nick="라떼" class="memo"></li>
+                            </ul>라떼
+                        </span>test</li>
+                    <li class="myChat "><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="shemf1004" data-nick="자낳괴나돈조심" class="memo"></li>
+                            </ul>자낳괴나돈조심
+                        </span>asdf</li>
+                    <li class="myChat "><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="shemf1004" data-nick="자낳괴나돈조심" class="memo"></li>
+                            </ul>자낳괴나돈조심
+                        </span>sdfsdfsdfsd</li>
+                    <li class="myChat "><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="shemf1004" data-nick="자낳괴나돈조심" class="memo"></li>
+                            </ul>자낳괴나돈조심
+                        </span>sd</li>
+                    <li class="myChat "><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="shemf1004" data-nick="자낳괴나돈조심" class="memo"></li>
+                            </ul>자낳괴나돈조심
+                        </span>fd</li>
+                    <li class="myChat "><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="shemf1004" data-nick="자낳괴나돈조심" class="memo"></li>
+                            </ul>자낳괴나돈조심
+                        </span>d</li>
+                    <li class="myChat "><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="shemf1004" data-nick="자낳괴나돈조심" class="memo"></li>
+                            </ul>자낳괴나돈조심
+                        </span>d</li>
+                    <li class="myChat "><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="shemf1004" data-nick="자낳괴나돈조심" class="memo"></li>
+                            </ul>자낳괴나돈조심
+                        </span>d</li>
+                </ul>
+                <div class="chat_btm">
+                    <input type="text" name="messagePut" id="messagePut" autocomplete="off" placeholder="대화 내용을 입력해 주세요.">
+                    <button class="off">전송</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div id="layer_message"></div>
+
+    <!-- 메인자리 -->
+
+    <main>
+        <ul class="inventory_list">
+
+            <li class="nick_change">
+                <div class="img">
+                    <img src="./img/item/item_7.png" alt="닉네임 변경">
+                </div>
+                <div class="txt">
+                    <div>
+                        <span class="twtxt">닉네임 변경</span>
+                        <span class="num">175</span>
+                    </div>
+                    <span class="gtxt">
+                    닉네임을 변경할 수 있는 아이템 입니다.<br>
+* 닉네임은 한글, 영문, 숫자를 포함한 2~13자 까지 입력할 수 있습니다.                    </span>
+                </div>
+                <button class="bbtn2">사용하기</button>
+            </li>
+            <li>
+                <div class="img">
+                    <img src="./img/item/item10.png" alt="7폴더 배당권">
+                </div>
+                <div class="txt">
+                    <div>
+                        <span class="twtxt">폴더 강화석 조각</span>
+                        <span class="num">11</span>
+                    </div>
+                    <span class="gtxt">
+                        <p>50개가 모이면 ‘폴더 강화석’으로 합성이 가능하다.</p>
+                    </span>
+                </div>
+                <button class="bbtn2" onclick="use_action('piece', 'f-forti-piece', '526508');">사용하기</button>
+            </li>
+            <li>
+                <div class="img">
+                    <img src="./img/item/item9.png" alt="7폴더 배당권">
+                </div>
+                <div class="txt">
+                    <div>
+                        <span class="twtxt">7폴더 배당권(1.05)</span>
+                        <span class="num">0</span>
+                    </div>
+                    <span class="gtxt">
+                        <p>7폴더 이상 경기 베팅 시 사용하면 총 배당률이 추가된다.</p>
+                    </span>
+                </div>
+                <button class="bbtn2" onclick="use_action('folder-bet', 'folder7', '525885');" data-odds="1.05" data-folder="7" data-count="0">사용하기</button>
+            </li>
+            <li>
+                <div class="img">
+                    <img src="./img/item/item3.png" alt="7폴더 배당권">
+                </div>
+                <div class="txt">
+                    <div>
+                        <span class="twtxt">2폴더 배당권(1.08)</span>
+                        <span class="num">1</span>
+                    </div>
+                    <span class="gtxt">
+                        <p>7폴더 이상 경기 베팅 시 사용하면 총 배당률이 추가된다.</p>
+                    </span>
+                </div>
+                <button class="bbtn2" onclick="use_action('folder-bet', 'folder7', '525887');" data-odds="1.08" data-folder="2" data-count="1">사용하기</button>
+            </li>
+            <li>
+                <div class="img">
+                    <img src="./img/item/item4.png" alt="7폴더 배당권">
+                </div>
+                <div class="txt">
+                    <div>
+                        <span class="twtxt">7폴더 배당권 조각</span>
+                        <span class="num">28</span>
+                    </div>
+                    <span class="gtxt">
+                        <p>50개가 모이면 ‘7폴더 배당권’으로 합성이 가능하다.</p>
+                    </span>
+                </div>
+                <button class="bbtn2" onclick="use_action('piece', 'folder7-piece', '525875');">사용하기</button>
+            </li>
+            <li>
+                <div class="img">
+                    <img src="./img/item/item9.png" alt="7폴더 배당권">
+                </div>
+                <div class="txt">
+                    <div>
+                        <span class="twtxt">확성기</span>
+                        <span class="num">-7</span>
+                    </div>
+                    <span class="gtxt">
+                        <p>채팅창에 외치기 메시지를 보낼 수 있다.</p>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="img">
+                    <img src="./img/item/item4.png" alt="7폴더 배당권">
+                </div>
+                <div class="txt">
+                    <div>
+                        <span class="twtxt">낙첨수수료 0.2%</span>
+                        <span class="num">30</span>
+                    </div>
+                    <span class="gtxt">
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="img">
+                    <img src="./img/item/item3.png" alt="7폴더 배당권">
+                </div>
+                <div class="txt">
+                    <div>
+                        <span class="twtxt">2폴더 배당권(1.02)</span>
+                        <span class="num">1</span>
+                    </div>
+                    <span class="gtxt">
+                        <p>2폴더 이상 경기 베팅 시 사용하면 총 배당률이 추가된다.</p>
+                    </span>
+                </div>
+                <button class="bbtn2" onclick="use_action('folder-bet', 'folder2', '525867');" data-odds="1.02" data-folder="2" data-count="1">사용하기</button>
+            </li>
+            <li>
+                <div class="img">
+                    <img src="./img/item/item17.png" alt="7폴더 배당권">
+                </div>
+                <div class="txt">
+                    <div>
+                        <span class="twtxt">개척의 열쇠</span>
+                        <span class="num">4</span>
+                    </div>
+                    <span class="gtxt">
+                        <p>개척의 열쇠</p>
+                        <span>보물상자를 열 수 있는 열쇠로 랜덤하게 더 많은 아이템을 획득할 수 있다.</span>
+                        <br><br>
+                    </span>
+                </div>
+                <button class="bbtn2" onclick="use_action('openbox', '1590405138', '525858');">사용하기</button>
+            </li>
+            <li>
+                <div class="img">
+                    <img src="./img/item/item4.png" alt="7폴더 배당권">
+                </div>
+                <div class="txt">
+                    <div>
+                        <span class="twtxt">시작의 열쇠</span>
+                        <span class="num">37</span>
+                    </div>
+                    <span class="gtxt">
+                        <p>시작의 열쇠</p>
+                        <span>보물상자를 열 수 있는 열쇠로 랜덤하게 아이템을 획득할 수 있다.</span><br><br>
+                    </span>
+                </div>
+                <button class="bbtn2" onclick="use_action('openbox', '1590405252', '525777');">사용하기</button>
+            </li>
+            <li>
+                <div class="img">
+                    <img src="./img/item/item12.png" alt="7폴더 배당권">
+                </div>
+                <div class="txt">
+                    <div>
+                        <span class="twtxt">분석 이용권</span>
+                        <span class="num">1</span>
+                    </div>
+                    <span class="gtxt">
+                        <p>분석 1회 사용 가능</p>
+                    </span>
+                </div>
+            </li>
+
+        </ul>
+
+        <div id="reserve">
+            <div id="ShowNickName" class="ShowNickName" style="display: none;">
+                <div class="title">
+                    <p class="center tit">닉네임</p>
+                    <div id="DistributorSkin2" class="DistributorSkin2">
+                        <ul>
+                            <li>아이템을 사용하여 닉네임을 변경 하시겠습니까?</li>
+                            <li> </li>
+                            <li>
+                                <a href="#" class="btn2" onclick="name_change_show('#ShowNickName2');">확인</a>
+                                <a href="#" class="btn" onclick="name_change_hide('#ShowNickName');name_change_hide('#ShowNickName2');">취소</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="ShowNickName2" class="ShowNickName" style="display: block;">
+                <form name="fitem" method="post" id="fitem" action="/contents/ajax_ItemUsed.php?mode=nicknameupdate" onsubmit="return nick_change_submit(this);">
+                    <input type="hidden" name="it_no" value="">
+                    <input type="hidden" name="mb_no" value="3">
+                    <input type="hidden" name="mb_id" value="game_admin">
+                    <input type="hidden" name="ca_id" value="202090">
+                <div id="DistributorSkin" class="DistributorSkin result">
+                    <p class="center tit">닉네임</p>
+                    <ul>
+                        <li><input type="text" name="mb_nick" id="reg_mb_nick" required="" maxlength="12"></li>
+                        <li><span id="msg_mb_nick"></span></li>
+                        <li>변경하실 닉네임을 입력 한 후 확인을 선택 해 주십시오.<br>닉네임은 최소 2~12자 한글,영문,숫자 가능</li>
+                        <li>
+                            <input type="submit" value="확인" id="nick_change_btn_submit" class="ChangeLink btn2">
+                            <a href="#retrun false" class="btn_gradient_gray btn" onclick="name_change_hide('#ShowNickName');name_change_hide('#ShowNickName2');">취소</a>
+                        </li>
+                    </ul>
+                </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div id="DistributorSkin" class="result"></div>
+
+    </main>
+
+
+
+    <!-- 메인자리 -->
+    <footer>
+        <div class="container">
+            <div class="ftbtn">
+                <button class="logout" onclick="location.href='//portal.dev.spolive.com/bbs/logout.php?url=//sports.portal.dev.spolive.com'">
+                    <span class="list-i-ftlogout"></span>로그아웃
+                </button>
+                <a href="/?device=pc" class="pcview_btn">
+                    <span class="list-i-ftpc"></span>PC화면
+                </a>
+            </div>
+            <h2>
+                <span class="list-i-ftlogo"></span>
+            </h2>
+            <p>ⓒ 2015 - 2020, SPOLIVE Corp.All rights reserved.</p>
+        </div>
+    </footer>
+    <nav>
+        <ul>
+            <li class="nvmenu">
+                <button>
+                    <span class="list-i-nvmanu"></span>
+                    <p>전체메뉴</p>
+                    <span class="new">18</span>
+                </button>
+            </li>
+            <li class="nvbetcart">
+                <button>
+                    <span class="list-i-nvcart"></span>
+                    <p>베팅카트</p>
+                    <span class="new">0</span>
+                </button>
+            </li>
+            <li class="nvmylog">
+                <button>
+                    <span class="list-i-nvlog"></span>
+                    <p>베팅내역</p>
+                    <span class="new">0</span>
+                </button>
+            </li>
+            <li class="nvchat">
+                <button>
+                    <span class="list-i-nvchat"></span>
+                    <p>채팅창</p>
+                    <span class="new">0</span>
+                </button>
+            </li>
+            <li onclick="wopen('/page/payment/payment.php', 'payment', '768', '1000');">
+                <a href="#.">
+                    <span class="list-i-nvcharge"></span>
+                    <p>충전</p>
+                    <span class="new">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/plugins.js"></script>
+    <script src="./js/sly.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/spolive-0.0.1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,10479 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, form, fieldset, p, button, pre {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 180%;
+    font-weight: 300;
+}
+
+html{
+    background: #051a25;
+}
+
+td, th {
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 300;
+}
+
+a, span {
+    color: inherit;
+    /* font-size: inherit; */
+    font-weight: inherit;
+    line-height: inherit;
+    text-decoration: none;
+}
+
+body {
+    height: 100%;
+    position: relative;
+    overflow-y: scroll;
+    word-break: keep-all;
+}
+
+body.scroff {
+    overflow-y: hidden;
+}
+
+img, fieldset, iframe {
+    border: 0 none;
+}
+
+li {
+    list-style: none;
+}
+
+input, select, button, textarea {
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    /* box-shadow: none !important; */
+}
+
+input, select {
+    padding: 0 10px;
+}
+
+input:focus,
+select:focus,
+button:focus,
+option:focus {
+    /* border: 0; */
+    outline: 0;
+    /* background: none; */
+}
+
+select {
+    width: 100px;
+    height: 30px;
+    padding: 3px;
+    line-height: 55px;
+    border-radius: 4px;
+    background: #071724;
+    border-color: #071724 !important;
+    color: #c9d2d9;
+}
+
+.inp[type="file"] {
+    padding: 0;
+}
+
+.inp[type="file"]::-webkit-file-upload-button {
+    height: 100%;
+}
+
+textarea {
+    padding: 10px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: top;
+}
+
+em, address {
+    font-style: normal;
+}
+
+label, button {
+    cursor: pointer;
+}
+
+button {
+    background: none;
+    border: none;
+    vertical-align: top;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+legend {
+    *width: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+
+pre {
+    white-space: pre-line;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+sup {
+    font-size: 0.5%;
+}
+
+.gtxt {
+    color: #9fb6c4;
+}
+
+.btxt {
+    color: #1a8dff;
+}
+
+.btxt2 {
+    color: #6196f4;
+}
+
+.ytxt {
+    color: #ffae0a !important;
+}
+
+.ybtn {
+    text-align: center;
+    color: #000;
+    border-radius: 3px;
+    background: #ffae0a;
+    font-weight: 500;
+}
+
+.ybtn2 {
+    padding: 0 5px;
+    text-align: center;
+    color: #ffae0a;
+    border-radius: 3px;
+    border: 1px solid #ffae0a;
+}
+
+.bbtn {
+    text-align: center;
+    color: #fff;
+    border: 1px solid #4b82a9;
+    border-radius: 3px;
+    background: #4b82a9;
+}
+
+.bbtn2 {
+    padding: 0 5px;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+    background: #3592d7;
+}
+
+.rbtn {
+    padding: 0 5px;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+    background: #d73d35;
+}
+
+.gbtn {
+    text-align: center;
+    color: #b7c7d4;
+    border: 1px solid #b7c7d4;
+    border-radius: 3px;
+    padding: 0 5px;
+}
+
+.gbtn2 {
+    text-align: center;
+    color: #98b5c7;
+    border: 1px solid #98b5c7;
+}
+
+.gbtn3 {
+    text-align: center;
+    color: #fff;
+    background: #747474;
+    border-radius: 50px;
+}
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*commom끝*/
+body {
+    background-color: #1a2c38;
+}
+
+.cb:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.twtxt {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+/*header*/
+.dim {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    z-index: 11;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    padding: 15px 0;
+    background: #253743;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    border-bottom: 1px solid #2e424d;
+}
+
+header .container span {
+    zoom: .5;
+    margin: 0;
+    padding: 0;
+}
+
+body .menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+body .menu .tit {
+    height: 50px;
+    margin: 10px 0;
+    border-bottom: 1px solid #192b39;
+}
+
+body .menu .game:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+header a,
+footer a {
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+.logo {
+    width: 150px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.hdul:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.hdul {
+    position: absolute;
+    top: 0px;
+    right: 0;
+}
+
+.hdul li {
+    float: left;
+    width: 17px;
+    text-align: center;
+    margin: 0 10px 0 0;
+}
+
+.hdul li:last-child {
+    margin: 0;
+}
+
+.hdul li a {
+    display: block;
+}
+
+/*내정보*/
+.navmu_wrap>.mydata {
+    height: 100% !important;
+    margin: 0 auto !important;
+    padding-bottom: 80px;
+    background: #071724;
+}
+
+.navmu_wrap .mydata>.tit:nth-child(1) {
+    position: relative;
+    font-size: 17px;
+    border-bottom: 1px solid #192b39;
+}
+
+.navmu_wrap .mydata .container .tit {
+    font-size: 15px;
+    border-bottom: 0;
+}
+
+.navmu_wrap .mydata .tit .xbtn {
+    position: absolute;
+    zoom: .7;
+    top: 20px;
+    right: 10px;
+    width: auto;
+    height: auto;
+}
+
+.navmu_wrap .mydata .container>div {
+    padding: 5px 0 10px;
+}
+
+.navmu_wrap .mydata .container>div .num {
+    overflow: hidden;
+    display: inline-block;
+    max-width: 63%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    text-align: right;
+}
+
+.navmu_wrap .mydata .container>div>div {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 0;
+}
+
+.navmu_wrap .mydata .container .wrap>div {
+    padding: 50px 0;
+    border-bottom: 1px solid #1e303e;
+}
+
+.navmu_wrap .mydata span {
+    float: left;
+    color: #fff;
+    text-align: right;
+}
+
+.navmu_wrap .mydata span.txt {
+    text-align-last: left;
+    color: #becedb;
+}
+
+.navmu_wrap .mydata span.num,
+.navmu_wrap .mydata span.name {
+    float: right;
+    text-align: left;
+}
+
+.navmu_wrap .mydata span.num span[class*="list-i"] {
+    margin-top: 13px;
+}
+
+.navmu_wrap .mydata span.list-i-subtxt {
+    float: right;
+    zoom: .7;
+    margin: 2px 0 0 5px !important;
+}
+
+.mydata button {
+    width: 78px;
+    height: 40px;
+    background: #406c8f;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.mydata .tit button {
+    border: 0;
+    background: 0;
+}
+
+.mydata .container>div {
+    border-bottom: 1px solid #1e303e;
+}
+
+.mydata .container button {
+    float: right;
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 13px;
+    margin-top: 4px;
+}
+.mydata .container button.inven_btn {
+    float: right;
+    width: 80px;
+    height: 25px;
+    background: #406c8f;
+    text-align: center;
+    line-height: 25px;
+    font-size: 14px;
+    margin-top: 4px;
+}
+.mydata .list-i-subtxt {
+    float: right;
+}
+
+.mydata div>div:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.mydata .tit span[class*="list-i-my"],
+.mydata .tit .list-i-wrank,
+.mydata .tit .list-i-mrank {
+    margin-top: 11px;
+    zoom: .63;
+}
+
+.mydata .container .tit .onoff_btn {
+    margin-top: 4px;
+}
+
+.mydata .container>div>div>span.txt {
+    float: left;
+}
+
+.mydata .mydata,
+.mydata .mygold,
+.mydata .wrank,
+.mydata .mrank {
+    color: #fff;
+    font-size: 20px;
+}
+
+.mydata .mydata span,
+.mydata .mygold span,
+.mydata .wrank span,
+.mydata .mrank span {
+    margin: 0px 5px 0 0;
+}
+
+.mydata .container .list-i-coin,
+.mydata .container .list-i-gold,
+.mydata .container .list-i-mile {
+    zoom: .7;
+}
+
+input[id="weekly_record"]:checked+.list-i-mdonoff,
+input[id="monthly_record"]:checked+.list-i-mdonoff {
+    background-position: -378px -304px;
+}
+
+input[id="monthly_record"],
+input[id="weekly_record"] {
+    display: none;
+}
+
+/*내정보 끝*/
+nav {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    background: #060e14;
+    z-index: 13;
+}
+
+nav ul li.new button .new,
+.wrap .frame li.active .new {
+    background: #188bff;
+    color: #fff !important;
+}
+
+.frame.gamelist {
+    border-bottom: 0;
+}
+
+.wrap .frame li .new {
+    background: #091016;
+    color: #94afc0 !important;
+}
+
+nav:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+nav li {
+    float: left;
+    width: 20%;
+    padding: 7px 0;
+    text-align: center;
+}
+
+nav li button {
+    position: relative;
+}
+
+nav li .new,
+.wrap .frame li .new {
+    display: none;
+}
+
+nav li.new .new {
+    display: block;
+    position: absolute;
+    top: -8px;
+    right: -3px;
+    width: 25px !important;
+    height: 25px !important;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.wrap .frame li.new .new {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 18px;
+    width: 20px !important;
+    height: 20px !important;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 12px;
+    z-index: 5;
+}
+
+nav li button span,
+nav li a span {
+    zoom: .6;
+}
+
+nav li span {
+    width: 45px !important;
+    height: 45px !important;
+    margin: 5px auto !important;
+    zoom: 0.8;
+}
+
+nav li:nth-child(2) span {
+    width: 52px !important;
+}
+
+nav li p {
+    color: #a8bdcc;
+    font-size: 12px;
+}
+
+nav li.on p {
+    color: #ffbb31;
+}
+
+/*팝업 메뉴*/
+.navmu_wrap {
+    position: fixed;
+    width: 100%;
+    /* height: 100%; */
+    z-index: 10;
+}
+
+.navmu_wrap>.login,
+.navmu_wrap>.mydata,
+.navmu_wrap>.menu,
+.navmu_wrap>.betcart,
+.navmu_wrap>.mylog,
+.navmu_wrap>.chat {
+    overflow: auto;
+    width: 100%;
+    height: 80%;
+    position: fixed;
+    bottom: 0px;
+    margin-bottom: 70px;
+    background: #02070b;
+    z-index: 20;
+}
+
+.navmu_wrap>.betcart {
+    height: 56%;
+}
+
+.navmu_wrap .menu {
+    height: 100%;
+    top: 0;
+    padding-bottom: 80px;
+}
+
+.navmu_wrap div>.tit {
+    position: relative;
+    /* padding: 5px 0; */
+}
+/* .navmu_wrap .mybet_list li .bet_data .tit{
+
+} */
+
+.navmu_wrap div>.tit>div {
+    position: absolute;
+    top: 8px;
+    left: 91px;
+    width: 52px;
+    height: 30px;
+    background: #000000;
+}
+
+.navmu_wrap div>.tit>div button {
+    position: absolute;
+    top: 1px;
+    zoom: 1;
+}
+
+.navmu_wrap div>.tit>div button:first-child {
+    left: 0;
+}
+
+.navmu_wrap div>.tit>div button:last-child {
+    /* top: 2px; */
+    right: 0;
+}
+
+.navmu_wrap div>.tit .xbtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    zoom: .7;
+}
+
+.navmu_wrap div>.tit p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.navmu_wrap>div {
+    margin: 0 auto;
+    background: #071724;
+}
+
+header>div>div,
+.navmu_wrap .menu>div ul>li {
+    padding: 0 10px;
+}
+
+.navmu_wrap .menu>div ul,
+.navmu_wrap .menu>.gnb {
+    padding: 0 !important;
+}
+
+.navmu_wrap .menu>div>ul>li {
+    border-bottom: 1px solid #1e303e;
+}
+
+.navmu_wrap .menu>div>ul>li.on button {
+    color: #ffbb31;
+}
+
+.navmu_wrap .menu .game:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.navmu_wrap .menu .game li {
+    float: left;
+    width: 32.2%;
+    margin: 0 5px 15px 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.navmu_wrap .menu .game li:nth-child(3n) {
+    margin-right: 0;
+}
+
+.navmu_wrap .menu .game li a,
+.navmu_wrap .menu .game li a .img {
+    display: block;
+}
+
+.navmu_wrap .menu .game li a .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.navmu_wrap .menu>.game {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.gnb {
+    background: #071724;
+    border-top: 1px solid #1e303e;
+}
+
+.gnb>li {
+    min-height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #1e303e;
+}
+
+.gnb li button {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+}
+
+.gnb li button .list-i-rarr {
+    float: right;
+    margin: 25px 0 0 0;
+}
+
+.gnb li.on button .list-i-rarr {
+    transform: rotate(90deg);
+}
+
+.gnb li button span {
+    zoom: .55;
+}
+
+.gnb li ul {
+    display: none;
+}
+
+.gnb li.on ul {
+    display: block;
+}
+
+.gnb li ul li {
+    display: block;
+    height: 30px;
+    padding: 0 0 0 30px !important;
+    line-height: 30px;
+    border: 0;
+}
+
+.gnb li ul li:last-child {
+    height: 40px;
+}
+
+.gnb li ul li a {
+    display: block;
+    color: #c2d2e1;
+    font-size: 14px;
+}
+
+.menu .minigame li {
+    float: left;
+    width: 20%;
+}
+
+.menu .minigame li a {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.menu .minigame li a div.img {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.menu .minigame li a p {
+    text-align: center;
+}
+
+.menu .minigame:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.minigame {
+    margin: 5% 2% 0 2%;
+}
+
+/*베팅카트*/
+.betcart .more_btn {
+    cursor: pointer;
+    text-align: center;
+}
+
+.betcart .more_btn span {
+    zoom: .7;
+    margin-bottom: 3px;
+}
+
+.betcart input {
+    border: 1px solid #252c32;
+    background: #0c1115;
+    width: 100%;
+    text-align: right;
+    padding: 5px;
+    margin: 10px 0;
+    color: #c3d0e0;
+}
+
+.betcart input::placeholder {
+    color: #c3d0e0;
+}
+
+.betcart .gold_btn button {
+    width: 24.1%;
+    line-height: 35px;
+    font-size: 13px;
+}
+
+.betcart .tit {
+    position: relative;
+    margin-top: 10px;
+}
+
+.betcart .tit button {
+    position: absolute;
+    display: inline-block;
+    top: 3px;
+    margin-top: 6px;
+}
+
+.betcart .tit button:last-child {
+    top: 10px;
+    right: 0;
+    zoom: .7;
+}
+
+.betcart button.ybtn {
+    width: 100%;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.betcart .container>div:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.betcart .container .myitem {
+    margin-bottom: 15px;
+}
+
+.betcart .container .myitem button {
+    padding: 0 5px;
+    font-size: 14px;
+}
+
+.betcart .container .bbtn,
+.betcart .container span:nth-child(2) {
+    float: right;
+}
+
+.betcart .container .gold_btn button:nth-child(n+5) {
+    margin-top: 5px;
+}
+
+.betcart .container .gold_btn .bbtn {
+    float: none;
+    border-radius: 0;
+}
+
+.betcart .container .mygold .list-i-more {
+    zoom: .6;
+    margin-left: 5px;
+}
+
+.mygold span:nth-child(2),
+.gross_dividend span:nth-child(2),
+.estimated_gold span:nth-child(2) {
+    max-width: 70%;
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    text-align: right;
+}
+
+.cart_list {
+    max-height: 250px;
+    margin: 10px 0;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.cart_list li {
+    position: relative;
+    display: block;
+    height: 62px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #fdbb27;
+}
+
+.cart_list li .left {
+    overflow: hidden;
+    float: left;
+    width: 70%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.cart_list li .left .wtxt {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.cart_list li .right {
+    float: right;
+    line-height: 50px;
+}
+
+.cart_list li:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.cart_list li .xbtn {
+    position: absolute;
+    top: -2px;
+    right: -4px;
+    zoom: .6;
+}
+
+.cart_list li div,
+.cart_list li p,
+.cart_list li span {
+    font-size: 14px;
+}
+
+.cart_list li .left .ytxt {
+    float: none;
+    text-align: left;
+    font-weight: normal !important;
+}
+
+.cart_list li .ytxt {
+    color: #fdbb27;
+    font-weight: 500;
+}
+
+.onoff_btn {
+    float: right;
+    margin-top: 10px;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.onoff_btn span {
+    margin-left: 5px;
+}
+
+input[id="cart_keep"]:checked+.list-i-bconoff {
+    background-position: -257px -293px;
+}
+
+input[id="cart_keep"] {
+    display: none;
+}
+
+/*베팅아이템 팝업*/
+.betitem {
+    overflow: hidden;
+    overflow-y: scroll;
+    position: fixed;
+    width: 100%;
+    height: 60%;
+    top: 20%;
+    background: #213744;
+    z-index: 20;
+}
+
+.betitem .tit {
+    position: relative;
+    border-bottom: 1px solid #273f4b;
+}
+
+.betitem .tit .xbtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    zoom: .7;
+}
+
+.betitem .tit p {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.betitem ul:after,
+.betitem ul li:after,
+.betitem ul li div.txt div:after,
+.inventory_list li:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.betitem ul>li>div .inventory_list>li>div {
+    float: left;
+    line-height: 12px;
+}
+
+.betitem ul li,
+.inventory_list li {
+    padding: 10px;
+    border-bottom: 1px solid #273f4b;
+}
+
+.betitem ul li button,
+.inventory_list li button {
+    float: right;
+    width: 20%;
+    height: 40px;
+    margin-top: 12px;
+    line-height: 40px;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.inventory_list li div {
+    float: left;
+}
+
+.betitem ul li div.img,
+.inventory_list li div.img {
+    width: 60px;
+    height: 60px;
+}
+.betitem ul li div.img,
+.inventory_list li div.img{
+    background: #040509;
+    border: 2px solid #b5c9d7;
+    border-radius: 4px;
+}
+
+.betitem ul li div.img img,
+.inventory_list li div.img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.betitem ul li div.txt,
+.inventory_list li div.txt {
+    width: 56%;
+    box-sizing: border-box;
+    margin-left: 3%;
+}
+
+.betitem ul li div.txt div,
+.betitem ul li div.txt .gtxt,
+.inventory_list li div.txt div {
+    width: 100%;
+}
+
+.inventory_list li div.txt .gtxt {
+    width: 98%;
+}
+
+.betitem ul li div.txt div .twtxt,
+.inventory_list li div.txt div .twtxt {
+    float: left;
+    overflow: hidden;
+    width: 60%;
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    letter-spacing: -1px;
+}
+
+.betitem ul li div.txt div .num,
+.inventory_list li div.txt div .num {
+    float: right;
+    overflow: hidden;
+    width: 40%;
+    font-size: 11px;
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.betitem ul li div.txt div .num:before,
+.inventory_list li div.txt div .num:before {
+    content: '보유:';
+}
+
+.betitem ul li div.txt div .num:after,
+.inventory_list li div.txt div .num:after {
+    content: '개';
+}
+
+.betitem ul li div.txt .gtxt,
+.inventory_list li div.txt .gtxt {
+    overflow: hidden;
+    font-size: .8em;
+    letter-spacing: -.5px;
+    text-overflow: ellipsis;
+    line-height: 1.2;
+    white-space: normal;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    letter-spacing: -1px;
+}
+.inventory_list li div.txt .gtxt p,
+.inventory_list li div.txt .gtxt p span{
+    color: #9fb6c4 !important;
+    font-size: 12px !important;
+    line-height: 120%;
+}
+
+.inventory_list .null_inven {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container>.more_btn {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    line-height: 50px;
+    text-align: center;
+    background: #051a25;
+}
+
+.container>.more_btn .list-i-larr {
+    transform: rotate(-90deg);
+    zoom: .45;
+    margin-left: 13px;
+    vertical-align: -2px;
+}
+
+.betcart .container>.more_btn {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    line-height: 40px;
+    background: #02070b;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    user-select:none;
+}
+
+.pro>span.list-i-betcartmore{
+    transform: rotate(180deg);
+}
+
+/*베팅아이템 팝업 끝*/
+/*베팅카트 끝*/
+/*로그인*/
+.navmu_wrap .login {
+    height: 100% !important;
+    background: #071724;
+    margin: 0;
+}
+
+.navmu_wrap>.login>.tit {
+    border-bottom: 1px solid #1e303e;
+}
+
+.login .tit {
+    margin-bottom: 15px;
+}
+
+.login input {
+    width: 80%;
+    display: block;
+    margin: 10px auto;
+    padding: 10px 5px;
+    background: #020611;
+    border: 1px solid #27384a;
+    color: #b8b9bb;
+    border-radius: 3px;
+}
+
+.login input::placeholder {
+    color: #b8b9bb;
+}
+
+.login>button.ybtn {
+    width: 80%;
+    display: block;
+    margin: 5px auto;
+    font-weight: bold;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.login>.ybtn2 {
+    width: 80%;
+    display: block;
+    margin: 5px auto;
+    padding: 8px;
+}
+
+.login .find {
+    width: 180px;
+    margin: 10px auto 20px;
+}
+
+.login .find a {
+    color: #ccdae5;
+}
+
+.login .find a:first-child {
+    position: relative;
+    margin-right: 10px;
+}
+
+.login .find a:first-child:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 10px;
+    top: 7px;
+    right: -8px;
+    background: #8dacc1;
+}
+
+.login .snslogin:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.login .snslogin {
+    width: 80%;
+    margin: 0 auto;
+    border-top: 1px solid #1e303e;
+    background: #071724;
+}
+
+.snslogin .twtxt {
+    margin: 10px auto;
+}
+
+.snslogin a {
+    width: 49%;
+    padding: 5px 5px 5px 15px;
+    border: 1px solid #607b90;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.snslogin a span {
+    zoom: .5;
+}
+
+.snslogin a:nth-child(2n) {
+    float: left;
+}
+
+.snslogin a:nth-child(odd) {
+    float: right;
+}
+
+.snslogin a:nth-child(n+4) {
+    margin-top: 2%;
+}
+
+/*로그인 끝*/
+/*채팅*/
+.chat {
+    overflow: hidden !important;
+    height: auto !important;
+    background: #02070b;
+}
+
+.chat .container {
+    margin-bottom: 70px;
+}
+
+.chat .tit {
+    position: relative;
+    margin: 0 auto;
+}
+
+.chat .tit button {
+    position: absolute;
+    display: inline-block;
+    top: 20px;
+    zoom: .7;
+}
+
+.chat .tit button.chatshar {
+    left: 15px;
+}
+.chat .tit button.speaker {
+    left: 58px;
+}
+.chat .tit button.chatset {
+    left: 95px;
+}
+
+.chat .tit button.xbtn {
+    right: 15px;
+    top: 15px;
+}
+
+.chat .chat_list {
+    display: block;
+    overflow: hidden;
+    overflow-y: scroll;
+    min-height: 280px;
+    max-height: 280px;
+}
+
+.chat .chat_list span {
+    position: relative;
+    color: #fff;
+    padding-right: 5px;
+}
+
+.chat .chat_list li {
+    color: #d4e0ec;
+    word-break: break-all;
+    font-size: 13px;
+}
+
+.chat .chat_list span:after {
+    position: absolute;
+    content: ':';
+    top: 1px;
+    right: 1px;
+}
+
+.chat .chat_list .game_master span:after {
+    top: -1px;
+}
+
+.chat .chat_list span.list-i-betmore:after {
+    display: none;
+}
+
+.chat .chat_btm {
+    position: absolute;
+    width: 100%;
+    margin-top: 10px;
+    top: 280px;
+    border: 1px solid #152630;
+    background: #02070b;
+}
+
+.chat .chat_btm input {
+    width:70%;
+    background: none;
+    border: 0;
+    color: #96a3ab;
+    line-height: 50px;
+}
+
+.chat .chat_btm button {
+    float: right;
+    width: 25%;
+    height: 50px;
+    font-weight: 500;
+}
+
+.chat .chat_btm button.off {
+    background: #4d6a7c;
+    color: #fff;
+}
+
+.chat .chat_btm button.on {
+    background: #ffbc30;
+    color: #000;
+}
+
+.chat .chat_btm:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.chat_box .chat_list .game_master {
+    margin-left: 21px;
+}
+
+.chat_box .chat_list .game_master span,
+.chat_box .chat_list .game_master {
+    position: relative;
+    color: #ffbc30;
+}
+
+.chat_box .chat_list .game_master span:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 3px;
+    left: -20px;
+    background-image: url(../img/icon.png);
+    background-position: -484px -346px;
+}
+
+.chat_box .betinfoshare {
+    background: #ffbc30;
+    color: #000 !important;
+    border-radius: 5px;
+    padding: 0px 0 0px 3px !important;
+    margin: 4px 3px 1px 0px;
+    line-height: 23px;
+}
+
+.chat_box .betinfoshare:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.chat_box .betinfoshare .clickable-nick {
+    float: left;
+    position: relative;
+    /* overflow: hidden; */
+    display: inline-block;
+    max-width: 100px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.chat_btm input.spk{
+    background: #194a6b;
+}
+.chat_btm button.spk{
+    background: #6c0000;
+}
+
+.chat_box .betinfoshare .clickable-nick,
+.chat_box .betinfoshare a {
+    color: #000;
+    font-weight: 500;
+}
+
+.chat_box .betinfoshare .list-i-betmore {
+    float: right;
+    margin: 1.45px 2px 0 0;
+}
+
+.chat_box .loudspeaker {
+    position: relative;
+    padding: 10px 10px 10px 30px !important;
+    margin: 4px 3px 4px 0px;
+    color: #fff !important;
+    border-radius: 5px;
+    background: #194a6b;
+}
+
+.chat_box .loudspeaker:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 25px;
+    top: 25px;
+    left: 10px;
+    background: url(../img/icon.png);
+    background-position: -165px -127px;
+    zoom: .6;
+}
+
+.chat_box .loudspeaker span {
+    display: block;
+    width: 100%;
+}
+
+.chat_box .loudspeaker span:after {
+    display: none;
+}
+
+/*채팅 끝*/
+/*마이로그*/
+.mylog_tab .cancel_change_btn{
+    width: 100%;
+}
+#mybet_layer .tit.change_btn{
+    display: block;
+    float: left;
+    width: 100%;
+    height: 37px;
+    padding: 0;
+}
+#mybet_layer .tit.change_btn li{
+    padding: 0;
+}
+.mylog div,
+.login .tit {
+    position: relative;
+}
+.result_wrap>.tit,
+.result_wrap>.tit>div{
+    position : inherit !important;
+}
+
+.bonus{
+    height: 70px;
+    line-height: 40px;
+    color: #fff !important;
+    border: 1px solid #ffb828 !important;
+    padding: 15px !important;
+}
+.bonus .ytxt{
+    float: left;
+    color: #ffb828;
+    font-size: 18px !important;
+    margin-right: 5px;
+}
+.bonus span:last-child{
+    float: right;
+    color: #ffb828 !important;
+    font-size: 15px !important;
+}
+
+.mylog .xbtn,
+.login .xbtn {
+    position: absolute;
+    display: inline-block;
+    top: 10px;
+    right: 0;
+    zoom: .7;
+}
+
+/* .mylog .mylog_tab ul li {
+    margin:0 0 10px 0;
+} */
+
+
+.mylog .mylog_tab ul li:last-child {
+    margin:0 0 0px 0 !important;
+}
+
+.mylog .mylog_tab .bet_log.on ul {
+    display: block;
+}
+
+.mylog .mylog_tab>ul.tit {
+    width: 200px;
+    margin: 0;
+}
+.mylog .mylog_tab>ul:first-child.tit li{
+    line-height: 150%;
+    cursor: pointer;
+}
+.mylog .mylog_tab>ul:first-child.tit li:last-child:after{
+    display: none;
+}
+.mylog .container>.xbtn {
+    top: 15px;
+    z-index: 20;
+}
+
+.mylog .mylog_tab ul:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.mylog .mylog_tab ul li {
+    position: relative;
+    float: left;
+    padding: 5px 0 0 0;
+    font-size: 18px;
+    color: #98b5c7;
+    font-weight: 500;
+}
+#mybet_cancel_layer #mybet_cancel_list li{
+    width: 100%;
+    margin: 0;
+}
+#mybet_cancel_layer #mybet_cancel_list li:first-child{
+    border-bottom: 1px solid #1f2f3c;
+}
+.mybet_list li .mylist {
+    background: #071724;
+    border-top: 1px solid #1f2f3c;
+}
+.mybet_list li .mylist li{
+    height: 70px;
+    background: #1a2c38;
+}
+.mybet_list li .mylist li:last-child{
+    border-bottom: none !important;
+}
+
+.mylog .mylog_tab ul li:first-child,
+.mylog .mylog_tab ul li:nth-child(2) {
+    position: relative;
+    margin-right: 15px;
+}
+.mylog .mylog_tab ul:first-child{
+    height: 37px;
+    padding: 5px 0 0 0;
+}
+.mylog .mylog_tab ul.tit:last-child{
+    padding: 0 0 5px 0 !important;
+}
+.mylog .mylog_tab ul.tit:last-child li{
+    padding: 0 0 5px 0;
+}
+.mylog .mylog_tab ul li:first-child:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 10px;
+    top: 17px;
+    right: -8px;
+    background: #8dacc1;
+}
+.mylog .mylog_tab ul:first-child li:first-child:after{
+    top:14px;
+}
+
+.mylog .mylog_tab ul li:nth-child(2):after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 10px;
+    top: 17px;
+    right: -8px;
+    background: #8dacc1;
+}
+
+.mylog .mylog_tab .result_wrap ul li:after {
+    display: none;
+}
+
+.mylog .mylog_tab ul li.on {
+    float: left;
+    color: #ffae0a;
+}
+
+
+#my_hit_list .betlog_box_blank{
+    text-align: center;
+    line-height: 40px;
+}
+
+.mylog_tab .period {
+    overflow: hidden;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    border: 1px solid #6c91ac;
+    border-radius: 5px;
+}
+
+.mylog_tab .period button {
+    float: left;
+    width: 25%;
+    height: 100%;
+    background: #03070a;
+    color: #78a3c3;
+    text-align: center;
+    font-size: 13px;
+}
+
+.mylog_tab .period button.on {
+    background: #6c91ac;
+    color: #fff;
+}
+
+.mylog_tab .bet_log p,
+.mylog_tab .bet_log span {
+    font-size: 12px;
+    color: #c0d2e0;
+    letter-spacing: -1px;
+}
+
+.bet_log .result_wrap .log .left p .teamname {
+    overflow: hidden;
+    display: inline-block;
+    width: 120px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    vertical-align: middle;
+    color: #fff;
+}
+
+.bet_log .result_wrap .log .left p .score {
+    color: #fff;
+    text-align: right;
+    float: right;
+    width: auto;
+    margin: 0 15px 0 0;
+}
+
+.mylog_tab .bet_log {
+    padding: 5px;
+    background: #141b23;
+}
+
+.mylog_tab .bet_log:nth-child(n+2) {
+    padding: 0 5px 5px 0;
+}
+
+.mylog_tab .bet_log.on .result_wrap .list-i-morelog {
+    transform: rotate(180deg);
+}
+
+.mylog_tab .bet_log>p>span:first-child {
+    display: inline-block;
+    position: relative;
+    width: 37%;
+}
+
+.mylog_tab .bet_log p span:nth-child(2) {
+    width: 60%;
+    text-align: right;
+}
+
+.mylog_tab .bet_log p span:nth-child(2) span.tit {
+    float: left;
+}
+
+.mylog_tab .bet_log p span:nth-child(2) span:last-child {
+    color: #fff;
+}
+
+.mylog_tab .bet_log>p>span:first-child:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 7px;
+    top: 7px;
+    right: 0;
+    background: #8dacc1;
+}
+
+.mylog_tab .bet_log p .gross_dividend .ytxt {
+    float: right;
+    width: auto;
+    padding-right: 5px;
+    color: #f5b422;
+    box-sizing: border-box;
+}
+
+
+.bet_log:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.bet_log .betgold .tit {
+    margin: 0 !important;
+}
+
+.bet_log .betgold {
+    float: right;
+}
+
+.mylog_tab .bet_log .result_wrap .tit {
+    background: #0b0e13;
+    border: 1px solid #252c32;
+    margin: 0 !important;
+}
+
+.mylog_tab .bet_log .result_wrap .tit .left {
+    float: left;
+    width: 60%;
+    top:inherit;
+    left:inherit;
+}
+.mylog_tab .bet_log .result_wrap .tit .left button{
+    float: left;
+    position: inherit;
+    top:inherit;
+    left:inherit;
+    right:inherit;
+}
+
+.mylog_tab .bet_log .result_wrap .tit:after,
+.mylog_tab .bet_log .result_wrap .tit .left:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.mylog_tab .bet_log .result_wrap .tit button {
+    font-size: 12px;
+    vertical-align: 2px;
+}
+
+.mylog_tab .bet_log .result_wrap .tit button:first-child {
+    float: left;
+    margin-right: 5px;
+}
+
+.mylog_tab .bet_log .right .result:after {
+    content: '대기중';
+    color: #3593d6;
+}
+
+.mylog_tab .bet_log.win .right .result:after {
+    content: '적중 성공';
+    color: #ffae0a;
+}
+
+.mylog_tab .bet_log.los .right .result:after {
+    content: '적중 실패';
+    color: #c7c7c7;
+}
+
+.mylog_tab .bet_log.spc .right .result:after {
+    content: '적중 특례';
+    color: #29eb92;
+}
+
+.result_wrap .tit {
+    padding: 6px 5px 0 5px !important;
+    border-radius: 5px;
+}
+
+.result_wrap .tit .right {
+    float: right;
+    width: 40%;
+    height: 23px;
+    top:inherit;
+    left:inherit;
+}
+
+.result_wrap .tit .right:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.result_wrap .tit .right .result {
+    float: left;
+    line-height: 24px;
+    color: #0ac0ff;
+}
+
+.win .result_wrap .tit .right .result {
+    color: #ffae0a;
+}
+
+.los .result_wrap .tit .right .result {
+    color: #c7c7c7;
+}
+
+.spc .result_wrap .tit .right .result {
+    color: #29eb92;
+}
+
+.result_wrap .tit .right button {
+    float: right;
+}
+
+.result_wrap .tit .right .list-i-morelog {
+    zoom: .5;
+}
+
+.result_wrap li {
+    width: 100%;
+    border-bottom: 1px solid #1d262d;
+}
+
+.null_log {
+    text-align: center;
+}
+
+.result_wrap li .type_time {
+    color: #fff;
+}
+
+.result_wrap li .type_time+.right {
+    width: auto !important;
+}
+
+.result_wrap li>p .right {
+    float: right;
+    color: #0ac0ff;
+}
+
+.result_wrap li>p .right:after {
+    content: '대기중';
+}
+
+/*적중성공*/
+.result_wrap li.win>p .right {
+    color: #ffae0a;
+}
+
+.result_wrap li.win>p .right:after {
+    content: '성공';
+}
+
+/*적중실패*/
+.result_wrap li.los>p .right {
+    color: #c7c7c7;
+}
+
+.result_wrap li.los>p .right:after {
+    content: '실패';
+}
+
+/*적중특례*/
+.result_wrap li.spc>p .right {
+    color: #29eb92;
+}
+
+.result_wrap li.spc>p .right:after {
+    content: '적특';
+}
+
+.result_wrap li .log .left {
+    float: left;
+    width: 50%;
+}
+
+.result_wrap li .log .right {
+    float: right;
+    width: 50%;
+}
+
+.result_wrap li .log .right span,
+.result_wrap li .log .right button {
+    float: left;
+    width: 33%;
+    text-align: center;
+    font-size: 12px;
+}
+
+.result_wrap li .log .right span {
+    line-height: 19px;
+}
+
+.result_wrap li .log.opt2 .right span,
+.result_wrap li .log.opt2 .right button {
+    width: 50%;
+}
+
+.result_wrap li .log .right button {
+    background: #02070b;
+}
+
+.result_wrap li .log .right button.on {
+    background: #feba31;
+    color: #000;
+    font-weight: bold;
+}
+
+/*적중성공*/
+.result_wrap li.win .log .right .on {
+    border: 1px solid #feba31;
+    background: #02070b;
+    color: #fff;
+    font-weight: normal;
+}
+
+/*적중실패*/
+.result_wrap li.los .log .right .on {
+    border: 1px solid #f5f5f5;
+    background: #02070b;
+    color: #fff;
+    font-weight: normal;
+}
+
+/*적중실패 정답*/
+.result_wrap li.los .log .right .winner {
+    background: #feba31;
+    color: #000;
+    font-weight: bold;
+}
+
+/*적중특례*/
+.result_wrap li.spc .log .right .on {
+    border: 1px solid #29eb92 !important;
+    background: #02070b;
+    color: #fff;
+    font-weight: normal;
+}
+
+.result_wrap li .log:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+/*마이로그 끝*/
+/*팝업 메뉴 끝*/
+/*메인*/
+.mainlink_box>div>a>span:first-child {
+    opacity: .7;
+}
+
+main {
+    padding: 60px 0 50px;
+    background-color: #213744;
+}
+
+/*탭*/
+.tab {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.tab>ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-bottom: 1px solid #324a54;
+    background: #071724;
+}
+
+.tab>ul>li {
+    float: left;
+    width: 50%;
+    height: 50px;
+    line-height: 48px;
+    text-align: center;
+    cursor: pointer;
+    background: #071724;
+    color: #c0c0c0;
+    vertical-align: middle;
+    font-weight: bold;
+    border-top: 2px solid #071724 !important;
+}
+
+.tab>ul>li:last-child {
+    border: 0;
+}
+
+.tab>ul>li:hover,
+.tab>ul>li.on {
+    border-top: 2px solid #198dfe !important;
+    color: #1f88ff;
+}
+
+.tab>.conBox {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: #213744;
+    display: none;
+}
+
+.mylog .conBox {
+    display: none;
+}
+
+.mylog .conBox.on {
+    display: block;
+}
+
+.tab>.conBox.on {
+    display: block;
+}
+
+.tab>.conBox select {
+    float: right;
+    margin: 10px 0;
+}
+
+/*탭끝*/
+/*sly Frame */
+.frame {
+    position: relative;
+    height: 70px;
+    line-height: 250px;
+    overflow: hidden;
+    border-bottom: 1px solid #304b56;
+    background: #152735;
+}
+
+.frame ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 50px;
+}
+
+.frame ul li {
+    position: relative;
+    float: left;
+    width: 80px;
+    height: 100%;
+    padding: 0;
+    background: #152735;
+    color: #90abc0;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    line-height: 100px;
+    font-size: 13px;
+}
+
+.frame ul li.active {
+    color: #ffbc30;
+}
+
+.frame ul li span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: 5px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/*sly Frame */
+/*최상단 라이브게임 슬라이드*/
+.toplivegame {
+    margin: 20px 0;
+}
+
+.toplivegame .wrap>div {
+    position: relative;
+}
+
+.toplivegame li {
+    position: relative;
+    float: left;
+    width: 265px;
+    height: 95px;
+    padding: 8px;
+    margin: 0 10px;
+    background: #071724;
+}
+
+.toplivegame li p:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.toplivegame li p:first-child .left {
+    overflow: hidden;
+    display: inline-block;
+    width: 55%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.toplivegame li span {
+    font-size: 12px;
+}
+
+.toplivegame li .left,
+.toplivegame li .team {
+    float: left;
+}
+
+.toplivegame li .team {
+    overflow: hidden;
+    display: inline-block;
+    width: 80%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.toplivegame li .right,
+.toplivegame li .num {
+    float: right;
+}
+
+.toplivegame li .right.gtxt {
+    font-size: 12px;
+}
+
+.toplivegame li .num {
+    background: #1f303a;
+    border-radius: 2px;
+    padding: 0 10px;
+    margin-top: 3px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.toplivegame li .list-i-live {
+    zoom: .6;
+}
+
+/*최상단 라이브게임 슬라이드 끝*/
+/*메인 스포츠 라이브게임 탭*/
+.wrap .frame ul li:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    top: 23px;
+    left: 50px;
+    background-image: url(../img/icon.png);
+    zoom: .6;
+}
+
+.wrap .frame ul li.all:after {
+    background-position: -0px -158px;
+}
+
+.wrap .frame ul li.soccer:after {
+    background-position: -45px -158px;
+}
+
+.wrap .frame ul li.basketball:after {
+    background-position: -92px -158px;
+}
+
+.wrap .frame ul li.baseball:after {
+    background-position: -139px -158px;
+}
+
+.wrap .frame ul li.volleyball:after {
+    background-position: -186px -158px;
+}
+
+.wrap .frame ul li.icehockey:after {
+    background-position: -232px -158px;
+}
+
+.wrap .frame ul li.football:after {
+    background-position: -276px -158px;
+}
+
+.wrap .frame ul li.esports:after {
+    width: 41px;
+    background-position: -321px -158px;
+}
+
+.wrap .frame ul li.billiards:after {
+    width: 41px;
+    background-position: -370px -158px;
+}
+
+.wrap .frame ul li.tennis:after {
+    width: 41px;
+    background-position: -417px -158px;
+}
+.wrap .frame ul li.table-tennis:after {
+    width: 37px;
+    height: 37px;
+    background-image: url(../img/sport_icon.png);
+    background-position: -0px -266px;
+}
+.wrap .frame ul li.handball:after {
+    width: 37px;
+    height: 37px;
+    background-image: url(../img/sport_icon.png);
+    background-position: -0px -342px;
+}
+.wrap .frame ul li.dart:after {
+    width: 37px;
+    height: 37px;
+    background-image: url(../img/sport_icon.png);
+    background-position: -0px -380px;
+}
+.wrap .frame ul li.badminton:after {
+    width: 37px;
+    height: 37px;
+    background-image: url(../img/sport_icon.png);
+    background-position: -0px -418px;
+}
+.wrap .frame ul li.snooker:after {
+    width: 37px;
+    height: 37px;
+    background-image: url(../img/sport_icon.png);
+    background-position: -0px -456px;
+}
+.wrap .frame ul li.squash:after {
+    width: 37px;
+    height: 37px;
+    background-image: url(../img/sport_icon.png);
+    background-position: -0px -494px;
+}
+.wrap .frame ul li.futsal:after {
+    width: 37px;
+    height: 37px;
+    background-image: url(../img/sport_icon.png);
+    background-position: -0px -304px;
+}
+
+
+/*on일때*/
+.wrap .frame ul li.active.all:after {
+    background-position: -0px -205px;
+}
+
+.wrap .frame ul li.active.soccer:after {
+    background-position: -45px -205px;
+}
+
+.wrap .frame ul li.active.basketball:after {
+    background-position: -92px -205px;
+}
+
+.wrap .frame ul li.active.baseball:after {
+    background-position: -139px -205px;
+}
+
+.wrap .frame ul li.active.volleyball:after {
+    background-position: -186px -205px;
+}
+
+.wrap .frame ul li.active.icehockey:after {
+    background-position: -232px -205px;
+}
+
+.wrap .frame ul li.active.football:after {
+    background-position: -276px -205px;
+}
+
+.wrap .frame ul li.active.esports:after {
+    width: 41px;
+    background-position: -321px -205px;
+}
+
+.wrap .frame ul li.active.billiards:after {
+    width: 41px;
+    background-position: -370px -205px;
+}
+
+.wrap .frame ul li.active.tennis:after {
+    width: 41px;
+    background-position: -417px -205px;
+}
+.wrap .frame ul li.active.table-tennis:after {
+
+    background-position: -38px -266px;
+}
+
+.wrap .frame ul li.active.handball:after {
+    width: 37px;
+    height: 37px;
+    background-image: url(../img/sport_icon.png);
+    background-position: -38px -342px;
+}
+.wrap .frame ul li.active.dart:after {
+    width: 37px;
+    height: 37px;
+    background-image: url(../img/sport_icon.png);
+    background-position: -38px -380px;
+}
+.wrap .frame ul li.active.badminton:after {
+    width: 37px;
+    height: 37px;
+    background-image: url(../img/sport_icon.png);
+    background-position: -38px -418px;
+}
+.wrap .frame ul li.active.snooker:after {
+    width: 37px;
+    height: 37px;
+    background-image: url(../img/sport_icon.png);
+    background-position: -38px -456px;
+}
+.wrap .frame ul li.active.squash:after {
+    width: 37px;
+    height: 37px;
+    background-image: url(../img/sport_icon.png);
+    background-position: -38px -494px;
+}
+.wrap .frame ul li.active.futsal:after {
+    width: 37px;
+    height: 37px;
+    background-image: url(../img/sport_icon.png);
+    background-position: -38px -304px;
+}
+
+
+/*메인 스포츠 라이브게임 탭 끝*/
+/* Controls */
+.wrap .controls {
+    position: absolute;
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+.wrap .controls .prev,
+.wrap .controls .next {
+    position: absolute;
+    width: 48px;
+    height: 49px;
+    zoom: .5;
+    top: 43px;
+}
+
+.toplivegame .wrap .controls .prev,
+.toplivegame .wrap .controls .next {
+    top: 70px;
+}
+
+.wrap .controls .next {
+    right: 0;
+}
+
+.wrap .controls button.disabled {
+    display: none;
+}
+
+.wrap .controls button:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 48px;
+    height: 49px;
+    top: 0px;
+    left: 0px;
+    background-image: url(../img/icon.png);
+}
+
+.wrap .controls .prev:after {
+    background-position: -326px -31px;
+}
+
+.wrap .controls .next:after {
+    background-position: -377px -31px;
+}
+
+.wrap .controls {
+    position: absolute;
+    width: 95%;
+    margin-left: 2.5%;
+    top: 0;
+    left: 0;
+}
+
+.wrap .controls button {
+    top: 42px;
+}
+
+.maingame .wrap .controls button {
+    top: 45px;
+}
+
+/* Controls 끝*/
+/*메인 최상단 진행중/내경기*/
+.livegame_box.container {
+    position: relative;
+    width: 97%;
+    margin: 0 0 7% 3%;
+}
+
+.topgamelist li div.gameTit:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    top: 20 px;
+    left: 15px;
+    background-image: url(../img/icon.png);
+    zoom: .6;
+}
+
+.topgamelist li.soccer div.gameTit:after {
+    background-position: -45px -205px;
+}
+
+.topgamelist li.basketball div.gameTit:after {
+    background-position: -92px -205px;
+}
+
+.topgamelist li.baseball div.gameTit:after {
+    background-position: -139px -205px;
+}
+
+.topgamelist li.volleyball div.gameTit:after {
+    background-position: -186px -205px;
+}
+
+.topgamelist li.icehockey div.gameTit:after {
+    background-position: -232px -205px;
+}
+
+.topgamelist li.football div.gameTit:after {
+    background-position: -276px -205px;
+}
+
+.topgamelist li.esports div.gameTit:after {
+    width: 41px;
+    background-position: -321px -205px;
+}
+
+.topgamelist li.billiards div.gameTit:after {
+    width: 41px;
+    background-position: -370px -205px;
+}
+
+.topgamelist li.tennis div.gameTit:after {
+    width: 41px;
+    background-position: -417px -205px;
+}
+
+/*최상단 진행중 내경기 끝*/
+.mainlink_box:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.mainlink_box {
+    margin: 25px auto 20px;
+}
+
+.mainlink_box div {
+    float: left;
+    width: 49%;
+    background: #2f4a5d;
+    border: 1px solid #4d6778;
+    border-radius: 2px;
+    padding: 3%;
+}
+
+.mainlink_box div:first-child,
+.mainlink_box div:nth-child(3) {
+    margin: 0 1% 1% 0;
+}
+
+.mainlink_box div:nth-child(2) {
+    margin: 0 0 1% 0;
+}
+
+.mainlink_box div a {
+    color: #fff;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.mainlink_box div:nth-child(1) a span:first-child {
+    zoom: .7;
+}
+
+.mainlink_box div:nth-child(2) a span:first-child {
+    zoom: .7;
+}
+
+.mainlink_box div:nth-child(3) a span:first-child {
+    zoom: .7;
+}
+
+.mainlink_box div:nth-child(4) a span:first-child {
+    zoom: .7;
+}
+
+.mainlink_box div a span.list-i-rarr {
+    zoom: .7;
+    float: right;
+    margin-top: 12px;
+}
+
+.minigame_box ul:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.minigame_box ul {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.minigame_box .twtxt {
+    width: 95%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.minigame_box li {
+    float: left;
+    padding-right: 5px;
+    width: 25%;
+    box-sizing: border-box;
+}
+
+.minigame_box li:nth-child(5) {
+    padding: 0;
+}
+
+.minigame_box li a .img {
+    text-align: center;
+}
+
+.minigame_box li a img {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.minigame_box li p {
+    text-align: center;
+    font-size: 13px;
+}
+
+/*경기종목 슬라이드*/
+/*미니스포츠탭*/
+.min_gamelist {
+    position: relative;
+}
+
+.min_gamelist ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+}
+
+.min_gamelist ul li {
+    position: relative;
+    float: left;
+    width: 65px;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    background: #122430;
+    color: #8ba7bd;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    border-right: 1px solid #233541;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+    font-size: 11px;
+    box-sizing: border-box;
+    padding-bottom: 9px;
+}
+
+.min_gamelist ul li:last-child {
+    margin-right: 65px;
+    border-right: 0;
+}
+
+.min_gamelist ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.min_gamelist ul li.active {
+    color: #ffbc2f;
+    background: #071724;
+}
+
+.min_gamelist ul li:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 11px;
+    left: 22px;
+    background-image: url(../img/icon.png);
+}
+
+.min_gamelist ul li.soccer:after {
+    background-position: -0px -105px;
+}
+
+.min_gamelist ul li.basketball:after {
+    background-position: -28px -105px;
+}
+
+.min_gamelist ul li.baseball:after {
+    width: 21px;
+    background-position: -55px -105px;
+}
+
+.min_gamelist ul li.volleyball:after {
+    background-position: -83px -105px;
+}
+
+.min_gamelist ul li.icehockey:after {
+    background-position: -110px -105px;
+}
+
+.min_gamelist ul li.football:after {
+    background-position: -137px -105px;
+}
+
+.min_gamelist ul li.esports:after {
+    width: 21px;
+    background-position: -165px -105px;
+}
+
+.min_gamelist ul li.billiards:after {
+    background-position: -194px -105px;
+}
+
+.min_gamelist ul li.tennis:after {
+    background-position: -221px -105px;
+}
+
+.min_gamelist ul li.soccer.active:after {
+    background-position: -0px -126px;
+}
+
+.min_gamelist ul li.basketball.active:after {
+    background-position: -28px -126px;
+}
+
+.min_gamelist ul li.baseball.active:after {
+    width: 21px;
+    background-position: -55px -126px;
+}
+
+.min_gamelist ul li.volleyball.active:after {
+    background-position: -83px -126px;
+}
+
+.min_gamelist ul li.icehockey.active:after {
+    background-position: -110px -126px;
+}
+
+.min_gamelist ul li.football.active:after {
+    background-position: -137px -126px;
+}
+
+.min_gamelist ul li.esports.active:after {
+    width: 21px;
+    background-position: -165px -126px;
+}
+
+.min_gamelist ul li.billiards.active:after {
+    background-position: -194px -126px;
+}
+
+.min_gamelist ul li.tennis.active:after {
+    background-position: -221px -126px;
+}
+
+/*미니 스포츠탭 끝*/
+/*경기종목 슬라이드 끝*/
+/*게임베팅*/
+/* .betlist:first-child {
+    border-top: 1px solid #334a58;
+} */
+.betting_content {
+    border-bottom: 1px solid #334a58;
+}
+
+.betlist .list {
+    padding: 10px 10px 3px 10px;
+    border-top: 1px solid #334a58;
+}
+
+/* .betlist:last-child>div {
+    border-bottom: 0;
+    border-top: 0;
+} */
+/* .betting_content>.bettb:first-child{
+    border-top: 0;
+} */
+.betlist .live_list {
+    margin: 0 0 10px 0;
+}
+
+.betlist .live_list:last-child {
+    margin-bottom: 0px !important;
+}
+
+.betlist .list:after,
+.maingame .container:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.betlist .list>.txt {
+    float: left;
+    width: 60%;
+}
+
+.betlist .list .txt .left {
+    float: left;
+    width: 60%;
+    font-size: 13px;
+}
+
+.betlist .list .txt .left p {
+    font-size: 12px;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    display: block;
+    overflow: hidden;
+}
+
+.betlist .list .txt .left p.home:before,
+.log .left .home span.teamname:nth-child(1):before {
+    content: 'H';
+    font-weight: bold;
+    color: #fe922f;
+    margin-right: 5px;
+}
+
+.betlist .list .txt .left p.away:before,
+.log .left .away span.teamname:nth-child(1):before {
+    content: 'A';
+    font-weight: bold;
+    color: #30ffc9;
+    margin-right: 5px;
+}
+
+.betlist .list .txt .right button {
+    min-width: 30px;
+    height: 32px;
+    padding: 0 3px;
+    line-height: 32px;
+    background: #ffbc30;
+    color: #000;
+    font-weight: 500;
+    border-radius: 3px;
+    vertical-align: middle;
+    font-size: 10px;
+}
+
+.betlist .txt .right {
+    float: right;
+    width: 40%;
+    line-height: 60px;
+    text-align: center;
+}
+
+.betlist .list .txt .right button .detail {
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    background: #1b1107;
+    color: #ffbc30;
+    border-radius: 50px;
+    font-size: 10px;
+    margin-left: 3px;
+}
+
+.betlist .txt .right button:before {
+    content: '+';
+}
+
+.betlist .basic_view {
+    float: right;
+    width: 40%;
+    margin-right: -5px;
+}
+
+.betlist .basic_view .type_wrap {
+    height: 30px;
+}
+
+.betlist .basic_view .type_wrap:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.betlist .list .basic_view span {
+    color: #a4b7c5;
+    font-size: 12px;
+}
+
+.basic_view span {
+    font-weight: bold;
+}
+
+.betlist .list .basic_view span,
+.betlist .list .basic_view button {
+    float: left;
+    width: 33.3%;
+    padding: 3px 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.btn_board_select {
+    background: #ffbc30 !important;
+    color: #000;
+    font-weight: bold;
+}
+
+.betlist .list .basic_view button {
+    border-right: 3px solid #213744;
+    font-size: 10px;
+}
+
+.betlist .list .basic_view button:nth-child(n+4) {
+    margin-top: 3px;
+}
+
+.betlist .list .basic_view button:nth-child(3n) {
+    border-right: 0;
+}
+
+.betlist .list .basic_view button strong {
+    font-weight: 400 !important;
+    font-size: 10px;
+    width: 100%;
+    overflow: hidden;
+    display: contents;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.betlist .list .basic_view button:last-child {
+    border-right: 0;
+}
+
+.betlist .list .basic_view span:nth-child(3),
+.betlist .list .basic_view button:last-child {
+    margin-right: 0;
+}
+
+.betlist .basic_view button {
+    background: #0e212e;
+}
+
+.betlist .basic_view button.btn_board {
+    background: #071724;
+}
+
+.betlist .list2 .basic_view {
+    width: 50%;
+}
+
+.betlist .list2 .basic_view:first-child {
+    float: left;
+}
+
+.betlist .list button.on {
+    background: #ffbc30;
+    color: #000;
+    font-weight: bold;
+    border: 0;
+}
+
+.betlist .more_wrap button {
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #1a2c38;
+    border-top: 1px solid #324a56;
+    text-align: center;
+}
+
+.betlist .more_wrap button:before {
+    content: '더보기';
+}
+
+.betlist .more_wrap button .list-i-rarr {
+    transform: rotate(90deg);
+    zoom: .7;
+    margin: -5px 0 0 10px;
+}
+
+.betlist .more_wrap button.off .list-i-rarr {
+    transform: rotate(270deg);
+}
+
+.betlist .more_wrap button.off:before {
+    content: '닫기';
+}
+
+.betlist>div {
+    /* border-bottom: 1px solid #324a56; */
+}
+
+/*게임 베팅 끝*/
+/*스포츠게임*/
+.container .timewrap {
+    float: right;
+    height: 50px;
+    line-height: 50px;
+}
+
+#livegame>.container {
+    border-bottom: 1px solid #324a54;
+}
+
+.list>.topcate {
+    background: #324553;
+    margin-bottom: 10px;
+}
+
+.list>.topcate li {
+    color: #b5cbd9;
+}
+
+/*스포츠게임 끝*/
+/*라이브게임 세부*/
+.livegame_wrap .conBox {
+    display: none;
+}
+
+.livegame_wrap .conBox.on {
+    display: block;
+}
+
+/*라이브게임 세부 끝*/
+/*서브타이틀*/
+.subnav {
+    height: 40px;
+    padding: 0 5px;
+    background: #1a2c38;
+    border-bottom: 1px solid #324a56;
+}
+
+.subnav .tit {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 37px;
+}
+
+.subnav .tit span {
+    zoom: .45;
+    margin-right: 10px;
+    vertical-align: -2px;
+}
+
+.subnav .livego {
+    float: right;
+    zoom: .7;
+    margin-top: 13px;
+}
+
+.subnav .livego a {
+    display: block;
+    position: relative;
+    width: 110px;
+    height: 31px;
+    border-radius: 50px;
+    background: #ffbb32;
+    color: #ffbb32;
+}
+
+.subnav .livego a .gamenum {
+    position: absolute;
+    display: inline-block;
+    min-width: 27px;
+    height: 27px;
+    top: 3px;
+    right: 5px;
+    padding: 0 2px;
+    border-radius: 50px;
+    background: #171105;
+    font-weight: 500;
+    text-align: center;
+}
+
+.submenu {
+    overflow: hidden;
+    height: 41px;
+    width: 100%;
+    z-index: 99;
+    left: 0px;
+    background: #071724;
+}
+
+.submenu li {
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    color: #b5cbd9;
+    line-height: 40px;
+    cursor: pointer;
+    border-bottom: 1px solid #324a56;
+    box-sizing: border-box;
+}
+
+.submenu li a {
+    display: block;
+}
+
+.submenu.menu3 li {
+    width: 33.3%;
+}
+
+.submenu.menu2 li {
+    width: 50%;
+}
+
+.submenu li.on {
+    height: 40px;
+    line-height: 40px;
+    color: #ffb828;
+    border-bottom: 2px solid #ffb828;
+    box-sizing: border-box;
+}
+
+/*서브타이틀 끝*/
+/*메인끝*/
+/*footer*/
+footer {
+    margin: 0px auto 70px;
+    background: #051a25;
+}
+
+footer .container {
+    margin: 0px auto;
+    padding: 30px 0 50px;
+}
+
+footer .container .ftbtn a,
+footer .container .ftbtn button {
+    float: left;
+    width: 49.5%;
+    height: 40px;
+    line-height: 36px;
+    text-align: center;
+    border: 1px solid #a8bdcc;
+    color: #a8bdcc;
+}
+
+footer .container .ftbtn button span.list-i-ftlogout {
+    margin-top: -6px;
+}
+
+footer .container .ftbtn a span {
+    margin-right: 7px;
+    vertical-align: -3px;
+    zoom: .8;
+}
+
+footer .container .ftbtn a.pcview_btn {
+    float: right !important;
+}
+
+.ftbtn:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+footer .container h2 {
+    display: block;
+    width: 145px;
+    height: 27px;
+    text-align: center;
+    margin: 30px auto 8px;
+}
+
+footer .logo {
+    margin: 0;
+}
+
+footer ul li a {
+    color: #fff;
+}
+
+footer p {
+    text-align: center;
+    color: #a1a1a1;
+    font-size: 12px;
+}
+
+/*footer 끝*/
+/*아이콘*/
+span[class*="list-i"],
+span[class*="chat-i"],
+span[class*="inven-i"] {
+    display: inline-block;
+    background: url(../img/icon.png);
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+/* header logo */
+span.list-i-logo {
+    width: 300px;
+    height: 37px;
+    padding: 0;
+    margin: 0;
+    background-position: -0px -398px;
+    zoom: .7;
+}
+
+/* footer logo */
+span.list-i-ftlogo {
+    /* width: 180px;
+    height: 28px;
+    background-position: -289px -336px;
+    zoom: .6;
+    margin: 0; */
+    width: 300px;
+    height: 37px;
+    background-position: -0px -398px;
+    zoom: .45;
+    margin: 0;
+}
+
+/*회원가입 아이콘*/
+span.list-i-join {
+    width: 34px;
+    height: 36px;
+    background-position: -47px -247px;
+}
+
+/*로그인 아이콘*/
+span.list-i-login {
+    width: 29px;
+    height: 37px;
+    background-position: -91px -247px;
+}
+
+/*충전 아이콘*/
+span.list-i-charge {
+    width: 35px;
+    height: 34px;
+    background-position: -130px -249px;
+}
+
+/*메인메뉴 아이콘*/
+span.list-i-menu {
+    width: 37px;
+    height: 32px;
+    background-position: -0px -248px;
+}
+
+/*내정보 아이콘*/
+span.list-i-mydata {
+    width: 31px;
+    height: 35px;
+    background-position: -174px -247px;
+}
+
+/*로그아웃 아이콘*/
+span.list-i-logout {
+    width: 16px;
+    height: 22px;
+    background-position: -410px -0px;
+    zoom: .8 !important;
+}
+
+/*닫기 아이콘*/
+span.list-i-xbtn {
+    width: 28px;
+    height: 29px;
+    background-position: -216px -249px;
+}
+
+/*메인 작은오른화살표*/
+span.list-i-rarr {
+    width: 9px;
+    height: 18px;
+    background-position: -244px -72px;
+}
+
+/*서브메뉴 타이틀 왼쪽 화살표*/
+span.list-i-larr {
+    width: 15px;
+    height: 26px;
+    background-position: -231px -96px;
+}
+
+/*골드마켓 빨간 화살표*/
+span.list-i-redarr {
+    width: 43px;
+    height: 37px;
+    background-position: -271px -80px;
+}
+
+/*베팅카트 전체보기 화실표*/
+span.list-i-betcartmore {
+    width: 16px;
+    height: 8px;
+    background-position: -138px -103px;
+}
+
+/*주간랭킹 아이콘*/
+span.list-i-wrank {
+    width: 35px;
+    height: 24px;
+    background-position: -92px -127px;
+}
+
+/*종목별팀순위 아이콘*/
+span.list-i-trank {
+    width: 18px;
+    height: 33px;
+    background-position: -137px -123px;
+}
+
+/*새소식 아이콘*/
+span.list-i-nnews {
+    width: 35px;
+    height: 25px;
+    background-position: -165px -127px;
+}
+
+/*골드마켓 아이콘*/
+span.list-i-gmk {
+    width: 30px;
+    height: 31px;
+    background-position: -210px -124px;
+}
+
+/*제작 아이콘*/
+span.list-i-make {
+    width: 31px;
+    height: 31px;
+    background-position: -305px -125px;
+}
+
+/*sns로그인 구글 아이콘*/
+span.list-i-google {
+    width: 36px;
+    height: 22px;
+    background-position: -456px -1px;
+}
+
+/*sns로그인 카카오 아이콘*/
+span.list-i-kakko {
+    width: 31px;
+    height: 29px;
+    background-position: -456px -29px;
+}
+
+/*sns로그인 네이버 아이콘*/
+span.list-i-naver {
+    width: 24px;
+    height: 23px;
+    background-position: -456px -63px;
+}
+
+/*sns로그인 페북 아이콘*/
+span.list-i-fbook {
+    width: 18px;
+    height: 29px;
+    background-position: -456px -91px;
+}
+
+/*내정보 내 아이콘*/
+span.list-i-myicon {
+    width: 27px;
+    height: 28px;
+    background-position: -0px -0px;
+}
+
+/*내정보 보유재화 아이콘*/
+span.list-i-mygold {
+    width: 26px;
+    height: 26px;
+    background-position: -37px -0px;
+}
+
+/*내정보 주간전적 아이콘*/
+span.list-i-wrank {
+    width: 25px;
+    height: 27px;
+    background-position: -73px -1px;
+}
+
+/*내정보 주간전적 아이콘*/
+span.list-i-mrank {
+    width: 25px;
+    height: 27px;
+    background-position: -108px -1px;
+}
+
+/*내정보 ? 아이콘*/
+span.list-i-subtxt {
+    width: 40px;
+    height: 40px;
+    background-position: -0px -73px;
+}
+
+/*코인 아이콘*/
+span.list-i-coin {
+    width: 28px;
+    height: 25px;
+    background-position: 0px -38px;
+}
+
+/*코인 아이콘*/
+span.list-i-wcoin {
+    width: 25px;
+    height: 25px;
+    background-position: -469px -306px;
+}
+
+/*마일리지 아이콘*/
+span.list-i-mile {
+    width: 25px;
+    height: 25px;
+    background-position: -35px -38px;
+}
+
+/*골드 아이콘*/
+span.list-i-gold {
+    width: 25px;
+    height: 25px;
+    background-position: -70px -38px;
+}
+
+/*검색 돋보기 아이콘*/
+span.list-i-search {
+    width: 27px;
+    height: 27px;
+    background-position: -139px -73px;
+}
+
+/*경기일정 달력아이콘*/
+span.list-i-cld {
+    width: 30px;
+    height: 33px;
+    background-position: -103px -33px;
+}
+
+/*메뉴 스포츠게임*/
+span.list-i-msport {
+    width: 35px;
+    height: 27px;
+    background-position: -6px -126px;
+}
+
+/*메뉴 커뮤니티*/
+span.list-i-community {
+    width: 31px;
+    height: 26px;
+    background-position: -51px -126px;
+}
+
+/*메뉴 달리는사람*/
+span.list-i-run {
+    width: 35px;
+    height: 26px;
+    background-position: -6px -126px;
+}
+
+/*메뉴 랭킹아이콘*/
+span.list-i-murank {
+    width: 35px;
+    height: 24px;
+    background-position: -92px -127px;
+}
+
+/*랭킹1등*/
+span.list-i-1st {
+    width: 28px;
+    height: 33px;
+    background-position: -134px -35px;
+}
+
+/*랭킹2등*/
+span.list-i-2st {
+    width: 28px;
+    height: 33px;
+    background-position: -164px -35px;
+}
+
+/*랭킹3등*/
+span.list-i-3st {
+    width: 28px;
+    height: 33px;
+    background-position: -194px -35px;
+}
+
+/*nav 메뉴*/
+span.list-i-nvmanu {
+    background-position: -0px -293px;
+}
+
+.on span.list-i-nvmanu {
+    background-position: -0px -347px;
+}
+
+/*nav 베팅카트*/
+span.list-i-nvcart {
+    background-position: -50px -295px;
+}
+
+.on span.list-i-nvcart {
+    background-position: -50px -349px;
+}
+
+/*nav 참여내역*/
+span.list-i-nvlog {
+    background-position: -106px -294px;
+}
+
+.on span.list-i-nvlog {
+    background-position: -105px -348px;
+}
+
+/*nav 채팅창*/
+span.list-i-nvchat {
+    background-position: -159px -295px;
+}
+
+.on span.list-i-nvchat {
+    background-position: -159px -349px;
+}
+
+/*nav 충전*/
+span.list-i-nvcharge {
+    background-position: -213px -295px;
+}
+
+.on span.list-i-nvcharge {
+    background-position: -213px -349px;
+}
+
+/*베팅카트 +버튼*/
+span.list-i-more {
+    width: 27px;
+    height: 28px;
+    background-position: -243px -126px;
+}
+
+/*베팅카트 x버튼*/
+span.list-i-yxbtn {
+    width: 30px;
+    height: 30px;
+    background-position: -273px -125px;
+}
+
+/*참여내역 + 더보기박스*/
+span.list-i-morelog {
+    width: 42px;
+    height: 42px;
+    background-position: -43px -74px;
+    transform: rotate(180deg);
+}
+
+span.list-i-morelog.chat-i-dwarr {
+    transform: rotate(0deg);
+}
+
+/*채팅 공유하기*/
+span.list-i-chatshar {
+    width: 34px;
+    height: 25px;
+    background-position: -168px -97px;
+}
+
+/*채팅 설정*/
+span.list-i-chatset {
+    width: 25px;
+    height: 26px;
+    background-position: -204px -96px;
+}
+
+/*footer 로그인 아이콘*/
+span.list-i-ftlogin {
+    width: 16px;
+    height: 21px;
+    background-position: -393px -1px;
+}
+
+/*footer 로그아웃 아이콘*/
+span.list-i-ftlogout {
+    width: 16px;
+    height: 21px;
+    background-position: -410px -1px;
+}
+
+/*footer pc 아이콘*/
+span.list-i-ftpc {
+    width: 24px;
+    height: 21px;
+    background-position: -427px -1px;
+}
+
+/*베팅카트on*/
+span.list-i-bconoff {
+    width: 119px;
+    height: 42px;
+    background-position: -257px -249px;
+    zoom: .6;
+}
+
+/*내정보on*/
+span.list-i-mdonoff {
+    width: 87px;
+    height: 30px;
+    margin-right: 0;
+    background-position: -378px -273px;
+    zoom: .7;
+}
+
+/*내정보on*/
+span.list-i-live {
+    width: 66px;
+    height: 29px;
+    background-position: -326px -0px;
+}
+
+/*toplivegame_icon*/
+span.list-i-tlgicon {
+    width: 37px;
+    height: 37px;
+    background-position: -45px -205px;
+    zoom: .5;
+}
+
+.soccer span.list-i-tlgicon {
+    background-position: -45px -205px;
+}
+
+.basketball span.list-i-tlgicon {
+    background-position: -92px -205px;
+}
+
+.baseball span.list-i-tlgicon {
+    background-position: -139px -205px;
+}
+
+.volleyball span.list-i-tlgicon {
+    background-position: -187px -205px;
+}
+
+.icehockey span.list-i-tlgicon {
+    background-position: -232px -205px;
+}
+
+.football span.list-i-tlgicon {
+    background-position: -276px -205px;
+}
+
+.esports span.list-i-tlgicon {
+    width: 41px;
+    height: 32px;
+    background-position: -321px -205px;
+}
+
+.billiards span.list-i-tlgicon {
+    background-position: -372px -205px;
+}
+
+.tennis span.list-i-tlgicon {
+    background-position: -419px -205px;
+}
+
+/*경기일정 라이브아이콘*/
+span.list-i-livenum {
+    width: 80px;
+    height: 31px;
+    background-position: -230px 0;
+}
+
+/*랭킹아이콘 적중건수*/
+span.list-i-rank1 {
+    width: 35px;
+    height: 34px;
+    background-position: -134px 0;
+}
+
+/*랭킹아이콘 당첨배당*/
+span.list-i-rank2 {
+    width: 29px;
+    height: 34px;
+    background-position: -169px 0;
+}
+
+/*랭킹아이콘 당첨골드*/
+span.list-i-rank3 {
+    width: 32px;
+    height: 32px;
+    background-position: -198px 0;
+}
+
+/*채팅 아이콘*/
+span.list-i-betmore {
+    width: 46px;
+    height: 20px;
+    background-position: -380px -249px;
+}
+
+/*채팅 스크롤 멈춤 off*/
+span.chat-i-scr {
+    width: 16px;
+    height: 17px;
+    background-position: -340px -136px;
+    zoom: 1.1;
+}
+
+/*채팅 스크롤 멈춤 on*/
+.on span.chat-i-scr {
+    background-position: -361px -136px;
+}
+
+/*채팅 입출입 알람 off*/
+span.chat-i-usarm {
+    width: 23px;
+    height: 20px;
+    background-position: -406px -136px;
+}
+
+/*채팅 입출입 알람 on*/
+.on span.chat-i-usarm {
+    background-position: -382px -136px;
+}
+
+/*채팅 확성기*/
+span.list-i-speaker {
+    width: 28px;
+    height: 26px;
+    background-position: -493px -0px;
+    margin: 0;
+}
+/*채팅 확성기 on*/
+.on span.list-i-speaker {
+    background-position: -522px -0px;
+}
+
+/* 비지니스 사용기한 아이콘 */
+span.list-i-business{
+    width: 28px;
+    height: 18px;
+    background-position: -324px -82px;
+    margin: 5px 0 0 0 !important;
+}
+
+/* 퍼스트 사용기한 아이콘 */
+span.list-i-first{
+    width: 28px;
+    height: 18px;
+    background-position: -354px -82px;
+    margin: 5px 0 0 0 !important;
+}
+
+/*아이콘 끝*/
+/*진오주임님*/
+/* 배팅 규정 테이블 */
+.rules_wrap {
+    display: none;
+}
+
+.rules_wrap.on {
+    display: block;
+}
+
+.rules_wrap .tit_box {
+    padding: 10px 10px 15px 10px;
+}
+
+.rules_wrap .tit_box p {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.rules_wrap .tit_box span {
+    display: block;
+    color: #c7dde9;
+    font-size: 12px;
+    letter-spacing: -1px;
+    line-height: 20px;
+}
+
+.bet_rule table .tit span {
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+}
+
+.bet_rule .tit {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+    text-align: left;
+    background: #324d5b;
+    border-top: 1px solid #466575;
+    border-bottom: 1px solid #466575;
+    letter-spacing: -1px;
+}
+
+.bet_rule table tr {
+    background: #213743;
+    border-bottom: 1px solid #2c4552;
+    margin-left: 20px;
+}
+
+.bet_rule table th {
+    width: 30%;
+    position: relative;
+    padding: 10px 0 10px 10px;
+    text-align: left;
+    box-sizing: border-box;
+    vertical-align: top;
+    font-size: 12px;
+    letter-spacing: -1px;
+}
+
+.bet_rule table th:after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 13px;
+    top: 11px;
+    right: 0;
+    margin-top: 15px;
+    background-image: url(../img/icon.png);
+    background-position: -262px -338px;
+    zoom: .7;
+}
+
+.bet_rule table td {
+    color: #c7dde9;
+    font-size: 12px;
+    padding: 10px;
+    line-height: 20px;
+    letter-spacing: -1px;
+}
+
+.bet_rule table td .type1 {
+    color: #c7dde9;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.bet_rule table td .type1:before {
+    content: '·';
+    font-weight: bold;
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+/* 배팅 규정 테이블 끝*/
+/* 골드마켓 - 베팅 열쇠 */
+
+#keymk.on,
+#vipmk.on,
+#itemmk.on{
+    display: block !important;
+}
+
+/*구매갯수*/
+.numbox {
+    margin: -14px 0 0 45%;
+}
+.numbox:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+.numbox button{
+    width: 34px;
+    float: left;;
+    height: 34px;
+    color:#fff;
+    border: 1px solid #23353f;
+    vertical-align: middle;
+    border-right: 0;
+    background:#040d12 url(../img/mbtn.png);
+}
+.numbox button:last-child{
+    border-left: 0;
+    border-right: 1px solid #23353f;
+    background:#040d12 url(../img/pbtn.png);
+}
+.numbox input{
+    float: left;
+    width: 34px;
+    height: 34px;
+    background: #040d12;
+    color:#fff;
+    border: 1px solid #23353f;
+    vertical-align: middle;
+    text-align: center;
+}
+/*구매갯수 끝*/
+
+.container_key {
+    width: 100%;
+}
+
+.bet_header {
+    position: relative;
+    height: 50px;
+    padding: 0 3%;
+    line-height: 50px;
+    border-bottom: 1px solid #324a56;
+}
+
+.bet_header:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.bet_header .bet_header_top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-top: 1px solid rgb(60, 80, 91);
+    border-bottom: 1px solid rgb(60, 80, 91);
+}
+
+.bet_header .bet_header_top button {
+    flex: 1;
+    width: 100%;
+    height: 45px;
+    color: #BACDD4;
+}
+
+.bet_header .bet_header_top .on {
+    color: #FFBD35;
+    border-bottom: 1px solid #FFBD35 !important;
+}
+
+.bet_header .bet_header_middle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.bet_header_left {
+    float: left;
+}
+
+.bet_header_center {
+    width: 47%;
+    line-height: 50px;
+    margin: 0 auto;
+}
+
+.bet_header_right {
+    position: absolute;
+    top: 13px;
+    right: 2.5%;
+}
+
+.bet_header_left p,
+.bet_header_left span {
+    margin: auto;
+    padding: auto;
+    color: #bdc7c9;
+}
+
+.bet_header_left p {
+    font-size: 12px;
+    line-height: 50px;
+}
+
+.bet_header_left span {
+    zoom: .4;
+    vertical-align: -8px;
+    margin: 0 0 0 6px;
+}
+
+.bet_header_center .progress {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 20px;
+    border-radius: 50px;
+    background: #061721;
+    vertical-align: middle;
+}
+
+.bet_header_center .progress p {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    font-size: 12px;
+    text-align: center;
+}
+
+.bet_header_center .progress span {
+    display: inline-block;
+    position: relative;
+    width: 75%;
+    height: 20px;
+    margin-right: 13px;
+    margin-top: -10px;
+    border-radius: 50px;
+    background: rgb(77, 129, 168);
+    vertical-align: middle;
+    margin-left: 0px;
+}
+
+.bet_header_right .inventory {
+    width: 55px;
+    height: 25px;
+    padding: 3px;
+    line-height: 23px;
+    border-radius: 3px;
+    border: 1px solid !important;
+    background-color: rgb(10, 19, 26);
+    color: #bdc7c9;
+    font-size: 12px;
+}
+
+.bet_header_right button.inventory {
+    line-height: 17px;
+}
+
+.bet_key_body ul {
+    background: #213743;
+}
+
+.bet_key_body .card {
+    padding: 10px;
+    background: #15262f;
+    margin-bottom: 10px;
+    border: 1px solid rgb(60, 80, 91);
+}
+
+.bet_key_body .card .left {
+    width: 40%;
+    display: inline-block;
+}
+
+.bet_key_body .card .left img {
+    display: block;
+    width: 100%;
+}
+
+.bet_key_body .card .top .right {
+    padding-left: 5%;
+    width: 60%;
+    float: right;
+}
+
+.bet_key_body .card .top .right span {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 23px;
+}
+
+.bet_key_body .card .top .right span.list-i-coin {
+    float: left;
+    zoom: .6;
+    margin-top: 6px;
+}
+
+.bet_key_body .card .bottom .btn {
+    width: 100%;
+    height: 45px;
+    border-radius: 3px;
+    margin-top: 10px;
+    background-color: rgb(53, 146, 215);
+    font-weight: bold;
+}
+
+.bet_key_footer {
+    background: #213743;
+    padding: 0 0 32px 0;
+}
+
+.bet_key_footer .content {
+    padding: 15px 15px 35px 15px;
+    background: #15262f;
+    border: 1px solid rgb(60, 80, 91);
+}
+
+.bet_key_footer .content .wrap .key_box {
+    position: relative;
+    float: left;
+    font-size: .8em;
+}
+
+.key_box {
+    border-right: 5px solid #15262f;
+}
+
+.key_box>img {
+    display: block;
+    width: 100%;
+}
+
+.bet_key_footer .content .wrap:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.bet_key_footer .wrap {
+    margin-right: -5px;
+}
+
+.neon {
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    color: #fff;
+    text-shadow: 0px 0px 5px #0092ff, 0 0 10px #0092ff, 0 0 30px #1277B4;
+    font-weight: bold;
+}
+
+.neon .list-i-wcoin {
+    float: left;
+    zoom: .6;
+    margin: 5px 5px 0 0;
+}
+
+.bet_key_footer .content .key_box {
+    position: relative;
+    width: 33.3%;
+}
+
+.btn_group {
+    position: absolute;
+    width: 100%;
+    bottom: 15px;
+}
+
+.btn_group .posion {
+    display: block;
+    text-align: center;
+}
+
+.btn_group span {
+    font-size: .6em;
+}
+
+.btn_group .left,
+.btn_group .right {
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+    text-align: center;
+    color: #53baff;
+}
+
+.btn_group .left span,
+.btn_group .right span {
+    color: #53baff;
+}
+
+.bet_key_footer .bottom .left {
+    float: left;
+}
+
+.bet_key_footer .bottom .center .btn_group .left span,
+.bet_key_footer .bottom .right .btn_group .left span,
+.bet_key_footer .bottom .left .btn_group .right span,
+.bet_key_footer .bottom .center .btn_group .right span,
+.bet_key_footer .bottom .right .btn_group .right span {
+    color: rgb(80, 170, 232);
+    background: #060708;
+    font-size: 10px;
+}
+
+.bet_key_footer .bottom .left .btn_group,
+.bet_key_footer .bottom .center .btn_group,
+.bet_key_footer .bottom .right .btn_group {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.bet_key_footer .bottom .left .btn_group .left,
+.bet_key_footer .bottom .center .btn_group .left,
+.bet_key_footer .bottom .right .btn_group .left,
+.bet_key_footer .bottom .left .btn_group .right,
+.bet_key_footer .bottom .center .btn_group .right,
+.bet_key_footer .bottom .right .btn_group .right {
+    font-size: 10px;
+}
+
+.bet_key_footer .bottom .left .btn_group .left,
+.bet_key_footer .bottom .center .btn_group .left,
+.bet_key_footer .bottom .right .btn_group .left {
+    width: 37px;
+    display: flex;
+    justify-content: center;
+}
+
+.bet_key_footer .bottom .left .btn_group .right,
+.bet_key_footer .bottom .center .btn_group .right,
+.bet_key_footer .bottom .right .btn_group .right {
+    width: 45px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-left: 1px solid rgb(20, 21, 23) !important;
+    display: flex;
+    justify-content: center;
+    padding-left: 3px;
+}
+
+.bet_key_footer .bottom .tit {
+    font-size: 15px;
+    color: #FCFFFF;
+}
+
+.bet_key_footer .bottom .posion {
+    color: #FCFFFF;
+    font-size: 10px;
+}
+
+/* 골드마켓 - 베팅 열쇠 끝 */
+/* 골드마켓 - VIP 패키지 */
+.container_vip {
+    width: 100%;
+}
+
+.mk_content .bet_key_body,
+.mk_content .bet_vip_body,
+.mk_content .bet_item_body {
+    display: none;
+}
+
+.mk_content .on .bet_key_body,
+.mk_content .on .bet_vip_body,
+.mk_content .on .bet_item_body {
+    display: block;
+}
+
+.mk_content .bet_key_body.on,
+.mk_content .bet_vip_body.on,
+.mk_content .bet_item_body.on {
+    display: block;
+}
+
+.mk_content .conBox {
+    position: relative;
+}
+
+.mk_content .conBox .item_popup {
+    position: fixed;
+    width: 98%;
+    padding: 3%;
+    top: 65px;
+    left: 50%;
+    margin-left: -49%;
+    background: #000;
+    border: 1px solid #3c4f5d;
+}
+
+.mk_content .conBox .item_popup .xbtn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    zoom: .6;
+}
+
+.mk_content .conBox .item_popup .wrap>div {
+    float: left;
+}
+
+.mk_content .conBox .item_popup .wrap>div.img {
+    width: 22%;
+}
+
+.mk_content .conBox .item_popup .wrap>div.img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.mk_content .conBox .item_popup .wrap>div.txt {
+    width: 78%;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+
+.item_popup .list-i-coin,
+.item_popup .list-i-gold {
+    zoom: .5;
+    vertical-align: -4px;
+    margin: 0;
+}
+
+.item_popup .wrap>div>p,
+.item_popup .wrap>div>span {
+    font-size: 12px;
+    color: #c7deec;
+}
+
+.mk_content .conBox .item_popup .tit {
+    font-size: 14px;
+    color: #fff;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    line-height: 15px;
+}
+
+.item_popup .wrap .txt .numbox button,
+.item_popup .wrap .txt .numbox input {
+    float: left;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 20px;
+}
+
+.item_popup .wrap .txt .numbox {
+    display: block;
+    float: left;
+    margin: 0 auto;
+    width: 100%;
+    height: 20px;
+    border-radius: 3px;
+}
+
+.item_popup .wrap .txt .numbox:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.item_popup .wrap .txt .numbox input {
+    background: #050c12;
+    color: #fff !important;
+    border: 1px solid #233946;
+    /* border-top: 0;
+    border-bottom: 0; */
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+}
+
+.item_popup .wrap .txt .numbox input::placeholder {
+    color: #fff !important;
+}
+
+.item_popup>.wrap:after,
+.item_popup .wrap .txt .numbox:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.item_popup .sub p {
+    font-size: 12px;
+    letter-spacing: -1px;
+    line-height: 17px;
+}
+
+.item_popup .sub button {
+    width: 100%;
+    height: 45px;
+    border-radius: 3px;
+    margin-top: 10px;
+    background-color: rgb(53, 146, 215);
+    font-weight: bold;
+}
+
+.item_popup .wrap .txt .coin .ytxt,
+.item_popup .wrap .txt .gold .btxt2 {
+    font-weight: bold;
+}
+
+.item_popup .sub {
+    margin-top: 5px;
+}
+
+.bet_key_body,
+.bet_vip_body {
+    padding: 5% 0;
+    background: #213744;
+}
+
+.bet_vip_body {
+    position: relative;
+}
+
+.bet_vip_body .card {
+    padding: 10px;
+    background: rgb(21, 38, 48);
+    border: 1px solid rgb(60, 80, 91);
+}
+
+.bet_vip_body .card:nth-child(n+2) {
+    margin-top: 5%;
+}
+
+.bet_vip_body .card .top .left,
+.buy_popup .top .left {
+    float: left;
+    width: 41%;
+    margin-bottom: 3%;
+}
+
+.bet_vip_body .card .top .left img,
+.buy_popup .top .left img {
+    display: block;
+    box-shadow: 2px 2px 5px 0.5px #111;
+    width: 100%;
+}
+
+.bet_vip_body .card .top .right,
+.buy_popup .top .right {
+    float: right;
+    width: 59%;
+    padding-left: 5%;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+.bet_vip_body .card .top .right p,
+.buy_popup .top .right p {
+    font-size: 1em;
+    letter-spacing: -.5px;
+    line-height: 18px;
+}
+.buy_popup .top .right p span,
+.bet_vip_body .card .top .right p span{
+    display: block;
+}
+.buy_popup .top .right p span:before,
+.bet_vip_body .card .top .right p span:before{
+    content: '-';
+    margin-right: 3px;
+}
+
+.bet_vip_body .card .top .right p,
+.buy_popup .top .right p {
+    color: rgb(200, 220, 231);
+}
+
+.bet_vip_body .card .top .right .tit,
+.buy_popup .top .right .tit {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+}
+
+.buy_popup .top .right .tit:before {
+    content: '';
+}
+
+.buy_popup .top:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.bet_vip_body .card .bottom .btn {
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    margin-top: 3%;
+    line-height: 40px;
+    background-color: rgb(53, 146, 215);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.buy_popup {
+    overflow: hidden;
+    overflow-y: scroll;
+    position: absolute;
+    width: 100%;
+    top: -1px;
+    left: 0;
+    background: #15262f;
+    border: 1px solid #3a505d;
+    z-index: 20;
+}
+
+.buy_popup .container .xbtn {
+    position: absolute;
+    zoom: 0.5;
+    top: 0px;
+    right: 0px;
+}
+
+.buy_popup .container>div:nth-child(n+2) {
+    margin: 10px 0;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #394f5c;
+}
+
+.buy_popup .container>div .tit:before {
+    content: 'ㆍ';
+}
+
+.buy_popup .container>div .tit {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.buy_popup .container .txt {
+    letter-spacing: -.5px;
+    font-size: 12px;
+    color: #c7dde9;
+}
+.buy_popup .container .txt p.precautions{
+    font-size: 12px;
+    color: #ff2413;
+}
+
+.buy_type ul:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.buy_type ul {
+    background: #051016;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.buy_type ul li {
+    float: left;
+    width: 25%;
+    font-size: 11px;
+}
+
+.buy_type ul li:nth-child(n+5) {
+    width: 50%;
+}
+
+.buy_type ul li input[type=radio] {
+    margin: 0 3px 0 0;
+    vertical-align: middle;
+}
+
+.payment_amount {
+    margin-bottom: 20px;
+}
+
+.payment_amount .ytxt {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.payment_amount .ytxt:after {
+    content: '원';
+}
+
+.buy_popup .container .bbtn2 {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.bet_vip_body .card .top .price {
+    margin-top: 15px;
+}
+
+.bet_vip_body .card .top .price .discount {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.bet_vip_body .card .top .price .discount span {
+    display: block;
+    width: 100%;
+    max-width: 120px;
+    padding: 0px 5px;
+    margin: 0 auto;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 15px;
+    background: #ff2929;
+    font-weight: bold;
+}
+
+.bet_vip_body .card .top .price .gtxt {
+    float: left;
+    width: 50%;
+    text-decoration: line-through;
+    text-align: center;
+    font-size: 15px;
+}
+
+.bet_vip_body .card .top .price .arricon {
+    width: 100%;
+    text-align: center;
+    zoom: 0.6;
+}
+
+.bet_vip_body .card .top .price .ytxt {
+    text-align: center;
+    font-weight: 500;
+}
+
+.after_buy .gold span {
+    font-size: 13px;
+}
+
+.after_buy .gold button {
+    float: right;
+    width: 29%;
+    font-size: 11px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 3px;
+    line-height: 190%;
+    border-radius: 50px;
+}
+
+.after_buy .top:after,
+.after_buy .price:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.after_buy .price>span {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.after_buy .price .discount {
+    max-width: 120px;
+    padding: 0px 5px;
+    margin: 0 auto;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 15px;
+    background: #ff2929;
+    font-weight: bold;
+}
+
+.after_buy .price .gtxt {
+    width: 15%;
+    margin: 0 5px;
+    text-decoration: line-through;
+}
+
+.after_buy .price .list-i-redarr {
+    width: 43px;
+    margin: 0;
+    zoom: 0.6;
+    transform: rotate(-90deg);
+}
+
+.after_buy .price .ytxt {
+    width: auto;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+/* 골드마켓 - VIP 패키지 끝 */
+/* 골드마켓 - 베팅 아이템 패키지 */
+.market_container {
+    width: 100%;
+}
+
+.bet_item_body {
+    padding: 7px;
+    border-bottom: 1px solid rgb(60, 80, 91);
+    background: #213744;
+}
+
+.bet_item_body .card_list {
+    margin-right: -5px;
+}
+
+.bet_item_body .card_list .card {
+    float: left;
+    width: 33.3%;
+    border-right: 5px solid #213744;
+    border-bottom: 5px solid #213744;
+    background: rgb(21, 38, 48);
+}
+
+.bet_item_body .card_list:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.bet_item_body .card_list .card .top {
+    background: rgb(8, 16, 19);
+    border: 1px solid #395060;
+}
+
+.bet_item_body .card_list .card .top .img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.bet_item_body .card_list .card .bottom {
+    padding: 5px;
+    background: rgb(21, 38, 48);
+    border: 1px solid #395060;
+    border-top: 0;
+}
+
+.card .bottom .list-i-coin,
+.card .bottom .list-i-mile,
+.card .bottom .list-i-gold {
+    zoom: .6;
+}
+
+.bet_item_body .card_list .card .bottom p,
+.bet_item_body .card_list .card .bottom span {
+    font-size: 12px;
+}
+
+.bet_item_body .card_list .card .bottom span {
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+.bet_item_body .card_list .card .bottom span:nth-child(2) {
+    overflow: hidden;
+    display: inline-block;
+    width: 70%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+/*골드마켓 열쇠보물상자*/
+.keybox {
+    padding: 10px;
+    background: #15262f;
+    border: 1px solid #3a505d;
+}
+
+.keybox>p {
+    margin-bottom: 10px;
+}
+
+.keybox>div {
+    overflow: hidden;
+    float: left;
+    width: 32%;
+    padding: 10px 0 0 0;
+    border-radius: 5px;
+    border: 1px solid #3a505d;
+    background: #0d1417;
+    background: radial-gradient(ellipse at 50% -50%, #30425a, #0d1417);
+}
+
+.keybox>div:nth-child(n+2) {
+    margin-left: 1%;
+}
+
+.keybox>div p {
+    text-align: center;
+}
+
+.keybox>div p.tit {
+    font-size: 14px;
+    margin: 0;
+}
+
+.keybox>div img {
+    display: block;
+    margin: 0 auto;
+}
+
+.keybox>div .wrap {
+    background: #050809;
+}
+
+.keybox>div .wrap button:first-child {
+    border-right: 1px solid #000;
+}
+
+.keybox>div .wrap button:last-child {
+    border-left: 1px solid #10171a;
+}
+
+.keybox>div .wrap button {
+    float: left;
+    width: 50%;
+    padding: 5px 0;
+    text-align: center;
+    color: #6196f4;
+    box-sizing: border-box;
+}
+
+.keybox:after,
+.keybox>div .wrap:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+/*골드마켓 열쇠보물상자 끝*/
+/* 골드마켓 - 베팅 아이템 패키지 다이얼로그 */
+.item_card_dialog {
+    position: fixed;
+    left: 2.7%;
+    top: 18%;
+    width: 95%;
+    height: 21.5%;
+    background: #081013;
+    border: 1px solid rgb(60, 80, 91);
+}
+
+.item_card_dialog .header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.item_card_dialog .header .left {
+    width: 30%;
+    padding: 10px;
+}
+
+.item_card_dialog .header .left .img {
+    height: 80px;
+    width: 80px;
+    border: 1px solid rgb(60, 80, 91);
+}
+
+.item_card_dialog .header .right {
+    padding: 5px;
+    width: 70%;
+}
+
+.item_card_dialog .header .right .tit {
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.item_card_dialog .header .right .money {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.item_card_dialog .header .right .money .left {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0;
+    width: 110px;
+}
+
+.item_card_dialog .header .right .money .left p {
+    line-height: 23px;
+    color: #BACDD4;
+}
+
+.item_card_dialog .header .right .money .right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.item_card_dialog .header .right .money .right p {
+    line-height: 27px;
+    color: #BACDD4;
+}
+
+.item_card_dialog .header .right .money span {
+    background: #081013;
+}
+
+.item_card_dialog .header .right .money .gold {
+    width: 20px;
+    height: 18px;
+    background: url(../img/icon.png);
+    background-position: -148px -57px;
+    margin-top: 3px;
+    margin-left: 5px
+}
+
+.item_card_dialog .header .right .money .game {
+    width: 17px;
+    height: 22px;
+    background: url(../img/icon.png);
+    background-position: -192px -271px;
+    margin-left: 8px;
+}
+
+.item_card_dialog .header .right .money .coin_money {
+    color: rgb(252, 193, 53);
+}
+
+.item_card_dialog .header .right .money .game_money {
+    color: rgb(98, 144, 255);
+}
+
+.item_card_dialog .header .right .item_num {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.item_card_dialog .header .right .item_num .item_minus {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    border: 1px solid rgb(60, 80, 91) !important;
+    background: #152630 url(../img/mbtn.png);
+    background-position: -3px -1px;
+}
+
+.item_card_dialog .header .right .item_num .item_plus {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(60, 80, 91) !important;
+    background: #152630 url(../img/pbtn.png);
+    background-position: -2px -1px;
+}
+
+.item_card_dialog .header .right .item_num input {
+    width: 30px;
+    height: 30px;
+    border-top: 1px solid rgb(60, 80, 91) !important;
+    border-bottom: 1px solid rgb(60, 80, 91) !important;
+    background: #152630;
+    color: #fff;
+    text-align: center;
+}
+
+.item_card_dialog .body .row {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+}
+
+.item_card_dialog .body .row p {
+    font-size: 11px !important;
+    color: #BACDD4;
+}
+
+.item_card_dialog .footer .btn_group {
+    padding: 10px;
+}
+
+.item_card_dialog .footer .btn_group .btn {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(53, 146, 215);
+}
+
+/* 골드마켓 - 베팅 아이템 패키지 다이얼로그 끝 */
+/* 랭킹 */
+.ranking_container {
+    width: 100%;
+}
+
+.ranking_container>div {
+    display: none;
+}
+
+.ranking_container>div.on {
+    display: block;
+}
+
+.ranking_body {
+    background: #213744;
+}
+
+.ranking_body .ranklist:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.ranking_body table {
+    float: left;
+    margin-top: 20px;
+    width: 33.3%;
+    border-right: 1px solid #273e4c;
+}
+
+.ranking_body table td {
+    height: 40px;
+    padding: 0 5px;
+    border-bottom: 1px solid #273e4c;
+    box-sizing: border-box;
+}
+
+.ranking_body table td .name {
+    overflow: hidden;
+    display: inline-block;
+    width: 80%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+.ranking_body table td .num {
+    float: left;
+    width: 20px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.ranking_body table th {
+    height: 40px;
+    background: #2e4553;
+}
+
+.ranking_body table .list-i-1st,
+.ranking_body table .list-i-2st,
+.ranking_body table .list-i-3st {
+    zoom: .5;
+}
+
+.ranking_body .top {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.ranking_body .top .date_box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 13px 0;
+}
+
+.ranking_body .top .date_box .left button {
+    width: 21px;
+    height: 17px;
+    background: url(../img/icon.png);
+    background-position: -196px -69px;
+    margin-right: 15px;
+    transform: rotate(90deg);
+    vertical-align: middle;
+}
+
+.ranking_body .top .date_box .center p {
+    font-size: 16px !important;
+}
+
+.ranking_body .top .date_box .right button {
+    width: 21px;
+    height: 17px;
+    background: url(../img/icon.png);
+    background-position: -196px -69px;
+    margin-left: 15px;
+    transform: rotate(270deg);
+    vertical-align: middle;
+}
+
+.ranking_body .top .my_ranking {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.ranking_body .top .my_ranking>div {
+    padding: 10px 5px;
+    width: 31%;
+    height: 70px;
+    border: 1px solid #425563;
+    background: #122430;
+}
+
+.my_ranking>div>.top p {
+    font-size: 12px;
+    color: #BACDD4;
+    letter-spacing: -1px;
+}
+
+.my_ranking>div>.top {
+    display: flex;
+    flex-direction: row;
+}
+
+.my_ranking>div>.top>span {
+    zoom: 0.6;
+}
+
+.my_ranking>div>.middle {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.my_ranking>div>.middle p {
+    font-size: 13px;
+}
+
+.ranking_body .bottom .btn_group {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.ranking_body .bottom .btn_group .btn {
+    width: 100%;
+    height: 50px;
+    background: #051a25;
+}
+
+.ranking_body .bottom .btn_group .arrow_down {
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    margin-left: 10px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: -26px -267px;
+    align-self: center;
+}
+
+/* 랭킹 끝 */
+/* 경기 일정 */
+.game_match_container {
+    width: 100%;
+    background: #213744;
+}
+
+.game_match_header .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.game_match_header .row .date_box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex: 1;
+}
+
+.game_match_header .row .date_box .left button {
+    width: 21px;
+    height: 17px;
+    background: url(../img/icon.png);
+    background-position: -197px -69px;
+    margin-right: 15px;
+    transform: rotate(90deg);
+    vertical-align: middle;
+    zoom: 78%;
+}
+
+.game_match_header .row .date_box .center p {
+    font-size: 15px !important;
+    line-height: 28px;
+}
+
+.game_match_header .row .date_box .right button {
+    width: 21px;
+    height: 17px;
+    background: url(../img/icon.png);
+    background-position: -195px -69px;
+    margin-left: 15px;
+    transform: rotate(270deg);
+    vertical-align: middle;
+    zoom: 78%;
+}
+
+.game_match_header .row .calendar_box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 2px;
+}
+
+.game_match_header .row .btn {
+    display: flex;
+    margin-top: 10px;
+}
+
+.game_match_header .row .btn span {
+    font-size: 18px;
+    background: #213744;
+    margin-right: 15px;
+}
+
+.game_match_header .row .calendar_box .btn p {
+    width: 31px;
+    height: 38px;
+    background: url(../img/icon.png);
+    background-position: -102px -30px;
+    zoom: 65%;
+}
+
+.game_match_header .row .calendar_box p {
+    font-size: 20px !important;
+    margin: 0px 10px 0px 10px;
+    color: #A5BDC9;
+}
+
+.game_match_table thead tr td {
+    border-top: 1px solid rgb(60, 80, 91);
+    border-bottom: 1px solid rgb(60, 80, 91);
+}
+
+.game_match_table thead tr td p {
+    margin: 10px 0px 10px 15px;
+    font-size: 15px !important;
+    font-weight: 400;
+}
+
+.game_match_table tbody tr {
+    border-bottom: 1px solid rgb(60, 80, 91);
+}
+
+.game_match_table tbody td {
+    border-left: 1px solid rgb(60, 80, 91);
+}
+
+.game_match_table tbody ul li .card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.game_match_table tbody ul li .card .game {
+    flex: 1;
+    margin: 9px 0px 5px 5px;
+    font-size: 12px !important;
+}
+
+.game_match_table tbody ul li .card .btn_group {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.game_match_table tbody ul li .card .btn_group .btn {
+    width: 64px;
+    height: 27px;
+    background: url(../img/icon.png);
+    background-position: -66px -310px;
+    zoom: 85%;
+}
+
+.game_match_table tbody td .game_state {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.game_match_table tbody td .game_state .proceeding {
+    width: 45px;
+    border: 1px solid #5CBF91;
+    margin: auto;
+    margin-bottom: 5px;
+    margin-top: 9px;
+    margin-bottom: 5px;
+    color: #5CBF91;
+    text-align: center;
+}
+
+.game_match_table tbody td .game_state .before_start {
+    width: 45px;
+    border: 1px solid #B39072;
+    margin: auto;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    color: #B39072;
+    text-align: center;
+}
+
+.game_match_table tbody td .game_state .end {
+    width: 45px;
+    border: 1px solid #818085;
+    margin: auto;
+    margin-top: 9px;
+    margin-bottom: 4px;
+    color: #818085;
+    text-align: center;
+}
+
+.game_match_body .bottom .btn_group {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.game_match_body .bottom .btn_group .btn {
+    width: 100%;
+    height: 35px;
+    background: #051a25;
+}
+
+.game_match_body .bottom .btn_group .arrow_down {
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    margin-left: 10px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: -26px -267px;
+    align-self: center;
+}
+
+/* 경기 일정 끝 */
+/* 종목별 팀 순위 */
+.team_ranking_container {
+    width: 100%;
+}
+
+.team_ranking_middle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+.team_ranking_middle .league {
+    width: 120px;
+    height: 25px;
+    background: #091626;
+    border: 1px solid #091626;
+    border-radius: 2px;
+    color: #8FA0AA;
+    font-size: 12px;
+    margin: 10px 5px 10px 0;
+}
+
+.team_ranking_table {
+    text-align: center;
+}
+
+.team_ranking_table td:nth-child(2) {
+    width: 40%;
+}
+
+.team_ranking_table tr {
+    border-top: 1px solid rgb(60, 80, 91);
+    border-bottom: 1px solid rgb(60, 80, 91);
+}
+
+.team_ranking_table tr td {
+    width: 10%;
+    height: 40px;
+}
+
+.team_ranking_table tr td:nth-child(2) {
+    padding-left: 10px;
+    text-align: left;
+}
+
+.team_ranking_table tr {
+    border-bottom: 1px solid rgb(60, 80, 91);
+}
+
+.team_ranking_table tr td:nth-child(2) {
+    padding-left: 10px;
+    text-align: left;
+}
+
+.team_ranking_table tbody tr:nth-child(1) td {
+    color: #FFBC30 !important;
+    font-weight: 500;
+}
+
+.team_ranking_table tr td {
+    height: 40px;
+}
+
+/* 종목별 팀 순위 끝*/
+/*진오주임님 부분 끝*/
+/*정서씨부분 경기 일정*/
+.sports_date {
+    position: relative;
+    box-sizing: border-box;
+    height: 55px;
+    line-height: 55px;
+    background-color: #213744;
+}
+
+.sports_date .date_txt {
+    position: relative;
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sports_date button {
+    position: absolute;
+    height: 20px;
+    padding: 15px;
+    margin-top: 5px;
+    vertical-align: middle;
+}
+
+.sports_date button.left_arrow {
+    top: 10px;
+    left: 0;
+}
+
+.sports_date button.right_arrow {
+    top: 10px;
+    right: 0;
+}
+
+.sports_date .date_btn {
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    right: 10px;
+    top: 12px;
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+
+.sports_date .date_btn:after {
+    display: none;
+}
+
+.sports_date .left_arrow:after, .sports_date .right_arrow:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 26px;
+    top: 6px;
+    left: 50%;
+    margin-left: -3px;
+    background-image: url(../img/icon.png);
+    zoom: .7;
+}
+
+.sports_date button.left_arrow:after {
+    background-position: -231px -96px;
+}
+
+.sports_date button.right_arrow:after {
+    background-position: -257px -96px;
+}
+
+.sports_date button:nth-child(4):after {
+    display: none;
+}
+
+.sports_date button {
+    color: #a9c2d0;
+}
+
+.sports_date button span {
+    zoom: .6;
+    margin: 0 5px 5px 0;
+}
+
+.sports_calendar {
+    table-layout: auto;
+    border-right: 0;
+}
+
+.sports_calendar th,
+.sports_calendar td {
+    padding-left: 10px;
+    border: 1px solid #334A58;
+    border-right: 0;
+}
+
+.sports_calendar th {
+    border-left: 0;
+}
+
+.sports_calendar td {
+    padding: 4px 0 4px 0;
+    box-sizing: border-box;
+}
+
+.sports_txt td:nth-child(2) {
+    width: 67% !important;
+}
+
+.sports_txt td:nth-child(3) {
+    width: 20% !important;
+    padding: 7px 5px 10px 5px;
+}
+
+.sports_tit {
+    height: 41px;
+}
+
+.sports_tit>th {
+    text-align: left;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.sports_txt td:nth-child(1) {
+    width: 13% !important;
+    color: #9BB6C7;
+    vertical-align: top;
+    padding: 7px 10px 10px 5px;
+    border-left: 0;
+}
+
+.sports_txt td:nth-child(2)>div {
+    padding: 0 10px 2px 0;
+    font-size: 12px;
+    letter-spacing: -1px;
+}
+
+.sports_txt td:nth-child(2)>div>span.home,
+.sports_txt td:nth-child(2)>div>span.away {
+    float: left;
+    padding: 0 5px;
+    color: #fff;
+    overflow: hidden;
+    max-width: 35%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.sports_txt td:nth-child(2)>div>span.score {
+    float: left;
+    letter-spacing: 1px;
+}
+
+.sports_txt td:nth-child(2)>div:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.sports_txt td:nth-child(2)>div>span.list-i-livenum {
+    display: none;
+    float: right;
+    zoom: .5;
+    margin: 5px 0 0 0;
+}
+
+.sports_txt td:nth-child(2)>div.live>span.list-i-livenum {
+    display: block;
+}
+
+.sports_txt td:last-child div {
+    display: flex;
+    justify-content: center;
+}
+
+.sports_txt td:nth-child(2) div .sport_live_icon {
+    display: inline-flex;
+    position: relative;
+    float: right;
+    top: 0;
+    right: 5px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.sport_live_icon:after {
+    content: '';
+    display: inline-block;
+    width: 63px;
+    height: 23px;
+    margin-left: -3px;
+    margin-top: 2px;
+    background-image: url(../img/icon.png);
+    background-position: -66px -310px;
+}
+
+.sports_txt td:last-child {
+    text-align: center;
+}
+
+.sports_txt td:last-child div {
+    margin-bottom: 5px;
+}
+
+.sports_txt td:last-child div:last-child {
+    margin-bottom: 0px;
+}
+
+.sports_calendar .sports_txt td:last-child div:after {
+    display: block;
+    width: 45px;
+    height: 17px;
+    top: 6px;
+    left: 50%;
+    padding: 0 5px;
+    line-height: 17px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.ongoing_btn:after {
+    content: '진행중';
+    color: #4da872;
+    border: 1px solid #4da872;
+}
+
+.before_btn:after {
+    content: '시작전';
+    color: #a87a4d;
+    border: 1px solid #a87a4d;
+}
+
+.after_btn:after {
+    content: '종료';
+    color: #919191;
+    border: 1px solid #919191;
+}
+
+/*경기 일정 끝*/
+/*자유 게시판*/
+.btn_box {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0 15px 0;
+    background-color: #213744;
+}
+
+.serch_box {
+    width: 45%;
+    border-radius: 1px;
+    border: 1px solid #96B9CF;
+    border-radius: 2px;
+}
+
+.serch_box button {
+    position: absolute;
+    display: block;
+    right: 0px;
+    top: 1px;
+    padding: 5px;
+    box-sizing: border-box;
+    zoom: 0.7;
+}
+
+.serch_box input[type=text] {
+    height: 30px;
+    width: 100%;
+    color: #96B9CF;
+    background-color: #213744;
+    border: 0;
+}
+
+.serch_box input[type=text]::placeholder {
+    color: #9DB3C1;
+    font-size: 85%;
+}
+
+.event_box .serch_box {
+    position: relative;
+    width: 55%;
+}
+
+.event_box .serch_box input {
+    padding: 0 30px 0 10px;
+}
+
+.btn_box .serch_btn button {
+    height: 32px;
+    width: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #96B9CF;
+    color: black;
+    margin-left: -1px;
+}
+
+.event_box .serch_box button {
+    position: absolute;
+    display: block;
+    right: 0px;
+    top: 1px;
+    padding: 5px;
+    box-sizing: border-box;
+    zoom: 0.7;
+}
+
+.write_box {
+    padding-left: 5px;
+}
+
+.write_box button,
+.write_box a {
+    display: block;
+    height: 32px;
+    width: 78px;
+    border-radius: 2px;
+    background-color: #4C82A6;
+    text-align: center;
+    line-height: 32px;
+}
+
+.board_list .list_ul li {
+    padding: 10px;
+    background-color: #213744;
+    border-bottom: 1px solid #314856;
+}
+
+.board_list .list_ul li a>div {
+    float: left;
+}
+
+.board_list .list_ul .notice_list {
+    background-color: #132531;
+}
+
+.board_list .list_ul a:after,
+.board_list .list_ul li:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.board_list .list_ul .left_txt {
+    width: 80%;
+}
+
+.board_list .list_ul .list_img {
+    float: right;
+    width: 20%;
+    height: 100%;
+}
+
+.board_list .list_ul .list_img img {
+    float: right;
+    width: 100%;
+    height: 100%;
+    max-width: 116px;
+    max-height: 116px;
+}
+
+.board_list .list_ul .left_txt>div {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    word-wrap: break-word;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 1.2;
+}
+
+.board_list .list_ul .left_txt div>span {
+    color: #FCFFFF;
+}
+
+.board_list .list_ul .left_txt .notice {
+    font-size: 13px;
+    color: #80B9E1;
+}
+
+.board_list .list_ul .left_txt .cert {
+    font-size: 13px;
+    color: #FFA977;
+}
+
+.board_list .list_ul .left_txt .free {
+    font-size: 13px;
+    color: #7DFFFF;
+}
+
+.board_list .list_ul .left_txt .analy {
+    font-size: 13px;
+    color: #E07CFA;
+}
+
+.board_list .list_ul .left_txt .board_tit {
+    font-size: 13px;
+}
+.board_list .list_ul .left_txt .cnt_cmt{
+    font-size: 13px;
+}
+.board_list .list_ul .left_txt .cmt_num{
+    color: #569ccf;
+}
+.board_list .list_ul .left_txt .info {
+    font-size: 12px;
+}
+
+.board_list .list_ul .left_txt .board_nick {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    max-width: 94px;
+    padding-right: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    box-sizing: border-box;
+}
+
+.board_view .view_ul .info>span {
+    vertical-align: middle;
+}
+
+.board_view .view_ul .info .board_nick {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    max-width: 100px;
+    padding-right: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    box-sizing: border-box;
+}
+
+.board_list .list_ul .left_txt .board_cnt {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    max-width: 80px;
+    padding: 0 10px 0 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    box-sizing: border-box;
+}
+
+.board_list .list_ul .left_txt .board_cnt:after,
+.board_list .list_ul .left_txt .board_nick:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 10px;
+    top: 9px;
+    background: #bed0dc;
+}
+
+.board_list .list_ul .left_txt .board_nick:after {
+    right: 0;
+}
+
+.board_list .list_ul .left_txt .board_cnt:after {
+    right: 2px;
+}
+
+.board_list .list_ul .left_txt .info span {
+    color: #becedb;
+    vertical-align: middle;
+}
+
+.board_list .list_ul .left_txt .board_date {
+    padding-left: 5px;
+}
+
+/*자유 게시판 끝*/
+/*자유 게시판 상세*/
+.board_view .view_ul li {
+    /* height: 85px; */
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    background-color: #132531;
+}
+
+.board_view .view_ul .view_tit>div {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    line-height: 1.2;
+    /* height: 2.4em; */
+}
+
+.board_view .view_ul .view_tit .board_tit {
+    width: 100%;
+    font-size: 14px;
+    color: #FCFFFF;
+}
+
+.board_view .view_ul .view_tit .info {
+    font-size: 12px;
+    color: #BFD1DD;
+}
+
+.board_view .view_ul .view_tit .info .board_nick {
+    padding-right: 5px;
+}
+
+.board_view .view_ul .view_tit .info .board_cnt {
+    position: relative;
+    padding: 0 5px;
+}
+
+.board_view .view_ul .view_tit .info .board_cnt:after,
+.board_view .view_ul .view_tit .info .board_cnt:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    top: 5px;
+    background: #dcdcdc;
+}
+
+.board_view .view_ul .view_tit .info .board_cnt:before {
+    left: 0px;
+}
+
+.board_view .view_ul .view_tit .info .board_cnt:after {
+    right: 0px;
+}
+
+.board_view .view_ul .view_tit .info .board_date {
+    padding-left: 5px;
+}
+
+.view_content {
+    padding: 20px 0px 0 0px;
+    background-color: #213744;
+}
+
+.view_content .view_text .view_img {
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+.view_content .view_text .view_img img {
+    width: 100%;
+}
+
+.view_content .view_text {
+    padding: 0 10px 40px 10px;
+    border-bottom: 1px solid #314856;
+}
+
+.view_content .view_btn {
+    border-bottom: 1px solid #314856;
+}
+
+.view_btn {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 0;
+    margin: 0 10px;
+}
+
+.view_btn button,
+.view_btn a {
+    display: inline-block;
+    width: 65px;
+    height: 30px;
+    margin: 0 0 0 5px;
+    border-radius: 2px;
+    line-height: 30px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.more_view {
+    padding: 5px 0;
+    margin: 0 10px;
+    border-bottom: 1px solid #314856;
+}
+
+.more_view li a {
+    width: 100%;
+    padding: 0 10px 0 30px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+
+.more_view li span {
+    font-size: 12px;
+}
+
+.more_view li span:first-child {
+    position: relative;
+    padding-right: 5px;
+    color: #96B3C5;
+}
+
+.more_view li span:last-child {
+    color: #FCFFFF;
+}
+
+.more_view li:last-child span:first-child:after,
+.more_view li:first-child span:first-child:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 8px;
+    top: 8px;
+    left: -25px;
+    background-image: url(../img/icon.png);
+    background-position: -138px -103px;
+    zoom: 0.7;
+}
+
+.more_view li:last-child span:first-child:after {
+    top: 10px;
+    background-position: -138px -113px;
+}
+
+.comment {
+    padding: 15px 10px 0 10px;
+    background-color: #213744;
+}
+
+.comment .add {
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.comment .add textarea {
+    width: 80%;
+    height: 50px;
+    padding: 15px 0 15px 10px;
+    vertical-align: 1.5px;
+    float: left;
+    resize: none;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    border: 0;
+    background: #111a1f;
+    color: #B7C5CE;
+}
+
+.comment textarea::placeholder {
+    color: #a2aaad;
+    font-size: 80%;
+}
+
+.comment .add button {
+    width: 20%;
+    height: 50px;
+    background-color: #4D81A8;
+}
+
+.comment .comment_count {
+    font-size: 13px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #314856;
+}
+
+.comment .comment_count .ytxt {
+    color: #FFA814;
+}
+
+.comment .comment_list li {
+    position: relative;
+    padding: 5px;
+    border-bottom: 1px solid #2f4552;
+}
+
+.comment .comment_list li:nth-child(2n) {
+    background: #1f313d;
+}
+
+.comment .comment_list .comment_tit span {
+    font-size: 12px;
+}
+
+.comment .comment_list .comment_tit span p {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 12px;
+    overflow: hidden;
+    max-width: 80px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    vertical-align: -6px;
+    box-sizing: border-box;
+}
+
+.comment .comment_list .comment_tit span:first-child {
+    position: relative;
+}
+
+.comment .comment_list .comment_tit span:first-child:after {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    top: 5px;
+    right: 0;
+    background: #dcdcdc;
+}
+
+.comment .comment_list .comment_tit span:last-child {
+    padding-left: 5px;
+}
+
+.comment .comment_list .comment_tit .dbtxt {
+    color: #FAFFFF;
+}
+
+.comment .comment_tit>.cmt_btn {
+    position: absolute;
+    height: 25px;
+    top: 5px;
+    right: 0;
+    text-align: center;
+}
+
+.cmt_reply>.comment_tit>.cmt_btn {
+    position: absolute;
+    height: 25px;
+    top: 2px;
+    right: 0;
+    text-align: center;
+}
+
+.comment .cmt_btn button {
+    margin-top: 7px 0 0 5px;
+    width: 30px;
+    height: 22px;
+    line-height: 15px;
+    border: 1px solid #7c929f !important;
+    border-radius: 2px;
+    color: #7c929f;
+    font-size: 12px;
+}
+
+.comment .cmt_btn button:last-child {
+    margin-right: 0px;
+}
+
+.comment_list .cmt_box {
+    clear: both;
+    margin: 0 0 5px 5px;
+    font-size: 13px;
+    color: #B2C8D5;
+    word-break: break-all;
+}
+
+.cmt_reply .cmt_box {
+    margin: 0px 0 5px 15px;
+}
+.cmt_reply .cmt_box:before {
+    display: none !important;
+}
+
+.comment .cmt_reply div {
+    margin-left: 15px;
+}
+.comment .cmt_reply div.cmt_box {
+    margin-left: 5px;
+}
+
+.comment .cmt_reply div:first-child {
+    position: relative;
+    line-height: 1.9;
+    word-break: break-all;
+    text-align: justify;
+}
+
+.comment .cmt_reply div:first-child:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 16px;
+    top: 17px;
+    left: -25px;
+    background-image: url(../img/icon.png);
+    background-position: -218px -69px;
+    zoom: 0.5;
+}
+
+/*자유 게시판 상세 끝*/
+/*이벤트 리스트*/
+.event_box {
+    background-color: #213744;
+    padding-bottom: 25px;
+}
+
+.event_box .btn_box {
+    background-color: transparent;
+    border: 0;
+}
+
+.sub_box {
+    display: flex;
+    justify-content: center;
+    margin: 3px 0 20px 0;
+}
+
+.event_box .serch_box {
+    position: relative;
+    width: 55%;
+}
+
+.sub_box button {
+    position: relative;
+    width: 43%;
+    height: 30px;
+    max-width: 140px;
+    top: 0;
+    padding: 0 20px;
+    background-color: #071724;
+    border-radius: 23px;
+    line-height: 30px;
+    font-size: 13px;
+    color: #A6A8A7;
+}
+
+.sub_box button:first-child {
+    left: 8px;
+}
+
+.sub_box button:last-child {
+    width: 40%;
+    right: 13px;
+}
+
+.sub_box .on {
+    z-index: 1;
+}
+
+.sub_box .on {
+    background-color: #4C82A6;
+    color: #FEFFFD;
+}
+
+.event_list .event_ul li {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #324957;
+}
+
+.event_list .event_ul li .event_txt {
+    padding: 5px 0;
+}
+
+.event_list .event_ul .event_img {
+    width: 100%;
+    height: 100%;
+    background-position: center !important;
+    background-size: 100% 100% !important;
+}
+
+.event_list .event_ul .event_img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.event_list .event_ul .event_txt div {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.event_list .event_ul .event_txt .event_tit {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    letter-spacing: -1px;
+}
+
+.event_list .event_ul .event_txt .board_date {
+    font-size: 13px;
+    color: #9BB6C7;
+}
+
+/*정서씨부분 끝 이벤트 리스트 끝*/
+/* 게시판 글쓰기 */
+.board_select {
+    display: block;
+    width: 95%;
+    height: 30px;
+    padding: 3px;
+    margin: 10px auto 0;
+    line-height: 55px;
+    border-radius: 4px;
+    background: #071724;
+    border-color: #071724 !important;
+    color: #c9d2d9;
+    font-size: 12px;
+}
+
+.board_body {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #314856;
+}
+
+.board_body .top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: 1px solid #314856;
+    border-bottom: 1px solid #314856;
+}
+
+.board_body .top input {
+    width: 95%;
+    margin: 10px auto;
+    padding: 0;
+    background-color: #213744;
+    border: 0;
+}
+
+.board_body .top input::placeholder {
+    color: #c9d2d9;
+}
+
+.board_body .top input[type=text] {
+    color: #c9d2d9;
+    font-size: 13px;
+}
+
+.board_body .middle .bet_upload {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    padding: 3px;
+    margin: 5px auto;
+    border: 1px dotted #c9d2d9;
+}
+
+.board_body .middle .bet_upload button {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.board_body .middle .bet_upload button>div {
+    font-size: 13px;
+    width: 67px;
+    height: 38px;
+    background-color: #a8bdcc !important;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+.board_body .middle .bet_upload button>div>.pre {
+    font-size: 12px;
+    margin-top: 2px;
+    color: #051a25;
+    line-height: 16px;
+}
+
+.board_body .middle .bet_upload button>.text {
+    line-height: 45px;
+}
+
+.board_body .middle .content {
+    border-bottom: 1px solid #314856;
+}
+
+.bet_upload a {
+    float: left;
+    width: 20%;
+    height: 30px;
+    line-height: 13px;
+    background: #f1f1f1;
+    text-align: center;
+    padding: 3px;
+    color: #c9d2d9;
+    background: #071724;
+    font-size: 12px;
+}
+
+.bet_upload span {
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.bet_upload>span {
+    display: inline-block;
+    width: 80%;
+    font-size: 12px;
+    line-height: 30px;
+    margin-left: 5px;
+    box-sizing: border-box;
+}
+
+.bet_upload .betting_box div span,
+.bet_upload .betting_box div b{
+    font-size: 12px;
+}
+
+/* 게시판 글쓰기 끝 */
+/*로딩모션*/
+.waiting_progress {
+    height: 200px;
+}
+
+.waiting_progress>div {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.loader {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    width: 12px;
+    height: 12px;
+    top: 46%;
+    top: -webkit-calc(40% - 6px);
+    top: calc(48% - 6px);
+    left: 46%;
+    left: -webkit-calc(50% - 6px);
+    left: calc(50% - 6px);
+    border-radius: 12px;
+    background-color: #ffbc30;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-animation: loader 1s ease-in-out infinite;
+    animation: loader 1s ease-in-out infinite;
+}
+
+.loader:before {
+    content: "";
+    position: absolute;
+    background-color: #ffbc30;
+    top: 0px;
+    left: -25px;
+    height: 12px;
+    width: 12px;
+    border-radius: 12px;
+}
+
+.loader:after {
+    content: "";
+    position: absolute;
+    background-color: #ffbc30;
+    top: 0px;
+    left: 25px;
+    height: 12px;
+    width: 12px;
+    border-radius: 12px;
+}
+
+@-webkit-keyframes loader {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(180deg);
+    }
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+/*로딩모션끝*/
+/*미디어쿼리*/
+@media screen and (min-width: 475px) {
+    .after_buy .price {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .after_buy .price .discount {
+        width: 87px;
+    }
+
+    .after_buy .price .gtxt {
+        width: 70px;
+    }
+
+    .after_buy .price .ytxt {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+
+    .keybox>div p.mykey,
+    .keybox>div .wrap button {
+        font-size: 10px;
+    }
+
+    .keybox>div img {
+        width: 80%;
+    }
+
+    .bet_vip_body .card .top .price .gtxt,
+    .bet_vip_body .card .top .price .discount span,
+    .after_buy .price .discount,
+    .after_buy .price .gtxt {
+        font-size: 11px;
+    }
+
+    .bet_vip_body .card .top .price {
+        margin-top: 5px;
+    }
+
+    .after_buy .price .discount {
+        margin-left: 10%;
+    }
+
+    .after_buy .gold button {
+        margin-top: 3%;
+    }
+
+    .after_buy .gold span {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .after_buy .price .discount {
+        margin-left: 6%;
+    }
+
+    .my_ranking>div>.top p {
+        font-size: 11px;
+    }
+
+    .ranking_body table td .name {
+        width: 70px;
+        font-size: 12px;
+    }
+
+    .my_ranking>div>.middle p {
+        font-size: 12px;
+    }
+
+    .ranking_body table td .num {
+        font-size: 12px;
+    }
+
+    .enhance_box .item .add {
+        top: 58%;
+    }
+}
+
+/*미디어쿼리 끝*/
+/*강화합성*/
+/* .make_content .submenu {
+    width: 80%;
+} */
+
+.make_content .menu_wrap {
+    position: relative;
+    border-bottom: 1px solid #324a56;
+    background: #071724;
+}
+
+.make_content .menu_wrap .submenu li {
+    border-bottom: 0;
+}
+
+.make_content .menu_wrap .submenu li.on {
+    height: 40px;
+    line-height: 40px;
+    color: #ffb828;
+    border-bottom: 2px solid #ffb828;
+    box-sizing: border-box;
+}
+
+.make_content .menu_wrap .bet_header_right {
+    top: 6px;
+}
+
+.make_content .additem_btn {
+    display: block;
+    width: 175px;
+    height: 40px;
+    line-height: 35px;
+    margin: 5% auto;
+    font-weight: 500;
+    border-radius: 50px;
+    background: #198dfe;
+    border-top: 1px solid #47bbff;
+    border-bottom: 5px solid #269aff;
+}
+
+.bet_key_body .precautions,
+#vip_buy_pop .precautions{
+    color: #ff2413;
+    margin-bottom: 10px;
+}
+
+/*강화합성*/
+/*제작*/
+.subtit.making {
+    background-image: url(../img/subtit/sub_making.png);
+}
+
+.making_wrap>p {
+    background: #071724;
+    padding-left: 30px;
+    line-height: 60px;
+    font-size: 17px;
+}
+.enhance_box #enhance_action_btn{
+    margin-bottom: 15px;
+}
+
+.enhance_box .dividend .arr {
+    width: 98px;
+    height: 103px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: -503px -294px;
+    margin: 150px 20px 0 20px;
+}
+
+.myitem>.arr {
+    float: left;
+}
+
+.enhance_box .dividend .arr {
+    zoom: .2;
+    margin: 0px 15px -11px 15px;
+}
+
+.enhance_box,
+.synthetic_box {
+    margin: 0 5%;
+    background: #152630;
+    border: 1px solid #394f5c;
+    box-sizing: border-box;
+}
+
+.synthetic_box .null {
+    height: 110px;
+    line-height: 80px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.enhance_box button{
+    display: block;
+    width: 80%;
+    margin: 15px auto 0px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 3px;
+    background: #3592d7;
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: .5px;
+}
+.synthetic_box .syn_btn{
+    display: block;
+    position: relative;
+    float: right;
+    width: 25%;
+    top:-30px;
+
+    height: 30px;
+    line-height: 30px;
+    border-radius: 3px;
+    background: #3592d7;
+    font-weight: bold;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: .5px;
+}
+.enhance_box>p {
+    text-align: center;
+    padding: 200px 0;
+    font-size: 17px;
+}
+
+.enhance_box .item:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.enhance_box .item>div:last-child {
+    float: right;
+}
+
+.enhance_box .item>div {
+    float: left;
+    width: 40%;
+}
+
+.enhance_box .item>div .img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #000308;
+    border: 3px solid #bcd2de;
+    border-radius: 5px;
+}
+
+.enhance_box .item>div .img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.enhance_box .item>div p {
+    text-align: center;
+    color: #c6deea;
+}
+
+.enhance_box .item .add {
+    position: absolute;
+    width: 65px;
+    height: 68px;
+    top: 54%;
+    left: 50%;
+    margin: -30px 0 0 -32px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: -513px -227px;
+    zoom: .5;
+}
+
+.betitem ul li>div {
+    float: left;
+}
+
+.enhance_box .item {
+    position: relative;
+    width: 80%;
+    margin: 3% auto 0;
+}
+
+.enhance_box .option {
+    padding: 15px 0;
+    font-size: 15px;
+    text-align: center;
+}
+
+.enhance_box .option label:first-child {
+    margin: 0 10px 0 0;
+}
+
+.enhance_box .option label {
+    vertical-align: middle;
+}
+
+.enhance_box .option input {
+    width: 15px;
+    height: 15px;
+    vertical-align: -2px;
+}
+
+.enhance_box .dividend {
+    height: 85px;
+    background: #071724;
+    text-align: center;
+    background: linear-gradient(to right, #13242e 0%, #071721 10%, #071721 90%, #13242e 100%);
+    padding: 10px 0;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.enhance_box .dividend .tit {
+    font-size: 15px;
+    color: #c7dbe6;
+    margin-bottom: 3px;
+}
+
+.enhance_box .dividend span {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.enhance_box .dividend span.after {
+    color: #febb2f;
+}
+
+.enhance_box>.sub {
+    text-align: center;
+}
+
+.enhance_box>.sub span {
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.enhance_box>.sub span:first-child {
+    position: relative;
+    padding-right: 10px;
+}
+
+.enhance_box>.sub span:last-child {
+    margin-left: 10px;
+}
+
+.enhance_box>.sub span:first-child:after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    right: -2px;
+    width: 1px;
+    height: 10px;
+    background: #fff;
+}
+
+.enhance_box>.sub span:last-child:after {
+    display: none;
+}
+
+.myitem ul {
+    overflow: hidden;
+    overflow-y: auto;
+    float: left;
+    height: 604px;
+    width: 433px;
+    border: 1px solid #394f5c;
+}
+
+.myitem ul::-webkit-scrollbar {
+    width: 10px;
+}
+
+.myitem ul::-webkit-scrollbar-thumb {
+    background-color: #717a81;
+    border-radius: 50px;
+}
+
+.myitem ul::-webkit-scrollbar-track {
+    background-color: #000;
+}
+
+.myitem li {
+    position: relative;
+    width: 433px;
+    background: #152630;
+    border-bottom: 1px solid #394f5c;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+.myitem li .blind {
+    display: none;
+}
+
+.myitem li.on .blind {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(../img/enhance_bg.png) repeat;
+}
+
+.myitem li.on .blind p {
+    text-align: center;
+    line-height: 200px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.myitem li:last-child {
+    border-bottom: 0;
+}
+
+.myitem li:after,
+.myitem:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.myitem li .img,
+.myitem .enhance_box .img {
+    float: left;
+    overflow: hidden;
+    width: 140px;
+    height: 140px;
+    border-radius: 7px;
+}
+
+.myitem li .img img,
+.myitem .enhance_box .img img {
+    outline: 3px solid #a1b7c3;
+    outline-offset: -4px;
+    border-radius: 12px;
+}
+
+.myitem li .txt {
+    float: right;
+    width: 236px;
+    box-sizing: border-box;
+}
+
+.myitem li .txt .tit {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.myitem li .txt .tit span {
+    float: right;
+    font-size: 14px;
+    margin-top: 7px;
+}
+
+.myitem li .txt .gtxt {
+    color: #cbdde7;
+    font-size: 18px;
+    margin-top: 4px;
+}
+
+.myitem li .txt button {
+    background: #4d81a8;
+    width: 94px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 3px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.synthetic_wrap {
+    float: right;
+    width: 433px;
+    height: 604px;
+    background: #152630;
+    border: 1px solid #394f5c;
+}
+
+.synthetic_wrap:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.synthetic_box ul {
+    border: 0;
+}
+
+.synthetic_box ul>li {
+    padding: 15px;
+    border: 0 !important;
+    background: #152630;
+    border-bottom: 1px solid #394f5c !important;
+}
+
+.synthetic_box ul>li .wrap:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.synthetic_box ul>li .img {
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+
+.synthetic_box ul>li .txt {
+    float: right;
+    width: 65%;
+}
+
+.synthetic_box li .img img {
+    border: 3px solid #3fa2e3;
+    border-radius: 3px;
+}
+
+.synthetic_box li .txt p {
+    overflow: hidden;
+    display: block;
+    font-size: 14px;
+    line-height: 17px;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.synthetic_box li .txt .gtxt {
+    font-size: 12px;
+}
+
+.synthetic_box li .txt .num {
+    overflow: hidden;
+    width: 105px;
+    height: 34px;
+    border: 1px solid #213744;
+    border-radius: 7px;
+    margin-top: 20px;
+}
+
+.synthetic_box li .txt .num:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.synthetic_box li .txt .num button,
+.synthetic_box li .txt .num input {
+    float: left;
+    width: 35px;
+    height: 34px;
+    background: #050d12;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    line-height: 34px;
+    color: #fff;
+}
+
+.synthetic_box li .txt .num input {
+    border: 0;
+    border-left: 1px solid #213744;
+    border-right: 1px solid #213744;
+}
+
+.betitem .enhance_btn {
+    padding: 0 5px;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+    background: #d73d35;
+}
+
+.betitem .synthetic_btn {
+    padding: 0 5px;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+    background: #d88235;
+}
+
+.synthetic_box li {
+    display: block;
+    padding: 3% auto 0;
+    border-bottom: 1px solid #394f5c;
+}
+
+.synthetic_box .num_box button {
+    float: left;
+    width: 25px;
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    background: #050d12;
+    line-height: 24px;
+}
+
+.synthetic_box .num_box {
+    width: 77px;
+    height: 26px;
+    border-radius: 5px;
+    margin-top: 5px;
+    border: 1px solid #213744;
+}
+
+.synthetic_box .num_box input {
+    float: left;
+    width: 25px;
+    height: 24px;
+    background: #050d12;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-right: 1px solid #213744;
+    border-left: 1px solid #213744;
+    box-sizing: border-box;
+}
+
+#synthetic_wrap, #additem_wrap {
+    display: none;
+}
+
+#synthetic_wrap.on, #additem_wrap.on {
+    display: block;
+}
+
+/*강화합성 끝*/
+/*닉네임변경 모달팝업*/
+#reserve .ShowNickName {
+    position: fixed;
+    width: 270px;
+    height: 180px;
+    padding: 5px;
+    top: 50%;
+    left: 50%;
+    margin: -90px 0 0 -135px;
+    border: 1px solid #8fb9dd;
+    background: #000;
+    z-index: 10;
+}
+
+#reserve #ShowNickName2 {
+    position: fixed;
+    width: 270px;
+    height: 220px;
+    padding: 5px;
+    top: 50%;
+    left: 50%;
+    margin: -110px 0 0 -135px;
+    border: 1px solid #8fb9dd;
+    background: #000;
+    z-index: 10;
+}
+
+#ShowNickName2 .tit {
+    text-align: center;
+}
+
+#reserve #ShowNickName .tit {
+    margin-top: 10px;
+}
+
+#reserve .ShowNickName .title {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 12px;
+}
+
+#reserve .ShowNickName .title p {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+#reserve #ShowNickName2 .title p {
+    margin-top: 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+#reserve .ShowNickName .title .center {
+    text-align: center;
+}
+
+#reserve .ShowNickName .result {
+    width: 96%;
+    margin: 0 auto;
+    border: 0px solid #e1e1e1;
+    overflow: hidden;
+}
+
+#reserve .ShowNickName ul {
+    padding: 5px;
+    border-bottom: 0px solid #e1e1e1;
+    overflow: hidden;
+}
+
+#reserve .ShowNickName li {
+    font-size: 12px;
+    line-height: 150%;
+    /* width: 100%; */
+}
+
+#reserve .ShowNickName li:nth-child(3) {
+    margin: 20px 0px 20px 0px;
+}
+
+#reserve #ShowNickName2 li:nth-child(3) {
+    margin: 10px 0px 20px 0px;
+}
+
+#reserve .ShowNickName li.last {
+    width: 110px;
+    padding-left: 10px;
+}
+
+#reserve .ShowNickName input #nick {
+    width: 96%;
+    height: 28px;
+    line-height: 16px;
+}
+
+#reserve .ShowNickName input {
+    width: 25%;
+    height: 28px;
+    line-height: 16px
+}
+
+#reserve .ShowNickName input[type=text] {
+    width: 100%;
+    height: 28px;
+    padding: 10px;
+    margin: 10px 0;
+    line-height: 16px;
+    background: #091626;
+    border: 1px solid #496e77;
+    color: #d3e1ec;
+    text-align: center;
+}
+
+#reserve .ShowNickName .btn {
+    width: 49%;
+    padding: 5px 24px;
+    background: #4c82a6;
+    border: 0px solid #4c82a6;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    float: right;
+}
+
+#reserve .ShowNickName .btn2 {
+    display: inline-block;
+    width: 49%;
+    height: 29px;
+    padding: 4px 23px 4px;
+    font-size: 13px;
+    border-radius: 15px;
+    font-weight: 700;
+    color: #000;
+    background: #ffbc30;
+    border: 1px solid #ffbc30;
+    vertical-align: -2px;
+}
+
+#reserve .ShowNickName input.btn2 {
+    padding: 0 !important;
+}
+
+#reserve .ShowNickName .btn3 {
+    padding: 5px 24px 20px;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 15px;
+    font-weight: 700;
+    background: #4c82a6;
+    border: 0px solid #4c82a6;
+    text-align: center;
+    color: #fff;
+}
+
+#reserve .ShowNickName .reg_mb_nick input {
+    width: 50px;
+    height: 32px;
+}
+
+/*닉네임변경 모달팝업끝*/
+/*페이징*/
+.page_num {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.page_num .page {
+    text-decoration: none;
+    border: 1px solid #dddddd;
+    vertical-align: middle;
+    line-height: 12px;
+    margin-bottom: 3px;
+}
+
+.page_num a {
+    padding: 0px 7px;
+}
+
+.page_num .activ {
+    color: #ffbc30;
+}
+
+.page_num span {
+    zoom: 0.55;
+}
+
+.page_num .l span {
+    transform: rotate(180deg);
+}
+
+.page_num .list-i-rarr {
+    margin-bottom: 7px;
+    margin-right: 0px;
+}
+
+/*페이징 끝*/
+/*채팅>쪽지보내기*/
+.tooltip {
+    display:none;
+    position: absolute;
+    top: 22px !important;
+    left: 0px;
+    width: 108px;
+    height: 27px;
+    margin: 0px;
+    padding: 0px;
+    z-index: 9;
+}
+
+.tooltip li {
+    float: left;
+    height: 27px;
+    width: 100%;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.clickable-nick {
+    cursor: pointer;
+}
+
+.tooltip .memo, .tooltip .mtm {
+    background: url("../img/area_chat_btn2.png") left top no-repeat;
+}
+
+.tooltip .memo {
+    background-position: 0px 0px;
+}
+
+.tooltip .mtm {
+    background-position: 0px -27px;
+}
+
+/*채팅>쪽지보내기*/
+/*베팅내역업로드*/
+/*쿠폰 충전소*/
+.pop_tit {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: fit-content;
+    color: #FFF;
+    font-size: 14px;
+}
+
+.dialog_two {
+    background: #888fa2;
+    border: 1px solid #888fa2;
+    border-radius: 4px;
+    height: 20px;
+    position: absolute;
+    width: 36px;
+    top: 50%;
+    right: 10px;
+    transform: translate(0, -50%);
+}
+
+.btn_pop_close .close-thik::after {
+    content: "닫기";
+    /*    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);*/
+    position: relative;
+    left: 0;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+}
+
+.inner_padding {
+    padding: 10px 10px 0 10px;
+}
+
+.tb_board_write {
+    border: 0;
+}
+
+.pop_btns {
+    margin: 5px 0;
+}
+
+.pop_btns input {
+    background-color: #f1f1f1;
+    border: 1px solid #898989;
+    font-size: 15px;
+    width: 19.4%;
+    height: 33px;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.cont_agreement_button_01 {
+    width: 50%;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 0 0 0 3px;
+    background-color: #d3d7dc;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-weight: 400;
+    float: left;
+    text-align: center;
+    color: #7d7d7d;
+}
+
+.cont_agreement_button_02 {
+    width: 50%;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 0 0 0 3px;
+    background-color: #FFBC30;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-weight: 400;
+    float: right;
+    color: #FFF;
+    text-align: center;
+}
+
+.cp_re_check {
+    float: right;
+    padding: 11px 0;
+    background: #363f51;
+    color: #FFF;
+    width: 19.4%;
+    box-sizing: border-box;
+    line-height: 12px;
+}
+
+.charging_btns {
+    margin-top: 15px;
+}
+
+.set-limit {
+    color: #fff;
+    text-align: left;
+}
+
+.set-limit span {
+    float: right;
+}
+
+.set-limit button {
+    margin-left: 5px;
+    zoom: .5;
+    vertical-align: middle;
+}
+
+.set-limit:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+/*타이틀공통*/
+.wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.inner_padding {
+    padding: 0 15px 0 15px;
+}
+
+.sub_common_title {
+    height: 55px;
+    line-height: 55px;
+    width: 100%;
+    position: relative;
+    background-color: #253743;
+}
+
+.sub_common_title ul li {
+    float: left;
+}
+
+.sub_common_title ul li.back_icon {
+    position: absolute;
+    left: 15px;
+    margin-top: 3px;
+}
+
+.sub_common_title ul li.sub_title_h3 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.sub_common_title ul li.home_icon {
+    position: absolute;
+    right: 15px;
+    margin-top: 4px;
+}
+
+.sub_common_title {
+    height: 55px;
+    line-height: 55px;
+    border-bottom: 1px solid #2e424d;
+    width: 100%;
+    position: relative;
+}
+
+.sub_common_title ul li {
+    float: left;
+}
+
+.sub_common_title ul li h3 {
+    color: #FFF;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 55px;
+}
+
+.sub_common_title ul li.back_icon {
+    position: absolute;
+    left: 15px;
+    margin-top: 3px;
+}
+
+.sub_common_title ul li.sub_title_h3 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.sub_common_title ul li.home_icon {
+    position: absolute;
+    right: 15px;
+    margin-top: 4px;
+}
+
+.sub_common_title ul li.back_icon .back_btn {
+    width: 10px;
+    height: 17px;
+    background: url(../images/back_history.png)no-repeat center;
+    background-size: 10px 17px;
+    display: inline-block;
+}
+
+.sub_common_title ul li.sub_title_h3 .title_logo {
+    width: 15px;
+    height: 15px;
+    background: url(../images/sub_title_logo.png)no-repeat center;
+    background-size: 15px 15px;
+    display: inline-block;
+}
+
+.sub_common_title ul li.home_icon .home_btn {
+    width: 22px;
+    height: 20px;
+    background: url(../images/sub_home_icon.png)no-repeat center;
+    background-size: 22px 20px;
+    display: inline-block;
+}
+
+/*//타이틀공통*/
+/*승무패, 캐쥬얼게임 select*/
+.hit_title {
+    height: 45px;
+    border-bottom: 1px solid #2e424d;
+    padding: 0 10px;
+}
+
+.hit_title .hit_select {
+    width: 50%;
+    height: 45px;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+}
+
+.hit_title .hit_select select::-ms-expand {
+    display: none;
+}
+
+.hit_title .hit_select select {
+    height: 30px;
+    width: 99%;
+    position: relative;
+    left: 0px;
+    top: 8px;
+    line-height: 23px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+.hit_title .all_select {
+    width: 50%;
+    height: 45px;
+    box-sizing: border-box;
+    float: right;
+    position: relative;
+}
+
+.hit_title .all_select select::-ms-expand {
+    display: none;
+}
+
+.hit_title .all_select select {
+    height: 30px;
+    width: 99%;
+    position: relative;
+    float: right;
+    top: 8px;
+    padding-left: 10px;
+    line-height: 23px;
+    background-position: right;
+    box-sizing: border-box;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+/*기간선택*/
+.date_choice01 {
+    height: 90px;
+    padding: 10px;
+    border-bottom: 1px solid #253743;
+}
+
+.date_choice01 ul:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.date_choice01 ul li {
+    float: left;
+    width: 19.6%;
+    box-sizing: border-box;
+    margin-right: 0.5%;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    position: relative;
+}
+
+.date_choice01 ul li:last-child {
+    margin-right: 0;
+    float: right;
+}
+
+.date_choice01 ul li a {
+    display: block;
+    display: block;
+    background: #060e14;
+    color: #a8bdcc;
+}
+
+.date_choice01 ul li a.cheked {
+    background: #FFBC30;
+    color: #000;
+    font-weight: 500;
+}
+
+/*기간선택*/
+.date_choice {
+    height: 65px;
+    clear: both;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.date_choice ul li {
+    float: left;
+    width: 19.5%;
+    box-sizing: border-box;
+    margin-right: 0.5%;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    position: relative;
+}
+
+.date_choice ul li:last-child {
+    margin-right: 0;
+}
+
+.date_choice ul li a {
+    display: block;
+    display: block;
+    background: #c8c8c8;
+    color: #717171;
+}
+
+.date_choice ul li a.cheked {
+    background: #FFBC30;
+    color: #FFF;
+}
+
+/*데이터피커*/
+.date_picker01 {
+    display: inline-block;
+    width: 90%;
+    box-sizing: border-box;
+    float: left;
+    margin-top: 10px;
+}
+
+.date_picker01 b {
+    width: 3%;
+    margin: 5px 3px 0 5px;
+    float: left;
+    display: inline-block;
+    text-align: center;
+    font-weight: normal;
+    color: #96b9cf;
+}
+
+.date_picker01 input {
+    width: 46%;
+    height: 32px;
+    float: left;
+    text-align: left;
+    padding-left: 10px;
+    background-position: 95% 10px;
+    display: inline-block;
+    outline: none;
+    background: transparent;
+    color: #96B9CF;
+    border: 1px solid #96B9CF;
+    border-radius: 3px;
+}
+
+.date_picker_search01 {
+    margin-top: 10px;
+    width: 8%;
+    float: right;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.date_picker_search01 button {
+    text-indent: -9999px;
+}
+
+.date_btn01 {
+    position: relative;
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    float: right;
+    margin-left: 5px;
+    box-shadow: none;
+    text-shadow: none;
+    border: 1px solid #96B9CF;
+    border-radius: 3px;
+}
+
+.date_btn01:after {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    background: url(../img/icon.png);
+    vertical-align: middle;
+    margin-right: 3px;
+    width: 27px;
+    height: 27px;
+    background-position: -139px -73px;
+    zoom: .6;
+    left: 50%;
+    margin: -14px 0 0 -13px;
+    top: 50%;
+}
+
+/**************************베팅내역 업로드*********************/
+#content {
+    clear: both;
+}
+
+.hit_list {
+    padding: 10px;
+    clear: both;
+}
+
+.hit_list>li>ul:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.hit_list>li>ul>li.check_list {
+    border-right: 0;
+}
+
+.hit_list>li>ul>li {
+    width: 100%;
+    height: 55px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.hit_list>li>ul>li>a {
+    color: #525c6c;
+}
+
+.hit_list>li>ul>li .hit_date {
+    float: left;
+    position: relative;
+    width: 15%;
+    margin-left: 5px;
+    height: 40px;
+    box-sizing: border-box;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.hit_list>li>ul>li .hit_betting {
+    width: 40%;
+    height: 30px;
+    line-height: 30px;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.hit_list>li>ul>li .hit_gold {
+    width: 40%;
+    height: 30px;
+    line-height: 30px;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    top: 50%;
+    margin-right: 5px;
+    margin-left: 1%;
+    transform: translate(0, -50%);
+}
+
+.hit_list>li>ul>li .hit_date .date_wrap {
+    width: 100%;
+    font-size: 11px;
+    line-height: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #c9d2d9;
+    letter-spacing: -.5px;
+}
+
+.hit_list>li>ul>li.check_list {
+    width: 7%;
+    box-sizing: border-box;
+    float: left;
+    border-bottom: 0;
+    border-left: 0;
+    border-top: 0;
+}
+
+.hit_list>li>ul>li.betting_list {
+    width: 93%;
+    box-sizing: border-box;
+    float: left;
+    border-bottom: 0;
+    border-right: 0;
+    border-top: 0;
+}
+
+/*베팅골드,배당률*/
+/* .hit_list>li>ul>li .hit_betting .hit_betting_wrap{
+	width:100%;
+	position:absolute; left:50%; top:50%;
+	transform:translate(-50%,-50%); color:#878787;
+}
+.hit_betting_wrap .betting_glod{
+	letter-spacing:-0.5px;
+	height:19px; line-height:19px;
+} */
+/* .hit_betting_wrap .betting_glod span{
+	color:#c9d2d9; float:left; font-size:11px;
+}
+.hit_betting_wrap .betting_glod b{
+    color:#c9d2d9; float:left; margin-left:10px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.hit_betting_wrap .betting_rate{
+	letter-spacing:-0.5px;
+	height:19px; line-height:19px;
+}
+.hit_betting_wrap .betting_rate span{
+	color:#c9d2d9; float:left; font-size:11px;
+}
+.hit_betting_wrap .betting_rate b{
+    font-size: 12px;
+    font-weight: normal;
+	color:#c9d2d9; float:left; margin-left:10px;
+} */
+/*당첨예상골드*/
+.hit_list>li>ul>li .hit_gold .hit_gold_wrap {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #878787;
+}
+
+.hit_gold_wrap .anticipate_glod {
+    letter-spacing: -0.5px;
+    height: 19px;
+    line-height: 19px;
+}
+
+.hit_gold_wrap .anticipate_glod span {
+    color: #c9d2d9;
+    float: right;
+    text-align: right;
+    font-size: 11px;
+}
+
+.hit_gold_wrap .result_num {
+    letter-spacing: -0.5px;
+    height: 19px;
+    line-height: 19px;
+}
+
+.hit_gold_wrap .result_num span {
+    color: #c9d2d9;
+    float: left;
+}
+
+.hit_gold_wrap .result_num b {
+    float: right;
+    letter-spacing: 0.5px;
+}
+
+.hit_gold_wrap .result_num img {
+    width: 35px;
+    height: 14px;
+    vertical-align: -3px;
+    margin-left: 3px;
+}
+
+/*적중,실패,구매 아이콘 이미지 텍스트 색상*/
+.hit_icon_txt {
+    color: #70ad46;
+}
+
+.fail_icon_txt {
+    color: #ff669a;
+}
+
+.buy_icon_txt {
+    color: #5a9bd3;
+}
+
+/*결과박스*/
+.result_box {
+    width: 100%;
+    display: block;
+    clear: both;
+    margin-top: -11px;
+    margin-bottom: 10px;
+}
+
+.result_box .result_box_wrap {
+    /* padding:10px 5px; */
+    background: #000;
+}
+
+.result_box .team_name {
+    height: 25px;
+    line-height: 25px;
+    position: relative;
+}
+
+.result_box .team_name .alert_img {
+    position: absolute;
+    bottom: -12px;
+    left: 5px;
+    z-index: 888;
+}
+
+.result_box .team_name b {
+    color: #FFBC30;
+    font-size: 10px;
+    margin: 0 2px;
+}
+
+.result_box .team_name p {
+    display: inline-block;
+    float: right;
+}
+
+/* .betting_box {
+    height: 33px;
+    line-height: 33px;
+    border: 1px solid #ddd;
+} */
+
+.bet_box_first {
+    border-top: 1px solid #ddd;
+}
+
+.result_box_wrap .betting_box .result_on {
+    background: #7ea5e6;
+    color: #FFF;
+}
+
+.result_box_wrap .betting_box .result_on .beadang {
+    color: #FFF;
+}
+
+.betting_box .home .home_txt,
+.betting_box .wonjung .home_txt {
+    float: left;
+    padding-left: 10px;
+}
+
+.betting_box .home .beadang,
+.betting_box .wonjung .beadang {
+    /* color: #737373; */
+    float: right;
+    padding-right: 10px;
+}
+
+/*체크모양*/
+/* position the checkbox */
+.wonjung.result_check:after {
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    top: 6px;
+    /* setting the checkbox */
+    /* short arm */
+    width: 5px;
+    border-bottom: 3px solid #ed4343;
+    /* long arm */
+    height: 11px;
+    border-right: 3px solid #ed4343;
+    /* rotate the mirrored L to make it a checkbox */
+    transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.result_check {
+    border: 2px solid #ed4343;
+    box-sizing: border-box;
+    line-height: 30px;
+}
+
+/*남색결과박스*/
+.last_result_box {
+    background: #253743;
+    border: 1px solid #071724;
+    height: 55px;
+    border: 1px solid #000;
+}
+
+
+/* .last_result_box_wrap {
+    padding: 5px;
+} */
+
+.title_result_txt {
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    background: #071724;
+}
+
+.title_result_txt li {
+    float: left;
+    width: 33%;
+    text-align: center;
+    color: #FFF;
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.result_num {
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+}
+
+
+.hit_list .tgroup_down {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    background: rgba(27, 37, 58, 0.4) url(../../images/detail_close.png) no-repeat center center;
+}
+
+/*엑스버튼*/
+.close-thik:after {
+    content: '✖';
+    /* UTF-8 symbol */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+}
+
+/* 엑스버튼 */
+.dialog {
+    background: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 20px;
+    position: absolute;
+    width: 20px;
+    top: 50%;
+    right: 10px;
+    transform: translate(0, -50%);
+}
+
+/*체크박스 버튼*/
+.con_check2 .all_delete_check {
+    margin-left: 20px;
+}
+
+.con_check2 input[type=checkbox] {
+    cursor: pointer;
+    font-size: 12px;
+    height: 15px;
+    width: 15px;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+.con_check2 input[type=checkbox]:after {
+    content: " ";
+    background-color: #ddd;
+    display: inline-block;
+    color: #FFF;
+    width: 15px;
+    height: 15px;
+    visibility: visible;
+    border-radius: 4px;
+}
+
+.con_check2 input[type=checkbox]:checked:after {
+    content: "\2714";
+    text-indent: -1px;
+    background: #FFBC30;
+    font-weight: bold;
+    text-align: center;
+    font-size: 10px;
+    color: #fff;
+}
+
+/*체크한것올리기 닫기 버튼*/
+.raise_close_btn {
+    height: 40px;
+    line-height: 40px;
+    padding: 10px;
+    clear: both;
+}
+
+.raise_close_btn .raise_btn {
+    float: left;
+    width: 48%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #FFBC30;
+}
+
+.raise_close_btn .raise_btn a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #000;
+    font-weight: bold;
+}
+
+.raise_close_btn .close_btn {
+    float: right;
+    width: 48%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #f1f1f1;
+}
+
+.raise_close_btn .close_btn a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #111;
+    font-weight: 500;
+}
+
+/***********************캐주얼게임 리스트**********************/
+.casual_list {
+    padding: 10px;
+    clear: both;
+}
+
+.casual_list>li {
+    width: 100%;
+    border: 1px solid #ddd;
+    background: #FFF;
+    height: 55px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.casual_list>li>a {
+    color: #525c6c;
+}
+
+.casual_list .round_name {
+    width: 45%;
+    box-sizing: border-box;
+    float: left;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+.casual_list .choice {
+    width: 55%;
+    box-sizing: border-box;
+    float: right;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+}
+
+.round_name .round_deta {
+    height: 19px;
+    line-height: 19px;
+    margin-left: 5px;
+    color: #878787;
+}
+
+.round_name .game_name {
+    height: 19px;
+    line-height: 19px;
+    margin-left: 5px;
+    color: #5f5f5f;
+}
+
+.round_name .game_name img {
+    width: 35px;
+    height: 14px;
+    vertical-align: -3px;
+}
+
+.choice .choice_comfirmate,
+.choice .choice_result {
+    text-align: right;
+    margin-right: 5px;
+    height: 19px;
+    line-height: 19px;
+}
+
+.choice .choice_comfirmate img,
+.choice .choice_result img {
+    width: 14px;
+    height: 14px;
+    vertical-align: -2px;
+}
+
+.choice_txt_color b {
+    color: #ff669a;
+}
+
+.result_txt_color b {
+    color: #5a9bd3;
+}
+
+/*베팅카트*/
+.betting_ship {
+    height: 38px;
+    line-height: 38px;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    bottom: 0px;
+    left: 0;
+}
+
+.betting_ship>ul>li {
+    width: 100%;
+    text-align: center;
+}
+
+.betting_ship>ul>li>a {
+    color: #FFF;
+    font-size: 14px;
+}
+
+.betting_ship>ul>li.live_chat {
+    background-color: #363f51;
+    border-radius: 15px 15px 0 0;
+}
+
+/*푸터*/
+.footer_fixed {
+    width: 100%;
+    position: relative;
+}
+
+.footer {
+    background-color: #f7f7f7;
+    height: 135px;
+    clear: both;
+}
+
+.login_footer ul {
+    height: 40px;
+}
+
+.login_footer ul li {
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+    width: 33.3%;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.login_footer ul li a {
+    color: #333;
+}
+
+.login_footer ul li div {
+    width: 90%;
+    height: 26px;
+    line-height: 26px;
+    border: 1px solid #ddd;
+    background-color: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.footer_txt {
+    position: relative;
+    clear: both;
+    height: 50px;
+}
+
+.footer_logo {
+    position: absolute;
+    left: 50%;
+    top: 9px;
+    transform: translate(-50%, 0);
+}
+
+.footer_rights {
+    color: #ccc;
+    font-size: 10px;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    text-align: center;
+}
+
+/*hitcommom*/
+/*탭메뉴 - 오늘의추천경기*/
+.betting_box {
+    line-height: 33px;
+    /* background-color: #ffffff; */
+    border-collapse: collapse;
+    display: flow-root;
+    height: 33px;
+}
+
+.betting_box .home {
+    float: left;
+    position: relative;
+    background: #253743;
+    /* border-right: 1px solid #ddd; */
+    width: 32%;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    box-sizing: border-box;
+    /* border-bottom: 1px solid #ddd; */
+    color: #c9d2d9;
+}
+
+.betting_box .moo {
+    position: relative;
+    float: left;
+    width: 24%;
+    height: 33px;
+    line-height: 33px;
+    color: #c9d2d9;
+    background-color: #253743;
+    text-align: center;
+    box-sizing: border-box;
+    border-right: 1px solid #2e424d;
+    border-left: 1px solid #2e424d;
+}
+
+.betting_box .wonjung {
+    position: relative;
+    float: left;
+    width: 32%;
+    height: 33px;
+    line-height: 33px;
+    background: #253743;
+    text-align: center;
+    /* border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd; */
+    box-sizing: border-box;
+    color: #c9d2d9;
+}
+
+.betting_box .game_result {
+    position: relative;
+    float: left;
+    width: 10%;
+    height: 33px;
+    line-height: 33px;
+    color: #fff;
+    background-color: #253743;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.betting_box .mmy_hit {
+    background-color: #FFBC30;
+    color: #000;
+    font-weight: 500;
+}
+
+.betting_box .mmy_select {
+    /* background-color: #FFBC30; */
+    /* color: #000; */
+    border: 1px solid #fff;
+    font-weight: 500;
+    line-height: 31px;
+}
+
+.betting_box .mmy_false {
+    border:1px solid #FFBC30;
+    color: #fff;
+    box-sizing: border-box;
+    line-height: 31px;
+}
+
+.betting_box .mspecial_case {
+    /* background-color: #253743; */
+    border: 1px solid #29eb92;
+    color: #29eb92;
+    /* background-image: url(../images/exclamation_point_icon.png); */
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+/*스포츠게시판 적중내역등록*/
+span#betdis .betting_box .team_name>span {
+    display: block;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+}
+
+span#betdis .result_box .team_name {
+    height: 50px;
+    position: relative;
+    text-align: center;
+    /* background: #f1f1f1; */
+}
+
+td.betting_upload_wrap .betting_box .home {
+    float: left;
+    position: relative;
+    height: 33px;
+    line-height: 30px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+td.betting_upload_wrap .betting_box .moo {
+    position: relative;
+    float: left;
+    width: 24%;
+    height: 33px;
+    line-height: 33px;
+    color: #999;
+    background-color: #FFF;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+td.betting_upload_wrap .betting_box .wonjung {
+    position: relative;
+    float: left;
+    height: 33px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+span#betdis .betting_box .game_result {
+    display: inline-block;
+    position: relative;
+    float: right;
+    width: 12%;
+    height: 33px;
+    line-height: 33px;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    box-sizing: border-box;
+    border: none;
+}
+
+.betting_box .down_arrow, .betting_box .btn_board_close {
+    position: relative;
+    height: 33px;
+    width: 10%;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #363f51;
+    background: #5d6576;
+    color: #FFF;
+}
+
+.betting_box .down_arrow_blank {
+    position: relative;
+    /*border: 2px solid red;*/
+    height: 33px;
+    width: 10%;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+    color: #FFF;
+}
+
+.betting_box .plus_betting {
+    position: relative;
+    float: left;
+    width: 20%;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.bd_area {
+    color: #FFBC30;
+    font-weight: 600;
+}
+
+.btn_board_select .bd_area {
+    color: #FFFFFF !important;
+}
+
+.btn_board_select .betting_box .moo a {
+    color: #FFFFFF !important;
+}
+
+.betting_box .moo a {
+    color: #FFBC30;
+}
+
+.team_name .entire_btn {
+    /*float:right;
+    padding-right:5px;
+    box-sizing:border-box;
+    width:20%;
+    height:30px;
+    text-align:right;
+    background:url(../images/all_btn.png)no-repeat center; */
+}
+
+.team_name .entire_btn {
+    float: right;
+    padding-right: 10px;
+    width: 15%;
+    text-align: right;
+    line-height: 32px;
+}
+
+.team_name .entire_btn img {
+    width: 50px;
+    height: 22px;
+    vertical-align: -7px;
+}
+/*
+.betting_box .home .home_txt,
+.betting_box .wonjung .home_txt {
+    float: left;
+    padding-left: 10px;
+    width: 42px;
+} */
+
+.betting_special_content .betting_box .home .home_txt,
+.betting_special_content .betting_box .wonjung .home_txt {
+    float: left;
+    padding-left: 10px;
+    width: auto;
+}
+
+/*스포츠게시판글쓰기*/
+#se2_inputarea{
+    color: #fff !important;
+}
+.betting_upload_wrap .betting_box .home .home_txt,
+.betting_upload_wrap .betting_box .wonjung .home_txt {
+    float: left;
+    padding-left: 5px;
+    width: 36px;
+}
+
+.betting_box .home .beadang,
+.betting_box .wonjung .beadang {
+    float: right;
+    padding-right: 10px;
+    font-weight: normal;
+}
+
+.betting_box .dividend {
+    color: #FFBC30;
+    font-weight: 600;
+}
+
+.betting_box .ground_text {
+    color: #000;
+    font-weight: normal;
+}
+
+.betting_box .home_txt img {
+    vertical-align: -1px;
+    padding: 0 1px;
+}
+
+.betting_box .home.orange_bet,
+.betting_box .btn_board.btn_board_select,
+.betting_box .wonjung.orange_bet,
+.betting_box .msboo.orange_bet,
+.betting_box .bd_area.orange_bet {
+    background: #FFBC30;
+    color: #FFF;
+}
+
+.betting_box .home.orange_bet b,
+.betting_box .wonjung.orange_bet b,
+.betting_box .btn_board.btn_board_select b,
+.betting_box .msboo.orange_bet b,
+.betting_box .bd_area.orange_bet b {
+    color: #FFF;
+}
+
+.betting_box .msboo {
+    background: #f0f6ff;
+}
+
+.league_header {
+    position: relative;
+    height: 33px;
+    line-height: 33px;
+    background: #FFF;
+    border-top: 2px solid #FFBC30;
+    border-bottom: 1px solid #ddd;
+}
+
+.league_header .soccer {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 10px;
+    height: 20px;
+    width: 20px;
+    background: url(../images/soccer.png)no-repeat 0 2px;
+}
+
+.league_header .basketball {
+    /*position:absolute;
+    top:50%; transform:translate(0,-50%);
+    left:10px;
+    height:20px; width:20px;
+    background:url(../images/basketball.png)no-repeat 0 2px; */
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 10px;
+    width: 15px;
+    height: 15px;
+}
+
+.league_header .league_name {
+    /*position:absolute;
+    top:50%; transform:translate(0,-50%);
+    left:35px;
+    width:50%;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+    color:#FFBC30;*/
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 30px;
+    width: 65%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #FFBC30;
+}
+
+.data_black {
+    text-align: center;
+    color: #666;
+    float: left;
+    box-sizing: border-box;
+    width: 30%;
+}
+
+.plus_btn {
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    background: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+}
+
+.plus_btn a {
+    color: #363f51;
+    display: block;
+    font-weight: 600;
+}
+
+.team_name {
+    position: relative;
+    height: 33px;
+    /* background-color:#FFF; */
+    /* border-bottom: 1px solid #ddd; */
+    /* color:#363f51; */
+    font-size: 12px;
+    text-align: center;
+}
+
+.today_date {
+    margin-right: 5px;
+}
+
+.today_time {
+    text-align: center;
+    color: #666;
+    transform: translate(0, -50%);
+    box-sizing: border-box;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+    height: 10px;
+}
+
+.tomorrow_time {
+    position: absolute;
+    right: 10px;
+}
+
+.team_name .team_1 {
+    float: left;
+    max-width: 45%;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 33px;
+    line-height: 33px;
+    margin-left: 10px;
+}
+
+.team_name .team_2 {
+    float: left;
+    max-width: 45%;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 33px;
+    line-height: 33px;
+}
+
+.time_red {
+    color: #FFF;
+    background: #ee4242;
+    transform: translate(0, -50%);
+    font-size: 11px;
+    /*width:20%;*/
+    width: auto;
+    border-radius: 15px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    padding: 0 8px;
+    float: right;
+    margin-top: 16px;
+    margin-right: 10px;
+}
+
+.time_right {
+    color: #aaa;
+    right: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 11px;
+    /*width:20%;*/
+    width: 15%;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.remain_time {
+    vertical-align: middle;
+}
+
+.vs {
+    text-align: center;
+    color: #62a4db;
+    float: left;
+    width: 5%;
+    font-size: 14px;
+    height: 33px;
+    line-height: 33px;
+}
+
+/********************적중내역*******************/
+/*적중내역 승무패 리스트*/
+#content {
+    /*background:#ededed;*/
+    clear: both;
+}
+
+.hit_list {
+    padding: 10px;
+    clear: both;
+}
+
+.hit_list>li {
+    width: 100%;
+    border: 1px solid #2e424d;
+    background: #253743;
+    height: 55px;
+    margin-bottom: 5px;
+    position: relative;
+    border: 1px solid #2e424d;
+}
+
+.hit_list>li>a {
+    color: #525c6c;
+}
+
+.hit_list>li .hit_date {
+    width: 12%;
+    margin-left: 5px;
+    height: 40px;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.hit_list>li .hit_betting {
+    width: 43%;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.hit_list>li .hit_gold {
+    width: 40%;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    top: 50%;
+    margin-right: 5px;
+    margin-left: 1%;
+    transform: translate(0, -50%);
+}
+
+.hit_list>li .hit_date .date_wrap {
+    width: 95%;
+    font-size: 11px;
+    line-height: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #c9d2d9;
+}
+
+/*베팅골드,배당률*/
+.hit_list>li .hit_betting .hit_betting_wrap {
+    width: 95%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #c9d2d9;
+}
+
+.hit_betting_wrap .betting_glod {
+    letter-spacing: -0.5px;
+    height: 19px;
+    line-height: 19px;
+}
+
+.hit_betting_wrap .betting_glod span {
+    color: #c9d2d9;
+    float: left;
+    font-size: 11px;
+}
+
+.hit_betting_wrap .betting_glod b,
+.hit_betting_wrap .betting_rate b {
+    color: #c9d2d9;
+    float: left;
+    margin-left: 10px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.hit_betting_wrap .betting_rate {
+    letter-spacing: -0.5px;
+    height: 19px;
+    line-height: 19px;
+}
+
+.hit_betting_wrap .betting_rate span {
+    color: #c9d2d9;
+    float: left;
+    font-size: 11px;
+}
+
+/*당첨예상골드*/
+.hit_list>li .hit_gold .hit_gold_wrap {
+    width: 95%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #878787;
+}
+
+.hit_gold_wrap .anticipate_glod {
+    letter-spacing: -0.5px;
+    height: 19px;
+    line-height: 19px;
+}
+
+.hit_gold_wrap .anticipate_glod span {
+    color: #c9d2d9;
+    float: right;
+    text-align: right;
+    font-size: 11px;
+    margin-right: 6px;
+}
+
+.hit_gold_wrap .result_num {
+    letter-spacing: -0.5px;
+    height: 19px;
+    line-height: 19px;
+    float: right;
+}
+
+.hit_gold_wrap .result_num span {
+    color: #FFBC30;
+    margin-right: 5px;
+    display: inline;
+}
+
+.hit_gold_wrap .result_num b {
+    letter-spacing: 0.5px;
+    display: inline;
+    text-align: right;
+    float: right;
+    color: #FFBC30;
+}
+
+.hit_gold_wrap .result_num span.fail_icon {
+    width: 35px;
+    height: 19px;
+    background: url(../images/hit_list/fail_btn.png)no-repeat center;
+}
+
+.hit_gold_wrap .result_num span.hit_icon {
+    width: 35px;
+    height: 19px;
+    background: url(../images/hit_list/hit_btn.png)no-repeat center;
+}
+
+.hit_gold_wrap .result_num span.success_icon {
+    width: 35px;
+    height: 19px;
+    background: url(../images/hit_list/success_btn.png)no-repeat center;
+}
+
+/*적중,실패,구매 아이콘 이미지 텍스트 색상*/
+.hit_icon_txt {
+    color: #ffbc30;
+}
+
+.fail_icon_txt {
+    color: #ff669a;
+}
+
+.buy_icon_txt {
+    color: #5a9bd3;
+}
+
+/*결과박스*/
+.result_box {
+    width: 100%;
+    display: block;
+    clear: both;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.result_box .result_box_wrap {
+    color: #9e9e9e;
+    border: 1px solid #000;
+}
+
+.result_box .team_name {
+    height: 50px;
+    position: relative;
+    text-align: center;
+    background: #333;
+}
+
+.result_box .team_name span {
+    height: 25px;
+    line-height: 25px;
+    overflow:hidden;
+    display:block;
+    width:100%;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    word-wrap:normal;
+
+}
+
+.result_box .team_name .alert_icon {
+    width: 60px;
+    height: 20px;
+    display: inline-block;
+    background: url(../images/hit_list/hit_alert.png)no-repeat center;
+    z-index: 888;
+    position: absolute;
+    bottom: -15px;
+    left: 5px;
+}
+
+.result_box .team_name b {
+    color: #FFBC30;
+    font-size: 10px;
+    margin: 0 2px;
+}
+
+.result_box .team_name p {
+    display: block;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    color: #888;
+    background: #000;
+}
+
+.result_box .team_name span .hit_alert_icon {
+    width: 15px;
+    height: 20px;
+    background: url(../images/hit_list/hit_alert_icon.png)no-repeat center;
+    float: left;
+}
+
+.game_bet_wrap {
+    padding: 2px;
+    margin: 5px 0;
+    background: #ddd;
+}
+
+#betdis .result_box_wrap:first-child .game_bet_wrap {
+    margin-top: 0 !important;
+}
+
+.bet_box_first {
+    /*border-top:1px solid #ddd;*/
+    border-collapse: collapse;
+}
+
+.result_box_wrap .betting_box .result_on {
+    background: #7ea5e6;
+    color: #FFF;
+}
+
+.result_box_wrap .betting_box .result_on .beadang {
+    color: #FFF;
+}
+
+.betting_box .moo b {
+    font-weight: normal;
+}
+
+/*체크모양*/
+/* position the checkbox */
+.betting_box .result_check:after {
+    display: none;
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    top: 6px;
+    /* setting the checkbox */
+    /* short arm */
+    width: 5px;
+    border-bottom: 3px solid #000;
+    /* long arm */
+    height: 11px;
+    border-right: 3px solid #000;
+    /* rotate the mirrored L to make it a checkbox */
+    transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.betting_box .result_check {
+    box-sizing: border-box;
+    line-height: 30px;
+    background: #FFBC30;
+    color: #fff;
+}
+
+.result_num {
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+}
+
+.result_num li {
+    float: left;
+    width: 33%;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFBC30;
+}
+
+.result_num li img {
+    width: 35px;
+    height: 14px;
+    vertical-align: -4px;
+}
+
+.result_num li.result_icon {
+    height: 30px;
+    background: url(../images/hit_list/fail_btn.png)no-repeat center;
+}
+
+.hit_list .tgroup_down {
+    content: ' ';
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    background: rgba(27, 37, 58, 0.7) url(../images/hit_list/detail_close.png) no-repeat center center;
+}
+
+/***************적중게임***********************/
+.hit-content {
+    display: none;
+    margin-top: 170px;
+}
+
+.hit-content.current {
+    display: inherit;
+}
+
+/*적중게임 적중마감 배경*/
+.tgroup_close {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.tgroup_close:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /*z-index:999;*/
+    background: rgba(27, 37, 58, 0.7) url(../images/board_tgroup_betting_close.png) no-repeat center center;
+}
+
+.tgroup_cancel {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.tgroup_cancel:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    background: rgba(27, 37, 58, 0.7) url(../images/board_tgroup_cancell.png) no-repeat center center;
+}
+
+/***경기결과 ***/
+.period_check {
+    width: 100%;
+    /*height:75px; padding:14px 0 10px;*/
+    margin-top: 6px;
+    border-bottom: 1px solid #ddd;
+    /*border-top:1px solid #ddd;*/
+    background: #FFF;
+}
+
+.period_check>ul {
+    height: 35px;
+    width: 100%;
+    padding: 5px 0;
+    clear: both;
+}
+
+.period_check>ul>li {
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+    height: 35px;
+    line-height: 35px;
+}
+
+.period_check>ul>li.today_btn {
+    width: 30%;
+    text-align: left;
+    /**********/
+}
+
+.period_check>ul>li.datepicker_box {
+    width: 40%;
+    text-align: center;
+}
+
+.period_check>ul>li.calendar_btn {
+    width: 30%;
+    text-align: right;
+    /**********/
+}
+
+.period_check>ul>li.today_btn img {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+}
+
+.period_check>ul>li.calendar_btn img {
+    border: 1px solid #ddd;
+    padding: 5px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(0, -50%);
+}
+
+.period_check>ul>li.datepicker_box .datepicker_box_wrap {
+    width: 100%;
+    height: 35px;
+    padding: 5px 0;
+    text-align: center;
+    margin-top: -6px;
+    position: relative;
+}
+
+/**********/
+.period_check>ul>li.datepicker_box .datepicker_box_wrap img {
+    width: 15px;
+    height: 15px;
+    vertical-align: -4px;
+}
+.period_check>ul>li.datepicker_box b {
+    margin: 0 10px;
+    text-align: center;
+}
+
+.period_check .clearfix {
+    padding: 10px 10px;
+    width: auto;
+    border-top: 1px solid #ddd;
+    height: 30px;
+    display: block;
+    position: relative;
+    clear: both;
+}
+
+.period_check .clearfix button {
+    width: 24%;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 1%;
+    background-color: #ddd;
+    color: #717171;
+}
+
+.period_check .clearfix button:last-child {
+    width: 23.2%;
+    float: right;
+    margin-right: 0px;
+}
+
+.game_result_box {
+    height: 33px;
+    border-bottom: 1px solid #ddd;
+}
+
+.game_result_box:last-child {
+    border-bottom: 1px solid #ddd;
+}
+
+.period_check .clearfix .current {
+    background-color: #FFBC30;
+    color: #ffffff;
+}
+
+.game_result_box .home {
+    float: left;
+    position: relative;
+    background: #FFFFFF;
+    line-height: 33px;
+    border-right: 1px solid #ddd;
+    width: 35%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.game_result_box .moo {
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 33px;
+    background-color: #FFF;
+    border-right: 1px solid #ddd;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.game_result_box .moo.one_line {
+    line-height: 33px;
+}
+
+.game_result_box .moo.two_line {
+    line-height: 16px;
+}
+
+.game_result_box .moo b {
+    font-weight: normal;
+}
+
+.game_result_box .wonjung {
+    position: relative;
+    float: left;
+    width: 35%;
+    line-height: 33px;
+    background: #FFFFFF;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.game_result_box .result_vs {
+    margin: 0 5px;
+}
+
+.game_result_box .msboo {
+    background: #f0f6ff;
+}
+
+.game_result_box .home .home_txt {
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90%;
+    padding-left: 10px;
+    text-align: left;
+}
+
+/**********/
+.game_result_box .wonjung .home_txt {
+    float: right;
+    /*direction: rtl;*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90%;
+    padding-right: 10px;
+    text-align: right;
+}
+
+/**********/
+.game_result_box .home .beadang,
+.game_result_box .wonjung .beadang {
+    color: #FFBC30;
+    float: right;
+    padding-right: 10px;
+}
+
+.game_result_box .home_txt img {
+    vertical-align: -1px;
+    padding: 0 1px;
+}
+
+.moo .win_num {
+    color: #FFBC30;
+}
+
+.moo .lose_num {
+    font-weight: 600;
+}
+
+.moo .draw_num {
+    font-weight: 600;
+}
+
+/***적중내역***/
+.hit_list .hide_box {
+    display: none;
+}
+
+/*기간선택*/
+.date_choice {
+    height: 35px;
+    /***********/
+    background: #FFF;
+    clear: both;
+    padding: 15px 10px 10px;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+.date_choice ul li {
+    float: left;
+    width: 19.5%;
+    box-sizing: border-box;
+    margin-right: 0.5%;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    position: relative;
+}
+
+.date_choice ul li:last-child {
+    margin-right: 0;
+}
+
+.date_choice ul li a {
+    display: block;
+    background: #c8c8c8;
+    color: #717171;
+}
+
+.date_choice ul li a.cheked {
+    background: #FFBC30;
+    color: #FFF;
+}
+
+/*데이터피커*/
+.date_picker {
+    display: inline-block;
+    width: 64%;
+    box-sizing: border-box;
+    float: right;
+    margin-left: 2px;
+}
+
+.date_picker b {
+    width: 3%;
+    margin: 6px 3px 0px;
+    float: left;
+    display: inline-block;
+}
+
+.date_picker input {
+    border: 1px solid #ddd;
+    width: 40%;
+    font-size: 11px;
+    height: 31px;
+    float: left;
+    text-align: left;
+    padding-left: 10px;
+    color: #8c8c8c;
+    background: #FFF url(../images/datepicker.png) no-repeat;
+    background-position: 95% 8px;
+    display: inline-block;
+    outline: none;
+}
+
+.date_picker_search {
+    width: 8%;
+    float: right;
+    height: 33px;
+    border: 0;
+    margin-left: 2px;
+}
+
+.date_btn {
+    display: inline-block;
+    color: #FFF;
+    width: 33px;
+    height: 33px;
+    float: right;
+    background: #FFF url(../images/hit_list/date_search.png) no-repeat;
+    background-position: center;
+    margin-top: 0px;
+    box-shadow: none;
+    text-shadow: none;
+    background-size: 33px;
+}
+
+.hit_list_select {
+    width: 25%;
+    height: 33px;
+    float: left;
+}
+
+.hit_list_select .linesellec {
+    border: 1px solid #ddd;
+    width: 100%;
+    height: 31px;
+    position: relative;
+}
+
+.hit_list_select select {
+    border: 0 none;
+    height: 31px;
+    background: #FFF url(../images/sellect_button_bg.png) no-repeat;
+    background-position: right;
+    box-sizing: border-box;
+    vertical-align: middle;
+    width: 95%;
+    float: left;
+    margin-right: 1%;
+    padding-left: 10px;
+    color: #7d7d7d;
+    letter-spacing: -0.5;
+    outline: none;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    /***********/
+}
+
+/***승무패 적중***/
+.hit_winner_select {
+    clear: both;
+    /*padding: 10px 0px 10px;*/
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+.hit_winner_select select {
+    border: 0 none;
+    height: 30px;
+    background: #FFF url(../images/sellect_button_bg.png) no-repeat;
+    background-position: right;
+    box-sizing: border-box;
+    vertical-align: middle;
+    width: 98%;
+    float: left;
+    margin-right: 1%;
+    padding-left: 10px;
+    color: #7d7d7d;
+    letter-spacing: -0.5px;
+    outline: none;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    /***********/
+}
+
+.main_tab .tab_btn .hit_winner_select {
+    padding: 10px !important;
+}
+
+.main_tab .tab_btn .hit_winner_select .inner_padding {
+    padding: 0 !important;
+    height: 32px;
+}
+
+.hit_winner_select .inner_padding .linesellec {
+    border: 1px solid #ddd;
+    width: 100%;
+    height: 30px;
+    display: inline-block;
+}
+
+.match_title {
+    height: 20px;
+    line-height: 20px;
+    color: #FFF;
+    text-align: center;
+}
+
+.tr_mylist .group_btns_new {
+    display: inline-block;
+    float: right;
+}
+
+.btn_betting_share {
+    background-color: #5f84ce;
+    text-align: center;
+    width: 126px;
+    margin-left: -1px;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn_betting_cancle_on {
+    background-color: #68bea1;
+    text-align: center;
+    width: 73px;
+    /*height:26px;*/
+    margin-left: -1px;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+}
+.mybet_list .bet_data .btn_box{
+    background: none;
+}
+.mybet_list .bet_data .btn_box .btn_betting_cancle_on {
+    background: #4e84a8 !important;
+    text-align: center;
+    width: 73px;
+    /* height: 26px; */
+    margin-left: -1px;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.btn_betting_cancle_off {
+    background-color: #666f82;
+    text-align: center;
+    width: 73px;
+    /*height:26px;*/
+    margin-left: -1px;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.weclick {
+    display: inline-block;
+    width: 107px;
+    float: right;
+}
+
+.weclick img {
+    width: 107px;
+    height: 33px;
+}
+
+.hit_game_section {
+    margin: 20px 0;
+    background-color: #FFF;
+}
+
+.hit_game_section:last-child {
+    margin: 0px;
+}
+
+.hit_game_box {
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 1px solid #ddd;
+}
+
+.hit_game_box .home {
+    float: left;
+    position: relative;
+    background: #f0f6ff;
+    border-right: 1px solid #ddd;
+    width: 32.5%;
+    height: 33px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.hit_game_box .moo {
+    position: relative;
+    float: left;
+    width: 25%;
+    color: #FFBC30;
+    height: 33px;
+    background-color: #FFF;
+    border-right: 1px solid #ddd;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.hit_game_box .wonjung {
+    position: relative;
+    float: left;
+    width: 32.5%;
+    height: 33px;
+    background: #f0f6ff;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.hit_game_box .down_arrow {
+    position: relative;
+    background: #FFF;
+    width: 10%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.hit_game_box .plus_number {
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 10px;
+}
+
+.hit_game_box .down_arrow .num_u_o {
+    color: #3fd911;
+}
+
+.hit_game_box .down_arrow .num_h_d {
+    color: #FFBC30;
+}
+
+.hit_game_box .home.orange_bet,
+.hit_game_box .wonjung.orange_bet,
+.hit_game_box .msboo.orange_bet {
+    background: #FFBC30;
+    color: #FFF;
+}
+
+.hit_game_box .home.orange_bet b,
+.hit_game_box .wonjung.orange_bet b,
+.hit_game_box .msboo.orange_bet b {
+    color: #FFF;
+}
+
+.hit_game_box .msboo {
+    background: #f0f6ff;
+}
+
+.hit_game_box .home .home_txt,
+.hit_game_box .wonjung .home_txt {
+    /*margin-right:15px;*/
+    float: left;
+    padding-left: 10px;
+}
+
+.hit_game_box .home .beadang,
+.hit_game_box .wonjung .beadang {
+    color: #FFBC30;
+    float: right;
+    padding-right: 10px;
+}
+
+.hit_game_box .home_txt img {
+    vertical-align: -1px;
+    padding: 0 1px;
+}
+
+.down_arrow img {
+    width: 13px;
+    height: 7px;
+}
+
+/*슬라이드다운 적중리스트*/
+.hit_game_box ul {
+    display: none;
+}
+
+/***스페셜***/
+.special_game_box {
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 1px solid #ddd;
+}
+
+.special_game_box .home {
+    float: left;
+    position: relative;
+    background: #f0f6ff;
+    border-right: 1px solid #ddd;
+    width: 36.5%;
+    height: 33px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.special_game_box .moo {
+    position: relative;
+    float: left;
+    width: 27%;
+    height: 33px;
+    color: #FFBC30;
+    background-color: #FFF;
+    border-right: 1px solid #ddd;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.special_game_box .wonjung {
+    position: relative;
+    float: left;
+    width: 36.5%;
+    height: 33px;
+    background: #f0f6ff;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.special_game_box .home.orange_bet,
+.special_game_box .wonjung.orange_bet,
+.special_game_box .msboo.orange_bet {
+    background: #FFBC30;
+    color: #FFF;
+}
+
+.special_game_box .home.orange_bet b,
+.special_game_box .wonjung.orange_bet b,
+.special_game_box .msboo.orange_bet b {
+    color: #FFF;
+}
+
+.special_game_box .msboo {
+    background: #f0f6ff;
+}
+
+.special_game_box .home .home_txt,
+.special_game_box .wonjung .home_txt {
+    /*margin-right:15px;*/
+    float: left;
+    letter-spacing: -0.5px;
+    padding-left: 10px;
+}
+
+.special_game_box .home .beadang,
+.special_game_box .wonjung .beadang {
+    color: #FFBC30;
+    float: right;
+    letter-spacing: -0.5px;
+    padding-right: 10px;
+}
+
+.special_game_box .home_txt img {
+    vertical-align: -1px;
+    padding: 0 1px;
+}
+
+/*20190930판매등록이 불가한 적중내역입니다*/
+ul.hit_list li div.divlind {
+    position: absolute;
+    background: rgb(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    text-align: center;
+    line-height: 55px;
+}
+
+ul.hit_list li div.divlind a div {
+    color: #fff;
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .betting_section .betting_box button.home .home_txt,
+    .betting_section .betting_box button.wonjung .beadang {
+        width: 60%;
+        display: inline-block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        word-wrap: normal;
+        overflow: hidden;
+    }
+
+    .betting_section .betting_box button.wonjung .home_txt,
+    .betting_section .betting_box button.home .beadang {
+        width: 40%;
+        padding: 0px;
+    }
+}
+
+@media screen and (min-width: 401px) {
+
+    .betting_section .betting_box button.home .home_txt,
+    .betting_box button:nth-child(3) b.beadang {
+        width: 50%;
+        display: inline-block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        word-wrap: normal;
+        overflow: hidden;
+    }
+}
+
+.betting_box button:nth-child(1) span.home_txt {
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.betting_box button:nth-child(3) b.beadang {
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.result_box_wrap .betting_box {
+    height: auto;
+}
+
+/*당구*/
+.billiard_group .betting_box {
+    line-height: 50px;
+    height: 50px;
+}
+
+.billiard_group .betting_box .home,
+.billiard_group .betting_box .moo,
+.billiard_group .betting_box .wonjung,
+.billiard_group .betting_box .down_arrow_blank {
+    height: 50px;
+    line-height: 50px;
+}
+
+.billiard_group .home span.home_txt {
+    width: 50% !important;
+    line-height: 20px;
+    text-align: left;
+    margin: 6px 0 0 8px;
+}
+
+.billiard_group .home .beadang {
+    line-height: 50px;
+}
+
+.billiard_group .wonjung span.home_txt {
+    line-height: 50px;
+}
+
+.billiard_group .wonjung .beadang {
+    width: 50% !important;
+    text-align: right;
+    margin: 6px 8px 0 0;
+    box-sizing: border-box;
+    line-height: 20px;
+}
+
+/*베팅내역 업로드 끝*/
+.subnav .liveTime {
+    float: right;
+    display: inline-block;
+    margin: 5px;
+}
+
+
+/*쪽지보내기*/
+#menu{
+	height:40px;
+	line-height: 40px;
+	background-color:#f1f1f1;
+	border-bottom:1px solid #ddd;
+}
+#menu>li{float:left; width:50%; height:40px; line-height:40px;
+text-align:center; box-sizing:border-box;}
+#menu>li>a{
+	display:block;
+	color:#666;
+	font-size:13px;
+}
+#menu>li.on{
+    background:#ffbc30;
+    color: #000 !important;
+}
+#menu>li.on>a{
+    color:#000;
+}
+
+#me_memo{
+    width: 98%;
+    height: 100%;
+}
+
+.writing_th .frm_input,
+.writing_content_wrap .writing_content textarea{
+    width: 98%;
+    background: #091626;
+    border: 1px solid #496e77;
+    color: #fff !important;
+}
+.writing_content_wrap .writing_content input {
+    width: 98%;
+    background: #091626;
+    border: 1px solid #496e77;
+    color: #fff;
+}
+
+
+.btn_wrap{
+	height:40px;
+	padding:10px;
+}
+.initialization_btn{
+    float:left;
+    width:32%;
+    height:35px;
+    line-height:35px;
+    background:#ddd;
+    text-align:center;
+    font-size:13px;
+    margin-right:2%;
+}
+.initialization_btn a{
+    display:block;
+    color:#666;
+}
+.message_send{
+    float:right;
+    width:40%;
+    height:35px;
+    line-height:35px;
+    background:#ffbc30;
+    text-align:center;
+	font-size:13px;
+}
+.message_send a{
+    color:#FFF;
+    display:block;
+}
+.writing_title_list tr:first-child th{
+    width: 100%;
+    padding-bottom: 5px;
+}
+.writing_title_list tr:first-child th p{
+    font-size: 11px;
+    color: #ffbc30;
+    margin-top: -5px;
+}
+.writing_title_list .nickname input{
+	border:0;
+	width:94%;
+}
+.writing_title_list .nickname input::placeholder{
+    color:#ffbc30;
+    font-size:10px;
+	letter-spacing:-0.5px;
+}
+.writing_title_list table th.writing_th{
+	width:100%;
+	color:#000;
+}
+.writing_title_list table th.writing_th input{
+    padding: 5px 10px;
+}
+.writing_title_list table th.writing_th input,
+.writing_content_wrap .writing_content textarea{
+    color:#fff;
+    font-size:13px;
+    font-weight:400;
+    outline: none;
+}
+.writing_title_list table th.writing_th input::placeholder{
+    color:#aaa;
+    font-weight:normal;
+}
+
+/*쪽지보내기 끝*/
+
+
+/*물음표 도움말 팝업*/
+.question{
+    position: relative;
+}
+.question div.txt{
+    max-width: 304px;
+    position: absolute;
+    right: 0px;
+    top: 30px;
+    background: #eaf1f5;
+    text-align: left;
+    padding: 13px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    color: #000;
+    z-index: 20;
+}
+.question div.txt .tit{
+    color: #000;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.question div.txt .zone{
+    display: inline-block;
+    color: #000;
+    width: 100% !important;
+    max-width: 100% !important;
+    line-height: 1.7;
+    text-align: justify;
+    letter-spacing: -.5px;
+    font-size: 12px;
+    word-break: break-all;
+    white-space: normal;
+    margin: 0;
+}
+.question div.txt .zone:nth-child(2) {
+    margin: 0 0 5px 0;
+}
+/*물음표 도움말 팝업 끝*/
+
+
+/*보너스 배당률 포인트 텍스트*/
+.bonus_dividend{
+    color: #ff2413 !important;
+    margin-left: 5px;
+}
+/*보너스 배당률 포인트 텍스트 끝*/
+
+
+/*마이베팅*/
+.mybet_top {
+    /* margin: 0 20px; */
+    padding: 15px 0;
+    border-bottom: 1px solid #1f2f3c;
+}
+.mybet_top input{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.mybet_top .select_bet_xbtn{
+    float: right;
+    width: 100px;
+    height: 25px;
+    border: 1px solid #a7becc;
+    border-radius: 2px;
+    color: #a7becc;
+    background: transparent;
+    vertical-align: middle;
+    font-size: 14px;
+    margin-left: 10px;
+    font-size: 12px;
+    line-height: 23px;
+    cursor: pointer;
+}
+.mybet_top .mybet-select-cancel{
+    margin: 0 0 0 5px;
+}
+.mybet_top .select_bet_xbtn:disabled,
+.mybet_top .select_bet_xbtn[disabled]{
+    cursor: default;
+    opacity: .3;
+}
+
+.mybet_list>li{
+    position: relative;
+    display: block;
+    height: auto;
+    margin: 0 20px;
+    border-bottom: 1px solid #1f2f3c;
+}
+.mybet_list>.null_betlist {
+    position: relative;
+    display: block;
+    width: 325px;
+    height: 71px;
+    margin-bottom: 5px;
+    padding: 15px !important;
+    border: 1px solid #4a667b;
+    background: #03070a;
+    box-sizing: border-box;
+}
+.cttbox.my_betchat .tab>.conBox ul li:before{
+    display: none;
+}
+div ul.mybet_list{
+    overflow:hidden;
+    overflow-y: scroll;
+    max-height: 640px;
+}
+.mybet_list li>button{
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    margin: 0 8px 0 10px;
+}
+.mybet_list .bet_data{
+    position: relative;
+    /* padding:15px 0px; */
+}
+.mybet_list .bet_data .btn_box{
+    position: absolute;
+    padding: 0;
+    top: 10px;
+    right: 0;
+}
+.mybet_list .bet_data .btn_box .btn3{
+    width: 40px;
+    height: 25px;
+}
+
+.mybet_list .on .bet_data .btn_box .btn3:after{
+    content: '닫기' !important;
+}
+.mybet_list .bet_data .btn_box .btn3:after{
+    content: '펼치기';
+}
+
+.mybet_list .bet_data p{
+    position: relative;
+}
+.mybet_list .bet_data p input{
+    width: 15px;
+    position: absolute;
+    height: 15px;
+    left: 0;
+    top: 5px;
+}
+.mybet_list .bet_data .gtxt{
+    font-size: 12px;
+}
+.mybet_list .bet_data span{
+    font-size: 13px;
+    vertical-align: middle;
+    line-height: 20px;
+}
+
+.mybet_list .bet_data p.tit .wtxt{
+    margin-left: 21px;
+}
+
+.mybet_list .bet_data p.gold{
+    margin: -7px 0 10px 23px;
+}
+.mybet_list .bet_data p.gold span:first-child .ytxt,
+.mybet_list .bet_data span .ytxt{
+    display: inline-block;
+    overflow: hidden;
+    max-width: 27%;
+    min-width: 31px;
+    height: 18px;
+    width: auto;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    vertical-align: -1px;
+}
+.mybet_list .bet_data p.gold .wtxt .ytxt{
+    padding: 1px 2px;
+    margin-bottom: -1px;
+}
+
+.mybet_list .bet_data .tit .gtxt:before{
+    content: '|';
+    padding: 0 5px;
+}
+.mybet_list .bet_data .tit .btn3{
+    width: 60px;
+    height: 20px;
+    margin-top: 5px;
+}
+.mybet_list li button:after,
+.mybet_list li button:before{
+    display: none;
+}
+.mybet_list .open>button{
+    transform: rotate(0deg);
+}
+.mybet_list>li>button span{
+    margin-bottom: -5px;
+}
+.mybet_list>li.open>ul{
+    display: block;
+}
+.mybet_list>li>ul{
+    display: none;
+}
+.mybet_list>li>ul>li{
+    display: block;
+}
+.mybet_list>li>ul>li div,
+.mybet_list>li>ul>li div p{
+    font-size: 13px;
+}
+
+.mybet_list li ul .left .wtxt{
+    overflow:hidden;
+    display:block;
+    width: 240px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    word-wrap:normal;
+}
+.mybet_list>li>ul>li:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+.mybet_list>li>ul>li{
+    position: relative;
+    display: block;
+    height: 60px;
+    margin-bottom: 5px;
+    padding:10px 15px !important;
+    background: #03070a;
+    box-sizing: border-box;
+}
+.mybet_list>li>ul>li .left{
+    position: relative;
+    display: inline-block;
+    width: 228px;
+    box-sizing: border-box;
+}
+.mybet_list>li>ul>li .left .gtxt{
+    width: 155px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    word-wrap:normal;
+    display:block;
+    overflow:hidden;
+}
+.mybet_list>li>ul>li .right{
+    float: right;
+    width: 43px;
+    line-height: 46px;
+    font-size: 14px;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.mybet_list>li>ul>li .left .state_box{
+    position: absolute;
+    right: 25px;
+    top: 22px;
+}
+/*마이베팅 끝*/
+
+.analysis_btn{
+    width: 19px;
+    height: 20px;
+    margin-top: 5px;
+    background-position: -324px -102px;
+    background-image: url(../img/icon.png);
+    text-indent: -9999px;
+}
+.bet_detail .wait{
+    padding-bottom: 5px !important;
+}

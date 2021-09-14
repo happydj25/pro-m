@@ -1,0 +1,1938 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta charset="utf-8">
+    <meta name="ROBOTS" content="INDEX,FOLLOW">
+    <meta name="GOOGLEBOT" content="INDEX,NOFOLLOW">
+    <meta name="ROBOTS" content="NOARCHIVE">
+    <meta name="GOOGLEBOT" content="NOARCHIVE">
+
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta property="og:type" content="website">
+    <title>SPOLIVE PRO</title>
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="http://sports.portal.dev.spolive.com/theme/basic/mobile/css/swiper.min.css">
+    <link rel="stylesheet" href="http://sports.portal.dev.spolive.com/theme/basic/mobile/css/style.css?20200716105242">
+    <link rel="stylesheet" href="http://sports.portal.dev.spolive.com/theme/basic/mobile/css/m_livegame.css?20200716105242">
+    <link rel="stylesheet" href="http://sports.portal.dev.spolive.com/lib/css/jquery-ui.min.css?20200716105242"> -->
+
+    <!-- <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script> -->
+    <!-- <script type="text/javascript" async="" src="https://avd.innity.net/744/container_5ec4f2f747e7048d01000000.js"></script> -->
+    <!-- <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-5745WZR"></script> -->
+    <!-- <script src="http://cr.acecounter.com/Mobile/AceCounter_AM.js?gc=AZ1A77753&amp;py=m.spolive.com&amp;up=NaPm_Ncisy&amp;rd=1594864363884"></script> -->
+    <!-- <script src="http://cr.acecounter.com/Web/AceCounter_AW.js?gc=AH6A42581673761&amp;py=0&amp;gd=gtp2&amp;gp=8080&amp;up=NaPm_Ncisy&amp;rd=1594864363881"></script> -->
+    <!-- <script async="" src="//www.google-analytics.com/analytics.js"></script> -->
+    <!-- <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-KFRZCM2"></script> -->
+    <!-- <script src="http://sports.portal.dev.spolive.com/lib/js/jquery-1.9.1.min.js?20200716105242"></script>
+    <script src="http://sports.portal.dev.spolive.com/lib/js/jquery-ui.min.js?20200716105242"></script>
+    <script src="http://sports.portal.dev.spolive.com/lib/js/swiper.min.js?20200716105242"></script> -->
+    <!-- <script src="http://sports.portal.dev.spolive.com/lib/js/jquery.simplemodal.js?20200716105242"></script>
+    <script src="http://sports.portal.dev.spolive.com/theme/basic/mobile/js/common.js?20200716105242"></script> -->
+
+    <link rel="shortcut icon" href="http://sports.portal.dev.spolive.com/theme/basic/mobile/img/icons/favicon.ico">
+    <link rel="apple-touch-icon" href="http://sports.portal.dev.spolive.com/theme/basic/mobile/img/icons/favicon_72.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://sports.portal.dev.spolive.com/theme/basic/mobile/img/icons/favicon_72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://sports.portal.dev.spolive.com/theme/basic/mobile/img/icons/favicon_114.png">
+</head>
+
+<body class="body_index">
+
+
+    <div class="dim hidden"></div>
+    <header>
+        <div class="container">
+            <button class="menu"><span class="list-i-menu"></span></button>
+            <h1 class="logo"><a href="http://sports.portal.dev.spolive.com"><span class="list-i-logo"></span></a></h1>
+            <ul class="hdul">
+                <li onclick="wopen('/page/payment/payment.php', 'payment', '768', '1000');"><a href="" title="충전"><span class="list-i-charge"></span></a></li>
+                <li><button class="mydata" title="내정보"><span class="list-i-mydata"></span></button></li>
+                <li><button class="logout" onclick="location.href='//portal.dev.spolive.com/bbs/logout.php?url=//sports.portal.dev.spolive.com'" title="로그아웃"><span class="list-i-logout"></span></button></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="betitem hidden">
+        <div class="tit">
+            <p class="twtxt">베팅아이템</p>
+            <button class="xbtn"><span class="list-i-xbtn"></span></button>
+        </div>
+        <div id="mk_item_layer_betslip">Loading.</div>
+    </div>
+
+    <div class="navmu_wrap hidden">
+
+        <div class="login hidden">
+
+            <div class="tit">
+                <p class="twtxt">로그인</p>
+                <button class="xbtn"><span class="list-i-xbtn"></span></button>
+            </div>
+            <form name="flogin" action="//portal.dev.spolive.com/bbs/login_check.php" method="post">
+                <div>
+                    <input type="text" name="mb_id" placeholder="아이디를 입력해주세요." required="">
+                    <input type="password" name="mb_password" placeholder="비밀번호를 입력해주세요." required="">
+                    <button type="submit" class="ybtn">로그인</button>
+                    <a href="//portal.dev.spolive.com/bbs/register.php" class="ybtn2">회원가입</a>
+                </div>
+                <div class="find">
+                    <a href="//portal.dev.spolive.com/bbs/password_lost.php">아이디 찾기</a>
+                    <a href="//portal.dev.spolive.com/bbs/password_lost.php">비밀번호 찾기</a>
+                </div>
+                <div class="snslogin">
+                    <p class="twtxt">다른 로그인 방법</p>
+                    <a href="">
+                        <span class="list-i-naver"></span>
+                        네이버 로그인
+                    </a>
+                    <a href="">
+                        <span class="list-i-kakko"></span>
+                        카카오 로그인
+                    </a>
+                    <a href="">
+                        <span class="list-i-fbook"></span>
+                        페이스북 로그인
+                    </a>
+                    <a href="">
+                        <span class="list-i-google"></span>
+                        구글 로그인
+                    </a>
+                </div>
+            </form>
+        </div>
+
+        <div class="mydata hidden">
+            <div class="tit">
+                <p class="twtxt">내정보</p>
+                <button class="xbtn"><span class="list-i-xbtn"></span></button>
+            </div>
+            <div class="container">
+                <div class="mydata">
+                    <div class="tit">
+                        <span class="list-i-myicon"></span>
+                        기본정보
+                        <button class="inven_btn" onclick="location.href='gold-market-inventory.html'">인벤토리</button>
+                    </div>
+                    <div>
+                        <span class="txt">랭킹</span>
+                        <span>-</span>
+                    </div>
+                    <div>
+                        <span class="txt">닉네임</span>
+                        <button class="btn1" onclick="location.href='gold-market.html'">변경</button>
+                        <span class="name">자낳괴나돈조심</span>
+                    </div>
+                    <div class="business">
+                        <span class="list-i-business"></span>
+                        <span class="num">D-0</span>
+                    </div>
+                    <div class="first">
+                        <span class="list-i-first"></span>
+                        <span class="num">D-345</span>
+                    </div>
+                </div>
+
+                <div class="mygold">
+                    <div class="tit">
+                        <span class="list-i-mygold"></span>
+                        보유재화
+                    </div>
+                    <div>
+                        <span class="txt">껨코인</span>
+                        <button class="btn1" onclick="wopen('/page/payment/payment.php', 'payment', '768', '1000');">충전</button>
+                        <span class="num"><span class="list-i-coin"></span>0</span>
+                    </div>
+                    <div>
+                        <span class="txt">골드</span>
+                        <button class="btn1" onclick="location.href='/contents/list.php?ca_id=50'">구매</button>
+                        <span class="num"><span class="list-i-gold"></span>35,999,910</span>
+                    </div>
+                    <div class="question">
+                        <span class="txt">마일리지</span>
+                        <span class="list-i-subtxt"></span>
+                        <div class="txt qpopup hidden">
+                            <p class="tit">마일리지</p>
+                            <span class="zone">
+                                게임 플레이를 통해 무료로 제공되는 재화입니다.<br>
+                                마일리지는 게임 참여 후 적중 실패 시 베팅금액의 0.001%만큼 적립 받습니다.
+                                획득한 마일리지는 골드마켓에서<br>아이템 구매 시 사용할 수 있습니다.<br>
+                            </span>
+                        </div>
+                        <span class="num"><span class="list-i-mile"></span>0</span>
+                    </div>
+                </div>
+
+
+                <div class="wrank">
+                    <div class="tit">
+                        <span class="list-i-wrank"></span>
+                        주간전적
+                        <label for="weekly_record" class="onoff_btn">
+                            <input type="checkbox" name="weekly_record" id="weekly_record">
+                            <span class="list-i-mdonoff"></span>
+                        </label>
+                    </div>
+                    <div>
+                        <span class="txt">적중건수</span>
+                        <span class="num">0</span>
+                    </div>
+                    <div>
+                        <span class="txt">최대 당첨 배당</span>
+                        <span class="num">0</span>
+                    </div>
+                    <div>
+                        <span class="txt">최대 당첨 골드</span>
+                        <span class="num">0</span>
+                    </div>
+                </div>
+
+                <div class="mrank">
+                    <div class="tit">
+                        <span class="list-i-mrank"></span>
+                        월간전적
+                        <label for="monthly_record" class="onoff_btn">
+                            <input type="checkbox" name="monthly_record" id="monthly_record">
+                            <span class="list-i-mdonoff"></span>
+                        </label>
+                    </div>
+                    <div>
+                        <span class="txt">적중건수</span>
+                        <span class="num">0</span>
+                    </div>
+                    <div>
+                        <span class="txt">최대 당첨 배당</span>
+                        <span class="num">0</span>
+                    </div>
+                    <div>
+                        <span class="txt">최대 당첨 골드</span>
+                        <span class="num">0</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="menu hidden">
+            <div class="tit">
+                <p class="twtxt">전체 메뉴</p>
+                <button class="xbtn"><span class="list-i-xbtn"></span></button>
+            </div>
+            <ul class="game">
+                <li>
+                    <a href="https://www.spolive.com/">
+                        <div class="img">
+                            <img src="http://sports.portal.dev.spolive.com/theme/basic/mobile/img/game/menu_thum01.png" alt="">
+                        </div>
+                        <p>스포라이브</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.tygem.com/">
+                        <div class="img">
+                            <img src="http://sports.portal.dev.spolive.com/theme/basic/mobile/img/game/menu_thum02.png" alt="">
+                        </div>
+                        <p>타이젬 바둑</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://happy.portal.dev.spolive.com/">
+                        <div class="img">
+                            <img src="http://sports.portal.dev.spolive.com/theme/basic/mobile/img/game/munu_thum03.png" alt="">
+                        </div>
+                        <p>해피라이브</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="gnb">
+                <ul>
+                    <li>
+                        <button type="button">
+                            <span class="list-i-run"></span>
+                            스포츠게임
+                            <span class="list-i-rarr"></span>
+                        </button>
+                        <ul>
+                            <li><a href="sport-game.html">스포츠게임</a></li>
+                            <li><a href="live-game.html">라이브게임</a></li>
+                            <li><a href="bet-rules.html">베팅규정</a></li>
+                            <li><a href="match-schedule.html">경기일정</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button">
+                            <span class="list-i-murank"></span>
+                            랭킹
+                            <span class="list-i-rarr"></span>
+                        </button>
+                        <ul>
+                            <li><a href="rank.html">주간랭킹</a></li>
+                            <li><a href="rank.html">월간랭킹</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" onclick="location.href='team-rank.html'">
+                            <span class="list-i-murank"></span>
+                            종목별 팀 순위
+                            <span class="list-i-rarr"></span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button">
+                            <span class="list-i-community"></span>
+                            커뮤니티
+                            <span class="list-i-rarr"></span>
+                        </button>
+                        <ul>
+                            <li><a href="board.html">자유게시판</a></li>
+                            <li><a href="board.html">분석게시판</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button">
+                            <span class="list-i-nnews"></span>
+                            새소식
+                            <span class="list-i-rarr"></span>
+                        </button>
+                        <ul>
+                            <li><a href="noti.html">공지사항</a></li>
+                            <li><a href="noti.html">업데이트</a></li>
+                            <li><a href="event.html">이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" onclick="location.href='gold-market.html'">
+                            <span class="list-i-gmk"></span>
+                            골드마켓
+                            <span class="list-i-rarr"></span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button">
+                            <span class="list-i-make"></span>
+                            제작
+                            <span class="list-i-rarr"></span>
+                        </button>
+                        <ul>
+                            <li><a href="make.html">합성</a></li>
+                            <li><a href="make.html">강화</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="betcart hidden">
+            <div class="container">
+                <div class="more_btn gtxt">
+                    전체보기
+                    <span class="list-i-betcartmore"></span>
+                </div>
+                <div class="tit">
+                    <button class="gbtn all_cancel_btn">전체삭제</button>
+                    <p class="twtxt">베팅카트<span class="btxt betCartCnt">(0)</span></p>
+                    <button class="xbtn"><span class="list-i-xbtn"></span></button>
+                </div>
+                <ul class="cart_list bet_list">
+                    <li>경기를 선택해주세요.</li>
+                </ul>
+                <div class="mygold">
+                    <span>보유골드<a href="/contents/list.php?ca_id=50"><span class="list-i-more"></span></a></span>
+                    <span>35,999,910</span>
+                </div>
+                <div class="gross_dividend">
+                    <span>총 배당률</span>
+                    <span id="odd_total">1</span>
+                </div>
+                <div class="estimated_gold">
+                    <span>예상골드</span>
+                    <span id="winspogold_total">0</span>
+                </div>
+                <div class="myitem">
+                    <span>보유 아이템</span>
+                    <button class="bbtn">베팅아이템 적용하기</button>
+                </div>
+                <div class="gold_btn expect_gold">
+                    <button class="gbtn2">1,000,000</button>
+                    <button class="gbtn2">3,000,000</button>
+                    <button class="gbtn2">5,000,000</button>
+                    <button class="gbtn2">10,000,000</button>
+                    <button class="gbtn2">30,000,000</button>
+                    <button class="gbtn2">50,000,000</button>
+                    <button class="gbtn2">초기화</button>
+                    <button class="bbtn max_btn" id="btnMax" name="btnMinMax">MAX</button>
+                </div>
+                <input type="text" id="seedgold" name="seedgold" placeholder="배팅골드를 입력해 주세요." value="10,000">
+                <button class="ybtn btn_batting">베팅하기</button>
+                <label for="cart_keep" class="onoff_btn">
+                    카트유지
+                    <input type="checkbox" name="cart_keep" id="cart_keep">
+                    <span class="list-i-bconoff"></span>
+                </label>
+            </div>
+
+
+
+
+
+        </div>
+        <div class="mylog hidden">
+
+            <div class="betlog_dlookup" style="display:none;">
+                <input type="date" name="" id="">
+                <input type="date" name="" id="">
+                <button class="dlookup_btn"></button>
+            </div>
+
+            <div class="container">
+                <button class="xbtn"><span class="list-i-xbtn"></span></button>
+                <div class="mylog_tab">
+                    <ul class="tit cancel_change_btn">
+                        <li class="on" onclick="get_draw_list();click_mybet_btn('change_mybet_btn');" id="change_mybet_btn">베팅내역</li>
+                        <li onclick="MyDrawList();click_mybet_btn('change_mybet_cancel_btn');" id="change_mybet_cancel_btn">베팅취소</li>
+                    </ul>
+
+                    <div id="mybet_layer">
+                        <ul class="tit change_btn change_list_btn" id="list_chage_btn_ul">
+                            <li data-id="mylog_sport" class="on" data-type="">전체</li>
+                            <li data-id="mylog_sport" data-type="SRS">스포츠</li>
+                            <li data-id="mylog_live" data-type="LIVE">라이브</li>
+                        </ul>
+                        <div id="mylog_sport" class="conBox on">
+                            <div class="period datebtn_wrap">
+                                <button class="on" data-type="today">오늘</button>
+                                <button data-type="week" data-value="1">1주일</button>
+                                <button data-type="month" data-value="1">1개월</button>
+                                <button data-type="month" data-value="3">3개월</button>
+                            </div>
+                            <div id="my_hit_list">
+                                <div class="betlog_box_blank">내역이 존재하지 않습니다.</div>
+                            </div>
+                            <div class="page_num memo"></div>
+                        </div>
+                    </div>
+                    <div id="mybet_cancel_layer" style="display: none;">
+                        <div class="mybet_top">
+                            <label for="all_select">
+                                <label><input type="checkbox" class="all_cancel_check">
+                                    전체선택</label>
+                            </label>
+                            <button class="select_bet_xbtn mybet-select-cancel">선택 베팅 개별 취소</button>
+                            <button class="select_bet_xbtn choice_cancel_btn">선택 베팅 전체 취소</button>
+                        </div>
+                        <ul class="mybet_list" id="mybet_cancel_list">
+                            <li class="null_betlist">
+                                최근 베팅한 내역이 없습니다.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="chat hidden">
+            <div class="tit">
+                <button class="chatshar"><span class="list-i-chatshar btn_bet"></span></button>
+                <!-- on으로 확성기 기능 on off -->
+                <button class="speaker"><span class="list-i-speaker"></span></button>
+                <button class="chatset"><span class="list-i-chatset"></span></button>
+
+                <div class="hidden">
+                    <button class="on"><span class="chat-i-scr" data-type="scroll"></span></button>
+                    <button><span class="chat-i-usarm" data-type="join"></span></button>
+                </div>
+
+
+                <p class="twtxt">채팅</p>
+                <button class="xbtn"><span class="list-i-xbtn"></span></button>
+            </div>
+            <div class="container chat_box">
+                <ul class="chat_list chat_content">
+                    <li class="game_master">
+                        <span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>
+                            gameadmin
+                        </span>🤢🤢🤢🤢🤢🤢🤢🤢😚😚😚🙂🤔🤩
+                    </li>
+                    <li class=""><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="champot19" data-nick="뽀뽀야럽" class="memo"></li>
+                            </ul>
+                            뽀뽀야럽
+                        </span>aa</li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="fkxp104" data-nick="fkxp104" class="memo"></li>
+                            </ul>fkxp104
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=5::SRS/14949','_blank',840,252)">승무패 9.44 대기중 <span class="list-i-betmore"></span></a></li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="fkxp104" data-nick="fkxp104" class="memo"></li>
+                            </ul>fkxp104
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=5::SRS/14949','_blank',840,252)">승무패 9.44 대기중 <span class="list-i-betmore"></span></a></li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>
+                            gameadmin
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=5::SRS/15045','_blank',840,212)">승무패 2.05 대기중 <span class="list-i-betmore"></span></a></li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="baaaba" data-nick="보로봉봉" class="memo"></li>
+                            </ul>보로봉봉
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=5::SRS/15047','_blank',840,372)">
+                            승무패 4.14 대기중
+                            <span class="list-i-betmore"></span></a></li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="champot19" data-nick="뽀뽀뽀친구" class="memo"></li>
+                            </ul>뽀뽀뽀친구
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=5::SRS/15066','_blank',840,332)">승무패 236079 대기중 <span class="list-i-betmore"></span></a></li>
+                    <li class=""><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="seojwfan9" data-nick="fewwegwwee" class="memo"></li>
+                            </ul>fewwegwwee
+                        </span>ㅇㄹㄹㄷ</li>
+                    <li class="game_master"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span>sdfsdfsdfsdf</li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="liveTest31" data-nick="liveTest31" class="memo"></li>
+                            </ul>liveTest31
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=3:63:49478','_blank',840,94)">점프볼 0 적중실패 <span class="list-i-betmore"></span></a></li>
+                    <li class=""><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="baaaba" data-nick="보로봉봉" class="memo"></li>
+                            </ul>보로봉봉
+                        </span>djkssydfsajfa</li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=5::SRS/15060','_blank',840,172)">승무패 1.68 대기중 <span class="list-i-betmore"></span></a></li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=3:61:40900','_blank',840,94)">코인토스 1.95 적중성공
+                            <span class="list-i-betmore"></span></a></li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=3:63:49940','_blank',840,94)">점프볼 0 적중실패 <span class="list-i-betmore"></span></a></li>
+                    <li class="game_master"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span>ㄴㅇㄻㄴㅇㄻㅇㄹ</li>
+                    <li class="game_master"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span>ㄴㅇㄹㄴㅇㄹ</li>
+                    <li class="game_master"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span>ㄴㅇㄻㄻㄴㄹㅇㅁㄴㄹㅇ</li>
+                    <li class=""><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="fkxp104" data-nick="라떼" class="memo"></li>
+                            </ul>라떼
+                        </span>아아아앙</li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=5::SRS/14690','_blank',840,252)">승무패 11.3 적중특례 <span class="list-i-betmore"></span></a></li>
+                    <li class=""><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="fkxp104" data-nick="라떼" class="memo"></li>
+                            </ul>라떼
+                        </span>ㅇ</li>
+                    <li class=""><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="fkxp104" data-nick="라떼" class="memo">
+
+                                </li>
+                            </ul>라떼
+                        </span>test</li>
+                    <li class="betinfoshare"><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="game_admin" data-nick="gameadmin" class="memo"></li>
+                            </ul>gameadmin
+                        </span><a href="#." onclick="open_window('https://sports.portal.dev.spolive.com/page/ajax_myhitlistHistory_pop.php?inframe=Y&amp;val=5::SRS/15218','_blank',840,172)">승무패 2.05 대기중 <span class="list-i-betmore"></span></a></li>
+                    <li class=""><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="fkxp104" data-nick="라떼" class="memo"></li>
+                            </ul>라떼
+                        </span>test</li>
+                    <li class="myChat "><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="shemf1004" data-nick="자낳괴나돈조심" class="memo"></li>
+                            </ul>자낳괴나돈조심
+                        </span>asdf</li>
+                    <li class="myChat "><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="shemf1004" data-nick="자낳괴나돈조심" class="memo"></li>
+                            </ul>자낳괴나돈조심
+                        </span>sdfsdfsdfsd</li>
+                    <li class="myChat "><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="shemf1004" data-nick="자낳괴나돈조심" class="memo"></li>
+                            </ul>자낳괴나돈조심
+                        </span>sd</li>
+                    <li class="myChat "><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="shemf1004" data-nick="자낳괴나돈조심" class="memo"></li>
+                            </ul>자낳괴나돈조심
+                        </span>fd</li>
+                    <li class="myChat "><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="shemf1004" data-nick="자낳괴나돈조심" class="memo"></li>
+                            </ul>자낳괴나돈조심
+                        </span>d</li>
+                    <li class="myChat "><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="shemf1004" data-nick="자낳괴나돈조심" class="memo"></li>
+                            </ul>자낳괴나돈조심
+                        </span>d</li>
+                    <li class="myChat "><span class="clickable-nick">
+                            <ul class="tooltip">
+                                <li data-id="shemf1004" data-nick="자낳괴나돈조심" class="memo"></li>
+                            </ul>자낳괴나돈조심
+                        </span>d</li>
+                </ul>
+                <div class="chat_btm">
+                    <input type="text" name="messagePut" id="messagePut" autocomplete="off" placeholder="대화 내용을 입력해 주세요.">
+                    <button class="off">전송</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div id="layer_message"></div>
+
+    <main>
+
+        <div class="tab">
+            <ul>
+                <li data-id="sportgame"><a href="sport-game.html">스포츠 게임</a></li>
+                <li data-id="livegame"><a href="live-game.html">라이브 게임</a></li>
+            </ul>
+
+            <div class="wrap">
+                <div class="frame gamelist" id="basic" style="overflow: hidden;">
+                    <ul class="clearfix" style="transform: translateZ(0px); width: 1200px;">
+                        <li class="all active">전체</li>
+                        <li class="soccer" data-sports="1">축구</li>
+                        <li class="basketball" data-sports="2">농구</li>
+                        <li class="baseball" data-sports="3">야구</li>
+                        <li class="volleyball" data-sports="23">배구</li>
+                        <li class="icehockey" data-sports="4">아이스하키</li>
+                        <li class="tennis" data-sports="5">테니스</li>
+                        <li class="table-tennis" data-sports="20">탁구</li>
+                        <li class="football" data-sports="16">미식축구</li>
+                        <li class="handball" data-sports="6">핸드볼</li>
+                        <li class="dart" data-sports="22">다트</li>
+                        <li class="badminton" data-sports="31">배드민턴</li>
+                        <li class="snooker" data-sports="19">스누커</li>
+                        <li class="squash" data-sports="37">스쿼시</li>
+                        <li class="futsal" data-sports="29">풋살</li>
+                    </ul>
+                    <div class="controls">
+                        <button class="btn prev disabled" disabled="">prev</button>
+                        <button class="btn next disabled" disabled="">next</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="betting_content">
+                <div class="waiting_progress" style="display: none;">
+                    <!-- <em>잠시 기다려 주세요.</em> -->
+                    <div class="loader"></div>
+                </div>
+                <div class="wrap_board bettb esports SRS59284170200">
+                    <div class="betlist tb_board tb_board_bet" id="157483">
+                        <div class="list" id="157483">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-16(목) 17:00</p>
+                                    <p class="home homename">kt Rolster</p>
+                                    <p class="away awayname">T1</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open" style="display: none;">0<span class="detail">0</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="130" data-mnmid="157483-2way" id="157483-2way" data-markettype="2way" data-allottedvalue="None" data-srsmarketid="9696155" data-finished="0" data-hometeam="kt Rolster"
+                                    data-awayteam="T1" data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin on">3.7</button><button class="btn_board_normal draw">&nbsp;</button><button
+                                        class="btn_board btn_board_normal awaywin">1.28</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap on">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_board bettb esports SRS59316170300">
+                    <div class="betlist tb_board tb_board_bet" id="157191">
+                        <div class="list" id="157191">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-16(목) 18:00</p>
+                                    <p class="home homename">LNG Esports</p>
+                                    <p class="away awayname">인빅터스 게이밍</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open" style="display: none;">0<span class="detail">0</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="130" data-mnmid="157191-2way" id="157191-2way" data-markettype="2way" data-allottedvalue="None" data-srsmarketid="9621969" data-finished="0" data-hometeam="LNG Esports"
+                                    data-awayteam="인빅터스 게이밍" data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">4.9</button><button class="btn_board_normal draw">&nbsp;</button><button
+                                        class="btn_board btn_board_normal awaywin">1.18</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_board bettb soccer SRS144170330">
+                    <div class="betlist tb_board tb_board_bet" id="155852">
+                        <div class="list" id="155852">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-16(목) 18:30</p>
+                                    <p class="home homename">멜버른 빅토리</p>
+                                    <p class="away awayname">웨스턴 유니테드 FC</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open">2<span class="detail">135</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="1" data-mnmid="155852-3way" id="155852-3way" data-markettype="3way" data-allottedvalue="None" data-srsmarketid="9354085" data-finished="0" data-hometeam="멜버른 빅토리"
+                                    data-awayteam="웨스턴 유니테드 FC" data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin on">2.55</button><button class="btn_board_normal draw btn_board">3.75</button><button
+                                        class="btn_board btn_board_normal awaywin">2.7</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="155852-handicap" id="155852-handicap" data-markettype="handicap" data-allottedvalue="2" data-srsmarketid="9354041" data-finished="0" data-hometeam="멜버른 빅토리"
+                                        data-awayteam="웨스턴 유니테드 FC" data-typename="핸디캡" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.19</button><button
+                                            class="btn_board_normal draw btn_board"><strong>(H+2)</strong>8.6</button><button class="btn_board btn_board_normal awaywin">13</button></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="155852-totals" id="155852-totals" data-markettype="totals" data-allottedvalue="3.5" data-srsmarketid="9015958" data-finished="0" data-hometeam="멜버른 빅토리"
+                                        data-awayteam="웨스턴 유니테드 FC" data-typename="U / O" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.56</button><button class="btn_board_normal draw"><strong>(U/O
+                                                3.5)</strong></button><button class="btn_board btn_board_normal awaywin">2.55</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="more_155852" class="pro_view" style="display: none;">
+                            <div class="more_wrap"><button class="more_btn"></button></div>
+                            <div class="detail_choice moregame_list list" style="display:none"></div>
+                            <div class="more_wrap" style="display:none;"><button class="more_btn off"></button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_board bettb esports SRS59284170500">
+                    <div class="betlist tb_board tb_board_bet" id="157484">
+                        <div class="list" id="157484">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-16(목) 20:00</p>
+                                    <p class="home homename">Seolhaeone Prince</p>
+                                    <p class="away awayname">Sandbox Gaming</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open" style="display: none;">0<span class="detail">0</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="130" data-mnmid="157484-2way" id="157484-2way" data-markettype="2way" data-allottedvalue="None" data-srsmarketid="9673473" data-finished="0" data-hometeam="Seolhaeone Prince"
+                                    data-awayteam="Sandbox Gaming" data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">3.1</button><button class="btn_board_normal draw">&nbsp;</button><button
+                                        class="btn_board btn_board_normal awaywin">1.38</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_board bettb esports SRS59316170500">
+                    <div class="betlist tb_board tb_board_bet" id="157194">
+                        <div class="list" id="157194">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-16(목) 20:00</p>
+                                    <p class="home homename">로열 네버 기브업</p>
+                                    <p class="away awayname">Suning Gaming</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open" style="display: none;">0<span class="detail">0</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="130" data-mnmid="157194-2way" id="157194-2way" data-markettype="2way" data-allottedvalue="None" data-srsmarketid="9713108" data-finished="0" data-hometeam="로열 네버 기브업"
+                                    data-awayteam="Suning Gaming" data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">2.18</button><button class="btn_board_normal draw">&nbsp;</button><button
+                                        class="btn_board btn_board_normal awaywin">1.69</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_board bettb soccer SRS2171000">
+                    <div class="betlist tb_board tb_board_bet" id="157147">
+                        <div class="list" id="157147">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-17(금) 01:00</p>
+                                    <p class="home homename">리즈</p>
+                                    <p class="away awayname">반즐리</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open">2<span class="detail">150</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="1" data-mnmid="157147-3way" id="157147-3way" data-markettype="3way" data-allottedvalue="None" data-srsmarketid="9709011" data-finished="0" data-hometeam="리즈" data-awayteam="반즐리"
+                                    data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.35</button><button class="btn_board_normal draw btn_board">5.4</button><button
+                                        class="btn_board btn_board_normal awaywin">9.6</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="157147-handicap" id="157147-handicap" data-markettype="handicap" data-allottedvalue="-2" data-srsmarketid="9708967" data-finished="0" data-hometeam="리즈"
+                                        data-awayteam="반즐리" data-typename="핸디캡" data-isspecial="false"><button class="btn_board btn_board_normal homewin">3.5</button><button
+                                            class="btn_board_normal draw btn_board"><strong>(H-2)</strong>4.5</button><button class="btn_board btn_board_normal awaywin">1.92</button></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="157147-totals" id="157147-totals" data-markettype="totals" data-allottedvalue="3.5" data-srsmarketid="9670580" data-finished="0" data-hometeam="리즈"
+                                        data-awayteam="반즐리" data-typename="U / O" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.51</button><button class="btn_board_normal draw"><strong>(U/O 3.5)</strong></button><button
+                                            class="btn_board btn_board_normal awaywin">2.75</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="more_157147" class="pro_view" style="display: none;">
+                            <div class="more_wrap"><button class="more_btn"></button></div>
+                            <div class="detail_choice moregame_list list" style="display:none"></div>
+                            <div class="more_wrap" style="display:none;"><button class="more_btn off"></button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_board bettb soccer SRS1171100">
+                    <div class="betlist tb_board tb_board_bet" id="157345">
+                        <div class="list" id="157341">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-17(금) 02:00</p>
+                                    <p class="home homename">레스터</p>
+                                    <p class="away awayname">셰필드 유나이티드</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open">2<span class="detail">250</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="1" data-mnmid="157341-3way" id="157341-3way" data-markettype="3way" data-allottedvalue="None" data-srsmarketid="9705513" data-finished="0" data-hometeam="레스터"
+                                    data-awayteam="셰필드 유나이티드" data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">2.03</button><button class="btn_board_normal draw btn_board">3.4</button><button
+                                        class="btn_board btn_board_normal awaywin">4.1</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="157341-handicap" id="157341-handicap" data-markettype="handicap" data-allottedvalue="-2" data-srsmarketid="9705152" data-finished="0" data-hometeam="레스터"
+                                        data-awayteam="셰필드 유나이티드" data-typename="핸디캡" data-isspecial="false"><button class="btn_board btn_board_normal homewin">9.4</button><button
+                                            class="btn_board_normal draw btn_board"><strong>(H-2)</strong>6.4</button><button class="btn_board btn_board_normal awaywin">1.3</button></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="157341-totals" id="157341-totals" data-markettype="totals" data-allottedvalue="3.5" data-srsmarketid="9684120" data-finished="0" data-hometeam="레스터"
+                                        data-awayteam="셰필드 유나이티드" data-typename="U / O" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.29</button><button class="btn_board_normal draw"><strong>(U/O
+                                                3.5)</strong></button><button class="btn_board btn_board_normal awaywin">3.95</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="more_157341" class="pro_view" style="display: none;">
+                            <div class="more_wrap"><button class="more_btn"></button></div>
+                            <div class="detail_choice moregame_list list" style="display:none"></div>
+                            <div class="more_wrap" style="display:none;"><button class="more_btn off"></button></div>
+                        </div>
+                        <div class="list" id="157345">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-17(금) 02:00</p>
+                                    <p class="home homename">에버튼</p>
+                                    <p class="away awayname">아스톤빌라</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open">2<span class="detail">246</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="1" data-mnmid="157345-3way" id="157345-3way" data-markettype="3way" data-allottedvalue="None" data-srsmarketid="9699243" data-finished="0" data-hometeam="에버튼" data-awayteam="아스톤빌라"
+                                    data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">2.04</button><button class="btn_board_normal draw btn_board">3.6</button><button
+                                        class="btn_board btn_board_normal awaywin">3.8</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="157345-handicap" id="157345-handicap" data-markettype="handicap" data-allottedvalue="-1" data-srsmarketid="9699236" data-finished="0" data-hometeam="에버튼"
+                                        data-awayteam="아스톤빌라" data-typename="핸디캡" data-isspecial="false"><button class="btn_board btn_board_normal homewin">3.85</button><button
+                                            class="btn_board_normal draw btn_board"><strong>(H-1)</strong>4.3</button><button class="btn_board btn_board_normal awaywin">1.87</button></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="157345-totals" id="157345-totals" data-markettype="totals" data-allottedvalue="3.5" data-srsmarketid="9699238" data-finished="0" data-hometeam="에버튼"
+                                        data-awayteam="아스톤빌라" data-typename="U / O" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.4</button><button class="btn_board_normal draw"><strong>(U/O 3.5)</strong></button><button
+                                            class="btn_board btn_board_normal awaywin">3.2</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="more_157345" class="pro_view" style="display: none;">
+                            <div class="more_wrap"><button class="more_btn"></button></div>
+                            <div class="detail_choice moregame_list list" style="display:none"></div>
+                            <div class="more_wrap" style="display:none;"><button class="more_btn off"></button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_board bettb soccer SRS36171300">
+                    <div class="betlist tb_board tb_board_bet" id="157524">
+                        <div class="list" id="151380">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-17(금) 04:00</p>
+                                    <p class="home homename">바르셀로나</p>
+                                    <p class="away awayname">오사수나</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open">2<span class="detail">150</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="1" data-mnmid="151380-3way" id="151380-3way" data-markettype="3way" data-allottedvalue="None" data-srsmarketid="9700824" data-finished="0" data-hometeam="바르셀로나" data-awayteam="오사수나"
+                                    data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.17</button><button class="btn_board_normal draw btn_board">8.4</button><button
+                                        class="btn_board btn_board_normal awaywin">18</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="151380-handicap" id="151380-handicap" data-markettype="handicap" data-allottedvalue="-2" data-srsmarketid="9702431" data-finished="0" data-hometeam="바르셀로나"
+                                        data-awayteam="오사수나" data-typename="핸디캡" data-isspecial="false"><button class="btn_board btn_board_normal homewin">2.33</button><button
+                                            class="btn_board_normal draw btn_board"><strong>(H-2)</strong>4.3</button><button class="btn_board btn_board_normal awaywin">2.7</button></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="151380-totals" id="151380-totals" data-markettype="totals" data-allottedvalue="4.5" data-srsmarketid="9635800" data-finished="0" data-hometeam="바르셀로나"
+                                        data-awayteam="오사수나" data-typename="U / O" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.32</button><button class="btn_board_normal draw"><strong>(U/O 4.5)</strong></button><button
+                                            class="btn_board btn_board_normal awaywin">3.65</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="more_151380" class="pro_view" style="display: none;">
+                            <div class="more_wrap"><button class="more_btn"></button></div>
+                            <div class="detail_choice moregame_list list" style="display:none"></div>
+                            <div class="more_wrap" style="display:none;"><button class="more_btn off"></button></div>
+                        </div>
+                        <div class="list" id="151381">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-17(금) 04:00</p>
+                                    <p class="home homename">레알베티스</p>
+                                    <p class="away awayname">알라베스</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open">2<span class="detail">154</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="1" data-mnmid="151381-3way" id="151381-3way" data-markettype="3way" data-allottedvalue="None" data-srsmarketid="9669968" data-finished="0" data-hometeam="레알베티스" data-awayteam="알라베스"
+                                    data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">2.22</button><button class="btn_board_normal draw btn_board">3.35</button><button
+                                        class="btn_board btn_board_normal awaywin">3.55</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="151381-handicap" id="151381-handicap" data-markettype="handicap" data-allottedvalue="-2" data-srsmarketid="9669950" data-finished="0" data-hometeam="레알베티스"
+                                        data-awayteam="알라베스" data-typename="핸디캡" data-isspecial="false"><button class="btn_board btn_board_normal homewin">12</button><button
+                                            class="btn_board_normal draw btn_board"><strong>(H-2)</strong>7</button><button class="btn_board btn_board_normal awaywin">1.25</button></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="151381-totals" id="151381-totals" data-markettype="totals" data-allottedvalue="3.5" data-srsmarketid="9663652" data-finished="0" data-hometeam="레알베티스"
+                                        data-awayteam="알라베스" data-typename="U / O" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.28</button><button class="btn_board_normal draw"><strong>(U/O 3.5)</strong></button><button
+                                            class="btn_board btn_board_normal awaywin">4</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="more_151381" class="pro_view" style="display: none;">
+                            <div class="more_wrap"><button class="more_btn"></button></div>
+                            <div class="detail_choice moregame_list list" style="display:none"></div>
+                            <div class="more_wrap" style="display:none;"><button class="more_btn off"></button></div>
+                        </div>
+                        <div class="list" id="151382">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-17(금) 04:00</p>
+                                    <p class="home homename">셀타비고</p>
+                                    <p class="away awayname">레반테</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open">2<span class="detail">158</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="1" data-mnmid="151382-3way" id="151382-3way" data-markettype="3way" data-allottedvalue="None" data-srsmarketid="9702898" data-finished="0" data-hometeam="셀타비고" data-awayteam="레반테"
+                                    data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.65</button><button class="btn_board_normal draw btn_board">4.3</button><button
+                                        class="btn_board btn_board_normal awaywin">5.4</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="151382-handicap" id="151382-handicap" data-markettype="handicap" data-allottedvalue="-1" data-srsmarketid="9702836" data-finished="0" data-hometeam="셀타비고"
+                                        data-awayteam="레반테" data-typename="핸디캡" data-isspecial="false"><button class="btn_board btn_board_normal homewin">2.75</button><button
+                                            class="btn_board_normal draw btn_board"><strong>(H-1)</strong>4</button><button class="btn_board btn_board_normal awaywin">2.4</button></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="151382-totals" id="151382-totals" data-markettype="totals" data-allottedvalue="3.5" data-srsmarketid="9682774" data-finished="0" data-hometeam="셀타비고"
+                                        data-awayteam="레반테" data-typename="U / O" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.46</button><button class="btn_board_normal draw"><strong>(U/O 3.5)</strong></button><button
+                                            class="btn_board btn_board_normal awaywin">2.9</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="more_151382" class="pro_view" style="display: none;">
+                            <div class="more_wrap"><button class="more_btn"></button></div>
+                            <div class="detail_choice moregame_list list" style="display:none"></div>
+                            <div class="more_wrap" style="display:none;"><button class="more_btn off"></button></div>
+                        </div>
+                        <div class="list" id="151383">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-17(금) 04:00</p>
+                                    <p class="home homename">에이바르</p>
+                                    <p class="away awayname">레알 바야돌리드</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open">2<span class="detail">154</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="1" data-mnmid="151383-3way" id="151383-3way" data-markettype="3way" data-allottedvalue="None" data-srsmarketid="9697398" data-finished="0" data-hometeam="에이바르"
+                                    data-awayteam="레알 바야돌리드" data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">2.2</button><button class="btn_board_normal draw btn_board">3.2</button><button
+                                        class="btn_board btn_board_normal awaywin">3.8</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="151383-handicap" id="151383-handicap" data-markettype="handicap" data-allottedvalue="-1" data-srsmarketid="9703707" data-finished="0" data-hometeam="에이바르"
+                                        data-awayteam="레알 바야돌리드" data-typename="핸디캡" data-isspecial="false"><button class="btn_board btn_board_normal homewin">4.7</button><button
+                                            class="btn_board_normal draw btn_board"><strong>(H-1)</strong>4.1</button><button class="btn_board btn_board_normal awaywin">1.75</button></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="151383-totals" id="151383-totals" data-markettype="totals" data-allottedvalue="3.5" data-srsmarketid="9703711" data-finished="0" data-hometeam="에이바르"
+                                        data-awayteam="레알 바야돌리드" data-typename="U / O" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.21</button><button class="btn_board_normal draw"><strong>(U/O
+                                                3.5)</strong></button><button class="btn_board btn_board_normal awaywin">4.9</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="more_151383" class="pro_view" style="display: none;">
+                            <div class="more_wrap"><button class="more_btn"></button></div>
+                            <div class="detail_choice moregame_list list" style="display:none"></div>
+                            <div class="more_wrap" style="display:none;"><button class="more_btn off"></button></div>
+                        </div>
+                        <div class="list" id="151384">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-17(금) 04:00</p>
+                                    <p class="home homename">헤타페</p>
+                                    <p class="away awayname">AT</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open">2<span class="detail">154</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="1" data-mnmid="151384-3way" id="151384-3way" data-markettype="3way" data-allottedvalue="None" data-srsmarketid="9701347" data-finished="0" data-hometeam="헤타페" data-awayteam="AT"
+                                    data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">3.95</button><button class="btn_board_normal draw btn_board">3</button><button
+                                        class="btn_board btn_board_normal awaywin">2.25</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="151384-handicap" id="151384-handicap" data-markettype="handicap" data-allottedvalue="2" data-srsmarketid="9701331" data-finished="0" data-hometeam="헤타페"
+                                        data-awayteam="AT" data-typename="핸디캡" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.21</button><button
+                                            class="btn_board_normal draw btn_board"><strong>(H+2)</strong>7.4</button><button class="btn_board btn_board_normal awaywin">14</button></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="151384-totals" id="151384-totals" data-markettype="totals" data-allottedvalue="1.5" data-srsmarketid="9692705" data-finished="0" data-hometeam="헤타페"
+                                        data-awayteam="AT" data-typename="U / O" data-isspecial="false"><button class="btn_board btn_board_normal homewin">2.39</button><button class="btn_board_normal draw"><strong>(U/O 1.5)</strong></button><button
+                                            class="btn_board btn_board_normal awaywin">1.64</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="more_151384" class="pro_view" style="display: none;">
+                            <div class="more_wrap"><button class="more_btn"></button></div>
+                            <div class="detail_choice moregame_list list" style="display:none"></div>
+                            <div class="more_wrap" style="display:none;"><button class="more_btn off"></button></div>
+                        </div>
+                        <div class="list" id="151385">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-17(금) 04:00</p>
+                                    <p class="home homename">소시에다드</p>
+                                    <p class="away awayname">세비야</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open">2<span class="detail">158</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="1" data-mnmid="151385-3way" id="151385-3way" data-markettype="3way" data-allottedvalue="None" data-srsmarketid="9711110" data-finished="0" data-hometeam="소시에다드" data-awayteam="세비야"
+                                    data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">2.85</button><button class="btn_board_normal draw btn_board">3.4</button><button
+                                        class="btn_board btn_board_normal awaywin">2.55</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="151385-handicap" id="151385-handicap" data-markettype="handicap" data-allottedvalue="1" data-srsmarketid="9711109" data-finished="0" data-hometeam="소시에다드"
+                                        data-awayteam="세비야" data-typename="핸디캡" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.58</button><button
+                                            class="btn_board_normal draw btn_board"><strong>(H+1)</strong>4.7</button><button class="btn_board btn_board_normal awaywin">5.4</button></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="151385-totals" id="151385-totals" data-markettype="totals" data-allottedvalue="3.5" data-srsmarketid="9635077" data-finished="0" data-hometeam="소시에다드"
+                                        data-awayteam="세비야" data-typename="U / O" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.35</button><button class="btn_board_normal draw"><strong>(U/O 3.5)</strong></button><button
+                                            class="btn_board btn_board_normal awaywin">3.45</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="more_151385" class="pro_view" style="display: none;">
+                            <div class="more_wrap"><button class="more_btn"></button></div>
+                            <div class="detail_choice moregame_list list" style="display:none"></div>
+                            <div class="more_wrap" style="display:none;"><button class="more_btn off"></button></div>
+                        </div>
+                        <div class="list" id="151386">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-17(금) 04:00</p>
+                                    <p class="home homename">발렌시아</p>
+                                    <p class="away awayname">에스파뇰</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open">2<span class="detail">148</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="1" data-mnmid="151386-3way" id="151386-3way" data-markettype="3way" data-allottedvalue="None" data-srsmarketid="9698993" data-finished="0" data-hometeam="발렌시아" data-awayteam="에스파뇰"
+                                    data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.56</button><button class="btn_board_normal draw btn_board">4.3</button><button
+                                        class="btn_board btn_board_normal awaywin">6.4</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="151386-handicap" id="151386-handicap" data-markettype="handicap" data-allottedvalue="1" data-srsmarketid="9705465" data-finished="0" data-hometeam="발렌시아"
+                                        data-awayteam="에스파뇰" data-typename="핸디캡" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.16</button><button
+                                            class="btn_board_normal draw btn_board"><strong>(H+1)</strong>8.6</button><button class="btn_board btn_board_normal awaywin">21</button></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="151386-totals" id="151386-totals" data-markettype="totals" data-allottedvalue="3.5" data-srsmarketid="9656923" data-finished="0" data-hometeam="발렌시아"
+                                        data-awayteam="에스파뇰" data-typename="U / O" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.36</button><button class="btn_board_normal draw"><strong>(U/O 3.5)</strong></button><button
+                                            class="btn_board btn_board_normal awaywin">3.35</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="more_151386" class="pro_view" style="display: none;">
+                            <div class="more_wrap"><button class="more_btn"></button></div>
+                            <div class="detail_choice moregame_list list" style="display:none"></div>
+                            <div class="more_wrap" style="display:none;"><button class="more_btn off"></button></div>
+                        </div>
+                        <div class="list" id="157522">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-17(금) 04:00</p>
+                                    <p class="home homename">마요르카</p>
+                                    <p class="away awayname">그라나다</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open">2<span class="detail">154</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="1" data-mnmid="157522-3way" id="157522-3way" data-markettype="3way" data-allottedvalue="None" data-srsmarketid="9706395" data-finished="0" data-hometeam="마요르카" data-awayteam="그라나다"
+                                    data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">2.18</button><button class="btn_board_normal draw btn_board">3.4</button><button
+                                        class="btn_board btn_board_normal awaywin">3.6</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="157522-handicap" id="157522-handicap" data-markettype="handicap" data-allottedvalue="1" data-srsmarketid="9662968" data-finished="0" data-hometeam="마요르카"
+                                        data-awayteam="그라나다" data-typename="핸디캡" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.34</button><button
+                                            class="btn_board_normal draw btn_board"><strong>(H+1)</strong>5.8</button><button class="btn_board btn_board_normal awaywin">9.4</button></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="157522-totals" id="157522-totals" data-markettype="totals" data-allottedvalue="3.5" data-srsmarketid="9634787" data-finished="0" data-hometeam="마요르카"
+                                        data-awayteam="그라나다" data-typename="U / O" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.3</button><button class="btn_board_normal draw"><strong>(U/O 3.5)</strong></button><button
+                                            class="btn_board btn_board_normal awaywin">3.8</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="more_157522" class="pro_view" style="display: none;">
+                            <div class="more_wrap"><button class="more_btn"></button></div>
+                            <div class="detail_choice moregame_list list" style="display:none"></div>
+                            <div class="more_wrap" style="display:none;"><button class="more_btn off"></button></div>
+                        </div>
+                        <div class="list" id="157523">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-17(금) 04:00</p>
+                                    <p class="home homename">레알마드리드</p>
+                                    <p class="away awayname">비야레알</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open">2<span class="detail">152</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="1" data-mnmid="157523-3way" id="157523-3way" data-markettype="3way" data-allottedvalue="None" data-srsmarketid="9669809" data-finished="0" data-hometeam="레알마드리드"
+                                    data-awayteam="비야레알" data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.51</button><button class="btn_board_normal draw btn_board">4.8</button><button
+                                        class="btn_board btn_board_normal awaywin">6.2</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="157523-handicap" id="157523-handicap" data-markettype="handicap" data-allottedvalue="2" data-srsmarketid="9669780" data-finished="0" data-hometeam="레알마드리드"
+                                        data-awayteam="비야레알" data-typename="핸디캡" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.04</button><button
+                                            class="btn_board_normal draw btn_board"><strong>(H+2)</strong>20</button><button class="btn_board btn_board_normal awaywin">60</button></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="157523-totals" id="157523-totals" data-markettype="totals" data-allottedvalue="4.5" data-srsmarketid="9659420" data-finished="0" data-hometeam="레알마드리드"
+                                        data-awayteam="비야레알" data-typename="U / O" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.25</button><button class="btn_board_normal draw"><strong>(U/O 4.5)</strong></button><button
+                                            class="btn_board btn_board_normal awaywin">4.3</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="more_157523" class="pro_view" style="display: none;">
+                            <div class="more_wrap"><button class="more_btn"></button></div>
+                            <div class="detail_choice moregame_list list" style="display:none"></div>
+                            <div class="more_wrap" style="display:none;"><button class="more_btn off"></button></div>
+                        </div>
+                        <div class="list" id="157524">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-17(금) 04:00</p>
+                                    <p class="home homename">빌바오</p>
+                                    <p class="away awayname">레가네스</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open">2<span class="detail">154</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="1" data-mnmid="157524-3way" id="157524-3way" data-markettype="3way" data-allottedvalue="None" data-srsmarketid="9708812" data-finished="0" data-hometeam="빌바오" data-awayteam="레가네스"
+                                    data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.82</button><button class="btn_board_normal draw btn_board">3.5</button><button
+                                        class="btn_board btn_board_normal awaywin">5.2</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="157524-handicap" id="157524-handicap" data-markettype="handicap" data-allottedvalue="-1" data-srsmarketid="9708798" data-finished="0" data-hometeam="빌바오"
+                                        data-awayteam="레가네스" data-typename="핸디캡" data-isspecial="false"><button class="btn_board btn_board_normal homewin">3.6</button><button
+                                            class="btn_board_normal draw btn_board"><strong>(H-1)</strong>3.6</button><button class="btn_board btn_board_normal awaywin">2.1</button></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="157524-totals" id="157524-totals" data-markettype="totals" data-allottedvalue="0.5" data-srsmarketid="9661723" data-finished="0" data-hometeam="빌바오"
+                                        data-awayteam="레가네스" data-typename="U / O" data-isspecial="false"><button class="btn_board btn_board_normal homewin">7.4</button><button class="btn_board_normal draw"><strong>(U/O 0.5)</strong></button><button
+                                            class="btn_board btn_board_normal awaywin">1.12</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="more_157524" class="pro_view" style="display: none;">
+                            <div class="more_wrap"><button class="more_btn"></button></div>
+                            <div class="detail_choice moregame_list list" style="display:none"></div>
+                            <div class="more_wrap" style="display:none;"><button class="more_btn off"></button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_board bettb soccer SRS1171315">
+                    <div class="betlist tb_board tb_board_bet" id="157346">
+                        <div class="list" id="157340">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-17(금) 04:15</p>
+                                    <p class="home homename">크리스탈</p>
+                                    <p class="away awayname">맨유</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open">2<span class="detail">152</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="1" data-mnmid="157340-3way" id="157340-3way" data-markettype="3way" data-allottedvalue="None" data-srsmarketid="9678157" data-finished="0" data-hometeam="크리스탈" data-awayteam="맨유"
+                                    data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">9.8</button><button class="btn_board_normal draw btn_board">5</button><button
+                                        class="btn_board btn_board_normal awaywin">1.37</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="157340-handicap" id="157340-handicap" data-markettype="handicap" data-allottedvalue="2" data-srsmarketid="9682372" data-finished="0" data-hometeam="크리스탈"
+                                        data-awayteam="맨유" data-typename="핸디캡" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.85</button><button
+                                            class="btn_board_normal draw btn_board"><strong>(H+2)</strong>4.4</button><button class="btn_board btn_board_normal awaywin">3.8</button></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="157340-totals" id="157340-totals" data-markettype="totals" data-allottedvalue="3.5" data-srsmarketid="9673199" data-finished="0" data-hometeam="크리스탈"
+                                        data-awayteam="맨유" data-typename="U / O" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.39</button><button class="btn_board_normal draw"><strong>(U/O 3.5)</strong></button><button
+                                            class="btn_board btn_board_normal awaywin">3.2</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="more_157340" class="pro_view" style="display: none;">
+                            <div class="more_wrap"><button class="more_btn"></button></div>
+                            <div class="detail_choice moregame_list list" style="display:none"></div>
+                            <div class="more_wrap" style="display:none;"><button class="more_btn off"></button></div>
+                        </div>
+                        <div class="list" id="157346">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-17(금) 04:15</p>
+                                    <p class="home homename">사우샘프턴</p>
+                                    <p class="away awayname">브라이턴</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open">2<span class="detail">154</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="1" data-mnmid="157346-3way" id="157346-3way" data-markettype="3way" data-allottedvalue="None" data-srsmarketid="9697448" data-finished="0" data-hometeam="사우샘프턴" data-awayteam="브라이턴"
+                                    data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">2.2</button><button class="btn_board_normal draw btn_board">3.35</button><button
+                                        class="btn_board btn_board_normal awaywin">3.6</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="157346-handicap" id="157346-handicap" data-markettype="handicap" data-allottedvalue="-2" data-srsmarketid="9697416" data-finished="0" data-hometeam="사우샘프턴"
+                                        data-awayteam="브라이턴" data-typename="핸디캡" data-isspecial="false"><button class="btn_board btn_board_normal homewin">11</button><button
+                                            class="btn_board_normal draw btn_board"><strong>(H-2)</strong>7</button><button class="btn_board btn_board_normal awaywin">1.25</button></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="157346-totals" id="157346-totals" data-markettype="totals" data-allottedvalue="3.5" data-srsmarketid="9642269" data-finished="0" data-hometeam="사우샘프턴"
+                                        data-awayteam="브라이턴" data-typename="U / O" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.28</button><button class="btn_board_normal draw"><strong>(U/O 3.5)</strong></button><button
+                                            class="btn_board btn_board_normal awaywin">4</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="more_157346" class="pro_view" style="display: none;">
+                            <div class="more_wrap"><button class="more_btn"></button></div>
+                            <div class="detail_choice moregame_list list" style="display:none"></div>
+                            <div class="more_wrap" style="display:none;"><button class="more_btn off"></button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_board bettb esports SRS71501171600">
+                    <div class="betlist tb_board tb_board_bet" id="157419">
+                        <div class="list" id="157419">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-17(금) 07:00</p>
+                                    <p class="home homename">Team Liquid Academy</p>
+                                    <p class="away awayname">Evil Geniuses Academy</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open" style="display: none;">0<span class="detail">0</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="130" data-mnmid="157419-2way" id="157419-2way" data-markettype="2way" data-allottedvalue="None" data-srsmarketid="9633248" data-finished="0" data-hometeam="Team Liquid Academy"
+                                    data-awayteam="Evil Geniuses Academy" data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">3.15</button><button class="btn_board_normal draw">&nbsp;</button><button
+                                        class="btn_board btn_board_normal awaywin">1.36</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_board bettb esports SRS71501171700">
+                    <div class="betlist tb_board tb_board_bet" id="157420">
+                        <div class="list" id="157420">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-17(금) 08:00</p>
+                                    <p class="home homename">100 Thieves Academy</p>
+                                    <p class="away awayname">Team Solomid Academy</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open" style="display: none;">0<span class="detail">0</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="130" data-mnmid="157420-2way" id="157420-2way" data-markettype="2way" data-allottedvalue="None" data-srsmarketid="9697476" data-finished="0" data-hometeam="100 Thieves Academy"
+                                    data-awayteam="Team Solomid Academy" data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">2.75</button><button class="btn_board_normal draw">&nbsp;</button><button
+                                        class="btn_board btn_board_normal awaywin">1.46</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_board bettb esports SRS71501171800">
+                    <div class="betlist tb_board tb_board_bet" id="157423">
+                        <div class="list" id="157423">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-17(금) 09:00</p>
+                                    <p class="home homename">Cloud9 Academy</p>
+                                    <p class="away awayname">Flyquest Academy</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open" style="display: none;">0<span class="detail">0</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="130" data-mnmid="157423-2way" id="157423-2way" data-markettype="2way" data-allottedvalue="None" data-srsmarketid="9660277" data-finished="0" data-hometeam="Cloud9 Academy"
+                                    data-awayteam="Flyquest Academy" data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.4</button><button class="btn_board_normal draw">&nbsp;</button><button
+                                        class="btn_board btn_board_normal awaywin">2.95</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_board bettb esports SRS71501171900">
+                    <div class="betlist tb_board tb_board_bet" id="157422">
+                        <div class="list" id="157422">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-17(금) 10:00</p>
+                                    <p class="home homename">Golden Guardians Academy</p>
+                                    <p class="away awayname">Immortals Academy</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open" style="display: none;">0<span class="detail">0</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="130" data-mnmid="157422-2way" id="157422-2way" data-markettype="2way" data-allottedvalue="None" data-srsmarketid="9713827" data-finished="0" data-hometeam="Golden Guardians Academy"
+                                    data-awayteam="Immortals Academy" data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">2.27</button><button class="btn_board_normal draw">&nbsp;</button><button
+                                        class="btn_board btn_board_normal awaywin">1.64</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_board bettb esports SRS71501172000">
+                    <div class="betlist tb_board tb_board_bet" id="157421">
+                        <div class="list" id="157421">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-17(금) 11:00</p>
+                                    <p class="home homename">Counter Logic Gaming Academy</p>
+                                    <p class="away awayname">Team Dignitas Academy</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open" style="display: none;">0<span class="detail">0</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="130" data-mnmid="157421-2way" id="157421-2way" data-markettype="2way" data-allottedvalue="None" data-srsmarketid="9713828" data-finished="0"
+                                    data-hometeam="Counter Logic Gaming Academy" data-awayteam="Team Dignitas Academy" data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">2.41</button><button
+                                        class="btn_board_normal draw">&nbsp;</button><button class="btn_board btn_board_normal awaywin">1.57</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_board bettb esports SRS66623180000">
+                    <div class="betlist tb_board tb_board_bet" id="157514">
+                        <div class="list" id="157514">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-17(금) 15:00</p>
+                                    <p class="home homename">Order</p>
+                                    <p class="away awayname">맘모스</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open" style="display: none;">0<span class="detail">0</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="130" data-mnmid="157514-2way" id="157514-2way" data-markettype="2way" data-allottedvalue="None" data-srsmarketid="9625808" data-finished="0" data-hometeam="Order"
+                                    data-awayteam="맘모스" data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.29</button><button class="btn_board_normal draw">&nbsp;</button><button
+                                        class="btn_board btn_board_normal awaywin">3.6</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_board bettb esports SRS66623180100">
+                    <div class="betlist tb_board tb_board_bet" id="157392">
+                        <div class="list" id="157392">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-17(금) 16:00</p>
+                                    <p class="home homename">Legacy Esports</p>
+                                    <p class="away awayname">Avant Gaming</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open" style="display: none;">0<span class="detail">0</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="130" data-mnmid="157392-2way" id="157392-2way" data-markettype="2way" data-allottedvalue="None" data-srsmarketid="9646160" data-finished="0" data-hometeam="Legacy Esports"
+                                    data-awayteam="Avant Gaming" data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.23</button><button class="btn_board_normal draw">&nbsp;</button><button
+                                        class="btn_board btn_board_normal awaywin">4.3</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_board bettb esports SRS59284180200">
+                    <div class="betlist tb_board tb_board_bet" id="157485">
+                        <div class="list" id="157485">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-17(금) 17:00</p>
+                                    <p class="home homename">DragonX</p>
+                                    <p class="away awayname">Hanwha Life Esports</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open" style="display: none;">0<span class="detail">0</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="130" data-mnmid="157485-2way" id="157485-2way" data-markettype="2way" data-allottedvalue="None" data-srsmarketid="9714455" data-finished="0" data-hometeam="DragonX"
+                                    data-awayteam="Hanwha Life Esports" data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.06</button><button class="btn_board_normal draw">&nbsp;</button><button
+                                        class="btn_board btn_board_normal awaywin">9.2</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_board bettb esports SRS66623180200">
+                    <div class="betlist tb_board tb_board_bet" id="157393">
+                        <div class="list" id="157393">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-17(금) 17:00</p>
+                                    <p class="home homename">Chiefs Esports Club</p>
+                                    <p class="away awayname">Dire Wolves</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open" style="display: none;">0<span class="detail">0</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="130" data-mnmid="157393-2way" id="157393-2way" data-markettype="2way" data-allottedvalue="None" data-srsmarketid="9685978" data-finished="0" data-hometeam="Chiefs Esports Club"
+                                    data-awayteam="Dire Wolves" data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.67</button><button class="btn_board_normal draw">&nbsp;</button><button
+                                        class="btn_board btn_board_normal awaywin">2.22</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_board bettb esports SRS59316180300">
+                    <div class="betlist tb_board tb_board_bet" id="157198">
+                        <div class="list" id="157198">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-17(금) 18:00</p>
+                                    <p class="home homename">Rogue Warriors</p>
+                                    <p class="away awayname">펀플러스 피닉스</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open" style="display: none;">0<span class="detail">0</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="130" data-mnmid="157198-2way" id="157198-2way" data-markettype="2way" data-allottedvalue="None" data-srsmarketid="9656511" data-finished="0" data-hometeam="Rogue Warriors"
+                                    data-awayteam="펀플러스 피닉스" data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">7.6</button><button class="btn_board_normal draw">&nbsp;</button><button
+                                        class="btn_board btn_board_normal awaywin">1.09</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_board bettb esports SRS66623180300">
+                    <div class="betlist tb_board tb_board_bet" id="157399">
+                        <div class="list" id="157399">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-17(금) 18:00</p>
+                                    <p class="home homename">Pentanet.gg</p>
+                                    <p class="away awayname">Gravitas</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open" style="display: none;">0<span class="detail">0</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="130" data-mnmid="157399-2way" id="157399-2way" data-markettype="2way" data-allottedvalue="None" data-srsmarketid="9661869" data-finished="0" data-hometeam="Pentanet.gg"
+                                    data-awayteam="Gravitas" data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.4</button><button class="btn_board_normal draw">&nbsp;</button><button
+                                        class="btn_board btn_board_normal awaywin">3</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_board bettb soccer SRS144180330">
+                    <div class="betlist tb_board tb_board_bet" id="156282">
+                        <div class="list" id="156282">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-17(금) 18:30</p>
+                                    <p class="home homename">시드니 FC</p>
+                                    <p class="away awayname">웰링턴 피닉스 FC</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open">2<span class="detail">154</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="1" data-mnmid="156282-3way" id="156282-3way" data-markettype="3way" data-allottedvalue="None" data-srsmarketid="9293525" data-finished="0" data-hometeam="시드니 FC"
+                                    data-awayteam="웰링턴 피닉스 FC" data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.72</button><button class="btn_board_normal draw btn_board">4</button><button
+                                        class="btn_board btn_board_normal awaywin">5</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="156282-handicap" id="156282-handicap" data-markettype="handicap" data-allottedvalue="-2" data-srsmarketid="9293508" data-finished="0" data-hometeam="시드니 FC"
+                                        data-awayteam="웰링턴 피닉스 FC" data-typename="핸디캡" data-isspecial="false"><button class="btn_board btn_board_normal homewin">6</button><button
+                                            class="btn_board_normal draw btn_board"><strong>(H-2)</strong>5.4</button><button class="btn_board btn_board_normal awaywin">1.47</button></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                    <div class="type_wrap hide" data-sportid="1" data-mnmid="156282-totals" id="156282-totals" data-markettype="totals" data-allottedvalue="2.5" data-srsmarketid="9293236" data-finished="0" data-hometeam="시드니 FC"
+                                        data-awayteam="웰링턴 피닉스 FC" data-typename="U / O" data-isspecial="false"><button class="btn_board btn_board_normal homewin">2.08</button><button class="btn_board_normal draw"><strong>(U/O
+                                                2.5)</strong></button><button class="btn_board btn_board_normal awaywin">1.82</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="more_156282" class="pro_view" style="display: none;">
+                            <div class="more_wrap"><button class="more_btn"></button></div>
+                            <div class="detail_choice moregame_list list" style="display:none"></div>
+                            <div class="more_wrap" style="display:none;"><button class="more_btn off"></button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_board bettb esports SRS71164180400">
+                    <div class="betlist tb_board tb_board_bet" id="157401">
+                        <div class="list" id="157401">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-17(금) 19:00</p>
+                                    <p class="home homename">Cerberus Esports</p>
+                                    <p class="away awayname">GAM Esports</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open" style="display: none;">0<span class="detail">0</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="130" data-mnmid="157401-2way" id="157401-2way" data-markettype="2way" data-allottedvalue="None" data-srsmarketid="9547379" data-finished="0" data-hometeam="Cerberus Esports"
+                                    data-awayteam="GAM Esports" data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.77</button><button class="btn_board_normal draw">&nbsp;</button><button
+                                        class="btn_board btn_board_normal awaywin">2.06</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_board bettb esports SRS59284180500">
+                    <div class="betlist tb_board tb_board_bet" id="157486">
+                        <div class="list" id="157486">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-17(금) 20:00</p>
+                                    <p class="home homename">Afreeca Freecs</p>
+                                    <p class="away awayname">담원 게이밍</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open" style="display: none;">0<span class="detail">0</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="130" data-mnmid="157486-2way" id="157486-2way" data-markettype="2way" data-allottedvalue="None" data-srsmarketid="9714456" data-finished="0" data-hometeam="Afreeca Freecs"
+                                    data-awayteam="담원 게이밍" data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">4.2</button><button class="btn_board_normal draw">&nbsp;</button><button
+                                        class="btn_board btn_board_normal awaywin">1.23</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_board bettb esports SRS59316180500">
+                    <div class="betlist tb_board tb_board_bet" id="157242">
+                        <div class="list" id="157242">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-17(금) 20:00</p>
+                                    <p class="home homename">Edward Gaming</p>
+                                    <p class="away awayname">LGD Gaming</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open" style="display: none;">0<span class="detail">0</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="130" data-mnmid="157242-2way" id="157242-2way" data-markettype="2way" data-allottedvalue="None" data-srsmarketid="9713729" data-finished="0" data-hometeam="Edward Gaming"
+                                    data-awayteam="LGD Gaming" data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">2.22</button><button class="btn_board_normal draw">&nbsp;</button><button
+                                        class="btn_board btn_board_normal awaywin">1.67</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_board bettb esports SRS71164180700">
+                    <div class="betlist tb_board tb_board_bet" id="157405">
+                        <div class="list" id="157405">
+                            <div class="txt">
+                                <div class="left">
+                                    <p class="gtxt datetime">07-17(금) 22:00</p>
+                                    <p class="home homename">팀 플래시 베트남</p>
+                                    <p class="away awayname">Team Secret</p>
+                                </div>
+                                <div class="right"><button class="more btn_board_open" style="display: none;">0<span class="detail">0</span></button></div>
+                            </div>
+                            <div class="basic_view 3way 2way">
+                                <div class="type_wrap"><span>H</span><span>무승부</span><span>A</span></div>
+                                <div class="type_wrap" data-sportid="130" data-mnmid="157405-2way" id="157405-2way" data-markettype="2way" data-allottedvalue="None" data-srsmarketid="9713944" data-finished="0" data-hometeam="팀 플래시 베트남"
+                                    data-awayteam="Team Secret" data-typename="승무패" data-isspecial="false"><button class="btn_board btn_board_normal homewin">1.86</button><button class="btn_board_normal draw">&nbsp;</button><button
+                                        class="btn_board btn_board_normal awaywin">1.95</button></div>
+                            </div>
+                            <div class="list2 hidden">
+                                <div class="basic_view handicap">
+                                    <div class="type_wrap hide"><span>H</span><span>핸디캡</span><span>A</span></div>
+                                </div>
+                                <div class="basic_view totals">
+                                    <div class="type_wrap hide"><span>U</span><span>언오버</span><span>O</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form name="AnalysisDataForm" id="AnalysisDataForm" method="post" action="/page/dataCenter/AnalysisData.php">
+                <input type="hidden" name="frameurl">
+                <input type="hidden" name="aid">
+            </form>
+
+            <div class="mainlink_box container">
+                <div class="wlank">
+                    <a href="/rank/mark.php">
+                        <span class="list-i-wrank"></span>
+                        주간랭킹
+                        <span class="list-i-rarr"></span>
+                    </a>
+                </div>
+                <div class="teamlank">
+                    <a href="/rank/team_rank.php">
+                        <span class="list-i-trank"></span>
+                        종목별 팀 순위
+                        <span class="list-i-rarr"></span>
+                    </a>
+                </div>
+                <div class="newnews">
+                    <a href="/bbs/board.php?bo_table=notice">
+                        <span class="list-i-nnews"></span>
+                        새소식
+                        <span class="list-i-rarr"></span>
+                    </a>
+                </div>
+                <div class="goldmk">
+                    <a href="/contents/list.php?ca_id=50">
+                        <span class="list-i-gmk"></span>
+                        골드마켓
+                        <span class="list-i-rarr"></span>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="minigame_box">
+                <p class="tit twtxt">추천게임</p>
+                <ul>
+                    <li>
+                        <a href="https://www.spolive.com/">
+                            <div class="img">
+                                <img src="http://sports.portal.dev.spolive.com/theme/basic/mobile/img/game/spolive_img.png" alt="">
+                            </div>
+                            <p>스포라이브</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tygem.com/">
+                            <div class="img">
+                                <img src="http://sports.portal.dev.spolive.com/theme/basic/mobile/img/game/tygem_img.png" alt="">
+                            </div>
+                            <p>타이젬 바둑</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+        <div class="container">
+            <div class="ftbtn">
+                <button class="logout" onclick="location.href='//portal.dev.spolive.com/bbs/logout.php?url=//sports.portal.dev.spolive.com'"><span class="list-i-ftlogout"></span>로그아웃</button>
+                <a href="/?device=pc" class="pcview_btn"><span class="list-i-ftpc"></span>PC화면</a>
+            </div>
+            <h2><span class="list-i-ftlogo"></span></h2>
+            <p>
+                ⓒ 2015 - 2020, SPOLIVE Corp.All rights reserved.
+            </p>
+        </div>
+    </footer>
+    <nav>
+        <ul>
+            <li class="nvmenu">
+                <button>
+                    <span class="list-i-nvmanu"></span>
+                    <p>전체메뉴</p>
+                    <span class="new">18</span>
+                </button>
+            </li>
+            <li class="nvbetcart">
+                <button>
+                    <span class="list-i-nvcart"></span>
+                    <p>베팅카트</p>
+                    <span class="new">0</span>
+                </button>
+            </li>
+            <li class="nvmylog">
+                <button>
+                    <span class="list-i-nvlog"></span>
+                    <p>베팅내역</p>
+                    <span class="new">0</span>
+                </button>
+            </li>
+            <li class="nvchat">
+                <button>
+                    <span class="list-i-nvchat"></span>
+                    <p>채팅창</p>
+                    <span class="new">0</span>
+                </button>
+            </li>
+            <li onclick="wopen('/page/payment/payment.php', 'payment', '768', '1000');">
+                <a href="#.">
+                    <span class="list-i-nvcharge"></span>
+                    <p>충전</p>
+                    <span class="new">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/plugins.js"></script>
+    <script src="./js/sly.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/spolive-0.0.1.js"></script>
+</body>
+
+</html>
